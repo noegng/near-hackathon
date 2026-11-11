@@ -1,6 +1,7 @@
 # NEAR, replicated
 
 Built at NEAR HACKATHON, track **Investment Thesis** (`thesis`). The thesis: [`THESIS.md`](THESIS.md).
+The results on one page, generated from the build: <https://noegng.github.io/near-hackathon/>.
 
 Many teams in this track measured the same chain independently and published their numbers. This project
 treats those numbers as evidence: it records each one with its source, recomputes it from raw public data,

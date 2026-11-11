@@ -197,7 +197,8 @@ def render(snapshot: str) -> str:
     near = lambda v: f"{v / 1e6:.1f}M"
 
     status_cls = {"HOLDS": "ok", "HIT": "ok", "FAILS": "bad", "MISS": "bad", "PENDING": "wait"}
-    check_rows = [[E(c["id"]), E(c["statement"]), E(c.get("due", "now")), f'{c["value"]:.3g}',
+    unit = lambda c: {"%": "%", "x": "x"}.get(res["metrics"][c["metric"]]["unit"], "")
+    check_rows = [[E(c["id"]), E(c["statement"]), E(c.get("due", "now")), f'{c["value"]:.3g}{unit(c)}',
                    f'<span class="st {status_cls[c["status"]]}">{c["status"].capitalize()}</span>'] for c in chk]
     claim_rows = [[E(c["family"]), E(c["project"]), compare.fmt(c["claimed"], c["unit"]), compare.fmt(c["best_dated"]["ours"], c["unit"]),
                    f'{c["best_dated"]["gap"]:.1%}', E(c["best_dated"]["status"]), f'<a href="{E(c["url"])}">quote</a>']
@@ -241,7 +242,7 @@ def render(snapshot: str) -> str:
 
 <h2>What would change our mind</h2>
 <p>K rows are kill conditions: if one fails on a new snapshot, the thesis is dropped and <code>python3 -m replicated.checks</code> exits with an error. P rows are predictions written on 2026-11-11.</p>
-{table(["Id", "Condition", "Due", "Value", "Status"], check_rows, num_cols=(3,))}
+{table(["Id", "Condition", "Due", "Today", "Status"], check_rows, num_cols=(3,))}
 
 <h2>Every claim we checked</h2>
 <p class="note">"Ours" is the closest standard definition on the best day within {rep['lookback_days']} days before the snapshot. A match means a standard definition gives the published number, not that the team computed it that way.</p>

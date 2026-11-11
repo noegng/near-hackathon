@@ -8,7 +8,7 @@ of the metric that produced it; a test fails if the text and the computation dis
 
 1. NEAR's base layer no longer carries the investment case. Its activity fell by about 85% in a year and its fees
    offset under 2% of new supply.
-2. NEAR Intents does carry it. It is the only part of NEAR with growing, fee-paying demand, and the share
+2. NEAR Intents does carry it. Of the two sources of demand measured here, it is the one that grows and pays fees, and the share
    NEAR captures arrives as NEAR in three wallets anyone can read (DefiLlama's methodology describes it as an
    open-market buyback since 2026-02-23).
 3. That captured revenue is real but small: over the last 90 days it equals 18.2% of the NEAR
@@ -33,10 +33,11 @@ Dune (`dune.near.dataset_near_intents_metrics`, `..._fees`). Twelve matching num
 times. We did not rebuild volume from `intents.near` events; one team reports doing so
 ([near-thesis](https://github.com/soldanoandrea/near-thesis)) and we have not replicated their work.
 
-**Captured revenue, in contrast, can be checked without trusting anyone.** We read the balances of the three revenue
+**Captured revenue, in contrast, can be checked without trusting the party that reports it.** We read the balances of the three revenue
 wallets from an archival RPC node at 15 block heights. Their growth equals 1.01x, 0.98x and 0.98x of
 DefiLlama's reported revenue over 30, 90 and 360 days. So the revenue series is confirmed by a second, on-chain
-route, and nothing has left the wallets: the total never fell between two samples.
+route, and no net outflow shows: the total never fell between two samples. The list of wallets itself comes from
+DefiLlama's adapter; revenue sent anywhere else would not appear in either route.
 
 ## Evidence for
 
@@ -48,7 +49,7 @@ route, and nothing has left the wallets: the total never fell between two sample
 - **The capture is verifiable and accumulating.** The revenue wallets hold 4.24M NEAR, 0.32% of supply.
 - **The cover of issuance is rising.** On chain, wallet growth was 11.2% of net supply growth in the first half
   of the last 360 days and 14.5% in the second half.
-- **Supply policy is as stated.** Net supply grew 31.32M NEAR in 360 days, 2.48% a year, read from block
+- **Supply growth is measured, not assumed.** Net supply grew 31.32M NEAR in 360 days, 2.48% a year, read from block
   headers and matching NearBlocks to 0.001%.
 
 ## Evidence against
@@ -110,6 +111,8 @@ Dated predictions, written on 2026-11-11 and checked by the same command once a 
 - The proposed issuance cut HSP-029 that several teams cite. We did not read the vote on chain, so it is not used here.
 - A burn would lower the wallet total and trip K3 and P3 although it would be good for holders. If a burn is
   announced, those two conditions need a new metric.
+- Whether the three wallets are the complete set. They are the ones DefiLlama's adapter lists; we did not search
+  for others.
 - Wallet balances are sampled every 30 days. Money that entered and left between two samples is invisible; the
   match with reported revenue (0.98 to 1.01) bounds how much that could be.
 - The claims registry is a sample of what each team published, read by hand from README and THESIS files.
