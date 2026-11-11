@@ -1,6 +1,6 @@
 """Render docs/index.html: one static, self-contained page (inline SVG, no dependencies, no network).
 
-Reads the latest snapshot and recomputes everything, so the page cannot drift from the build.
+Reads the thesis snapshot and recomputes everything, so the page cannot drift from the build.
 """
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 """The thesis as executable conditions. `python3 -m replicated.checks` evaluates every
-condition in THESIS.md against the latest snapshot and exits 1 if a kill condition fires.
+condition in THESIS.md against the thesis snapshot and exits 1 if a kill condition fires.
 
 Kill conditions (K) say what result would make us drop the thesis. Dated predictions (P)
 are written before their date and stay PENDING until a snapshot taken on or after it.
