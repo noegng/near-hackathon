@@ -8,6 +8,22 @@ treats those numbers as evidence: it records each one with its source, recompute
 and shows where the teams agree, where they differ, and which definition explains the difference. The
 thesis is then built only on numbers that replicate, and its conditions run as code.
 
+## What it found
+
+119 numbers published by 20 teams were recomputed from raw data: 109 are within 5% of ours (89 on our
+snapshot day, 20 more on a day in the two weeks before). Team by team: <https://noegng.github.io/near-hackathon/>.
+
+1. **The teams agree because they read one source.** 15 of the 20 repositories publish NEAR Intents volume,
+   fees or revenue, and all 15 cite DefiLlama, whose adapter reads datasets NEAR uploads to Dune. Their
+   agreement is one measurement read fifteen times. We added a second one: the three revenue wallets, read from an
+   archival node at past block heights, grew by 0.98 to 1.01 times the reported revenue.
+2. **Where published numbers differ, the definition differs, not the data.** NEAR's price over a year is +19%
+   in one thesis and +96% or +97% in two others; L1 fees in USD fell 28%, 40% or 55%. Each of these six numbers
+   is reproduced within 5% once the window and the end day are matched.
+3. **One figure does not replicate, and we do not know why.** Two teams print 30-day Intents fees of
+   $5,458,382 to the dollar and a third rounds it to $5.5M. The series we downloaded gives no 30-day total
+   within 5% of that for any end day in the two weeks before our snapshot.
+
 ## Try it
 
 Needs Python 3.9+ and nothing else (standard library only).
@@ -50,12 +66,9 @@ snapshot named in `data/THESIS_SNAPSHOT`; later snapshots only feed `out/history
 
 - 119 numbers from 20 repositories: 89 are within 5% of our recomputation on the snapshot day, 109 when the day may
   move within two weeks. Full table: [`out/replication.md`](out/replication.md).
-- The numbers that differ most between teams differ by definition, not by error. NEAR's price change over one year
-  is +19% from day to day and +98% between 30-day averages; both appear in published theses.
-- Every repository that publishes an Intents volume or fee number mentions DefiLlama, whose adapter reads datasets
-  NEAR uploads to Dune. That agreement is one source read many times.
-- Captured revenue is confirmed by a second route: the growth of the three revenue wallets, read from an archival
-  node, is 0.98 to 1.01 times DefiLlama's reported revenue over 30, 90 and 360 days.
+- Our own variants show the same spread as the teams: NEAR's price change over one year is +19% from day to day
+  and +98% between 30-day averages.
+- The wallet growth is 0.98 to 1.01 times DefiLlama's reported revenue over 30, 90 and 360 days.
 - That revenue equals 13% to 18% of net issuance depending on the window, and all of it is still in the wallets.
 
 ## Limits
@@ -66,8 +79,8 @@ snapshot named in `data/THESIS_SNAPSHOT`; later snapshots only feed `out/history
   TVL against price; `3Nerion7/near-feelens`: a gas and storage cost model).
 - The dated search tries several definitions and 15 days per claim. A match shows that a standard
   definition on a nearby day gives the published number, not that the team computed it that way.
-- DefiLlama restates recent days: three teams quote a 30-day fee total of $5,458,382 that the current series does
-  not give for any end day in the two weeks before our snapshot (closest: 6% away). `python3 -m replicated.restated <older> <newer>` compares two snapshots, and
+- The 30-day fee total of $5,458,382 (finding 3) is closest to our series at 6% away. The source changing past
+  days is one possible cause and is not established: two snapshots taken three hours apart were identical. `python3 -m replicated.restated <older> <newer>` compares two snapshots, and
   [`out/history.md`](out/history.md) lists the changed days for every pair of consecutive snapshots. A scheduled job
   (`.github/workflows/snapshot.yml`) commits one snapshot per day from 2026-11-12.
 - NearBlocks API v1 (`/v1/charts`) is announced to switch off on 2026-11-22; the committed snapshot keeps

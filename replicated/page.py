@@ -17,8 +17,8 @@ REPO_URL = "https://github.com/noegng/near-hackathon"  # empty makes the page li
 
 CSS = """
 :root{color-scheme:light;--serif:Charter,"Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,serif;--sans:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
---surface:#faf9f6;--panel:#f0eee8;--text:#161614;--text2:#55534d;--muted:#8a8880;--grid:#e2dfd6;--s1:#2a78d6;--s2:#eb6834;--good:#0a7d0a;--crit:#c43131}
-@media (prefers-color-scheme:dark){:root{color-scheme:dark;--surface:#161615;--panel:#232321;--text:#eeece6;--text2:#bdbbb1;--muted:#8f8d85;--grid:#33322e;--s1:#4a94ea;--s2:#e0683a;--good:#4fbf4f;--crit:#ef6b6b}}
+--surface:#faf9f6;--panel:#f0eee8;--text:#161614;--text2:#55534d;--muted:#8a8880;--grid:#e2dfd6;--s1:#2a78d6;--s2:#eb6834;--good:#0a7d0a;--warn:#a86400;--crit:#c43131}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--surface:#161615;--panel:#232321;--text:#eeece6;--text2:#bdbbb1;--muted:#8f8d85;--grid:#33322e;--s1:#4a94ea;--s2:#e0683a;--good:#4fbf4f;--warn:#e0a030;--crit:#ef6b6b}}
 *{box-sizing:border-box}body{margin:0;background:var(--surface);color:var(--text);font:17px/1.6 var(--serif);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 main{max-width:1040px;margin:0 auto;padding:28px 24px 64px}
 .mast{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;font:600 .72rem/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--text2);padding-bottom:12px;border-bottom:1px solid var(--text);margin-bottom:52px}
@@ -49,6 +49,10 @@ td.n,th.n{text-align:right;white-space:nowrap}td:first-child{white-space:nowrap}
 details{margin:14px 0;border-top:1px solid var(--grid);padding-top:12px}summary{cursor:pointer;font:600 .86rem/1.3 var(--sans)}summary:hover{color:var(--s1)}
 .st{font-weight:600;white-space:nowrap}.st.ok::before{content:"\\2713  ";color:var(--good)}.st.bad::before{content:"\\2717  ";color:var(--crit)}.st.wait::before{content:"\\25CB  ";color:var(--muted)}
 .scroll{overflow-x:auto}
+.mx td,.mx th{padding-right:12px}.mx td{white-space:nowrap}.mx td:first-child{white-space:normal;min-width:15em}.mx tfoot td{border-top:1px solid var(--text);border-bottom:0;font-weight:600}.mx th{white-space:normal;vertical-align:bottom}
+.m{display:inline-block;width:11px;height:11px;margin:0 3px 0 0;border-radius:50%;vertical-align:-1px;text-decoration:none}
+.m.same{background:var(--good)}.m.dated{border:2px solid var(--good)}.m.close{background:var(--warn);border-radius:2px}
+.m.miss{width:auto;height:auto;font:700 14px/11px var(--sans);color:var(--crit);vertical-align:0}.m:hover{outline:2px solid var(--text);outline-offset:1px}
 footer{margin-top:84px;border-top:1px solid var(--text);padding-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px 40px;font:.82rem/1.6 var(--sans);color:var(--text2)}
 footer b{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}footer p{margin:0}
 #tip{position:fixed;pointer-events:none;background:var(--text);color:var(--surface);padding:6px 9px;border-radius:4px;font:.78rem/1.35 var(--sans);display:none;z-index:9;max-width:260px}
@@ -177,6 +181,58 @@ def strip(rows: list[dict], w=940) -> str:
     return "".join(o) + "</svg>"
 
 
+# Column of the team-by-metric matrix -> prefixes of the claim families it gathers.
+GROUPS = (
+    ("Intents volume", ("intents_volume", "intents_share")),
+    ("Intents fees", ("intents_fees", "intents_take_rate")),
+    ("Captured revenue", ("intents_capture", "intents_revenue", "revenue_yield", "mcap_over")),
+    ("Issuance offset", ("issuance_cover", "burn_cover", "breakeven", "net_inflation")),
+    ("Transactions", ("tx_",)),
+    ("Accounts", ("active_accounts", "new_accounts")),
+    ("L1 fees", ("l1_fees", "fees_over_l1", "revenue_over_l1")),
+    ("Price", ("price_",)),
+    ("Staking", ("staked", "validators")),
+)
+
+
+def group_of(family: str) -> str:
+    for name, prefixes in GROUPS:
+        if family.startswith(prefixes):
+            return name
+    raise KeyError(family)
+
+
+def mark_class(c: dict) -> str:
+    if c["at_snapshot"]["status"] == "reproduced":
+        return "same"
+    return {"reproduced": "dated", "close": "close"}.get(c["best_dated"]["status"], "miss")
+
+
+def matrix(claims: list[dict]) -> str:
+    """One row per team, one column per group of metrics, one mark per published number."""
+    by = {}
+    for c in claims:
+        by.setdefault(c["project"], []).append(c)
+    ok = lambda cs: sum(c["best_dated"]["status"] == "reproduced" for c in cs)
+    head = "<th>Team</th>" + "".join(f"<th>{E(g)}</th>" for g, _ in GROUPS) + '<th class="n">Within 5%</th>'
+    body = []
+    for project, cs in sorted(by.items(), key=lambda kv: (-len(kv[1]), kv[0].lower())):
+        repo = cs[0]["url"].split("/-/blob/")[0].split("/blob/")[0]
+        cells = []
+        for g, _ in GROUPS:
+            marks = []
+            for c in sorted((c for c in cs if group_of(c["family"]) == g), key=lambda c: c["id"]):
+                b, cls = c["best_dated"], mark_class(c)
+                tip = f'{c["family"]}: published {compare.fmt(c["claimed"], c["unit"])}, ours {compare.fmt(b["ours"], c["unit"])} on {b["asof"]} ({b["gap"]:.1%} apart)'
+                marks.append(f'<a class="m {cls}" href="{E(c["url"])}" data-tip="{E(tip)}" aria-label="{E(tip)}">{"&times;" if cls == "miss" else ""}</a>')
+            cells.append(f"<td>{''.join(marks)}</td>")
+        body.append(f'<tr><td><a href="{E(repo)}">{E(project)}</a></td>{"".join(cells)}<td class="n">{ok(cs)} of {len(cs)}</td></tr>')
+    foot = "<td>All teams</td>" + "".join(
+        f"<td>{ok(g_cs)} of {len(g_cs)}</td>" for g_cs in ([c for c in claims if group_of(c["family"]) == g] for g, _ in GROUPS)
+    ) + f'<td class="n">{ok(claims)} of {len(claims)}</td>'
+    return f'<div class="scroll"><table class="mx"><thead><tr>{head}</tr></thead><tbody>{"".join(body)}</tbody><tfoot><tr>{foot}</tr></tfoot></table></div>'
+
+
 def table(head: list[str], rows: list[list[str]], num_cols=()) -> str:
     th = "".join(f'<th class="{"n" if i in num_cols else ""}">{E(h)}</th>' for i, h in enumerate(head))
     body = "".join("<tr>" + "".join(f'<td class="{"n" if i in num_cols else ""}">{c}</td>' for i, c in enumerate(r)) + "</tr>" for r in rows)
@@ -205,7 +261,9 @@ def render(snapshot: str) -> str:
                 [("30 days", "burn_cover_of_net_issuance_pct_30d"), ("90 days", "burn_cover_of_net_issuance_pct_90d"), ("365 days", "burn_cover_of_net_issuance_pct_365d")]),
         fam_row("breakeven_multiple", "Growth needed to offset issuance", mult,
                 [("90 days", "breakeven_multiple_90d"), ("30 days", "breakeven_multiple_30d"), ("365 days", "breakeven_multiple_365d")]),
-        fam_row("intents_fees_30d", "Intents gross fees, 30 days", money, [("snapshot day", "intents_fees_30d")]),
+        fam_row("intents_fees_30d", "Intents gross fees, 30 days", lambda v: f"${v / 1e6:.2f}M", [("snapshot day", "intents_fees_30d")]),
+        fam_row("intents_revenue_annualized", "Captured revenue, annualized", lambda v: f"${v / 1e6:.1f}M",
+                [("90 days", "intents_revenue_annualized_90d"), ("30 days", "intents_revenue_annualized_30d")]),
         fam_row("price_yoy", "NEAR price change over a year", lambda v: f"+{v:.0f}%", [("day to day", "price_yoy"), ("30-day means", "price_yoy_30d_avg")]),
     ]
     wk = res["series"]["weekly_30d_means"]
@@ -238,12 +296,19 @@ def render(snapshot: str) -> str:
 <p class="note" style="margin-top:8px">Snapshot {E(snapshot)}. Every figure on this page is generated by <code>python3 -m replicated.page</code> from raw data committed with its hashes. The full argument, with the evidence against, is in <a href="{thesis}">THESIS.md</a>.</p>
 
 <section><p class="kicker">1 &middot; Replication</p>
+<h2>{s['sources']} teams, {s['claims']} published numbers, one recomputation</h2>
+<p>Each mark is one number a team published, placed under the kind of quantity it measures. Hover for both values; click for the sentence it was read from, at a pinned commit.</p>
+<div class="legend"><span><i class="m same"></i>Within 5% on our snapshot day</span><span><i class="m dated"></i>Within 5% on a day in the two weeks before</span><span><i class="m close"></i>Within 15%</span><span><i class="m miss">&times;</i>Not reproduced</span></div>
+{matrix(rep["claims"])}
+<p class="note">A hollow mark usually means the team measured on an earlier day or over another window. The dated search tries several definitions and {rep['lookback_days'] + 1} days, so a match shows that a standard definition gives the published number, not that the team computed it that way.</p></section>
+
+<section><p class="kicker">2 &middot; Definitions</p>
 <h2>Where the teams disagree, it is the definition</h2>
 <p>Each row has its own scale starting at zero. Circles are numbers published by other teams; diamonds are our recomputation under different, equally defensible definitions. The circles spread about as widely as the diamonds do.</p>
 <div class="legend"><span><i style="background:var(--s1)"></i>Published by a team</span><span><i class="dia" style="background:var(--s2)"></i>Our recomputation, per definition</span></div>
 <figure>{strip(strips)}</figure></section>
 
-<section><p class="kicker">2 &middot; Revenue</p>
+<section><p class="kicker">3 &middot; Revenue</p>
 <h2>The revenue is on chain, and it is all still there</h2>
 <p>Reported revenue does not have to be taken on trust. It arrives as NEAR in three wallets, and their balances at past block heights can be read from any archival node.</p>
 <div class="grid2">
@@ -253,7 +318,7 @@ def render(snapshot: str) -> str:
 {bar_chart([month_label(x['to']) for x in steps], [x['cover_pct'] for x in steps], lambda v: f"{v:.0f}%", w=460, h=262)}</figure>
 </div></section>
 
-<section><p class="kicker">3 &middot; Usage</p>
+<section><p class="kicker">4 &middot; Usage</p>
 <h2>Usage left the base layer and went to Intents</h2>
 <p>Two charts, two scales: transactions and dollars are not comparable on one axis. Intents volume and fees come from one upstream source (datasets NEAR publishes on Dune, read through DefiLlama), so agreement between teams on these is not independent confirmation.</p>
 <div class="grid2">
@@ -263,12 +328,12 @@ def render(snapshot: str) -> str:
 {line_chart([x['day'] for x in wk], [("Intents volume per day", "--s1", [x['intents_volume_usd_per_day'] for x in wk])], money)}</figure>
 </div></section>
 
-<section><p class="kicker">4 &middot; Falsification</p>
+<section><p class="kicker">5 &middot; Falsification</p>
 <h2>What would change our mind</h2>
 <p>K rows are kill conditions: if one fails on a new snapshot, the thesis is dropped and <code>python3 -m replicated.checks</code> exits with an error. P rows are predictions written on 2026-11-11.</p>
 {table(["Id", "Condition", "Due", "Today", "Status"], check_rows, num_cols=(3,))}</section>
 
-<section><p class="kicker">5 &middot; Data</p>
+<section><p class="kicker">6 &middot; Data</p>
 <h2>Every claim we checked</h2>
 <p class="note">"Ours" is the closest standard definition on the best day within {rep['lookback_days']} days before the snapshot. A match means a standard definition gives the published number, not that the team computed it that way.</p>
 <details><summary>All {s['claims']} claims from {s['sources']} repositories</summary>
