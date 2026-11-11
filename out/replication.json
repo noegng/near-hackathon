@@ -1,0 +1,2543 @@
+{
+ "snapshot": "2026-11-11",
+ "asof": "2026-11-10",
+ "lookback_days": 14,
+ "thresholds": {
+  "reproduced": 0.05,
+  "close": 0.15
+ },
+ "summary": {
+  "claims": 98,
+  "sources": 15,
+  "at_snapshot": {
+   "reproduced": 75,
+   "close": 17,
+   "not reproduced": 6
+  },
+  "best_dated": {
+   "reproduced": 88,
+   "close": 8,
+   "not reproduced": 2
+  }
+ },
+ "families": {
+  "intents_volume_30d": {
+   "n": 2,
+   "unit": "USD",
+   "min": 3727751510,
+   "max": 3757732084,
+   "median": 3742741797.0,
+   "spread_pct_of_median": 0.8010323881821334,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 2
+  },
+  "intents_volume_365d": {
+   "n": 2,
+   "unit": "USD",
+   "min": 32800000000.0,
+   "max": 32910000000.0,
+   "median": 32855000000.0,
+   "spread_pct_of_median": 0.33480444376807184,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 2
+  },
+  "intents_volume_alltime": {
+   "n": 3,
+   "unit": "USD",
+   "min": 35700000000.0,
+   "max": 37170000000.0,
+   "median": 37000000000.0,
+   "spread_pct_of_median": 3.972972972972973,
+   "reproduced_at_snapshot": 3,
+   "reproduced_best_dated": 3
+  },
+  "intents_volume_avg_30d": {
+   "n": 5,
+   "unit": "USD/day",
+   "min": 124258384,
+   "max": 149000000.0,
+   "median": 129900000.0,
+   "spread_pct_of_median": 19.046663587374905,
+   "reproduced_at_snapshot": 4,
+   "reproduced_best_dated": 4
+  },
+  "intents_volume_yoy": {
+   "n": 3,
+   "unit": "%",
+   "min": 59,
+   "max": 128,
+   "median": 60,
+   "spread_pct_of_median": 114.99999999999999,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 3
+  },
+  "intents_volume_30d_vs_prev": {
+   "n": 1,
+   "unit": "%",
+   "min": -20.7,
+   "max": -20.7,
+   "median": -20.7,
+   "spread_pct_of_median": 0.0,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 1
+  },
+  "intents_fees_30d": {
+   "n": 5,
+   "unit": "USD",
+   "min": 5458382,
+   "max": 6130000.0,
+   "median": 5500000.0,
+   "spread_pct_of_median": 12.211236363636363,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 2
+  },
+  "intents_fees_annualized": {
+   "n": 1,
+   "unit": "USD/yr",
+   "min": 74500000.0,
+   "max": 74500000.0,
+   "median": 74500000.0,
+   "spread_pct_of_median": 0.0,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 1
+  },
+  "intents_fees_365d": {
+   "n": 1,
+   "unit": "USD",
+   "min": 54200000.0,
+   "max": 54200000.0,
+   "median": 54200000.0,
+   "spread_pct_of_median": 0.0,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 1
+  },
+  "intents_fees_90d": {
+   "n": 1,
+   "unit": "USD",
+   "min": 17400000.0,
+   "max": 17400000.0,
+   "median": 17400000.0,
+   "spread_pct_of_median": 0.0,
+   "reproduced_at_snapshot": 0,
+   "reproduced_best_dated": 1
+  },
+  "intents_take_rate_bps": {
+   "n": 2,
+   "unit": "bps",
+   "min": 14.53,
+   "max": 15.56,
+   "median": 15.045,
+   "spread_pct_of_median": 6.846128281821211,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 2
+  },
+  "intents_capture_share": {
+   "n": 2,
+   "unit": "%",
+   "min": 32.1,
+   "max": 33.92,
+   "median": 33.010000000000005,
+   "spread_pct_of_median": 5.5134807634050285,
+   "reproduced_at_snapshot": 0,
+   "reproduced_best_dated": 2
+  },
+  "intents_revenue_365d": {
+   "n": 1,
+   "unit": "USD",
+   "min": 9350000.0,
+   "max": 9350000.0,
+   "median": 9350000.0,
+   "spread_pct_of_median": 0.0,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 1
+  },
+  "intents_revenue_annualized": {
+   "n": 3,
+   "unit": "USD/yr",
+   "min": 21600000.0,
+   "max": 25600000.0,
+   "median": 22600000.0,
+   "spread_pct_of_median": 17.699115044247787,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 3
+  },
+  "issuance_cover": {
+   "n": 7,
+   "unit": "%",
+   "min": 12.0,
+   "max": 20.6,
+   "median": 18.0,
+   "spread_pct_of_median": 47.777777777777786,
+   "reproduced_at_snapshot": 5,
+   "reproduced_best_dated": 6
+  },
+  "burn_cover": {
+   "n": 7,
+   "unit": "%",
+   "min": 0.58,
+   "max": 2,
+   "median": 1.15,
+   "spread_pct_of_median": 123.47826086956522,
+   "reproduced_at_snapshot": 5,
+   "reproduced_best_dated": 6
+  },
+  "breakeven_multiple": {
+   "n": 4,
+   "unit": "x",
+   "min": 5.3,
+   "max": 7.6,
+   "median": 6.25,
+   "spread_pct_of_median": 36.8,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 3
+  },
+  "tx_yoy": {
+   "n": 6,
+   "unit": "%",
+   "min": -85.1,
+   "max": -84,
+   "median": -85.0,
+   "spread_pct_of_median": 1.2941176470588167,
+   "reproduced_at_snapshot": 6,
+   "reproduced_best_dated": 6
+  },
+  "tx_vs_peak": {
+   "n": 3,
+   "unit": "%",
+   "min": -93.0,
+   "max": -91,
+   "median": -91.8,
+   "spread_pct_of_median": 2.178649237472767,
+   "reproduced_at_snapshot": 3,
+   "reproduced_best_dated": 3
+  },
+  "active_accounts_yoy": {
+   "n": 4,
+   "unit": "%",
+   "min": -78,
+   "max": -73.5,
+   "median": -76.5,
+   "spread_pct_of_median": 5.88235294117647,
+   "reproduced_at_snapshot": 4,
+   "reproduced_best_dated": 4
+  },
+  "active_accounts_vs_peak": {
+   "n": 2,
+   "unit": "%",
+   "min": -97,
+   "max": -92.1,
+   "median": -94.55,
+   "spread_pct_of_median": 5.1824431517715555,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 2
+  },
+  "new_accounts_yoy": {
+   "n": 3,
+   "unit": "%",
+   "min": -96.2,
+   "max": -96,
+   "median": -96,
+   "spread_pct_of_median": 0.20833333333333628,
+   "reproduced_at_snapshot": 3,
+   "reproduced_best_dated": 3
+  },
+  "fees_over_l1_fees": {
+   "n": 2,
+   "unit": "x",
+   "min": 34.9,
+   "max": 48,
+   "median": 41.45,
+   "spread_pct_of_median": 31.6043425814234,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 2
+  },
+  "revenue_over_l1_fees": {
+   "n": 2,
+   "unit": "x",
+   "min": 13,
+   "max": 21,
+   "median": 17.0,
+   "spread_pct_of_median": 47.05882352941176,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 1
+  },
+  "mcap_over_fees": {
+   "n": 2,
+   "unit": "x",
+   "min": 70.4,
+   "max": 73.9,
+   "median": 72.15,
+   "spread_pct_of_median": 4.85100485100485,
+   "reproduced_at_snapshot": 0,
+   "reproduced_best_dated": 2
+  },
+  "mcap_over_revenue": {
+   "n": 2,
+   "unit": "x",
+   "min": 206,
+   "max": 211,
+   "median": 208.5,
+   "spread_pct_of_median": 2.3980815347721824,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 2
+  },
+  "revenue_yield_on_mcap": {
+   "n": 2,
+   "unit": "%/yr",
+   "min": 0.45,
+   "max": 0.47,
+   "median": 0.45999999999999996,
+   "spread_pct_of_median": 4.347826086956514,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 2
+  },
+  "price_yoy": {
+   "n": 2,
+   "unit": "%",
+   "min": 19,
+   "max": 96.4,
+   "median": 57.7,
+   "spread_pct_of_median": 134.1421143847487,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 2
+  },
+  "staked_share": {
+   "n": 4,
+   "unit": "%",
+   "min": 43.8,
+   "max": 45.3,
+   "median": 44.349999999999994,
+   "spread_pct_of_median": 3.3821871476888394,
+   "reproduced_at_snapshot": 4,
+   "reproduced_best_dated": 4
+  },
+  "validators": {
+   "n": 4,
+   "unit": "count",
+   "min": 335,
+   "max": 379,
+   "median": 344.5,
+   "spread_pct_of_median": 12.772133526850507,
+   "reproduced_at_snapshot": 3,
+   "reproduced_best_dated": 3
+  },
+  "validators_to_one_third": {
+   "n": 1,
+   "unit": "count",
+   "min": 9,
+   "max": 9,
+   "median": 9,
+   "spread_pct_of_median": 0.0,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 1
+  },
+  "net_inflation": {
+   "n": 3,
+   "unit": "%/yr",
+   "min": 2.41,
+   "max": 2.49,
+   "median": 2.48,
+   "spread_pct_of_median": 3.2258064516129057,
+   "reproduced_at_snapshot": 3,
+   "reproduced_best_dated": 3
+  },
+  "l1_fees_usd_365d": {
+   "n": 1,
+   "unit": "USD",
+   "min": 1190000.0,
+   "max": 1190000.0,
+   "median": 1190000.0,
+   "spread_pct_of_median": 0.0,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 1
+  },
+  "l1_fees_usd_30d": {
+   "n": 1,
+   "unit": "USD",
+   "min": 136746,
+   "max": 136746,
+   "median": 136746,
+   "spread_pct_of_median": 0.0,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 1
+  },
+  "l1_fees_usd_yoy": {
+   "n": 2,
+   "unit": "%",
+   "min": -40.0,
+   "max": -27.6,
+   "median": -33.8,
+   "spread_pct_of_median": 36.68639053254438,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 2
+  },
+  "intents_share_of_near_dex_volume": {
+   "n": 2,
+   "unit": "%",
+   "min": 83.9,
+   "max": 92.6,
+   "median": 88.25,
+   "spread_pct_of_median": 9.858356940509902,
+   "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 1
+  }
+ },
+ "claims": [
+  {
+   "id": "ledger-intents_volume_30d-000",
+   "family": "intents_volume_30d",
+   "project": "NEAR Demand Ledger",
+   "claimed": 3727751510,
+   "unit": "USD",
+   "quote": "It settled $3,727,751,510 in the 30 days ending 9 Nov 2026",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_30d",
+    "ours": 3757732084.0,
+    "gap": 0.008042535539070843,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_30d",
+    "ours": 3727751510.0,
+    "gap": 0.0,
+    "status": "reproduced",
+    "asof": "2026-11-09"
+   }
+  },
+  {
+   "id": "tope-intents_volume_30d-001",
+   "family": "intents_volume_30d",
+   "project": "NEAR as a Cross-Chain Settlement Business",
+   "claimed": 3757732084,
+   "unit": "USD",
+   "quote": "30d volume $3,757,732,084",
+   "url": "https://github.com/Topeseun/near-intents-investment-thesis/blob/a02982df090e1a2e3c386f8c303fe4eae4f05094/README.md",
+   "at_snapshot": {
+    "metric": "intents_volume_30d",
+    "ours": 3757732084.0,
+    "gap": 0.0,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_30d",
+    "ours": 3757732084.0,
+    "gap": 0.0,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "rida-intents_volume_365d-002",
+   "family": "intents_volume_365d",
+   "project": "NEAR Investment Thesis: the evidence",
+   "claimed": 32910000000.0,
+   "unit": "USD",
+   "quote": "NEAR Intents settled $32.91B over the last year",
+   "url": "https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_365d",
+    "ours": 32910846701.0,
+    "gap": 2.5727772713460955e-05,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_365d",
+    "ours": 32910221548.0,
+    "gap": 6.731935581890003e-06,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "lval-intents_volume_365d-003",
+   "family": "intents_volume_365d",
+   "project": "NEAR Thesis Scorecard",
+   "claimed": 32800000000.0,
+   "unit": "USD",
+   "quote": "$32.8B settled in 12 months",
+   "url": "https://github.com/lvalentine16/near-thesis-indiciadesk/blob/d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_365d",
+    "ours": 32910846701.0,
+    "gap": 0.003379472591463415,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_365d",
+    "ours": 32789145894.0,
+    "gap": 0.00033091786585365854,
+    "status": "reproduced",
+    "asof": "2026-10-29"
+   }
+  },
+  {
+   "id": "lval-intents_volume_alltime-004",
+   "family": "intents_volume_alltime",
+   "project": "NEAR Thesis Scorecard",
+   "claimed": 35700000000.0,
+   "unit": "USD",
+   "quote": "($35.7B all time)",
+   "url": "https://github.com/lvalentine16/near-thesis-indiciadesk/blob/d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_alltime",
+    "ours": 37324522122.0,
+    "gap": 0.045504821344537816,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_alltime",
+    "ours": 35746085036.0,
+    "gap": 0.0012908973669467788,
+    "status": "reproduced",
+    "asof": "2026-10-29"
+   }
+  },
+  {
+   "id": "sem-intents_volume_alltime-005",
+   "family": "intents_volume_alltime",
+   "project": "Semilla1 NEAR Thesis",
+   "claimed": 37000000000.0,
+   "unit": "USD",
+   "quote": "Cumulative Intents volume since 2024-12-10: **$37.0B**",
+   "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_alltime",
+    "ours": 37324522122.0,
+    "gap": 0.008770868162162162,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_alltime",
+    "ours": 37005533919.0,
+    "gap": 0.00014956537837837838,
+    "status": "reproduced",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "ledger-intents_volume_alltime-006",
+   "family": "intents_volume_alltime",
+   "project": "NEAR Demand Ledger",
+   "claimed": 37170000000.0,
+   "unit": "USD",
+   "quote": "($37.17B against $38.11B)",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_alltime",
+    "ours": 37324522122.0,
+    "gap": 0.004157173042776433,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_alltime",
+    "ours": 37171767218.0,
+    "gap": 4.754420231369384e-05,
+    "status": "reproduced",
+    "asof": "2026-11-09"
+   }
+  },
+  {
+   "id": "nepu-intents_volume_avg_30d-007",
+   "family": "intents_volume_avg_30d",
+   "project": "NePu",
+   "claimed": 130400000.0,
+   "unit": "USD/day",
+   "quote": "7.6x its $130.4M average",
+   "url": "https://github.com/Axlnd3r/NePu/blob/eb9fe8468b8fddfd2607b3db85a779b73b9788af/README.md",
+   "at_snapshot": {
+    "metric": "intents_volume_avg_30d",
+    "ours": 125257736.13333334,
+    "gap": 0.039434538854805676,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_avg_30d",
+    "ours": 130406943.66666667,
+    "gap": 5.324897750515056e-05,
+    "status": "reproduced",
+    "asof": "2026-10-30"
+   }
+  },
+  {
+   "id": "rajesh-intents_volume_avg_30d-008",
+   "family": "intents_volume_avg_30d",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 129900000.0,
+   "unit": "USD/day",
+   "quote": "30-day average of **$129.9M a day**",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_avg_30d",
+    "ours": 125257736.13333334,
+    "gap": 0.03573721221452394,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_avg_30d",
+    "ours": 129901649.3,
+    "gap": 1.2696689761331946e-05,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "ledger-intents_volume_avg_30d-009",
+   "family": "intents_volume_avg_30d",
+   "project": "NEAR Demand Ledger",
+   "claimed": 124258384,
+   "unit": "USD/day",
+   "quote": "an average of $124,258,384 a day",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_avg_30d",
+    "ours": 125257736.13333334,
+    "gap": 0.008042532834913902,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_avg_30d",
+    "ours": 124258383.66666667,
+    "gap": 2.6825821939409706e-09,
+    "status": "reproduced",
+    "asof": "2026-11-09"
+   }
+  },
+  {
+   "id": "rain-intents_volume_avg_30d-010",
+   "family": "intents_volume_avg_30d",
+   "project": "NEAR Usage Thesis (Raindess69)",
+   "claimed": 127590000.0,
+   "unit": "USD/day",
+   "quote": "now $127.59M",
+   "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_avg_30d",
+    "ours": 125257736.13333334,
+    "gap": 0.01827936254147394,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_avg_30d",
+    "ours": 127279872.03333333,
+    "gap": 0.002430660448833519,
+    "status": "reproduced",
+    "asof": "2026-11-01"
+   }
+  },
+  {
+   "id": "books-intents_volume_avg_30d-011",
+   "family": "intents_volume_avg_30d",
+   "project": "NEAR Books",
+   "claimed": 149000000.0,
+   "unit": "USD/day",
+   "quote": "5.3x today's $149M",
+   "url": "https://github.com/IhorMuliar/nearbooks/blob/39f8c94a5d99fc4893a14e3b16283fb162e4455a/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_avg_30d",
+    "ours": 125257736.13333334,
+    "gap": 0.15934405279642053,
+    "status": "not reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_avg_30d",
+    "ours": 134134820.16666667,
+    "gap": 0.09976630760626395,
+    "status": "close",
+    "asof": "2026-11-06"
+   }
+  },
+  {
+   "id": "ledger-intents_volume_yoy-012",
+   "family": "intents_volume_yoy",
+   "project": "NEAR Demand Ledger",
+   "claimed": 59,
+   "unit": "%",
+   "quote": "up 59% from $77,935,548 a day",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_yoy_30d",
+    "ours": 57.824406747227975,
+    "gap": 0.019925309369017367,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_yoy_30d",
+    "ours": 59.43736372420041,
+    "gap": 0.00741294447797304,
+    "status": "reproduced",
+    "asof": "2026-11-09"
+   }
+  },
+  {
+   "id": "rajesh-intents_volume_yoy-013",
+   "family": "intents_volume_yoy",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 128,
+   "unit": "%",
+   "quote": "more than double a year earlier (+128%)",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_yoy_30d",
+    "ours": 57.824406747227975,
+    "gap": 0.5482468222872814,
+    "status": "not reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_yoy_30d",
+    "ours": 128.47265313007944,
+    "gap": 0.0036926025787455963,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "sem-intents_volume_yoy-014",
+   "family": "intents_volume_yoy",
+   "project": "Semilla1 NEAR Thesis",
+   "claimed": 60,
+   "unit": "%",
+   "quote": "(+60% YoY volume)",
+   "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/README.md",
+   "at_snapshot": {
+    "metric": "intents_volume_yoy_30d",
+    "ours": 57.824406747227975,
+    "gap": 0.036259887546200416,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_yoy_30d",
+    "ours": 59.94978423963608,
+    "gap": 0.000836929339398651,
+    "status": "reproduced",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "rida-intents_volume_30d_vs_prev-015",
+   "family": "intents_volume_30d_vs_prev",
+   "project": "NEAR Investment Thesis: the evidence",
+   "claimed": -20.7,
+   "unit": "%",
+   "quote": "The last 30 days were -20.7% vs the 30 days before",
+   "url": "https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_30d_vs_prev_30d",
+    "ours": -20.681798050544653,
+    "gap": 0.0008793212297268508,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_30d_vs_prev_30d",
+    "ours": -20.681798050544653,
+    "gap": 0.0008793212297268508,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "erfan-intents_fees_30d-016",
+   "family": "intents_fees_30d",
+   "project": "NEAR Intents thesis: usage vs value capture",
+   "claimed": 6130000.0,
+   "unit": "USD",
+   "quote": "$6.13M in fees over the last 30 days",
+   "url": "https://github.com/erfanmoheb/near-intents-thesis/blob/8bf528276c2f209394c0c9334ada3de2e6142168/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_fees_30d",
+    "ours": 5960786.0,
+    "gap": 0.027604241435562806,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_fees_30d",
+    "ours": 6126166.0,
+    "gap": 0.0006254486133768352,
+    "status": "reproduced",
+    "asof": "2026-11-05"
+   }
+  },
+  {
+   "id": "ledger-intents_fees_30d-017",
+   "family": "intents_fees_30d",
+   "project": "NEAR Demand Ledger",
+   "claimed": 5458382,
+   "unit": "USD",
+   "quote": "Fees were $5,458,382 over the trailing 30 days",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_fees_30d",
+    "ours": 5960786.0,
+    "gap": 0.09204266026086119,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_fees_30d",
+    "ours": 5781089.0,
+    "gap": 0.05912136600186649,
+    "status": "close",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "rida-intents_fees_30d-018",
+   "family": "intents_fees_30d",
+   "project": "NEAR Investment Thesis: the evidence",
+   "claimed": 5500000.0,
+   "unit": "USD",
+   "quote": "$5.5M of Intents fees in 30 days",
+   "url": "https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_fees_30d",
+    "ours": 5960786.0,
+    "gap": 0.08377927272727273,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_fees_30d",
+    "ours": 5781089.0,
+    "gap": 0.05110709090909091,
+    "status": "close",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "tope-intents_fees_30d-019",
+   "family": "intents_fees_30d",
+   "project": "NEAR as a Cross-Chain Settlement Business",
+   "claimed": 5458382,
+   "unit": "USD",
+   "quote": "grossed $5,458,382 of fees in 30 days",
+   "url": "https://github.com/Topeseun/near-intents-investment-thesis/blob/a02982df090e1a2e3c386f8c303fe4eae4f05094/README.md",
+   "at_snapshot": {
+    "metric": "intents_fees_30d",
+    "ours": 5960786.0,
+    "gap": 0.09204266026086119,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_fees_30d",
+    "ours": 5781089.0,
+    "gap": 0.05912136600186649,
+    "status": "close",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "sem-intents_fees_30d-020",
+   "family": "intents_fees_30d",
+   "project": "Semilla1 NEAR Thesis",
+   "claimed": 5780000.0,
+   "unit": "USD",
+   "quote": "($5.78M vs $0.17M)",
+   "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_fees_30d",
+    "ours": 5960786.0,
+    "gap": 0.031277854671280275,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_fees_30d",
+    "ours": 5781089.0,
+    "gap": 0.0001884083044982699,
+    "status": "reproduced",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "erfan-intents_fees_annualized-021",
+   "family": "intents_fees_annualized",
+   "project": "NEAR Intents thesis: usage vs value capture",
+   "claimed": 74500000.0,
+   "unit": "USD/yr",
+   "quote": "**$74.5M a year**",
+   "url": "https://github.com/erfanmoheb/near-intents-thesis/blob/8bf528276c2f209394c0c9334ada3de2e6142168/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_fees_annualized_30d",
+    "ours": 72522896.33333333,
+    "gap": 0.02653830425055935,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_fees_annualized_30d",
+    "ours": 74493957.16666667,
+    "gap": 8.111185682319955e-05,
+    "status": "reproduced",
+    "asof": "2026-11-04"
+   }
+  },
+  {
+   "id": "rajesh-intents_fees_365d-022",
+   "family": "intents_fees_365d",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 54200000.0,
+   "unit": "USD",
+   "quote": "$54.2M over the last 365 days",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_fees_365d",
+    "ours": 54026265.0,
+    "gap": 0.0032054428044280443,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_fees_365d",
+    "ours": 54190867.0,
+    "gap": 0.00016850553505535056,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "luong-intents_fees_90d-023",
+   "family": "intents_fees_90d",
+   "project": "NEAR Intents Thesis — Tested",
+   "claimed": 17400000.0,
+   "unit": "USD",
+   "quote": "($17.4M vs $0.36M)",
+   "url": "https://github.com/luongs3/near-intents-thesis/blob/81f3ecce6fa0a619817a8f7f243b1aa336866b96/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_fees_90d",
+    "ours": 18757458.0,
+    "gap": 0.0780148275862069,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_fees_90d",
+    "ours": 17432035.0,
+    "gap": 0.0018410919540229884,
+    "status": "reproduced",
+    "asof": "2026-10-31"
+   }
+  },
+  {
+   "id": "sem-intents_take_rate_bps-024",
+   "family": "intents_take_rate_bps",
+   "project": "Semilla1 NEAR Thesis",
+   "claimed": 15.56,
+   "unit": "bps",
+   "quote": "**15.56 bps**",
+   "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_take_rate_bps_90d",
+    "ours": 15.500541663271859,
+    "gap": 0.003821229866847147,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_take_rate_bps_30d",
+    "ours": 15.56271916150913,
+    "gap": 0.0001747533103553119,
+    "status": "reproduced",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "tope-intents_take_rate_bps-025",
+   "family": "intents_take_rate_bps",
+   "project": "NEAR as a Cross-Chain Settlement Business",
+   "claimed": 14.53,
+   "unit": "bps",
+   "quote": "implied gross fee rate 14.53 bps",
+   "url": "https://github.com/Topeseun/near-intents-investment-thesis/blob/a02982df090e1a2e3c386f8c303fe4eae4f05094/README.md",
+   "at_snapshot": {
+    "metric": "intents_take_rate_bps_90d",
+    "ours": 15.500541663271859,
+    "gap": 0.06679570979159391,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_take_rate_bps_90d",
+    "ours": 15.076779961072699,
+    "gap": 0.03763110537320713,
+    "status": "reproduced",
+    "asof": "2026-10-29"
+   }
+  },
+  {
+   "id": "sem-intents_capture_share-026",
+   "family": "intents_capture_share",
+   "project": "Semilla1 NEAR Thesis",
+   "claimed": 32.1,
+   "unit": "%",
+   "quote": "NEAR captures **32.1%** of gross fees",
+   "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_capture_share_30d",
+    "ours": 30.492086110791426,
+    "gap": 0.05009077536475312,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_capture_share_30d",
+    "ours": 32.14299243620017,
+    "gap": 0.0013393282305347565,
+    "status": "reproduced",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "tope-intents_capture_share-027",
+   "family": "intents_capture_share",
+   "project": "NEAR as a Cross-Chain Settlement Business",
+   "claimed": 33.92,
+   "unit": "%",
+   "quote": "measured 30-day capture rate 33.92%",
+   "url": "https://github.com/Topeseun/near-intents-investment-thesis/blob/a02982df090e1a2e3c386f8c303fe4eae4f05094/README.md",
+   "at_snapshot": {
+    "metric": "intents_capture_share_30d",
+    "ours": 30.492086110791426,
+    "gap": 0.10105878211110186,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_capture_share_30d",
+    "ours": 34.04862542122809,
+    "gap": 0.0037920230314884024,
+    "status": "reproduced",
+    "asof": "2026-10-28"
+   }
+  },
+  {
+   "id": "rajesh-intents_revenue_365d-028",
+   "family": "intents_revenue_365d",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 9350000.0,
+   "unit": "USD",
+   "quote": "$9.35M over 365 days",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_revenue_365d",
+    "ours": 9358304.05,
+    "gap": 0.0008881336898396519,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_revenue_365d",
+    "ours": 9347842.05,
+    "gap": 0.0002307967914437706,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "rajesh-intents_revenue_annualized-029",
+   "family": "intents_revenue_annualized",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 25600000.0,
+   "unit": "USD/yr",
+   "quote": "**$25.6M a year** at the last 30 days",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_revenue_annualized_30d",
+    "ours": 22113744.0,
+    "gap": 0.136181875,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_revenue_annualized_30d",
+    "ours": 25553820.333333332,
+    "gap": 0.001803893229166715,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "sem-intents_revenue_annualized-030",
+   "family": "intents_revenue_annualized",
+   "project": "Semilla1 NEAR Thesis",
+   "claimed": 22600000.0,
+   "unit": "USD/yr",
+   "quote": "30-day revenue run-rate: **$22.6M/yr",
+   "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_revenue_annualized_30d",
+    "ours": 22113744.0,
+    "gap": 0.02151575221238938,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_revenue_annualized_30d",
+    "ours": 22608282.5,
+    "gap": 0.00036648230088495574,
+    "status": "reproduced",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "tenx-intents_revenue_annualized-031",
+   "family": "intents_revenue_annualized",
+   "project": "NEAR's agent economy, measured",
+   "claimed": 21600000.0,
+   "unit": "USD/yr",
+   "quote": "captured value is $21.6M",
+   "url": "https://github.com/tenxagent/near-agent-economy/blob/c54570d5fa4993e5d625a6c36b5da70354b198be/README.md",
+   "at_snapshot": {
+    "metric": "intents_revenue_annualized_30d",
+    "ours": 22113744.0,
+    "gap": 0.023784444444444445,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_revenue_annualized_30d",
+    "ours": 22113744.0,
+    "gap": 0.023784444444444445,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "nepu-issuance_cover-032",
+   "family": "issuance_cover",
+   "project": "NePu",
+   "claimed": 12.0,
+   "unit": "%",
+   "quote": "covered 12 cents per dollar of new NEAR issued",
+   "url": "https://github.com/Axlnd3r/NePu/blob/eb9fe8468b8fddfd2607b3db85a779b73b9788af/THESIS.md",
+   "at_snapshot": {
+    "metric": "revenue_cover_of_gross_issuance_pct_365d",
+    "ours": 12.854507053994366,
+    "gap": 0.07120892116619719,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "revenue_cover_of_gross_issuance_pct_365d",
+    "ours": 12.721113952325164,
+    "gap": 0.06009282936043029,
+    "status": "close",
+    "asof": "2026-11-07"
+   }
+  },
+  {
+   "id": "census-issuance_cover-033",
+   "family": "issuance_cover",
+   "project": "NEAR Agent Census",
+   "claimed": 15.1,
+   "unit": "%",
+   "quote": "Reported Intents revenue (DefiLlama) covered 15.1%",
+   "url": "https://github.com/daodudestiny56-netizen/near-thesis-/blob/fc071ba8aebce367fbe07fa87c0f2d635503b8f0/README.md",
+   "at_snapshot": {
+    "metric": "revenue_cover_of_gross_issuance_pct_30d",
+    "ours": 15.037013593855143,
+    "gap": 0.004171285175156083,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "revenue_cover_of_gross_issuance_pct_30d",
+    "ours": 15.096421145811883,
+    "gap": 0.00023701021113356057,
+    "status": "reproduced",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "books-issuance_cover-034",
+   "family": "issuance_cover",
+   "project": "NEAR Books",
+   "claimed": 17.3,
+   "unit": "%",
+   "quote": "took in 17.3% as much NEAR as total supply grew",
+   "url": "https://github.com/IhorMuliar/nearbooks/blob/39f8c94a5d99fc4893a14e3b16283fb162e4455a/THESIS.md",
+   "at_snapshot": {
+    "metric": "usage_cover_of_net_issuance_pct_30d",
+    "ours": 16.3280365003943,
+    "gap": 0.056182861248884365,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "usage_cover_of_gross_issuance_pct_30d",
+    "ours": 17.402773392433573,
+    "gap": 0.005940658522171835,
+    "status": "reproduced",
+    "asof": "2026-11-01"
+   }
+  },
+  {
+   "id": "rain-issuance_cover-035",
+   "family": "issuance_cover",
+   "project": "NEAR Usage Thesis (Raindess69)",
+   "claimed": 18.0,
+   "unit": "%",
+   "quote": "offset **18.0%** over the last 90 days",
+   "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/README.md",
+   "at_snapshot": {
+    "metric": "revenue_cover_of_gross_issuance_pct_90d",
+    "ours": 18.42370667690785,
+    "gap": 0.023539259828213983,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "usage_cover_of_net_issuance_pct_30d",
+    "ours": 17.990304233591182,
+    "gap": 0.0005386536893787763,
+    "status": "reproduced",
+    "asof": "2026-10-30"
+   }
+  },
+  {
+   "id": "rain-issuance_cover-036",
+   "family": "issuance_cover",
+   "project": "NEAR Usage Thesis (Raindess69)",
+   "claimed": 19.0,
+   "unit": "%",
+   "quote": "usage paid for **19.0%** of issuance over 90 days",
+   "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/README.md",
+   "at_snapshot": {
+    "metric": "revenue_cover_of_net_issuance_pct_90d",
+    "ours": 18.647333269786447,
+    "gap": 0.018561406853344887,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "usage_cover_of_net_issuance_pct_90d",
+    "ours": 19.03824999315285,
+    "gap": 0.002013157534360488,
+    "status": "reproduced",
+    "asof": "2026-10-27"
+   }
+  },
+  {
+   "id": "rajesh-issuance_cover-037",
+   "family": "issuance_cover",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 20.6,
+   "unit": "%",
+   "quote": "cover **20.6%** of that",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "usage_cover_of_net_issuance_pct_90d",
+    "ours": 19.86113132248173,
+    "gap": 0.035867411530013237,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "usage_cover_of_net_issuance_pct_90d",
+    "ours": 19.86113132248173,
+    "gap": 0.035867411530013237,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "tenx-issuance_cover-038",
+   "family": "issuance_cover",
+   "project": "NEAR's agent economy, measured",
+   "claimed": 18,
+   "unit": "%",
+   "quote": "covers about 18% of issua",
+   "url": "https://github.com/tenxagent/near-agent-economy/blob/c54570d5fa4993e5d625a6c36b5da70354b198be/README.md",
+   "at_snapshot": {
+    "metric": "revenue_cover_of_gross_issuance_pct_90d",
+    "ours": 18.42370667690785,
+    "gap": 0.023539259828213983,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "usage_cover_of_net_issuance_pct_30d",
+    "ours": 17.990304233591182,
+    "gap": 0.0005386536893787763,
+    "status": "reproduced",
+    "asof": "2026-10-30"
+   }
+  },
+  {
+   "id": "census-burn_cover-039",
+   "family": "burn_cover",
+   "project": "NEAR Agent Census",
+   "claimed": 0.58,
+   "unit": "%",
+   "quote": "Estimated L1 burn covered 0.58% of gross issuance",
+   "url": "https://github.com/daodudestiny56-netizen/near-thesis-/blob/fc071ba8aebce367fbe07fa87c0f2d635503b8f0/README.md",
+   "at_snapshot": {
+    "metric": "burn70_cover_of_gross_issuance_pct_30d",
+    "ours": 0.7794638152387391,
+    "gap": 0.343903129721964,
+    "status": "not reproduced"
+   },
+   "best_dated": {
+    "metric": "burn70_cover_of_gross_issuance_pct_30d",
+    "ours": 0.7794638152387391,
+    "gap": 0.343903129721964,
+    "status": "not reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "rida-burn_cover-040",
+   "family": "burn_cover",
+   "project": "NEAR Investment Thesis: the evidence",
+   "claimed": 0.8,
+   "unit": "%",
+   "quote": "Burn offsets 0.8% of issuance",
+   "url": "https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md",
+   "at_snapshot": {
+    "metric": "burn70_cover_of_gross_issuance_pct_30d",
+    "ours": 0.7794638152387391,
+    "gap": 0.025670230951576195,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "burn70_cover_of_gross_issuance_pct_30d",
+    "ours": 0.7794638152387391,
+    "gap": 0.025670230951576195,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "erfan-burn_cover-041",
+   "family": "burn_cover",
+   "project": "NEAR Intents thesis: usage vs value capture",
+   "claimed": 0.84,
+   "unit": "%",
+   "quote": "Burn offsets 0.84% of issuance (90-day window)",
+   "url": "https://github.com/erfanmoheb/near-intents-thesis/blob/8bf528276c2f209394c0c9334ada3de2e6142168/THESIS.md",
+   "at_snapshot": {
+    "metric": "burn70_cover_of_gross_issuance_pct_90d",
+    "ours": 0.842500260656238,
+    "gap": 0.0029765007812356963,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "burn70_cover_of_gross_issuance_pct_90d",
+    "ours": 0.8402084889287946,
+    "gap": 0.00024820110570792736,
+    "status": "reproduced",
+    "asof": "2026-10-29"
+   }
+  },
+  {
+   "id": "rain-burn_cover-042",
+   "family": "burn_cover",
+   "project": "NEAR Usage Thesis (Raindess69)",
+   "claimed": 1.15,
+   "unit": "%",
+   "quote": "Gas burn offsets **1.15%** of that",
+   "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/README.md",
+   "at_snapshot": {
+    "metric": "burn_cover_of_net_issuance_pct_30d",
+    "ours": 1.122267404382724,
+    "gap": 0.02411530053676158,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "burn_cover_of_net_issuance_pct_30d",
+    "ours": 1.122267404382724,
+    "gap": 0.02411530053676158,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "ledger-burn_cover-043",
+   "family": "burn_cover",
+   "project": "NEAR Demand Ledger",
+   "claimed": 1.88,
+   "unit": "%",
+   "quote": "Fees cover 1.88% of net issuance",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "burn_cover_of_net_issuance_pct_365d",
+    "ours": 1.8713255712489218,
+    "gap": 0.004614057846318109,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "burn_cover_of_net_issuance_pct_365d",
+    "ours": 1.8786263009287547,
+    "gap": 0.0007306909953431822,
+    "status": "reproduced",
+    "asof": "2026-11-09"
+   }
+  },
+  {
+   "id": "rajesh-burn_cover-044",
+   "family": "burn_cover",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 1.9,
+   "unit": "%",
+   "quote": "Burn alone covers 1.9%",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "burn_cover_of_net_issuance_pct_365d",
+    "ours": 1.8713255712489218,
+    "gap": 0.01509180460583056,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "burn_cover_of_gross_issuance_pct_365d",
+    "ours": 1.8977070799322135,
+    "gap": 0.0012068000356770337,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "lval-burn_cover-045",
+   "family": "burn_cover",
+   "project": "NEAR Thesis Scorecard",
+   "claimed": 2,
+   "unit": "%",
+   "quote": "1y burned fees cover ~2% of new issuance",
+   "url": "https://github.com/lvalentine16/near-thesis-indiciadesk/blob/d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6/THESIS.md",
+   "at_snapshot": {
+    "metric": "burn_cover_of_net_issuance_pct_365d",
+    "ours": 1.8713255712489218,
+    "gap": 0.06433721437553908,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "burn_cover_of_net_issuance_pct_365d",
+    "ours": 1.9730914644641009,
+    "gap": 0.013454267767949557,
+    "status": "reproduced",
+    "asof": "2026-10-27"
+   }
+  },
+  {
+   "id": "nepu-breakeven_multiple-046",
+   "family": "breakeven_multiple",
+   "project": "NePu",
+   "claimed": 7.6,
+   "unit": "x",
+   "quote": "7.6x its $130.4M average",
+   "url": "https://github.com/Axlnd3r/NePu/blob/eb9fe8468b8fddfd2607b3db85a779b73b9788af/README.md",
+   "at_snapshot": {
+    "metric": "breakeven_multiple_365d",
+    "ours": 6.806676691144792,
+    "gap": 0.10438464590200107,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "breakeven_multiple_365d",
+    "ours": 6.858812531268928,
+    "gap": 0.09752466693829892,
+    "status": "close",
+    "asof": "2026-11-07"
+   }
+  },
+  {
+   "id": "books-breakeven_multiple-047",
+   "family": "breakeven_multiple",
+   "project": "NEAR Books",
+   "claimed": 5.3,
+   "unit": "x",
+   "quote": "5.3x today's $149M",
+   "url": "https://github.com/IhorMuliar/nearbooks/blob/39f8c94a5d99fc4893a14e3b16283fb162e4455a/THESIS.md",
+   "at_snapshot": {
+    "metric": "breakeven_multiple_90d",
+    "ours": 5.096074156567643,
+    "gap": 0.03847657423252014,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "breakeven_multiple_90d",
+    "ours": 5.309606713684275,
+    "gap": 0.0018125874875990595,
+    "status": "reproduced",
+    "asof": "2026-10-28"
+   }
+  },
+  {
+   "id": "rain-breakeven_multiple-048",
+   "family": "breakeven_multiple",
+   "project": "NEAR Usage Thesis (Raindess69)",
+   "claimed": 5.3,
+   "unit": "x",
+   "quote": "usage-based revenue must grow **5.3x**",
+   "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/README.md",
+   "at_snapshot": {
+    "metric": "breakeven_multiple_90d",
+    "ours": 5.096074156567643,
+    "gap": 0.03847657423252014,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "breakeven_multiple_90d",
+    "ours": 5.309606713684275,
+    "gap": 0.0018125874875990595,
+    "status": "reproduced",
+    "asof": "2026-10-28"
+   }
+  },
+  {
+   "id": "soldano-breakeven_multiple-049",
+   "family": "breakeven_multiple",
+   "project": "near-thesis: NEAR on the evidence",
+   "claimed": 7.2,
+   "unit": "x",
+   "quote": "7.2x today's Intents revenue",
+   "url": "https://github.com/soldanoandrea/near-thesis/blob/13b580f37e97d04fa0403f5c1a785f962886bddd/README.md",
+   "at_snapshot": {
+    "metric": "breakeven_multiple_365d",
+    "ours": 6.806676691144792,
+    "gap": 0.054628237341001196,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "breakeven_multiple_365d",
+    "ours": 6.858812531268928,
+    "gap": 0.04738714843487115,
+    "status": "reproduced",
+    "asof": "2026-11-07"
+   }
+  },
+  {
+   "id": "rida-tx_yoy-050",
+   "family": "tx_yoy",
+   "project": "NEAR Investment Thesis: the evidence",
+   "claimed": -85.1,
+   "unit": "%",
+   "quote": "Transactions/day are -85.1% YoY",
+   "url": "https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md",
+   "at_snapshot": {
+    "metric": "tx_yoy_30d",
+    "ours": -85.14222143833281,
+    "gap": 0.0004961391108439104,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "tx_yoy_30d",
+    "ours": -85.09279071824083,
+    "gap": 8.471541432619953e-05,
+    "status": "reproduced",
+    "asof": "2026-11-09"
+   }
+  },
+  {
+   "id": "lisa-tx_yoy-051",
+   "family": "tx_yoy",
+   "project": "NEAR Usage Thesis (lisaaai200)",
+   "claimed": -84.2,
+   "unit": "%",
+   "quote": "transactions -84.2%",
+   "url": "https://github.com/lisaaai200/near-usage-thesis/blob/1e61facf7c79d23da8c0d8ec97871b9d24dd6951/THESIS.md",
+   "at_snapshot": {
+    "metric": "tx_yoy_30d",
+    "ours": -85.14222143833281,
+    "gap": 0.011190278364997723,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "tx_yoy_30d",
+    "ours": -84.24899513324084,
+    "gap": 0.0005818899434778706,
+    "status": "reproduced",
+    "asof": "2026-10-31"
+   }
+  },
+  {
+   "id": "ledger-tx_yoy-052",
+   "family": "tx_yoy",
+   "project": "NEAR Demand Ledger",
+   "claimed": -85,
+   "unit": "%",
+   "quote": "transactions fell 85%",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "tx_yoy_30d",
+    "ours": -85.14222143833281,
+    "gap": 0.0016731933921507187,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "tx_yoy_30d",
+    "ours": -84.99535263882908,
+    "gap": 5.467483730499493e-05,
+    "status": "reproduced",
+    "asof": "2026-11-06"
+   }
+  },
+  {
+   "id": "lval-tx_yoy-053",
+   "family": "tx_yoy",
+   "project": "NEAR Thesis Scorecard",
+   "claimed": -84,
+   "unit": "%",
+   "quote": "txns −84% YoY",
+   "url": "https://github.com/lvalentine16/near-thesis-indiciadesk/blob/d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6/THESIS.md",
+   "at_snapshot": {
+    "metric": "tx_yoy_30d",
+    "ours": -85.14222143833281,
+    "gap": 0.013597874265866798,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "tx_yoy_30d",
+    "ours": -83.80960588509303,
+    "gap": 0.0022665966060353,
+    "status": "reproduced",
+    "asof": "2026-10-30"
+   }
+  },
+  {
+   "id": "rajesh-tx_yoy-054",
+   "family": "tx_yoy",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": -85,
+   "unit": "%",
+   "quote": "(−85% YoY)",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "tx_yoy_30d",
+    "ours": -85.14222143833281,
+    "gap": 0.0016731933921507187,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "tx_yoy_30d",
+    "ours": -84.99535263882908,
+    "gap": 5.467483730499493e-05,
+    "status": "reproduced",
+    "asof": "2026-11-06"
+   }
+  },
+  {
+   "id": "sem-tx_yoy-055",
+   "family": "tx_yoy",
+   "project": "Semilla1 NEAR Thesis",
+   "claimed": -85,
+   "unit": "%",
+   "quote": "(tx/day −85% YoY)",
+   "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/README.md",
+   "at_snapshot": {
+    "metric": "tx_yoy_30d",
+    "ours": -85.14222143833281,
+    "gap": 0.0016731933921507187,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "tx_yoy_30d",
+    "ours": -84.99535263882908,
+    "gap": 5.467483730499493e-05,
+    "status": "reproduced",
+    "asof": "2026-11-06"
+   }
+  },
+  {
+   "id": "erfan-tx_vs_peak-056",
+   "family": "tx_vs_peak",
+   "project": "NEAR Intents thesis: usage vs value capture",
+   "claimed": -91.8,
+   "unit": "%",
+   "quote": "(−91.8%)",
+   "url": "https://github.com/erfanmoheb/near-intents-thesis/blob/8bf528276c2f209394c0c9334ada3de2e6142168/THESIS.md",
+   "at_snapshot": {
+    "metric": "tx_vs_peak_30d",
+    "ours": -92.07008947606539,
+    "gap": 0.0029421511553964466,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "tx_vs_peak_30d",
+    "ours": -91.76836567376665,
+    "gap": 0.00034460050363120616,
+    "status": "reproduced",
+    "asof": "2026-11-05"
+   }
+  },
+  {
+   "id": "tope-tx_vs_peak-057",
+   "family": "tx_vs_peak",
+   "project": "NEAR as a Cross-Chain Settlement Business",
+   "claimed": -93.0,
+   "unit": "%",
+   "quote": "txns 93.0% and active accounts 92.1% below peak",
+   "url": "https://github.com/Topeseun/near-intents-investment-thesis/blob/a02982df090e1a2e3c386f8c303fe4eae4f05094/README.md",
+   "at_snapshot": {
+    "metric": "tx_vs_peak_day",
+    "ours": -93.03568709392094,
+    "gap": 0.0003837321926982956,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "tx_vs_peak_day",
+    "ours": -93.03568709392094,
+    "gap": 0.0003837321926982956,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "rain-tx_vs_peak-058",
+   "family": "tx_vs_peak",
+   "project": "NEAR Usage Thesis (Raindess69)",
+   "claimed": -91,
+   "unit": "%",
+   "quote": "down 91% from their peak month",
+   "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/THESIS.md",
+   "at_snapshot": {
+    "metric": "tx_vs_peak_30d",
+    "ours": -92.07008947606539,
+    "gap": 0.011759225011707593,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "tx_vs_peak_30d",
+    "ours": -91.01704728574418,
+    "gap": 0.00018733281037564486,
+    "status": "reproduced",
+    "asof": "2026-10-29"
+   }
+  },
+  {
+   "id": "lisa-active_accounts_yoy-059",
+   "family": "active_accounts_yoy",
+   "project": "NEAR Usage Thesis (lisaaai200)",
+   "claimed": -73.5,
+   "unit": "%",
+   "quote": "active accounts -73.5%",
+   "url": "https://github.com/lisaaai200/near-usage-thesis/blob/1e61facf7c79d23da8c0d8ec97871b9d24dd6951/THESIS.md",
+   "at_snapshot": {
+    "metric": "active_accounts_yoy_30d",
+    "ours": -76.28304789580271,
+    "gap": 0.03786459722180558,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "active_accounts_yoy_30d",
+    "ours": -73.5130378393887,
+    "gap": 0.00017738556991430475,
+    "status": "reproduced",
+    "asof": "2026-10-31"
+   }
+  },
+  {
+   "id": "lval-active_accounts_yoy-060",
+   "family": "active_accounts_yoy",
+   "project": "NEAR Thesis Scorecard",
+   "claimed": -76,
+   "unit": "%",
+   "quote": "Active accounts −76%",
+   "url": "https://github.com/lvalentine16/near-thesis-indiciadesk/blob/d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6/THESIS.md",
+   "at_snapshot": {
+    "metric": "active_accounts_yoy_30d",
+    "ours": -76.28304789580271,
+    "gap": 0.0037243144184567114,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "active_accounts_yoy_30d",
+    "ours": -75.7490968710806,
+    "gap": 0.003301356959465844,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "rajesh-active_accounts_yoy-061",
+   "family": "active_accounts_yoy",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": -77,
+   "unit": "%",
+   "quote": "(−77% YoY)",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "active_accounts_yoy_30d",
+    "ours": -76.28304789580271,
+    "gap": 0.009311066288276493,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "active_accounts_yoy_30d",
+    "ours": -76.97226195447129,
+    "gap": 0.0003602343575156791,
+    "status": "reproduced",
+    "asof": "2026-11-03"
+   }
+  },
+  {
+   "id": "ledger-active_accounts_yoy-062",
+   "family": "active_accounts_yoy",
+   "project": "NEAR Demand Ledger",
+   "claimed": -78,
+   "unit": "%",
+   "quote": "Daily active accounts fell 78%",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "active_accounts_yoy_30d",
+    "ours": -76.28304789580271,
+    "gap": 0.02201220646406782,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "active_accounts_yoy_30d",
+    "ours": -77.85976353674498,
+    "gap": 0.0017979033750643808,
+    "status": "reproduced",
+    "asof": "2026-11-09"
+   }
+  },
+  {
+   "id": "erfan-active_accounts_vs_peak-063",
+   "family": "active_accounts_vs_peak",
+   "project": "NEAR Intents thesis: usage vs value capture",
+   "claimed": -97,
+   "unit": "%",
+   "quote": "Active accounts: −97%",
+   "url": "https://github.com/erfanmoheb/near-intents-thesis/blob/8bf528276c2f209394c0c9334ada3de2e6142168/THESIS.md",
+   "at_snapshot": {
+    "metric": "active_accounts_vs_peak_30d",
+    "ours": -96.91179329835619,
+    "gap": 0.0009093474396269364,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "active_accounts_vs_peak_30d",
+    "ours": -97.02112378537537,
+    "gap": 0.00021777098325119438,
+    "status": "reproduced",
+    "asof": "2026-11-05"
+   }
+  },
+  {
+   "id": "tope-active_accounts_vs_peak-064",
+   "family": "active_accounts_vs_peak",
+   "project": "NEAR as a Cross-Chain Settlement Business",
+   "claimed": -92.1,
+   "unit": "%",
+   "quote": "active accounts 92.1% below peak",
+   "url": "https://github.com/Topeseun/near-intents-investment-thesis/blob/a02982df090e1a2e3c386f8c303fe4eae4f05094/README.md",
+   "at_snapshot": {
+    "metric": "active_accounts_vs_peak_day",
+    "ours": -92.13343425605535,
+    "gap": 0.0003630212383860803,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "active_accounts_vs_peak_day",
+    "ours": -92.13343425605535,
+    "gap": 0.0003630212383860803,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "lisa-new_accounts_yoy-065",
+   "family": "new_accounts_yoy",
+   "project": "NEAR Usage Thesis (lisaaai200)",
+   "claimed": -96.2,
+   "unit": "%",
+   "quote": "new accounts -96.2%",
+   "url": "https://github.com/lisaaai200/near-usage-thesis/blob/1e61facf7c79d23da8c0d8ec97871b9d24dd6951/THESIS.md",
+   "at_snapshot": {
+    "metric": "new_accounts_yoy_30d",
+    "ours": -95.61463795957636,
+    "gap": 0.006084844495048301,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "new_accounts_yoy_30d",
+    "ours": -96.20420938285015,
+    "gap": 4.375657848388012e-05,
+    "status": "reproduced",
+    "asof": "2026-10-31"
+   }
+  },
+  {
+   "id": "ledger-new_accounts_yoy-066",
+   "family": "new_accounts_yoy",
+   "project": "NEAR Demand Ledger",
+   "claimed": -96,
+   "unit": "%",
+   "quote": "new accounts fell 96%",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "new_accounts_yoy_30d",
+    "ours": -95.61463795957636,
+    "gap": 0.004014187921079622,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "new_accounts_yoy_30d",
+    "ours": -95.96455173336899,
+    "gap": 0.0003692527774063296,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "rajesh-new_accounts_yoy-067",
+   "family": "new_accounts_yoy",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": -96,
+   "unit": "%",
+   "quote": "new accounts −96%",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "new_accounts_yoy_30d",
+    "ours": -95.61463795957636,
+    "gap": 0.004014187921079622,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "new_accounts_yoy_30d",
+    "ours": -95.96455173336899,
+    "gap": 0.0003692527774063296,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "luong-fees_over_l1_fees-068",
+   "family": "fees_over_l1_fees",
+   "project": "NEAR Intents Thesis — Tested",
+   "claimed": 48,
+   "unit": "x",
+   "quote": "**48x** the fees of the NEAR L1 itself",
+   "url": "https://github.com/luongs3/near-intents-thesis/blob/81f3ecce6fa0a619817a8f7f243b1aa336866b96/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_fees_over_l1_fees_365d",
+    "ours": 46.434893623796036,
+    "gap": 0.03260638283758258,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_fees_over_l1_fees_90d",
+    "ours": 49.2221346127217,
+    "gap": 0.025461137765035485,
+    "status": "reproduced",
+    "asof": "2026-10-29"
+   }
+  },
+  {
+   "id": "sem-fees_over_l1_fees-069",
+   "family": "fees_over_l1_fees",
+   "project": "Semilla1 NEAR Thesis",
+   "claimed": 34.9,
+   "unit": "x",
+   "quote": "**Intents gross fees are 34.9× NEAR",
+   "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_fees_over_l1_fees_30d",
+    "ours": 43.34928817297436,
+    "gap": 0.24209994764969522,
+    "status": "not reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_fees_over_l1_fees_30d",
+    "ours": 34.880444123884786,
+    "gap": 0.000560340289834178,
+    "status": "reproduced",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "rajesh-revenue_over_l1_fees-070",
+   "family": "revenue_over_l1_fees",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 21,
+   "unit": "x",
+   "quote": "Intents revenue now runs at roughly **21x** L1 fees",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_revenue_over_l1_fees_90d",
+    "ours": 13.762610619337341,
+    "gap": 0.3446375895553647,
+    "status": "not reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_revenue_over_l1_fees_90d",
+    "ours": 13.762610619337341,
+    "gap": 0.3446375895553647,
+    "status": "not reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "rain-revenue_over_l1_fees-071",
+   "family": "revenue_over_l1_fees",
+   "project": "NEAR Usage Thesis (Raindess69)",
+   "claimed": 13,
+   "unit": "x",
+   "quote": "13x the chain's gas fees",
+   "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_revenue_over_l1_fees_30d",
+    "ours": 13.218102278118467,
+    "gap": 0.01677709831680515,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_revenue_over_l1_fees_30d",
+    "ours": 13.218102278118467,
+    "gap": 0.01677709831680515,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "erfan-mcap_over_fees-072",
+   "family": "mcap_over_fees",
+   "project": "NEAR Intents thesis: usage vs value capture",
+   "claimed": 70.4,
+   "unit": "x",
+   "quote": "**70.4×** annualized Intents fees",
+   "url": "https://github.com/erfanmoheb/near-intents-thesis/blob/8bf528276c2f209394c0c9334ada3de2e6142168/THESIS.md",
+   "at_snapshot": {
+    "metric": "mcap_over_intents_fees_annualized_30d",
+    "ours": 65.5249140858459,
+    "gap": 0.06924837946241637,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "mcap_over_intents_fees_annualized_30d",
+    "ours": 70.44051353503616,
+    "gap": 0.0005754763499453798,
+    "status": "reproduced",
+    "asof": "2026-11-05"
+   }
+  },
+  {
+   "id": "soldano-mcap_over_fees-073",
+   "family": "mcap_over_fees",
+   "project": "near-thesis: NEAR on the evidence",
+   "claimed": 73.9,
+   "unit": "x",
+   "quote": "73.9x counting Intents fees",
+   "url": "https://github.com/soldanoandrea/near-thesis/blob/13b580f37e97d04fa0403f5c1a785f962886bddd/README.md",
+   "at_snapshot": {
+    "metric": "mcap_over_intents_fees_annualized_30d",
+    "ours": 65.5249140858459,
+    "gap": 0.1133299853065509,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "mcap_over_intents_fees_annualized_30d",
+    "ours": 74.70279506674845,
+    "gap": 0.010863262066961362,
+    "status": "reproduced",
+    "asof": "2026-10-31"
+   }
+  },
+  {
+   "id": "rajesh-mcap_over_revenue-074",
+   "family": "mcap_over_revenue",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 206,
+   "unit": "x",
+   "quote": "Market cap is **206x** annualized Intents revenue",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "mcap_over_intents_revenue_annualized_30d",
+    "ours": 214.89154217840155,
+    "gap": 0.04316282610874539,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "mcap_over_intents_revenue_annualized_30d",
+    "ours": 206.02810528186285,
+    "gap": 0.00013643340710121142,
+    "status": "reproduced",
+    "asof": "2026-11-07"
+   }
+  },
+  {
+   "id": "sem-mcap_over_revenue-075",
+   "family": "mcap_over_revenue",
+   "project": "Semilla1 NEAR Thesis",
+   "claimed": 211,
+   "unit": "x",
+   "quote": "~211× captured revenue",
+   "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
+   "at_snapshot": {
+    "metric": "mcap_over_intents_revenue_annualized_30d",
+    "ours": 214.89154217840155,
+    "gap": 0.01844332785972299,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "mcap_over_intents_revenue_annualized_30d",
+    "ours": 209.9263784764394,
+    "gap": 0.005088253666164,
+    "status": "reproduced",
+    "asof": "2026-11-09"
+   }
+  },
+  {
+   "id": "sem-revenue_yield_on_mcap-076",
+   "family": "revenue_yield_on_mcap",
+   "project": "Semilla1 NEAR Thesis",
+   "claimed": 0.47,
+   "unit": "%/yr",
+   "quote": "= 0.47%** of NEAR market cap",
+   "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
+   "at_snapshot": {
+    "metric": "revenue_yield_on_mcap_pct_30d",
+    "ours": 0.4653510277150911,
+    "gap": 0.00989143039342308,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "revenue_yield_on_mcap_pct_30d",
+    "ours": 0.4653510277150911,
+    "gap": 0.00989143039342308,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "tenx-revenue_yield_on_mcap-077",
+   "family": "revenue_yield_on_mcap",
+   "project": "NEAR's agent economy, measured",
+   "claimed": 0.45,
+   "unit": "%/yr",
+   "quote": "0.45% a year of NEAR",
+   "url": "https://github.com/tenxagent/near-agent-economy/blob/c54570d5fa4993e5d625a6c36b5da70354b198be/README.md",
+   "at_snapshot": {
+    "metric": "revenue_yield_on_mcap_pct_30d",
+    "ours": 0.4653510277150911,
+    "gap": 0.0341133949224247,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "revenue_yield_on_mcap_pct_30d",
+    "ours": 0.4453841348552751,
+    "gap": 0.010257478099388656,
+    "status": "reproduced",
+    "asof": "2026-10-27"
+   }
+  },
+  {
+   "id": "lisa-price_yoy-078",
+   "family": "price_yoy",
+   "project": "NEAR Usage Thesis (lisaaai200)",
+   "claimed": 96.4,
+   "unit": "%",
+   "quote": "price is +96.4%",
+   "url": "https://github.com/lisaaai200/near-usage-thesis/blob/1e61facf7c79d23da8c0d8ec97871b9d24dd6951/THESIS.md",
+   "at_snapshot": {
+    "metric": "price_yoy_30d_avg",
+    "ours": 97.79631931610413,
+    "gap": 0.014484640208549025,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "price_yoy_30d_avg",
+    "ours": 96.40388460137885,
+    "gap": 4.0296694801275354e-05,
+    "status": "reproduced",
+    "asof": "2026-10-30"
+   }
+  },
+  {
+   "id": "ledger-price_yoy-079",
+   "family": "price_yoy",
+   "project": "NEAR Demand Ledger",
+   "claimed": 19,
+   "unit": "%",
+   "quote": "a 19% rise across a year",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "price_yoy",
+    "ours": 19.427924839522206,
+    "gap": 0.022522359974852923,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "price_yoy",
+    "ours": 19.427924839522206,
+    "gap": 0.022522359974852923,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "ledger-staked_share-080",
+   "family": "staked_share",
+   "project": "NEAR Demand Ledger",
+   "claimed": 44.3,
+   "unit": "%",
+   "quote": "44.3% of the 1,311,369,535 NEAR supply",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "staked_share_pct",
+    "ours": 44.40622018788337,
+    "gap": 0.002397746904816553,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "staked_share_pct",
+    "ours": 44.40622018788337,
+    "gap": 0.002397746904816553,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "lval-staked_share-081",
+   "family": "staked_share",
+   "project": "NEAR Thesis Scorecard",
+   "claimed": 45.3,
+   "unit": "%",
+   "quote": "**45.3%** of supply staked across 379 validators",
+   "url": "https://github.com/lvalentine16/near-thesis-indiciadesk/blob/d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6/THESIS.md",
+   "at_snapshot": {
+    "metric": "staked_share_pct",
+    "ours": 44.40622018788337,
+    "gap": 0.019730238678071232,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "staked_share_pct",
+    "ours": 44.40622018788337,
+    "gap": 0.019730238678071232,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "rida-staked_share-082",
+   "family": "staked_share",
+   "project": "NEAR Investment Thesis: the evidence",
+   "claimed": 44.4,
+   "unit": "%",
+   "quote": "44.4% of supply is staked across 351 validators",
+   "url": "https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md",
+   "at_snapshot": {
+    "metric": "staked_share_pct",
+    "ours": 44.40622018788337,
+    "gap": 0.0001400943216975645,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "staked_share_pct",
+    "ours": 44.40622018788337,
+    "gap": 0.0001400943216975645,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "rajesh-staked_share-083",
+   "family": "staked_share",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 43.8,
+   "unit": "%",
+   "quote": "43.8% of supply is staked across 335 validators",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "staked_share_pct",
+    "ours": 44.40622018788337,
+    "gap": 0.013840643558981127,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "staked_share_pct",
+    "ours": 44.40622018788337,
+    "gap": 0.013840643558981127,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "ledger-validators-084",
+   "family": "validators",
+   "project": "NEAR Demand Ledger",
+   "claimed": 338,
+   "unit": "count",
+   "quote": "counts 338 current validators",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "validators_current",
+    "ours": 351,
+    "gap": 0.038461538461538464,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "validators_current",
+    "ours": 351,
+    "gap": 0.038461538461538464,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "lval-validators-085",
+   "family": "validators",
+   "project": "NEAR Thesis Scorecard",
+   "claimed": 379,
+   "unit": "count",
+   "quote": "staked across 379 validators",
+   "url": "https://github.com/lvalentine16/near-thesis-indiciadesk/blob/d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6/THESIS.md",
+   "at_snapshot": {
+    "metric": "validators_current",
+    "ours": 351,
+    "gap": 0.07387862796833773,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "validators_current",
+    "ours": 351,
+    "gap": 0.07387862796833773,
+    "status": "close",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "rida-validators-086",
+   "family": "validators",
+   "project": "NEAR Investment Thesis: the evidence",
+   "claimed": 351,
+   "unit": "count",
+   "quote": "staked across 351 validators",
+   "url": "https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md",
+   "at_snapshot": {
+    "metric": "validators_current",
+    "ours": 351,
+    "gap": 0.0,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "validators_current",
+    "ours": 351,
+    "gap": 0.0,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "rajesh-validators-087",
+   "family": "validators",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 335,
+   "unit": "count",
+   "quote": "staked across 335 validators",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "validators_current",
+    "ours": 351,
+    "gap": 0.04776119402985075,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "validators_current",
+    "ours": 351,
+    "gap": 0.04776119402985075,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "rajesh-validators_to_one_third-088",
+   "family": "validators_to_one_third",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 9,
+   "unit": "count",
+   "quote": "the largest **9** hold more than a third of stake",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "validators_to_one_third",
+    "ours": 9,
+    "gap": 0.0,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "validators_to_one_third",
+    "ours": 9,
+    "gap": 0.0,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "lval-net_inflation-089",
+   "family": "net_inflation",
+   "project": "NEAR Thesis Scorecard",
+   "claimed": 2.48,
+   "unit": "%/yr",
+   "quote": "net supply inflation **2.48%/yr**",
+   "url": "https://github.com/lvalentine16/near-thesis-indiciadesk/blob/d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6/THESIS.md",
+   "at_snapshot": {
+    "metric": "net_inflation_annual_pct_365d",
+    "ours": 2.4804748388071127,
+    "gap": 0.00019146726093255764,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "net_inflation_annual_pct_365d",
+    "ours": 2.4799377931300928,
+    "gap": 2.5083415285165692e-05,
+    "status": "reproduced",
+    "asof": "2026-11-05"
+   }
+  },
+  {
+   "id": "rain-net_inflation-090",
+   "family": "net_inflation",
+   "project": "NEAR Usage Thesis (Raindess69)",
+   "claimed": 2.49,
+   "unit": "%/yr",
+   "quote": "Issuance is about 2.49% a year",
+   "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/THESIS.md",
+   "at_snapshot": {
+    "metric": "net_inflation_annual_pct_365d",
+    "ours": 2.4804748388071127,
+    "gap": 0.0038253659409186696,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "net_inflation_annual_pct_365d",
+    "ours": 2.488965591397757,
+    "gap": 0.00041542514146319394,
+    "status": "reproduced",
+    "asof": "2026-10-27"
+   }
+  },
+  {
+   "id": "census-net_inflation-091",
+   "family": "net_inflation",
+   "project": "NEAR Agent Census",
+   "claimed": 2.41,
+   "unit": "%/yr",
+   "quote": "(2.41% ",
+   "url": "https://github.com/daodudestiny56-netizen/near-thesis-/blob/fc071ba8aebce367fbe07fa87c0f2d635503b8f0/THESIS.md",
+   "at_snapshot": {
+    "metric": "net_inflation_annual_pct_90d",
+    "ours": 2.4755620881494704,
+    "gap": 0.027204185954137046,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "net_inflation_annual_pct_30d",
+    "ours": 2.4484641937517355,
+    "gap": 0.01596024637001468,
+    "status": "reproduced",
+    "asof": "2026-10-28"
+   }
+  },
+  {
+   "id": "rajesh-l1_fees_usd_365d-092",
+   "family": "l1_fees_usd_365d",
+   "project": "near-thesis (rajeshmullippa)",
+   "claimed": 1190000.0,
+   "unit": "USD",
+   "quote": "$1.19M over the last 365 days",
+   "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
+   "at_snapshot": {
+    "metric": "l1_fees_usd_365d",
+    "ours": 1163484.1987085696,
+    "gap": 0.022282185959185186,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "l1_fees_usd_365d",
+    "ours": 1189986.58173188,
+    "gap": 1.127585556295489e-05,
+    "status": "reproduced",
+    "asof": "2026-11-05"
+   }
+  },
+  {
+   "id": "rida-l1_fees_usd_30d-093",
+   "family": "l1_fees_usd_30d",
+   "project": "NEAR Investment Thesis: the evidence",
+   "claimed": 136746,
+   "unit": "USD",
+   "quote": "$136,746 of L1 gas fees",
+   "url": "https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md",
+   "at_snapshot": {
+    "metric": "l1_fees_usd_30d",
+    "ours": 137505.97186775,
+    "gap": 0.005557543677694348,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "l1_fees_usd_30d",
+    "ours": 137505.97186775,
+    "gap": 0.005557543677694348,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "rida-l1_fees_usd_yoy-094",
+   "family": "l1_fees_usd_yoy",
+   "project": "NEAR Investment Thesis: the evidence",
+   "claimed": -40.0,
+   "unit": "%",
+   "quote": "L1 gas fees moved -40.0% YoY in USD",
+   "url": "https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md",
+   "at_snapshot": {
+    "metric": "l1_fees_usd_yoy_30d",
+    "ours": -39.21404783375275,
+    "gap": 0.01964880415618122,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "l1_fees_usd_yoy_30d",
+    "ours": -39.21404783375275,
+    "gap": 0.01964880415618122,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "lisa-l1_fees_usd_yoy-095",
+   "family": "l1_fees_usd_yoy",
+   "project": "NEAR Usage Thesis (lisaaai200)",
+   "claimed": -27.6,
+   "unit": "%",
+   "quote": "fees in USD -27.6%",
+   "url": "https://github.com/lisaaai200/near-usage-thesis/blob/1e61facf7c79d23da8c0d8ec97871b9d24dd6951/THESIS.md",
+   "at_snapshot": {
+    "metric": "l1_fees_usd_yoy_30d",
+    "ours": -39.21404783375275,
+    "gap": 0.42079883455625905,
+    "status": "not reproduced"
+   },
+   "best_dated": {
+    "metric": "l1_fees_usd_yoy_30d",
+    "ours": -27.630056556237392,
+    "gap": 0.0010890056607750164,
+    "status": "reproduced",
+    "asof": "2026-10-31"
+   }
+  },
+  {
+   "id": "ledger-intents_share_of_near_dex_volume-096",
+   "family": "intents_share_of_near_dex_volume",
+   "project": "NEAR Demand Ledger",
+   "claimed": 92.6,
+   "unit": "%",
+   "quote": "it was 92.6% of the $4,024,785,541",
+   "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_share_of_near_dex_volume_30d",
+    "ours": 92.78285112852154,
+    "gap": 0.001974634217295339,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_share_of_near_dex_volume_30d",
+    "ours": 92.61057510873191,
+    "gap": 0.00011420203814161419,
+    "status": "reproduced",
+    "asof": "2026-11-07"
+   }
+  },
+  {
+   "id": "erfan-intents_share_of_near_dex_volume-097",
+   "family": "intents_share_of_near_dex_volume",
+   "project": "NEAR Intents thesis: usage vs value capture",
+   "claimed": 83.9,
+   "unit": "%",
+   "quote": "Intents was 83.9% of all DEX volume attributed to NEAR over the last 90 days",
+   "url": "https://github.com/erfanmoheb/near-intents-thesis/blob/8bf528276c2f209394c0c9334ada3de2e6142168/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_share_of_near_dex_volume_30d",
+    "ours": 92.78285112852154,
+    "gap": 0.10587426851634728,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_share_of_near_dex_volume_30d",
+    "ours": 90.26942626939706,
+    "gap": 0.07591688044573364,
+    "status": "close",
+    "asof": "2026-10-27"
+   }
+  }
+ ]
+}

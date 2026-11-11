@@ -1,0 +1,1525 @@
+{
+ "collected": "2026-11-11",
+ "sources": {
+  "ledger": {
+   "project": "NEAR Demand Ledger",
+   "repo": "hanafynst/near-demand-ledger",
+   "commit": "1202e34a62258ba100256a42114b003091c3921f",
+   "mentions": [
+    "defillama",
+    "intents_explorer",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "tope": {
+   "project": "NEAR as a Cross-Chain Settlement Business",
+   "repo": "Topeseun/near-intents-investment-thesis",
+   "commit": "a02982df090e1a2e3c386f8c303fe4eae4f05094",
+   "mentions": [
+    "coingecko",
+    "defillama",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "rida": {
+   "project": "NEAR Investment Thesis: the evidence",
+   "repo": "ridakalam52-design/near-investment-thesis",
+   "commit": "39fede7aa774ae738215d4d4a7bfd8fc190b13ba",
+   "mentions": [
+    "bigquery",
+    "coingecko",
+    "defillama",
+    "intents_explorer",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "lval": {
+   "project": "NEAR Thesis Scorecard",
+   "repo": "lvalentine16/near-thesis-indiciadesk",
+   "commit": "d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6",
+   "mentions": [
+    "bigquery",
+    "coingecko",
+    "defillama",
+    "intents_explorer",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "sem": {
+   "project": "Semilla1 NEAR Thesis",
+   "repo": "semilla1lab/semilla1-near-thesis",
+   "commit": "94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6",
+   "mentions": [
+    "defillama",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "nepu": {
+   "project": "NePu",
+   "repo": "Axlnd3r/NePu",
+   "commit": "eb9fe8468b8fddfd2607b3db85a779b73b9788af",
+   "mentions": [
+    "bigquery",
+    "coingecko",
+    "defillama",
+    "intents_explorer",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "rajesh": {
+   "project": "near-thesis (rajeshmullippa)",
+   "repo": "rajeshmullippa-collab/near-thesis",
+   "commit": "2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd",
+   "mentions": [
+    "bigquery",
+    "coingecko",
+    "defillama",
+    "intents_explorer",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "rain": {
+   "project": "NEAR Usage Thesis (Raindess69)",
+   "repo": "Raindess69/near-usage-thesis",
+   "commit": "b3a9061544208bf5001e11deb7e8fcbb874df251",
+   "mentions": [
+    "bigquery",
+    "coingecko",
+    "defillama",
+    "intents_explorer",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "books": {
+   "project": "NEAR Books",
+   "repo": "IhorMuliar/nearbooks",
+   "commit": "39f8c94a5d99fc4893a14e3b16283fb162e4455a",
+   "mentions": [
+    "defillama",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "erfan": {
+   "project": "NEAR Intents thesis: usage vs value capture",
+   "repo": "erfanmoheb/near-intents-thesis",
+   "commit": "8bf528276c2f209394c0c9334ada3de2e6142168",
+   "mentions": [
+    "bigquery",
+    "defillama",
+    "intents_explorer",
+    "nearblocks"
+   ]
+  },
+  "luong": {
+   "project": "NEAR Intents Thesis — Tested",
+   "repo": "luongs3/near-intents-thesis",
+   "commit": "81f3ecce6fa0a619817a8f7f243b1aa336866b96",
+   "mentions": [
+    "defillama"
+   ]
+  },
+  "tenx": {
+   "project": "NEAR's agent economy, measured",
+   "repo": "tenxagent/near-agent-economy",
+   "commit": "c54570d5fa4993e5d625a6c36b5da70354b198be",
+   "mentions": [
+    "defillama",
+    "dune",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "census": {
+   "project": "NEAR Agent Census",
+   "repo": "daodudestiny56-netizen/near-thesis-",
+   "commit": "fc071ba8aebce367fbe07fa87c0f2d635503b8f0",
+   "mentions": [
+    "bigquery",
+    "defillama",
+    "intents_explorer",
+    "rpc"
+   ]
+  },
+  "soldano": {
+   "project": "near-thesis: NEAR on the evidence",
+   "repo": "soldanoandrea/near-thesis",
+   "commit": "13b580f37e97d04fa0403f5c1a785f962886bddd",
+   "mentions": [
+    "bigquery",
+    "coingecko",
+    "defillama",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "lisa": {
+   "project": "NEAR Usage Thesis (lisaaai200)",
+   "repo": "lisaaai200/near-usage-thesis",
+   "commit": "1e61facf7c79d23da8c0d8ec97871b9d24dd6951",
+   "mentions": [
+    "bigquery",
+    "nearblocks"
+   ]
+  }
+ },
+ "claims": [
+  {
+   "id": "ledger-intents_volume_30d-000",
+   "source": "ledger",
+   "family": "intents_volume_30d",
+   "value": 3727751510,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "It settled $3,727,751,510 in the 30 days ending 9 Nov 2026",
+   "candidates": [
+    "intents_volume_30d"
+   ]
+  },
+  {
+   "id": "tope-intents_volume_30d-001",
+   "source": "tope",
+   "family": "intents_volume_30d",
+   "value": 3757732084,
+   "unit": "USD",
+   "file": "README.md",
+   "quote": "30d volume $3,757,732,084",
+   "candidates": [
+    "intents_volume_30d"
+   ]
+  },
+  {
+   "id": "rida-intents_volume_365d-002",
+   "source": "rida",
+   "family": "intents_volume_365d",
+   "value": 32910000000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "NEAR Intents settled $32.91B over the last year",
+   "candidates": [
+    "intents_volume_365d"
+   ]
+  },
+  {
+   "id": "lval-intents_volume_365d-003",
+   "source": "lval",
+   "family": "intents_volume_365d",
+   "value": 32800000000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "$32.8B settled in 12 months",
+   "candidates": [
+    "intents_volume_365d"
+   ]
+  },
+  {
+   "id": "lval-intents_volume_alltime-004",
+   "source": "lval",
+   "family": "intents_volume_alltime",
+   "value": 35700000000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "($35.7B all time)",
+   "candidates": [
+    "intents_volume_alltime"
+   ]
+  },
+  {
+   "id": "sem-intents_volume_alltime-005",
+   "source": "sem",
+   "family": "intents_volume_alltime",
+   "value": 37000000000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "Cumulative Intents volume since 2024-12-10: **$37.0B**",
+   "candidates": [
+    "intents_volume_alltime"
+   ]
+  },
+  {
+   "id": "ledger-intents_volume_alltime-006",
+   "source": "ledger",
+   "family": "intents_volume_alltime",
+   "value": 37170000000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "($37.17B against $38.11B)",
+   "candidates": [
+    "intents_volume_alltime"
+   ]
+  },
+  {
+   "id": "nepu-intents_volume_avg_30d-007",
+   "source": "nepu",
+   "family": "intents_volume_avg_30d",
+   "value": 130400000.0,
+   "unit": "USD/day",
+   "file": "README.md",
+   "quote": "7.6x its $130.4M average",
+   "candidates": [
+    "intents_volume_avg_30d"
+   ]
+  },
+  {
+   "id": "rajesh-intents_volume_avg_30d-008",
+   "source": "rajesh",
+   "family": "intents_volume_avg_30d",
+   "value": 129900000.0,
+   "unit": "USD/day",
+   "file": "THESIS.md",
+   "quote": "30-day average of **$129.9M a day**",
+   "candidates": [
+    "intents_volume_avg_30d"
+   ]
+  },
+  {
+   "id": "ledger-intents_volume_avg_30d-009",
+   "source": "ledger",
+   "family": "intents_volume_avg_30d",
+   "value": 124258384,
+   "unit": "USD/day",
+   "file": "THESIS.md",
+   "quote": "an average of $124,258,384 a day",
+   "candidates": [
+    "intents_volume_avg_30d"
+   ]
+  },
+  {
+   "id": "rain-intents_volume_avg_30d-010",
+   "source": "rain",
+   "family": "intents_volume_avg_30d",
+   "value": 127590000.0,
+   "unit": "USD/day",
+   "file": "THESIS.md",
+   "quote": "now $127.59M",
+   "candidates": [
+    "intents_volume_avg_30d"
+   ]
+  },
+  {
+   "id": "books-intents_volume_avg_30d-011",
+   "source": "books",
+   "family": "intents_volume_avg_30d",
+   "value": 149000000.0,
+   "unit": "USD/day",
+   "file": "THESIS.md",
+   "quote": "5.3x today's $149M",
+   "candidates": [
+    "intents_volume_avg_30d"
+   ]
+  },
+  {
+   "id": "ledger-intents_volume_yoy-012",
+   "source": "ledger",
+   "family": "intents_volume_yoy",
+   "value": 59,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "up 59% from $77,935,548 a day",
+   "candidates": [
+    "intents_volume_yoy_30d"
+   ]
+  },
+  {
+   "id": "rajesh-intents_volume_yoy-013",
+   "source": "rajesh",
+   "family": "intents_volume_yoy",
+   "value": 128,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "more than double a year earlier (+128%)",
+   "candidates": [
+    "intents_volume_yoy_30d"
+   ]
+  },
+  {
+   "id": "sem-intents_volume_yoy-014",
+   "source": "sem",
+   "family": "intents_volume_yoy",
+   "value": 60,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "(+60% YoY volume)",
+   "candidates": [
+    "intents_volume_yoy_30d"
+   ]
+  },
+  {
+   "id": "rida-intents_volume_30d_vs_prev-015",
+   "source": "rida",
+   "family": "intents_volume_30d_vs_prev",
+   "value": -20.7,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "The last 30 days were -20.7% vs the 30 days before",
+   "candidates": [
+    "intents_volume_30d_vs_prev_30d"
+   ]
+  },
+  {
+   "id": "erfan-intents_fees_30d-016",
+   "source": "erfan",
+   "family": "intents_fees_30d",
+   "value": 6130000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "$6.13M in fees over the last 30 days",
+   "candidates": [
+    "intents_fees_30d"
+   ]
+  },
+  {
+   "id": "ledger-intents_fees_30d-017",
+   "source": "ledger",
+   "family": "intents_fees_30d",
+   "value": 5458382,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "Fees were $5,458,382 over the trailing 30 days",
+   "candidates": [
+    "intents_fees_30d"
+   ]
+  },
+  {
+   "id": "rida-intents_fees_30d-018",
+   "source": "rida",
+   "family": "intents_fees_30d",
+   "value": 5500000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "$5.5M of Intents fees in 30 days",
+   "candidates": [
+    "intents_fees_30d"
+   ]
+  },
+  {
+   "id": "tope-intents_fees_30d-019",
+   "source": "tope",
+   "family": "intents_fees_30d",
+   "value": 5458382,
+   "unit": "USD",
+   "file": "README.md",
+   "quote": "grossed $5,458,382 of fees in 30 days",
+   "candidates": [
+    "intents_fees_30d"
+   ]
+  },
+  {
+   "id": "sem-intents_fees_30d-020",
+   "source": "sem",
+   "family": "intents_fees_30d",
+   "value": 5780000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "($5.78M vs $0.17M)",
+   "candidates": [
+    "intents_fees_30d"
+   ]
+  },
+  {
+   "id": "erfan-intents_fees_annualized-021",
+   "source": "erfan",
+   "family": "intents_fees_annualized",
+   "value": 74500000.0,
+   "unit": "USD/yr",
+   "file": "THESIS.md",
+   "quote": "**$74.5M a year**",
+   "candidates": [
+    "intents_fees_annualized_30d"
+   ]
+  },
+  {
+   "id": "rajesh-intents_fees_365d-022",
+   "source": "rajesh",
+   "family": "intents_fees_365d",
+   "value": 54200000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "$54.2M over the last 365 days",
+   "candidates": [
+    "intents_fees_365d"
+   ]
+  },
+  {
+   "id": "luong-intents_fees_90d-023",
+   "source": "luong",
+   "family": "intents_fees_90d",
+   "value": 17400000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "($17.4M vs $0.36M)",
+   "candidates": [
+    "intents_fees_90d"
+   ]
+  },
+  {
+   "id": "sem-intents_take_rate_bps-024",
+   "source": "sem",
+   "family": "intents_take_rate_bps",
+   "value": 15.56,
+   "unit": "bps",
+   "file": "THESIS.md",
+   "quote": "**15.56 bps**",
+   "candidates": [
+    "intents_take_rate_bps_30d",
+    "intents_take_rate_bps_90d",
+    "intents_take_rate_bps_365d"
+   ]
+  },
+  {
+   "id": "tope-intents_take_rate_bps-025",
+   "source": "tope",
+   "family": "intents_take_rate_bps",
+   "value": 14.53,
+   "unit": "bps",
+   "file": "README.md",
+   "quote": "implied gross fee rate 14.53 bps",
+   "candidates": [
+    "intents_take_rate_bps_30d",
+    "intents_take_rate_bps_90d",
+    "intents_take_rate_bps_365d"
+   ]
+  },
+  {
+   "id": "sem-intents_capture_share-026",
+   "source": "sem",
+   "family": "intents_capture_share",
+   "value": 32.1,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "NEAR captures **32.1%** of gross fees",
+   "candidates": [
+    "intents_capture_share_30d",
+    "intents_capture_share_90d",
+    "intents_capture_share_365d"
+   ]
+  },
+  {
+   "id": "tope-intents_capture_share-027",
+   "source": "tope",
+   "family": "intents_capture_share",
+   "value": 33.92,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "measured 30-day capture rate 33.92%",
+   "candidates": [
+    "intents_capture_share_30d",
+    "intents_capture_share_90d",
+    "intents_capture_share_365d"
+   ]
+  },
+  {
+   "id": "rajesh-intents_revenue_365d-028",
+   "source": "rajesh",
+   "family": "intents_revenue_365d",
+   "value": 9350000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "$9.35M over 365 days",
+   "candidates": [
+    "intents_revenue_365d"
+   ]
+  },
+  {
+   "id": "rajesh-intents_revenue_annualized-029",
+   "source": "rajesh",
+   "family": "intents_revenue_annualized",
+   "value": 25600000.0,
+   "unit": "USD/yr",
+   "file": "THESIS.md",
+   "quote": "**$25.6M a year** at the last 30 days",
+   "candidates": [
+    "intents_revenue_annualized_30d",
+    "intents_revenue_annualized_90d"
+   ]
+  },
+  {
+   "id": "sem-intents_revenue_annualized-030",
+   "source": "sem",
+   "family": "intents_revenue_annualized",
+   "value": 22600000.0,
+   "unit": "USD/yr",
+   "file": "THESIS.md",
+   "quote": "30-day revenue run-rate: **$22.6M/yr",
+   "candidates": [
+    "intents_revenue_annualized_30d",
+    "intents_revenue_annualized_90d"
+   ]
+  },
+  {
+   "id": "tenx-intents_revenue_annualized-031",
+   "source": "tenx",
+   "family": "intents_revenue_annualized",
+   "value": 21600000.0,
+   "unit": "USD/yr",
+   "file": "README.md",
+   "quote": "captured value is $21.6M",
+   "candidates": [
+    "intents_revenue_annualized_30d",
+    "intents_revenue_annualized_90d"
+   ]
+  },
+  {
+   "id": "nepu-issuance_cover-032",
+   "source": "nepu",
+   "family": "issuance_cover",
+   "value": 12.0,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "covered 12 cents per dollar of new NEAR issued",
+   "candidates": [
+    "revenue_cover_of_gross_issuance_pct_30d",
+    "revenue_cover_of_gross_issuance_pct_90d",
+    "revenue_cover_of_gross_issuance_pct_365d",
+    "revenue_cover_of_net_issuance_pct_30d",
+    "revenue_cover_of_net_issuance_pct_90d",
+    "revenue_cover_of_net_issuance_pct_365d",
+    "usage_cover_of_gross_issuance_pct_30d",
+    "usage_cover_of_gross_issuance_pct_90d",
+    "usage_cover_of_gross_issuance_pct_365d",
+    "usage_cover_of_net_issuance_pct_30d",
+    "usage_cover_of_net_issuance_pct_90d",
+    "usage_cover_of_net_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "census-issuance_cover-033",
+   "source": "census",
+   "family": "issuance_cover",
+   "value": 15.1,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "Reported Intents revenue (DefiLlama) covered 15.1%",
+   "candidates": [
+    "revenue_cover_of_gross_issuance_pct_30d",
+    "revenue_cover_of_gross_issuance_pct_90d",
+    "revenue_cover_of_gross_issuance_pct_365d",
+    "revenue_cover_of_net_issuance_pct_30d",
+    "revenue_cover_of_net_issuance_pct_90d",
+    "revenue_cover_of_net_issuance_pct_365d",
+    "usage_cover_of_gross_issuance_pct_30d",
+    "usage_cover_of_gross_issuance_pct_90d",
+    "usage_cover_of_gross_issuance_pct_365d",
+    "usage_cover_of_net_issuance_pct_30d",
+    "usage_cover_of_net_issuance_pct_90d",
+    "usage_cover_of_net_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "books-issuance_cover-034",
+   "source": "books",
+   "family": "issuance_cover",
+   "value": 17.3,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "took in 17.3% as much NEAR as total supply grew",
+   "candidates": [
+    "revenue_cover_of_gross_issuance_pct_30d",
+    "revenue_cover_of_gross_issuance_pct_90d",
+    "revenue_cover_of_gross_issuance_pct_365d",
+    "revenue_cover_of_net_issuance_pct_30d",
+    "revenue_cover_of_net_issuance_pct_90d",
+    "revenue_cover_of_net_issuance_pct_365d",
+    "usage_cover_of_gross_issuance_pct_30d",
+    "usage_cover_of_gross_issuance_pct_90d",
+    "usage_cover_of_gross_issuance_pct_365d",
+    "usage_cover_of_net_issuance_pct_30d",
+    "usage_cover_of_net_issuance_pct_90d",
+    "usage_cover_of_net_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "rain-issuance_cover-035",
+   "source": "rain",
+   "family": "issuance_cover",
+   "value": 18.0,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "offset **18.0%** over the last 90 days",
+   "candidates": [
+    "revenue_cover_of_gross_issuance_pct_30d",
+    "revenue_cover_of_gross_issuance_pct_90d",
+    "revenue_cover_of_gross_issuance_pct_365d",
+    "revenue_cover_of_net_issuance_pct_30d",
+    "revenue_cover_of_net_issuance_pct_90d",
+    "revenue_cover_of_net_issuance_pct_365d",
+    "usage_cover_of_gross_issuance_pct_30d",
+    "usage_cover_of_gross_issuance_pct_90d",
+    "usage_cover_of_gross_issuance_pct_365d",
+    "usage_cover_of_net_issuance_pct_30d",
+    "usage_cover_of_net_issuance_pct_90d",
+    "usage_cover_of_net_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "rain-issuance_cover-036",
+   "source": "rain",
+   "family": "issuance_cover",
+   "value": 19.0,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "usage paid for **19.0%** of issuance over 90 days",
+   "candidates": [
+    "revenue_cover_of_gross_issuance_pct_30d",
+    "revenue_cover_of_gross_issuance_pct_90d",
+    "revenue_cover_of_gross_issuance_pct_365d",
+    "revenue_cover_of_net_issuance_pct_30d",
+    "revenue_cover_of_net_issuance_pct_90d",
+    "revenue_cover_of_net_issuance_pct_365d",
+    "usage_cover_of_gross_issuance_pct_30d",
+    "usage_cover_of_gross_issuance_pct_90d",
+    "usage_cover_of_gross_issuance_pct_365d",
+    "usage_cover_of_net_issuance_pct_30d",
+    "usage_cover_of_net_issuance_pct_90d",
+    "usage_cover_of_net_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "rajesh-issuance_cover-037",
+   "source": "rajesh",
+   "family": "issuance_cover",
+   "value": 20.6,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "cover **20.6%** of that",
+   "candidates": [
+    "revenue_cover_of_gross_issuance_pct_30d",
+    "revenue_cover_of_gross_issuance_pct_90d",
+    "revenue_cover_of_gross_issuance_pct_365d",
+    "revenue_cover_of_net_issuance_pct_30d",
+    "revenue_cover_of_net_issuance_pct_90d",
+    "revenue_cover_of_net_issuance_pct_365d",
+    "usage_cover_of_gross_issuance_pct_30d",
+    "usage_cover_of_gross_issuance_pct_90d",
+    "usage_cover_of_gross_issuance_pct_365d",
+    "usage_cover_of_net_issuance_pct_30d",
+    "usage_cover_of_net_issuance_pct_90d",
+    "usage_cover_of_net_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "tenx-issuance_cover-038",
+   "source": "tenx",
+   "family": "issuance_cover",
+   "value": 18,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "covers about 18% of issua",
+   "candidates": [
+    "revenue_cover_of_gross_issuance_pct_30d",
+    "revenue_cover_of_gross_issuance_pct_90d",
+    "revenue_cover_of_gross_issuance_pct_365d",
+    "revenue_cover_of_net_issuance_pct_30d",
+    "revenue_cover_of_net_issuance_pct_90d",
+    "revenue_cover_of_net_issuance_pct_365d",
+    "usage_cover_of_gross_issuance_pct_30d",
+    "usage_cover_of_gross_issuance_pct_90d",
+    "usage_cover_of_gross_issuance_pct_365d",
+    "usage_cover_of_net_issuance_pct_30d",
+    "usage_cover_of_net_issuance_pct_90d",
+    "usage_cover_of_net_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "census-burn_cover-039",
+   "source": "census",
+   "family": "burn_cover",
+   "value": 0.58,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "Estimated L1 burn covered 0.58% of gross issuance",
+   "candidates": [
+    "burn_cover_of_net_issuance_pct_30d",
+    "burn_cover_of_net_issuance_pct_90d",
+    "burn_cover_of_net_issuance_pct_365d",
+    "burn_cover_of_gross_issuance_pct_30d",
+    "burn_cover_of_gross_issuance_pct_90d",
+    "burn_cover_of_gross_issuance_pct_365d",
+    "burn70_cover_of_gross_issuance_pct_30d",
+    "burn70_cover_of_gross_issuance_pct_90d",
+    "burn70_cover_of_gross_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "rida-burn_cover-040",
+   "source": "rida",
+   "family": "burn_cover",
+   "value": 0.8,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "Burn offsets 0.8% of issuance",
+   "candidates": [
+    "burn_cover_of_net_issuance_pct_30d",
+    "burn_cover_of_net_issuance_pct_90d",
+    "burn_cover_of_net_issuance_pct_365d",
+    "burn_cover_of_gross_issuance_pct_30d",
+    "burn_cover_of_gross_issuance_pct_90d",
+    "burn_cover_of_gross_issuance_pct_365d",
+    "burn70_cover_of_gross_issuance_pct_30d",
+    "burn70_cover_of_gross_issuance_pct_90d",
+    "burn70_cover_of_gross_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "erfan-burn_cover-041",
+   "source": "erfan",
+   "family": "burn_cover",
+   "value": 0.84,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "Burn offsets 0.84% of issuance (90-day window)",
+   "candidates": [
+    "burn_cover_of_net_issuance_pct_30d",
+    "burn_cover_of_net_issuance_pct_90d",
+    "burn_cover_of_net_issuance_pct_365d",
+    "burn_cover_of_gross_issuance_pct_30d",
+    "burn_cover_of_gross_issuance_pct_90d",
+    "burn_cover_of_gross_issuance_pct_365d",
+    "burn70_cover_of_gross_issuance_pct_30d",
+    "burn70_cover_of_gross_issuance_pct_90d",
+    "burn70_cover_of_gross_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "rain-burn_cover-042",
+   "source": "rain",
+   "family": "burn_cover",
+   "value": 1.15,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "Gas burn offsets **1.15%** of that",
+   "candidates": [
+    "burn_cover_of_net_issuance_pct_30d",
+    "burn_cover_of_net_issuance_pct_90d",
+    "burn_cover_of_net_issuance_pct_365d",
+    "burn_cover_of_gross_issuance_pct_30d",
+    "burn_cover_of_gross_issuance_pct_90d",
+    "burn_cover_of_gross_issuance_pct_365d",
+    "burn70_cover_of_gross_issuance_pct_30d",
+    "burn70_cover_of_gross_issuance_pct_90d",
+    "burn70_cover_of_gross_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "ledger-burn_cover-043",
+   "source": "ledger",
+   "family": "burn_cover",
+   "value": 1.88,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "Fees cover 1.88% of net issuance",
+   "candidates": [
+    "burn_cover_of_net_issuance_pct_30d",
+    "burn_cover_of_net_issuance_pct_90d",
+    "burn_cover_of_net_issuance_pct_365d",
+    "burn_cover_of_gross_issuance_pct_30d",
+    "burn_cover_of_gross_issuance_pct_90d",
+    "burn_cover_of_gross_issuance_pct_365d",
+    "burn70_cover_of_gross_issuance_pct_30d",
+    "burn70_cover_of_gross_issuance_pct_90d",
+    "burn70_cover_of_gross_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "rajesh-burn_cover-044",
+   "source": "rajesh",
+   "family": "burn_cover",
+   "value": 1.9,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "Burn alone covers 1.9%",
+   "candidates": [
+    "burn_cover_of_net_issuance_pct_30d",
+    "burn_cover_of_net_issuance_pct_90d",
+    "burn_cover_of_net_issuance_pct_365d",
+    "burn_cover_of_gross_issuance_pct_30d",
+    "burn_cover_of_gross_issuance_pct_90d",
+    "burn_cover_of_gross_issuance_pct_365d",
+    "burn70_cover_of_gross_issuance_pct_30d",
+    "burn70_cover_of_gross_issuance_pct_90d",
+    "burn70_cover_of_gross_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "lval-burn_cover-045",
+   "source": "lval",
+   "family": "burn_cover",
+   "value": 2,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "1y burned fees cover ~2% of new issuance",
+   "candidates": [
+    "burn_cover_of_net_issuance_pct_30d",
+    "burn_cover_of_net_issuance_pct_90d",
+    "burn_cover_of_net_issuance_pct_365d",
+    "burn_cover_of_gross_issuance_pct_30d",
+    "burn_cover_of_gross_issuance_pct_90d",
+    "burn_cover_of_gross_issuance_pct_365d",
+    "burn70_cover_of_gross_issuance_pct_30d",
+    "burn70_cover_of_gross_issuance_pct_90d",
+    "burn70_cover_of_gross_issuance_pct_365d"
+   ]
+  },
+  {
+   "id": "nepu-breakeven_multiple-046",
+   "source": "nepu",
+   "family": "breakeven_multiple",
+   "value": 7.6,
+   "unit": "x",
+   "file": "README.md",
+   "quote": "7.6x its $130.4M average",
+   "candidates": [
+    "breakeven_multiple_30d",
+    "breakeven_multiple_90d",
+    "breakeven_multiple_365d"
+   ]
+  },
+  {
+   "id": "books-breakeven_multiple-047",
+   "source": "books",
+   "family": "breakeven_multiple",
+   "value": 5.3,
+   "unit": "x",
+   "file": "THESIS.md",
+   "quote": "5.3x today's $149M",
+   "candidates": [
+    "breakeven_multiple_30d",
+    "breakeven_multiple_90d",
+    "breakeven_multiple_365d"
+   ]
+  },
+  {
+   "id": "rain-breakeven_multiple-048",
+   "source": "rain",
+   "family": "breakeven_multiple",
+   "value": 5.3,
+   "unit": "x",
+   "file": "README.md",
+   "quote": "usage-based revenue must grow **5.3x**",
+   "candidates": [
+    "breakeven_multiple_30d",
+    "breakeven_multiple_90d",
+    "breakeven_multiple_365d"
+   ]
+  },
+  {
+   "id": "soldano-breakeven_multiple-049",
+   "source": "soldano",
+   "family": "breakeven_multiple",
+   "value": 7.2,
+   "unit": "x",
+   "file": "README.md",
+   "quote": "7.2x today's Intents revenue",
+   "candidates": [
+    "breakeven_multiple_30d",
+    "breakeven_multiple_90d",
+    "breakeven_multiple_365d"
+   ]
+  },
+  {
+   "id": "rida-tx_yoy-050",
+   "source": "rida",
+   "family": "tx_yoy",
+   "value": -85.1,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "Transactions/day are -85.1% YoY",
+   "candidates": [
+    "tx_yoy_30d"
+   ]
+  },
+  {
+   "id": "lisa-tx_yoy-051",
+   "source": "lisa",
+   "family": "tx_yoy",
+   "value": -84.2,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "transactions -84.2%",
+   "candidates": [
+    "tx_yoy_30d"
+   ]
+  },
+  {
+   "id": "ledger-tx_yoy-052",
+   "source": "ledger",
+   "family": "tx_yoy",
+   "value": -85,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "transactions fell 85%",
+   "candidates": [
+    "tx_yoy_30d"
+   ]
+  },
+  {
+   "id": "lval-tx_yoy-053",
+   "source": "lval",
+   "family": "tx_yoy",
+   "value": -84,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "txns −84% YoY",
+   "candidates": [
+    "tx_yoy_30d"
+   ]
+  },
+  {
+   "id": "rajesh-tx_yoy-054",
+   "source": "rajesh",
+   "family": "tx_yoy",
+   "value": -85,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "(−85% YoY)",
+   "candidates": [
+    "tx_yoy_30d"
+   ]
+  },
+  {
+   "id": "sem-tx_yoy-055",
+   "source": "sem",
+   "family": "tx_yoy",
+   "value": -85,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "(tx/day −85% YoY)",
+   "candidates": [
+    "tx_yoy_30d"
+   ]
+  },
+  {
+   "id": "erfan-tx_vs_peak-056",
+   "source": "erfan",
+   "family": "tx_vs_peak",
+   "value": -91.8,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "(−91.8%)",
+   "candidates": [
+    "tx_vs_peak_30d",
+    "tx_vs_peak_day"
+   ]
+  },
+  {
+   "id": "tope-tx_vs_peak-057",
+   "source": "tope",
+   "family": "tx_vs_peak",
+   "value": -93.0,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "txns 93.0% and active accounts 92.1% below peak",
+   "candidates": [
+    "tx_vs_peak_30d",
+    "tx_vs_peak_day"
+   ]
+  },
+  {
+   "id": "rain-tx_vs_peak-058",
+   "source": "rain",
+   "family": "tx_vs_peak",
+   "value": -91,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "down 91% from their peak month",
+   "candidates": [
+    "tx_vs_peak_30d",
+    "tx_vs_peak_day"
+   ]
+  },
+  {
+   "id": "lisa-active_accounts_yoy-059",
+   "source": "lisa",
+   "family": "active_accounts_yoy",
+   "value": -73.5,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "active accounts -73.5%",
+   "candidates": [
+    "active_accounts_yoy_30d"
+   ]
+  },
+  {
+   "id": "lval-active_accounts_yoy-060",
+   "source": "lval",
+   "family": "active_accounts_yoy",
+   "value": -76,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "Active accounts −76%",
+   "candidates": [
+    "active_accounts_yoy_30d"
+   ]
+  },
+  {
+   "id": "rajesh-active_accounts_yoy-061",
+   "source": "rajesh",
+   "family": "active_accounts_yoy",
+   "value": -77,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "(−77% YoY)",
+   "candidates": [
+    "active_accounts_yoy_30d"
+   ]
+  },
+  {
+   "id": "ledger-active_accounts_yoy-062",
+   "source": "ledger",
+   "family": "active_accounts_yoy",
+   "value": -78,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "Daily active accounts fell 78%",
+   "candidates": [
+    "active_accounts_yoy_30d"
+   ]
+  },
+  {
+   "id": "erfan-active_accounts_vs_peak-063",
+   "source": "erfan",
+   "family": "active_accounts_vs_peak",
+   "value": -97,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "Active accounts: −97%",
+   "candidates": [
+    "active_accounts_vs_peak_30d",
+    "active_accounts_vs_peak_day"
+   ]
+  },
+  {
+   "id": "tope-active_accounts_vs_peak-064",
+   "source": "tope",
+   "family": "active_accounts_vs_peak",
+   "value": -92.1,
+   "unit": "%",
+   "file": "README.md",
+   "quote": "active accounts 92.1% below peak",
+   "candidates": [
+    "active_accounts_vs_peak_30d",
+    "active_accounts_vs_peak_day"
+   ]
+  },
+  {
+   "id": "lisa-new_accounts_yoy-065",
+   "source": "lisa",
+   "family": "new_accounts_yoy",
+   "value": -96.2,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "new accounts -96.2%",
+   "candidates": [
+    "new_accounts_yoy_30d"
+   ]
+  },
+  {
+   "id": "ledger-new_accounts_yoy-066",
+   "source": "ledger",
+   "family": "new_accounts_yoy",
+   "value": -96,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "new accounts fell 96%",
+   "candidates": [
+    "new_accounts_yoy_30d"
+   ]
+  },
+  {
+   "id": "rajesh-new_accounts_yoy-067",
+   "source": "rajesh",
+   "family": "new_accounts_yoy",
+   "value": -96,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "new accounts −96%",
+   "candidates": [
+    "new_accounts_yoy_30d"
+   ]
+  },
+  {
+   "id": "luong-fees_over_l1_fees-068",
+   "source": "luong",
+   "family": "fees_over_l1_fees",
+   "value": 48,
+   "unit": "x",
+   "file": "THESIS.md",
+   "quote": "**48x** the fees of the NEAR L1 itself",
+   "candidates": [
+    "intents_fees_over_l1_fees_30d",
+    "intents_fees_over_l1_fees_90d",
+    "intents_fees_over_l1_fees_365d"
+   ]
+  },
+  {
+   "id": "sem-fees_over_l1_fees-069",
+   "source": "sem",
+   "family": "fees_over_l1_fees",
+   "value": 34.9,
+   "unit": "x",
+   "file": "THESIS.md",
+   "quote": "**Intents gross fees are 34.9× NEAR",
+   "candidates": [
+    "intents_fees_over_l1_fees_30d",
+    "intents_fees_over_l1_fees_90d",
+    "intents_fees_over_l1_fees_365d"
+   ]
+  },
+  {
+   "id": "rajesh-revenue_over_l1_fees-070",
+   "source": "rajesh",
+   "family": "revenue_over_l1_fees",
+   "value": 21,
+   "unit": "x",
+   "file": "THESIS.md",
+   "quote": "Intents revenue now runs at roughly **21x** L1 fees",
+   "candidates": [
+    "intents_revenue_over_l1_fees_30d",
+    "intents_revenue_over_l1_fees_90d",
+    "intents_revenue_over_l1_fees_365d"
+   ]
+  },
+  {
+   "id": "rain-revenue_over_l1_fees-071",
+   "source": "rain",
+   "family": "revenue_over_l1_fees",
+   "value": 13,
+   "unit": "x",
+   "file": "THESIS.md",
+   "quote": "13x the chain's gas fees",
+   "candidates": [
+    "intents_revenue_over_l1_fees_30d",
+    "intents_revenue_over_l1_fees_90d",
+    "intents_revenue_over_l1_fees_365d"
+   ]
+  },
+  {
+   "id": "erfan-mcap_over_fees-072",
+   "source": "erfan",
+   "family": "mcap_over_fees",
+   "value": 70.4,
+   "unit": "x",
+   "file": "THESIS.md",
+   "quote": "**70.4×** annualized Intents fees",
+   "candidates": [
+    "mcap_over_intents_fees_annualized_30d"
+   ]
+  },
+  {
+   "id": "soldano-mcap_over_fees-073",
+   "source": "soldano",
+   "family": "mcap_over_fees",
+   "value": 73.9,
+   "unit": "x",
+   "file": "README.md",
+   "quote": "73.9x counting Intents fees",
+   "candidates": [
+    "mcap_over_intents_fees_annualized_30d"
+   ]
+  },
+  {
+   "id": "rajesh-mcap_over_revenue-074",
+   "source": "rajesh",
+   "family": "mcap_over_revenue",
+   "value": 206,
+   "unit": "x",
+   "file": "THESIS.md",
+   "quote": "Market cap is **206x** annualized Intents revenue",
+   "candidates": [
+    "mcap_over_intents_revenue_annualized_30d"
+   ]
+  },
+  {
+   "id": "sem-mcap_over_revenue-075",
+   "source": "sem",
+   "family": "mcap_over_revenue",
+   "value": 211,
+   "unit": "x",
+   "file": "THESIS.md",
+   "quote": "~211× captured revenue",
+   "candidates": [
+    "mcap_over_intents_revenue_annualized_30d"
+   ]
+  },
+  {
+   "id": "sem-revenue_yield_on_mcap-076",
+   "source": "sem",
+   "family": "revenue_yield_on_mcap",
+   "value": 0.47,
+   "unit": "%/yr",
+   "file": "THESIS.md",
+   "quote": "= 0.47%** of NEAR market cap",
+   "candidates": [
+    "revenue_yield_on_mcap_pct_30d"
+   ]
+  },
+  {
+   "id": "tenx-revenue_yield_on_mcap-077",
+   "source": "tenx",
+   "family": "revenue_yield_on_mcap",
+   "value": 0.45,
+   "unit": "%/yr",
+   "file": "README.md",
+   "quote": "0.45% a year of NEAR",
+   "candidates": [
+    "revenue_yield_on_mcap_pct_30d"
+   ]
+  },
+  {
+   "id": "lisa-price_yoy-078",
+   "source": "lisa",
+   "family": "price_yoy",
+   "value": 96.4,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "price is +96.4%",
+   "candidates": [
+    "price_yoy",
+    "price_yoy_30d_avg"
+   ]
+  },
+  {
+   "id": "ledger-price_yoy-079",
+   "source": "ledger",
+   "family": "price_yoy",
+   "value": 19,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "a 19% rise across a year",
+   "candidates": [
+    "price_yoy",
+    "price_yoy_30d_avg"
+   ]
+  },
+  {
+   "id": "ledger-staked_share-080",
+   "source": "ledger",
+   "family": "staked_share",
+   "value": 44.3,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "44.3% of the 1,311,369,535 NEAR supply",
+   "candidates": [
+    "staked_share_pct"
+   ]
+  },
+  {
+   "id": "lval-staked_share-081",
+   "source": "lval",
+   "family": "staked_share",
+   "value": 45.3,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "**45.3%** of supply staked across 379 validators",
+   "candidates": [
+    "staked_share_pct"
+   ]
+  },
+  {
+   "id": "rida-staked_share-082",
+   "source": "rida",
+   "family": "staked_share",
+   "value": 44.4,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "44.4% of supply is staked across 351 validators",
+   "candidates": [
+    "staked_share_pct"
+   ]
+  },
+  {
+   "id": "rajesh-staked_share-083",
+   "source": "rajesh",
+   "family": "staked_share",
+   "value": 43.8,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "43.8% of supply is staked across 335 validators",
+   "candidates": [
+    "staked_share_pct"
+   ]
+  },
+  {
+   "id": "ledger-validators-084",
+   "source": "ledger",
+   "family": "validators",
+   "value": 338,
+   "unit": "count",
+   "file": "THESIS.md",
+   "quote": "counts 338 current validators",
+   "candidates": [
+    "validators_current"
+   ]
+  },
+  {
+   "id": "lval-validators-085",
+   "source": "lval",
+   "family": "validators",
+   "value": 379,
+   "unit": "count",
+   "file": "THESIS.md",
+   "quote": "staked across 379 validators",
+   "candidates": [
+    "validators_current"
+   ]
+  },
+  {
+   "id": "rida-validators-086",
+   "source": "rida",
+   "family": "validators",
+   "value": 351,
+   "unit": "count",
+   "file": "THESIS.md",
+   "quote": "staked across 351 validators",
+   "candidates": [
+    "validators_current"
+   ]
+  },
+  {
+   "id": "rajesh-validators-087",
+   "source": "rajesh",
+   "family": "validators",
+   "value": 335,
+   "unit": "count",
+   "file": "THESIS.md",
+   "quote": "staked across 335 validators",
+   "candidates": [
+    "validators_current"
+   ]
+  },
+  {
+   "id": "rajesh-validators_to_one_third-088",
+   "source": "rajesh",
+   "family": "validators_to_one_third",
+   "value": 9,
+   "unit": "count",
+   "file": "THESIS.md",
+   "quote": "the largest **9** hold more than a third of stake",
+   "candidates": [
+    "validators_to_one_third"
+   ]
+  },
+  {
+   "id": "lval-net_inflation-089",
+   "source": "lval",
+   "family": "net_inflation",
+   "value": 2.48,
+   "unit": "%/yr",
+   "file": "THESIS.md",
+   "quote": "net supply inflation **2.48%/yr**",
+   "candidates": [
+    "net_inflation_annual_pct_30d",
+    "net_inflation_annual_pct_90d",
+    "net_inflation_annual_pct_365d"
+   ]
+  },
+  {
+   "id": "rain-net_inflation-090",
+   "source": "rain",
+   "family": "net_inflation",
+   "value": 2.49,
+   "unit": "%/yr",
+   "file": "THESIS.md",
+   "quote": "Issuance is about 2.49% a year",
+   "candidates": [
+    "net_inflation_annual_pct_30d",
+    "net_inflation_annual_pct_90d",
+    "net_inflation_annual_pct_365d"
+   ]
+  },
+  {
+   "id": "census-net_inflation-091",
+   "source": "census",
+   "family": "net_inflation",
+   "value": 2.41,
+   "unit": "%/yr",
+   "file": "THESIS.md",
+   "quote": "(2.41% ",
+   "candidates": [
+    "net_inflation_annual_pct_30d",
+    "net_inflation_annual_pct_90d",
+    "net_inflation_annual_pct_365d"
+   ]
+  },
+  {
+   "id": "rajesh-l1_fees_usd_365d-092",
+   "source": "rajesh",
+   "family": "l1_fees_usd_365d",
+   "value": 1190000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "$1.19M over the last 365 days",
+   "candidates": [
+    "l1_fees_usd_365d"
+   ]
+  },
+  {
+   "id": "rida-l1_fees_usd_30d-093",
+   "source": "rida",
+   "family": "l1_fees_usd_30d",
+   "value": 136746,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "$136,746 of L1 gas fees",
+   "candidates": [
+    "l1_fees_usd_30d"
+   ]
+  },
+  {
+   "id": "rida-l1_fees_usd_yoy-094",
+   "source": "rida",
+   "family": "l1_fees_usd_yoy",
+   "value": -40.0,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "L1 gas fees moved -40.0% YoY in USD",
+   "candidates": [
+    "l1_fees_usd_yoy_30d"
+   ]
+  },
+  {
+   "id": "lisa-l1_fees_usd_yoy-095",
+   "source": "lisa",
+   "family": "l1_fees_usd_yoy",
+   "value": -27.6,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "fees in USD -27.6%",
+   "candidates": [
+    "l1_fees_usd_yoy_30d"
+   ]
+  },
+  {
+   "id": "ledger-intents_share_of_near_dex_volume-096",
+   "source": "ledger",
+   "family": "intents_share_of_near_dex_volume",
+   "value": 92.6,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "it was 92.6% of the $4,024,785,541",
+   "candidates": [
+    "intents_share_of_near_dex_volume_30d"
+   ]
+  },
+  {
+   "id": "erfan-intents_share_of_near_dex_volume-097",
+   "source": "erfan",
+   "family": "intents_share_of_near_dex_volume",
+   "value": 83.9,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "Intents was 83.9% of all DEX volume attributed to NEAR over the last 90 days",
+   "candidates": [
+    "intents_share_of_near_dex_volume_30d"
+   ]
+  }
+ ]
+}
