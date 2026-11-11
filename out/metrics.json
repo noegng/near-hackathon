@@ -128,6 +128,11 @@
    "unit": "%",
    "definition": "30-day mean txns vs the 30 days ending 365 days earlier."
   },
+  "tx_yoy_90d": {
+   "value": -84.02474537124363,
+   "unit": "%",
+   "definition": "90-day mean txns vs the 90 days ending 365 days earlier."
+  },
   "tx_vs_peak_30d": {
    "value": -92.07008947606539,
    "unit": "%",
@@ -148,6 +153,11 @@
    "unit": "%",
    "definition": "30-day mean active_accounts vs the 30 days ending 365 days earlier."
   },
+  "active_accounts_yoy_90d": {
+   "value": -75.34785886239067,
+   "unit": "%",
+   "definition": "90-day mean active_accounts vs the 90 days ending 365 days earlier."
+  },
   "active_accounts_vs_peak_30d": {
    "value": -96.91179329835619,
    "unit": "%",
@@ -167,6 +177,11 @@
    "value": -95.61463795957636,
    "unit": "%",
    "definition": "30-day mean new_accounts vs the 30 days ending 365 days earlier."
+  },
+  "new_accounts_yoy_90d": {
+   "value": -95.60459606296729,
+   "unit": "%",
+   "definition": "90-day mean new_accounts vs the 90 days ending 365 days earlier."
   },
   "new_accounts_vs_peak_30d": {
    "value": -98.27229010826046,
@@ -453,6 +468,11 @@
    "unit": "%",
    "definition": "30-day L1 fees in USD vs a year earlier."
   },
+  "l1_fees_usd_yoy_90d": {
+   "value": -52.66433681257239,
+   "unit": "%",
+   "definition": "90-day L1 fees in USD vs a year earlier."
+  },
   "l1_fees_near_yoy_30d": {
    "value": -69.70717940273981,
    "unit": "%",
@@ -562,6 +582,11 @@
    "value": 97.79631931610413,
    "unit": "%",
    "definition": "30-day mean price vs a year earlier."
+  },
+  "price_yoy_90d_avg": {
+   "value": 38.31426178494528,
+   "unit": "%",
+   "definition": "90-day mean price vs a year earlier."
   },
   "market_cap_usd": {
    "value": 4752056551.498374,

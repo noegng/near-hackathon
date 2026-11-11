@@ -19,10 +19,10 @@ of the metric that produced it; a test fails if the text and the computation dis
 
 ## How this thesis was built
 
-About thirty teams in this track measured NEAR independently. We recorded 98 of their published numbers from
-15 public repositories, with the exact quote and commit, and recomputed each from raw data
-([`out/replication.md`](out/replication.md)). 75 are within 5% of our number on our snapshot day and
-88 when the day may move within two weeks (the theses were published on different days). The thesis uses only
+About thirty teams in this track measured NEAR independently. We recorded 119 of their published numbers from
+20 public repositories, with the exact quote and commit, and recomputed each from raw data
+([`out/replication.md`](out/replication.md)). 89 are within 5% of our number on our snapshot day and
+109 when the day may move within two weeks (the theses were published on different days). The thesis uses only
 quantities that replicate, and takes its uncertainty from the spread between teams instead of from one model.
 
 Two things came out of the comparison that no single thesis shows.
@@ -76,8 +76,9 @@ The spread between teams is mostly definition, not error, and it sets the error 
 | --- | --- | --- | --- |
 | Share of issuance offset by Intents revenue | 12.0% to 20.6% (7 numbers) | 12.9% (360 d), 15.3% (30 d), 18.2% (90 d) | Window length. Sweeps into the wallets are lumpy: single 30-day steps range from 6.5% to 19.8% since April. |
 | Share offset by fee burn | 0.58% to 2.00% (7 numbers) | 1.12% (30 d) to 1.87% (365 d) | Window, and whether 70% or 100% of fees is counted as burnt. |
-| Growth needed to offset issuance | 5.3x to 7.6x (4 numbers) | 5.5x (90 d, on chain) | Same as the first row. |
-| NEAR price change over a year | +19% and +96% | +19% day to day, +98% between 30-day means | NEAR's price rose sharply in early November 2025, so the comparison day decides the result. |
+| Growth needed to offset issuance | 5.3x to 7.6x (5 numbers) | 5.5x (90 d, on chain) | Same as the first row. |
+| NEAR price change over a year | +19%, +96% and +97% | +19% day to day, +98% between 30-day means | NEAR's price rose sharply in early November 2025, so the comparison day decides the result. |
+| L1 fees in USD, change over a year | -27.6% to -55.3% (3 numbers) | -39% (30 d), -53% (90 d) | Window length: the same series gives either figure. |
 
 We therefore state the cover as **13% to 18%**, not as one figure, and treat any 30-day reading as noise.
 

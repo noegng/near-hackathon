@@ -7,29 +7,29 @@
   "close": 0.15
  },
  "summary": {
-  "claims": 98,
-  "sources": 15,
+  "claims": 119,
+  "sources": 20,
   "at_snapshot": {
-   "reproduced": 75,
-   "close": 17,
-   "not reproduced": 6
+   "reproduced": 89,
+   "close": 22,
+   "not reproduced": 8
   },
   "best_dated": {
-   "reproduced": 88,
+   "reproduced": 109,
    "close": 8,
    "not reproduced": 2
   }
  },
  "families": {
   "intents_volume_30d": {
-   "n": 2,
+   "n": 3,
    "unit": "USD",
    "min": 3727751510,
-   "max": 3757732084,
-   "median": 3742741797.0,
-   "spread_pct_of_median": 0.8010323881821334,
-   "reproduced_at_snapshot": 2,
-   "reproduced_best_dated": 2
+   "max": 3860000000.0,
+   "median": 3757732084,
+   "spread_pct_of_median": 3.5193698497851713,
+   "reproduced_at_snapshot": 3,
+   "reproduced_best_dated": 3
   },
   "intents_volume_365d": {
    "n": 2,
@@ -42,14 +42,14 @@
    "reproduced_best_dated": 2
   },
   "intents_volume_alltime": {
-   "n": 3,
+   "n": 4,
    "unit": "USD",
    "min": 35700000000.0,
    "max": 37170000000.0,
-   "median": 37000000000.0,
-   "spread_pct_of_median": 3.972972972972973,
-   "reproduced_at_snapshot": 3,
-   "reproduced_best_dated": 3
+   "median": 37003000000.0,
+   "spread_pct_of_median": 3.972650866145988,
+   "reproduced_at_snapshot": 4,
+   "reproduced_best_dated": 4
   },
   "intents_volume_avg_30d": {
    "n": 5,
@@ -82,14 +82,14 @@
    "reproduced_best_dated": 1
   },
   "intents_fees_30d": {
-   "n": 5,
+   "n": 6,
    "unit": "USD",
    "min": 5458382,
    "max": 6130000.0,
-   "median": 5500000.0,
-   "spread_pct_of_median": 12.211236363636363,
-   "reproduced_at_snapshot": 2,
-   "reproduced_best_dated": 2
+   "median": 5625000.0,
+   "spread_pct_of_median": 11.939875555555556,
+   "reproduced_at_snapshot": 3,
+   "reproduced_best_dated": 3
   },
   "intents_fees_annualized": {
    "n": 1,
@@ -122,24 +122,24 @@
    "reproduced_best_dated": 1
   },
   "intents_take_rate_bps": {
-   "n": 2,
+   "n": 4,
    "unit": "bps",
    "min": 14.53,
-   "max": 15.56,
-   "median": 15.045,
-   "spread_pct_of_median": 6.846128281821211,
-   "reproduced_at_snapshot": 1,
-   "reproduced_best_dated": 2
+   "max": 15.9,
+   "median": 15.23,
+   "spread_pct_of_median": 8.995403808273151,
+   "reproduced_at_snapshot": 3,
+   "reproduced_best_dated": 4
   },
   "intents_capture_share": {
-   "n": 2,
+   "n": 4,
    "unit": "%",
    "min": 32.1,
-   "max": 33.92,
-   "median": 33.010000000000005,
-   "spread_pct_of_median": 5.5134807634050285,
+   "max": 36.9,
+   "median": 33.96,
+   "spread_pct_of_median": 14.13427561837455,
    "reproduced_at_snapshot": 0,
-   "reproduced_best_dated": 2
+   "reproduced_best_dated": 4
   },
   "intents_revenue_365d": {
    "n": 1,
@@ -152,14 +152,14 @@
    "reproduced_best_dated": 1
   },
   "intents_revenue_annualized": {
-   "n": 3,
+   "n": 5,
    "unit": "USD/yr",
    "min": 21600000.0,
-   "max": 25600000.0,
-   "median": 22600000.0,
-   "spread_pct_of_median": 17.699115044247787,
+   "max": 26200000.0,
+   "median": 25600000.0,
+   "spread_pct_of_median": 17.96875,
    "reproduced_at_snapshot": 2,
-   "reproduced_best_dated": 3
+   "reproduced_best_dated": 5
   },
   "issuance_cover": {
    "n": 7,
@@ -182,24 +182,24 @@
    "reproduced_best_dated": 6
   },
   "breakeven_multiple": {
-   "n": 4,
+   "n": 5,
    "unit": "x",
    "min": 5.3,
    "max": 7.6,
-   "median": 6.25,
-   "spread_pct_of_median": 36.8,
+   "median": 5.6,
+   "spread_pct_of_median": 41.07142857142857,
    "reproduced_at_snapshot": 2,
-   "reproduced_best_dated": 3
+   "reproduced_best_dated": 4
   },
   "tx_yoy": {
-   "n": 6,
+   "n": 7,
    "unit": "%",
    "min": -85.1,
    "max": -84,
-   "median": -85.0,
+   "median": -85,
    "spread_pct_of_median": 1.2941176470588167,
-   "reproduced_at_snapshot": 6,
-   "reproduced_best_dated": 6
+   "reproduced_at_snapshot": 7,
+   "reproduced_best_dated": 7
   },
   "tx_vs_peak": {
    "n": 3,
@@ -212,14 +212,14 @@
    "reproduced_best_dated": 3
   },
   "active_accounts_yoy": {
-   "n": 4,
+   "n": 5,
    "unit": "%",
    "min": -78,
    "max": -73.5,
-   "median": -76.5,
-   "spread_pct_of_median": 5.88235294117647,
-   "reproduced_at_snapshot": 4,
-   "reproduced_best_dated": 4
+   "median": -76.2,
+   "spread_pct_of_median": 5.905511811023622,
+   "reproduced_at_snapshot": 5,
+   "reproduced_best_dated": 5
   },
   "active_accounts_vs_peak": {
    "n": 2,
@@ -272,64 +272,64 @@
    "reproduced_best_dated": 2
   },
   "mcap_over_revenue": {
-   "n": 2,
+   "n": 3,
    "unit": "x",
    "min": 206,
-   "max": 211,
-   "median": 208.5,
-   "spread_pct_of_median": 2.3980815347721824,
-   "reproduced_at_snapshot": 2,
-   "reproduced_best_dated": 2
-  },
-  "revenue_yield_on_mcap": {
-   "n": 2,
-   "unit": "%/yr",
-   "min": 0.45,
-   "max": 0.47,
-   "median": 0.45999999999999996,
-   "spread_pct_of_median": 4.347826086956514,
-   "reproduced_at_snapshot": 2,
-   "reproduced_best_dated": 2
-  },
-  "price_yoy": {
-   "n": 2,
-   "unit": "%",
-   "min": 19,
-   "max": 96.4,
-   "median": 57.7,
-   "spread_pct_of_median": 134.1421143847487,
-   "reproduced_at_snapshot": 2,
-   "reproduced_best_dated": 2
-  },
-  "staked_share": {
-   "n": 4,
-   "unit": "%",
-   "min": 43.8,
-   "max": 45.3,
-   "median": 44.349999999999994,
-   "spread_pct_of_median": 3.3821871476888394,
-   "reproduced_at_snapshot": 4,
-   "reproduced_best_dated": 4
-  },
-  "validators": {
-   "n": 4,
-   "unit": "count",
-   "min": 335,
-   "max": 379,
-   "median": 344.5,
-   "spread_pct_of_median": 12.772133526850507,
+   "max": 224,
+   "median": 211,
+   "spread_pct_of_median": 8.530805687203792,
    "reproduced_at_snapshot": 3,
    "reproduced_best_dated": 3
   },
+  "revenue_yield_on_mcap": {
+   "n": 4,
+   "unit": "%/yr",
+   "min": 0.43,
+   "max": 0.47,
+   "median": 0.45,
+   "spread_pct_of_median": 8.888888888888884,
+   "reproduced_at_snapshot": 3,
+   "reproduced_best_dated": 4
+  },
+  "price_yoy": {
+   "n": 3,
+   "unit": "%",
+   "min": 19,
+   "max": 97.3,
+   "median": 96.4,
+   "spread_pct_of_median": 81.22406639004149,
+   "reproduced_at_snapshot": 3,
+   "reproduced_best_dated": 3
+  },
+  "staked_share": {
+   "n": 5,
+   "unit": "%",
+   "min": 43.8,
+   "max": 45.3,
+   "median": 44.31,
+   "spread_pct_of_median": 3.3852403520649963,
+   "reproduced_at_snapshot": 5,
+   "reproduced_best_dated": 5
+  },
+  "validators": {
+   "n": 5,
+   "unit": "count",
+   "min": 335,
+   "max": 379,
+   "median": 339,
+   "spread_pct_of_median": 12.979351032448378,
+   "reproduced_at_snapshot": 4,
+   "reproduced_best_dated": 4
+  },
   "validators_to_one_third": {
-   "n": 1,
+   "n": 2,
    "unit": "count",
    "min": 9,
    "max": 9,
-   "median": 9,
+   "median": 9.0,
    "spread_pct_of_median": 0.0,
-   "reproduced_at_snapshot": 1,
-   "reproduced_best_dated": 1
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 2
   },
   "net_inflation": {
    "n": 3,
@@ -362,14 +362,14 @@
    "reproduced_best_dated": 1
   },
   "l1_fees_usd_yoy": {
-   "n": 2,
+   "n": 3,
    "unit": "%",
-   "min": -40.0,
+   "min": -55.3,
    "max": -27.6,
-   "median": -33.8,
-   "spread_pct_of_median": 36.68639053254438,
-   "reproduced_at_snapshot": 1,
-   "reproduced_best_dated": 2
+   "median": -40.0,
+   "spread_pct_of_median": 69.24999999999999,
+   "reproduced_at_snapshot": 2,
+   "reproduced_best_dated": 3
   },
   "intents_share_of_near_dex_volume": {
    "n": 2,
@@ -379,6 +379,16 @@
    "median": 88.25,
    "spread_pct_of_median": 9.858356940509902,
    "reproduced_at_snapshot": 1,
+   "reproduced_best_dated": 1
+  },
+  "active_accounts_per_day": {
+   "n": 1,
+   "unit": "per day",
+   "min": 58223,
+   "max": 58223,
+   "median": 58223,
+   "spread_pct_of_median": 0.0,
+   "reproduced_at_snapshot": 0,
    "reproduced_best_dated": 1
   }
  },
@@ -1514,17 +1524,17 @@
    "quote": "transactions -84.2%",
    "url": "https://github.com/lisaaai200/near-usage-thesis/blob/1e61facf7c79d23da8c0d8ec97871b9d24dd6951/THESIS.md",
    "at_snapshot": {
-    "metric": "tx_yoy_30d",
-    "ours": -85.14222143833281,
-    "gap": 0.011190278364997723,
+    "metric": "tx_yoy_90d",
+    "ours": -84.02474537124363,
+    "gap": 0.0020814088925935562,
     "status": "reproduced"
    },
    "best_dated": {
-    "metric": "tx_yoy_30d",
-    "ours": -84.24899513324084,
-    "gap": 0.0005818899434778706,
+    "metric": "tx_yoy_90d",
+    "ours": -84.20394113751692,
+    "gap": 4.680685887076066e-05,
     "status": "reproduced",
-    "asof": "2026-10-31"
+    "asof": "2026-11-08"
    }
   },
   {
@@ -1558,17 +1568,17 @@
    "quote": "txns −84% YoY",
    "url": "https://github.com/lvalentine16/near-thesis-indiciadesk/blob/d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6/THESIS.md",
    "at_snapshot": {
-    "metric": "tx_yoy_30d",
-    "ours": -85.14222143833281,
-    "gap": 0.013597874265866798,
+    "metric": "tx_yoy_90d",
+    "ours": -84.02474537124363,
+    "gap": 0.00029458775290030256,
     "status": "reproduced"
    },
    "best_dated": {
-    "metric": "tx_yoy_30d",
-    "ours": -83.80960588509303,
-    "gap": 0.0022665966060353,
+    "metric": "tx_yoy_90d",
+    "ours": -84.02474537124363,
+    "gap": 0.00029458775290030256,
     "status": "reproduced",
-    "asof": "2026-10-30"
+    "asof": "2026-11-10"
    }
   },
   {
@@ -1690,9 +1700,9 @@
    "quote": "active accounts -73.5%",
    "url": "https://github.com/lisaaai200/near-usage-thesis/blob/1e61facf7c79d23da8c0d8ec97871b9d24dd6951/THESIS.md",
    "at_snapshot": {
-    "metric": "active_accounts_yoy_30d",
-    "ours": -76.28304789580271,
-    "gap": 0.03786459722180558,
+    "metric": "active_accounts_yoy_90d",
+    "ours": -75.34785886239067,
+    "gap": 0.025140936903274368,
     "status": "reproduced"
    },
    "best_dated": {
@@ -1718,11 +1728,11 @@
     "status": "reproduced"
    },
    "best_dated": {
-    "metric": "active_accounts_yoy_30d",
-    "ours": -75.7490968710806,
-    "gap": 0.003301356959465844,
+    "metric": "active_accounts_yoy_90d",
+    "ours": -76.0167625637943,
+    "gap": 0.0002205600499250244,
     "status": "reproduced",
-    "asof": "2026-11-02"
+    "asof": "2026-10-30"
    }
   },
   {
@@ -2537,6 +2547,468 @@
     "gap": 0.07591688044573364,
     "status": "close",
     "asof": "2026-10-27"
+   }
+  },
+  {
+   "id": "apih-intents_volume_30d-098",
+   "family": "intents_volume_30d",
+   "project": "NEAR Intents Value Accrual Thesis",
+   "claimed": 3860000000.0,
+   "unit": "USD",
+   "quote": "$3.86B volume",
+   "url": "https://github.com/Apihpih96/near-intents-thesis/blob/cdbe83dfba1fb6fcc9294ad01ecd37f4035da3f3/FINDINGS.md",
+   "at_snapshot": {
+    "metric": "intents_volume_30d",
+    "ours": 3757732084.0,
+    "gap": 0.026494278756476683,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_30d",
+    "ours": 3860604916.0,
+    "gap": 0.0001567139896373057,
+    "status": "reproduced",
+    "asof": "2026-10-31"
+   }
+  },
+  {
+   "id": "apih-intents_fees_30d-099",
+   "family": "intents_fees_30d",
+   "project": "NEAR Intents Value Accrual Thesis",
+   "claimed": 5750000.0,
+   "unit": "USD",
+   "quote": "$5.75M fees",
+   "url": "https://github.com/Apihpih96/near-intents-thesis/blob/cdbe83dfba1fb6fcc9294ad01ecd37f4035da3f3/FINDINGS.md",
+   "at_snapshot": {
+    "metric": "intents_fees_30d",
+    "ours": 5960786.0,
+    "gap": 0.0366584347826087,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_fees_30d",
+    "ours": 5781089.0,
+    "gap": 0.005406782608695652,
+    "status": "reproduced",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "apih-intents_capture_share-100",
+   "family": "intents_capture_share",
+   "project": "NEAR Intents Value Accrual Thesis",
+   "claimed": 36.9,
+   "unit": "%",
+   "quote": "$2.12M captured = 36.9% of fees",
+   "url": "https://github.com/Apihpih96/near-intents-thesis/blob/cdbe83dfba1fb6fcc9294ad01ecd37f4035da3f3/FINDINGS.md",
+   "at_snapshot": {
+    "metric": "intents_capture_share_30d",
+    "ours": 30.492086110791426,
+    "gap": 0.17365620295958192,
+    "status": "not reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_capture_share_30d",
+    "ours": 35.25292877501666,
+    "gap": 0.04463607655781397,
+    "status": "reproduced",
+    "asof": "2026-10-29"
+   }
+  },
+  {
+   "id": "apih-intents_revenue_annualized-101",
+   "family": "intents_revenue_annualized",
+   "project": "NEAR Intents Value Accrual Thesis",
+   "claimed": 25800000.0,
+   "unit": "USD/yr",
+   "quote": "buybacks are $25.8M a year",
+   "url": "https://github.com/Apihpih96/near-intents-thesis/blob/cdbe83dfba1fb6fcc9294ad01ecd37f4035da3f3/FINDINGS.md",
+   "at_snapshot": {
+    "metric": "intents_revenue_annualized_30d",
+    "ours": 22113744.0,
+    "gap": 0.1428781395348837,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_revenue_annualized_30d",
+    "ours": 25770618.166666668,
+    "gap": 0.001138830749353957,
+    "status": "reproduced",
+    "asof": "2026-10-31"
+   }
+  },
+  {
+   "id": "apih-revenue_yield_on_mcap-102",
+   "family": "revenue_yield_on_mcap",
+   "project": "NEAR Intents Value Accrual Thesis",
+   "claimed": 0.45,
+   "unit": "%/yr",
+   "quote": "**0.45% of market cap per year**",
+   "url": "https://github.com/Apihpih96/near-intents-thesis/blob/cdbe83dfba1fb6fcc9294ad01ecd37f4035da3f3/README.md",
+   "at_snapshot": {
+    "metric": "revenue_yield_on_mcap_pct_30d",
+    "ours": 0.4653510277150911,
+    "gap": 0.0341133949224247,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "revenue_yield_on_mcap_pct_30d",
+    "ours": 0.4453841348552751,
+    "gap": 0.010257478099388656,
+    "status": "reproduced",
+    "asof": "2026-10-27"
+   }
+  },
+  {
+   "id": "apih-mcap_over_revenue-103",
+   "family": "mcap_over_revenue",
+   "project": "NEAR Intents Value Accrual Thesis",
+   "claimed": 224,
+   "unit": "x",
+   "quote": "NEAR trades at ≈ **224x** its annual buyback",
+   "url": "https://github.com/Apihpih96/near-intents-thesis/blob/cdbe83dfba1fb6fcc9294ad01ecd37f4035da3f3/README.md",
+   "at_snapshot": {
+    "metric": "mcap_over_intents_revenue_annualized_30d",
+    "ours": 214.89154217840155,
+    "gap": 0.040662758132135934,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "mcap_over_intents_revenue_annualized_30d",
+    "ours": 224.5252854201787,
+    "gap": 0.002345024197226359,
+    "status": "reproduced",
+    "asof": "2026-10-27"
+   }
+  },
+  {
+   "id": "apih-intents_take_rate_bps-104",
+   "family": "intents_take_rate_bps",
+   "project": "NEAR Intents Value Accrual Thesis",
+   "claimed": 14.9,
+   "unit": "bps",
+   "quote": "0.149% of volume",
+   "url": "https://github.com/Apihpih96/near-intents-thesis/blob/cdbe83dfba1fb6fcc9294ad01ecd37f4035da3f3/README.md",
+   "at_snapshot": {
+    "metric": "intents_take_rate_bps_90d",
+    "ours": 15.500541663271859,
+    "gap": 0.040304809615560974,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_take_rate_bps_90d",
+    "ours": 15.076779961072699,
+    "gap": 0.011864426917630776,
+    "status": "reproduced",
+    "asof": "2026-10-29"
+   }
+  },
+  {
+   "id": "apih-breakeven_multiple-105",
+   "family": "breakeven_multiple",
+   "project": "NEAR Intents Value Accrual Thesis",
+   "claimed": 5.6,
+   "unit": "x",
+   "quote": "issuance ≈ 5.6x buybacks",
+   "url": "https://github.com/Apihpih96/near-intents-thesis/blob/cdbe83dfba1fb6fcc9294ad01ecd37f4035da3f3/FINDINGS.md",
+   "at_snapshot": {
+    "metric": "breakeven_multiple_90d",
+    "ours": 5.096074156567643,
+    "gap": 0.08998675775577797,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "breakeven_multiple_30d",
+    "ours": 5.600411495397405,
+    "gap": 7.348132096526454e-05,
+    "status": "reproduced",
+    "asof": "2026-10-28"
+   }
+  },
+  {
+   "id": "emeka-intents_revenue_annualized-106",
+   "family": "intents_revenue_annualized",
+   "project": "NearQuery",
+   "claimed": 26200000.0,
+   "unit": "USD/yr",
+   "quote": "captured revenue annualizes to $26.2M",
+   "url": "https://github.com/EmekaManuel/nearquery/blob/c0ee04b88991398004b38fb81313d779fc2f842f/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_revenue_annualized_30d",
+    "ours": 22113744.0,
+    "gap": 0.15596396946564886,
+    "status": "not reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_revenue_annualized_30d",
+    "ours": 26162324.0,
+    "gap": 0.0014380152671755724,
+    "status": "reproduced",
+    "asof": "2026-10-28"
+   }
+  },
+  {
+   "id": "emeka-revenue_yield_on_mcap-107",
+   "family": "revenue_yield_on_mcap",
+   "project": "NearQuery",
+   "claimed": 0.43,
+   "unit": "%/yr",
+   "quote": "annualized captured revenue is 0.43% of market cap",
+   "url": "https://github.com/EmekaManuel/nearquery/blob/c0ee04b88991398004b38fb81313d779fc2f842f/THESIS.md",
+   "at_snapshot": {
+    "metric": "revenue_yield_on_mcap_pct_30d",
+    "ours": 0.4653510277150911,
+    "gap": 0.08221169236067705,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "revenue_yield_on_mcap_pct_30d",
+    "ours": 0.4271634930914916,
+    "gap": 0.006596527694205572,
+    "status": "reproduced",
+    "asof": "2026-10-28"
+   }
+  },
+  {
+   "id": "emeka-intents_take_rate_bps-108",
+   "family": "intents_take_rate_bps",
+   "project": "NearQuery",
+   "claimed": 15.9,
+   "unit": "bps",
+   "quote": "Gross fees run 15.9 bps of reported volume",
+   "url": "https://github.com/EmekaManuel/nearquery/blob/c0ee04b88991398004b38fb81313d779fc2f842f/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_take_rate_bps_30d",
+    "ours": 15.862722159944173,
+    "gap": 0.0023445182425048507,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_take_rate_bps_30d",
+    "ours": 15.926244309080255,
+    "gap": 0.0016505854767455898,
+    "status": "reproduced",
+    "asof": "2026-10-28"
+   }
+  },
+  {
+   "id": "emeka-intents_capture_share-109",
+   "family": "intents_capture_share",
+   "project": "NearQuery",
+   "claimed": 34,
+   "unit": "%",
+   "quote": "NEAR captures 34% of that",
+   "url": "https://github.com/EmekaManuel/nearquery/blob/c0ee04b88991398004b38fb81313d779fc2f842f/THESIS.md",
+   "at_snapshot": {
+    "metric": "intents_capture_share_30d",
+    "ours": 30.492086110791426,
+    "gap": 0.10317393791789922,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "intents_capture_share_30d",
+    "ours": 34.04862542122809,
+    "gap": 0.0014301594478849508,
+    "status": "reproduced",
+    "asof": "2026-10-28"
+   }
+  },
+  {
+   "id": "shelby-staked_share-110",
+   "family": "staked_share",
+   "project": "NEAR by the Numbers",
+   "claimed": 44.31,
+   "unit": "%",
+   "quote": "(44.31% of total supply)",
+   "url": "https://github.com/icallshelby/near-thesis-model/blob/1dffbf37ce8afbfa6a090bae419929395153bb79/ANALYSIS.md",
+   "at_snapshot": {
+    "metric": "staked_share_pct",
+    "ours": 44.40622018788337,
+    "gap": 0.0021715230847070225,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "staked_share_pct",
+    "ours": 44.40622018788337,
+    "gap": 0.0021715230847070225,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "shelby-validators-111",
+   "family": "validators",
+   "project": "NEAR by the Numbers",
+   "claimed": 339,
+   "unit": "count",
+   "quote": "Validators: **339**",
+   "url": "https://github.com/icallshelby/near-thesis-model/blob/1dffbf37ce8afbfa6a090bae419929395153bb79/ANALYSIS.md",
+   "at_snapshot": {
+    "metric": "validators_current",
+    "ours": 351,
+    "gap": 0.035398230088495575,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "validators_current",
+    "ours": 351,
+    "gap": 0.035398230088495575,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "shelby-validators_to_one_third-112",
+   "family": "validators_to_one_third",
+   "project": "NEAR by the Numbers",
+   "claimed": 9,
+   "unit": "count",
+   "quote": "Nakamoto coefficient is **9**",
+   "url": "https://github.com/icallshelby/near-thesis-model/blob/1dffbf37ce8afbfa6a090bae419929395153bb79/ANALYSIS.md",
+   "at_snapshot": {
+    "metric": "validators_to_one_third",
+    "ours": 9,
+    "gap": 0.0,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "validators_to_one_third",
+    "ours": 9,
+    "gap": 0.0,
+    "status": "reproduced",
+    "asof": "2026-11-10"
+   }
+  },
+  {
+   "id": "bear-intents_volume_alltime-113",
+   "family": "intents_volume_alltime",
+   "project": "The Bear Case, Run Live",
+   "claimed": 37006000000.0,
+   "unit": "USD",
+   "quote": "DefiLlama cumulative volume $37.006B",
+   "url": "https://github.com/Revaaa28/near-bear-case/blob/4b4705c5cb78e802b49cbf1843bcab9d8cea003d/README.md",
+   "at_snapshot": {
+    "metric": "intents_volume_alltime",
+    "ours": 37324522122.0,
+    "gap": 0.00860731021996433,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "intents_volume_alltime",
+    "ours": 37005533919.0,
+    "gap": 1.2594741393287576e-05,
+    "status": "reproduced",
+    "asof": "2026-11-08"
+   }
+  },
+  {
+   "id": "bear-active_accounts_per_day-114",
+   "family": "active_accounts_per_day",
+   "project": "The Bear Case, Run Live",
+   "claimed": 58223,
+   "unit": "per day",
+   "quote": "Trailing-30d daily active accounts average 58,223",
+   "url": "https://github.com/Revaaa28/near-bear-case/blob/4b4705c5cb78e802b49cbf1843bcab9d8cea003d/README.md",
+   "at_snapshot": {
+    "metric": "active_accounts_per_day_30d",
+    "ours": 62310.9,
+    "gap": 0.07021108496642223,
+    "status": "close"
+   },
+   "best_dated": {
+    "metric": "active_accounts_per_day_30d",
+    "ours": 58222.73333333333,
+    "gap": 4.5800914873857775e-06,
+    "status": "reproduced",
+    "asof": "2026-11-09"
+   }
+  },
+  {
+   "id": "oren-tx_yoy-115",
+   "family": "tx_yoy",
+   "project": "NEAR, on evidence",
+   "claimed": -84.4,
+   "unit": "%",
+   "quote": "| Daily transactions | 733,948 | **-84.4%** |",
+   "url": "https://gitlab.com/orenrot/near-thesis/-/blob/3c0171d81d93c555fe16d33d97e7b57b1616df27/THESIS.md",
+   "at_snapshot": {
+    "metric": "tx_yoy_90d",
+    "ours": -84.02474537124363,
+    "gap": 0.004446144890478439,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "tx_yoy_90d",
+    "ours": -84.40014213924363,
+    "gap": 1.6841142609169004e-06,
+    "status": "reproduced",
+    "asof": "2026-10-31"
+   }
+  },
+  {
+   "id": "oren-active_accounts_yoy-116",
+   "family": "active_accounts_yoy",
+   "project": "NEAR, on evidence",
+   "claimed": -76.2,
+   "unit": "%",
+   "quote": "| Daily active accounts | 71,044 | **-76.2%** |",
+   "url": "https://gitlab.com/orenrot/near-thesis/-/blob/3c0171d81d93c555fe16d33d97e7b57b1616df27/THESIS.md",
+   "at_snapshot": {
+    "metric": "active_accounts_yoy_30d",
+    "ours": -76.28304789580271,
+    "gap": 0.001089867398985659,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "active_accounts_yoy_90d",
+    "ours": -76.21267256051402,
+    "gap": 0.00016630656842545193,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "oren-l1_fees_usd_yoy-117",
+   "family": "l1_fees_usd_yoy",
+   "project": "NEAR, on evidence",
+   "claimed": -55.3,
+   "unit": "%",
+   "quote": "| Daily fees (USD) | $3,934 | **-55.3%** |",
+   "url": "https://gitlab.com/orenrot/near-thesis/-/blob/3c0171d81d93c555fe16d33d97e7b57b1616df27/THESIS.md",
+   "at_snapshot": {
+    "metric": "l1_fees_usd_yoy_90d",
+    "ours": -52.66433681257239,
+    "gap": 0.047661178796159324,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "l1_fees_usd_yoy_90d",
+    "ours": -55.29653317204178,
+    "gap": 6.269128315046328e-05,
+    "status": "reproduced",
+    "asof": "2026-11-02"
+   }
+  },
+  {
+   "id": "oren-price_yoy-118",
+   "family": "price_yoy",
+   "project": "NEAR, on evidence",
+   "claimed": 97.3,
+   "unit": "%",
+   "quote": "| NEAR price | $1.73 → $4.29 | **+97.3%** |",
+   "url": "https://gitlab.com/orenrot/near-thesis/-/blob/3c0171d81d93c555fe16d33d97e7b57b1616df27/THESIS.md",
+   "at_snapshot": {
+    "metric": "price_yoy_30d_avg",
+    "ours": 97.79631931610413,
+    "gap": 0.005100917945571784,
+    "status": "reproduced"
+   },
+   "best_dated": {
+    "metric": "price_yoy",
+    "ours": 97.34150965480595,
+    "gap": 0.00042661515730677783,
+    "status": "reproduced",
+    "asof": "2026-11-02"
    }
   }
  ]

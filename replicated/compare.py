@@ -55,7 +55,7 @@ def run(snapshot: str) -> dict:
         rows.append({
             "id": c["id"], "family": c["family"], "project": src["project"], "claimed": c["value"], "unit": c["unit"],
             "quote": c["quote"],
-            "url": f"https://github.com/{src['repo']}/blob/{src['commit']}/{c['file']}",
+            "url": f"https://{'gitlab.com' if src.get('host') == 'gitlab' else 'github.com'}/{src['repo']}/{'-/' if src.get('host') == 'gitlab' else ''}blob/{src['commit']}/{c['file']}",
             "at_snapshot": {"metric": id0, "ours": v0, "gap": g0, "status": status(g0)},
             "best_dated": {"metric": idb, "ours": vb, "gap": gb, "status": status(gb), "asof": dayb},
         })

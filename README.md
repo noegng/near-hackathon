@@ -15,7 +15,7 @@ Needs Python 3.9+ and nothing else (standard library only).
 | Do | See |
 | --- | --- |
 | `python3 -m unittest discover -s tests` | 38 tests pass, offline, in about a second |
-| `python3 -m replicated.build` | `out/metrics.json`: about 120 metrics, each with its definition, from the committed raw snapshot |
+| `python3 -m replicated.build` | `out/metrics.json`: about 130 metrics, each with its definition, from the committed raw snapshot |
 | `python3 -m replicated.compare` | `out/replication.md`: every published claim next to our number, and the spread per metric |
 | `python3 -m replicated.checks` | the thesis's five kill conditions evaluated (all hold today) and four dated predictions (pending) |
 | `python3 -m replicated.verify_claims` | (network) every quoted claim is found verbatim in its source file at the pinned commit |
@@ -38,7 +38,7 @@ Needs Python 3.9+ and nothing else (standard library only).
 
 ## Results (snapshot 2026-11-11)
 
-- 98 numbers from 15 repositories: 75 are within 5% of our recomputation on the snapshot day, 88 when the day may
+- 119 numbers from 20 repositories: 89 are within 5% of our recomputation on the snapshot day, 109 when the day may
   move within two weeks. Full table: [`out/replication.md`](out/replication.md).
 - The numbers that differ most between teams differ by definition, not by error. NEAR's price change over one year
   is +19% from day to day and +98% between 30-day averages; both appear in published theses.
@@ -51,7 +51,9 @@ Needs Python 3.9+ and nothing else (standard library only).
 ## Limits
 
 - Claims were extracted by reading each README and THESIS file, so the registry is a sample, not a census
-  of everything each team published. Theses without a public repository linked from their demo post are absent.
+  of everything each team published. Theses without a public repository linked from their demo post are absent,
+  and so are two repositories we read that publish no number in these metric families (`l3ockydev/near-thesis-dashboard`:
+  TVL against price; `3Nerion7/near-feelens`: a gas and storage cost model).
 - The dated search tries several definitions and 15 days per claim. A match shows that a standard
   definition on a nearby day gives the published number, not that the team computed it that way.
 - DefiLlama restates recent days: three teams quote a 30-day fee total of $5,458,382 that the current series does

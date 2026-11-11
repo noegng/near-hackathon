@@ -169,6 +169,61 @@
     "bigquery",
     "nearblocks"
    ]
+  },
+  "apih": {
+   "project": "NEAR Intents Value Accrual Thesis",
+   "repo": "Apihpih96/near-intents-thesis",
+   "commit": "cdbe83dfba1fb6fcc9294ad01ecd37f4035da3f3",
+   "mentions": [
+    "coingecko",
+    "defillama",
+    "nearblocks"
+   ]
+  },
+  "emeka": {
+   "project": "NearQuery",
+   "repo": "EmekaManuel/nearquery",
+   "commit": "c0ee04b88991398004b38fb81313d779fc2f842f",
+   "mentions": [
+    "bigquery",
+    "defillama",
+    "dune",
+    "intents_explorer",
+    "rpc"
+   ]
+  },
+  "shelby": {
+   "project": "NEAR by the Numbers",
+   "repo": "icallshelby/near-thesis-model",
+   "commit": "1dffbf37ce8afbfa6a090bae419929395153bb79",
+   "mentions": [
+    "coingecko",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "bear": {
+   "project": "The Bear Case, Run Live",
+   "repo": "Revaaa28/near-bear-case",
+   "commit": "4b4705c5cb78e802b49cbf1843bcab9d8cea003d",
+   "mentions": [
+    "defillama",
+    "dune",
+    "intents_explorer",
+    "nearblocks",
+    "rpc"
+   ]
+  },
+  "oren": {
+   "project": "NEAR, on evidence",
+   "repo": "orenrot/near-thesis",
+   "commit": "3c0171d81d93c555fe16d33d97e7b57b1616df27",
+   "mentions": [
+    "bigquery",
+    "defillama",
+    "nearblocks"
+   ],
+   "host": "gitlab"
   }
  },
  "claims": [
@@ -933,7 +988,8 @@
    "file": "THESIS.md",
    "quote": "Transactions/day are -85.1% YoY",
    "candidates": [
-    "tx_yoy_30d"
+    "tx_yoy_30d",
+    "tx_yoy_90d"
    ]
   },
   {
@@ -945,7 +1001,8 @@
    "file": "THESIS.md",
    "quote": "transactions -84.2%",
    "candidates": [
-    "tx_yoy_30d"
+    "tx_yoy_30d",
+    "tx_yoy_90d"
    ]
   },
   {
@@ -957,7 +1014,8 @@
    "file": "THESIS.md",
    "quote": "transactions fell 85%",
    "candidates": [
-    "tx_yoy_30d"
+    "tx_yoy_30d",
+    "tx_yoy_90d"
    ]
   },
   {
@@ -969,7 +1027,8 @@
    "file": "THESIS.md",
    "quote": "txns −84% YoY",
    "candidates": [
-    "tx_yoy_30d"
+    "tx_yoy_30d",
+    "tx_yoy_90d"
    ]
   },
   {
@@ -981,7 +1040,8 @@
    "file": "THESIS.md",
    "quote": "(−85% YoY)",
    "candidates": [
-    "tx_yoy_30d"
+    "tx_yoy_30d",
+    "tx_yoy_90d"
    ]
   },
   {
@@ -993,7 +1053,8 @@
    "file": "README.md",
    "quote": "(tx/day −85% YoY)",
    "candidates": [
-    "tx_yoy_30d"
+    "tx_yoy_30d",
+    "tx_yoy_90d"
    ]
   },
   {
@@ -1044,7 +1105,8 @@
    "file": "THESIS.md",
    "quote": "active accounts -73.5%",
    "candidates": [
-    "active_accounts_yoy_30d"
+    "active_accounts_yoy_30d",
+    "active_accounts_yoy_90d"
    ]
   },
   {
@@ -1056,7 +1118,8 @@
    "file": "THESIS.md",
    "quote": "Active accounts −76%",
    "candidates": [
-    "active_accounts_yoy_30d"
+    "active_accounts_yoy_30d",
+    "active_accounts_yoy_90d"
    ]
   },
   {
@@ -1068,7 +1131,8 @@
    "file": "THESIS.md",
    "quote": "(−77% YoY)",
    "candidates": [
-    "active_accounts_yoy_30d"
+    "active_accounts_yoy_30d",
+    "active_accounts_yoy_90d"
    ]
   },
   {
@@ -1080,7 +1144,8 @@
    "file": "THESIS.md",
    "quote": "Daily active accounts fell 78%",
    "candidates": [
-    "active_accounts_yoy_30d"
+    "active_accounts_yoy_30d",
+    "active_accounts_yoy_90d"
    ]
   },
   {
@@ -1118,7 +1183,8 @@
    "file": "THESIS.md",
    "quote": "new accounts -96.2%",
    "candidates": [
-    "new_accounts_yoy_30d"
+    "new_accounts_yoy_30d",
+    "new_accounts_yoy_90d"
    ]
   },
   {
@@ -1130,7 +1196,8 @@
    "file": "THESIS.md",
    "quote": "new accounts fell 96%",
    "candidates": [
-    "new_accounts_yoy_30d"
+    "new_accounts_yoy_30d",
+    "new_accounts_yoy_90d"
    ]
   },
   {
@@ -1142,7 +1209,8 @@
    "file": "THESIS.md",
    "quote": "new accounts −96%",
    "candidates": [
-    "new_accounts_yoy_30d"
+    "new_accounts_yoy_30d",
+    "new_accounts_yoy_90d"
    ]
   },
   {
@@ -1283,7 +1351,8 @@
    "quote": "price is +96.4%",
    "candidates": [
     "price_yoy",
-    "price_yoy_30d_avg"
+    "price_yoy_30d_avg",
+    "price_yoy_90d_avg"
    ]
   },
   {
@@ -1296,7 +1365,8 @@
    "quote": "a 19% rise across a year",
    "candidates": [
     "price_yoy",
-    "price_yoy_30d_avg"
+    "price_yoy_30d_avg",
+    "price_yoy_90d_avg"
    ]
   },
   {
@@ -1482,7 +1552,8 @@
    "file": "THESIS.md",
    "quote": "L1 gas fees moved -40.0% YoY in USD",
    "candidates": [
-    "l1_fees_usd_yoy_30d"
+    "l1_fees_usd_yoy_30d",
+    "l1_fees_usd_yoy_90d"
    ]
   },
   {
@@ -1494,7 +1565,8 @@
    "file": "THESIS.md",
    "quote": "fees in USD -27.6%",
    "candidates": [
-    "l1_fees_usd_yoy_30d"
+    "l1_fees_usd_yoy_30d",
+    "l1_fees_usd_yoy_90d"
    ]
   },
   {
@@ -1519,6 +1591,275 @@
    "quote": "Intents was 83.9% of all DEX volume attributed to NEAR over the last 90 days",
    "candidates": [
     "intents_share_of_near_dex_volume_30d"
+   ]
+  },
+  {
+   "id": "apih-intents_volume_30d-098",
+   "source": "apih",
+   "family": "intents_volume_30d",
+   "value": 3860000000.0,
+   "unit": "USD",
+   "file": "FINDINGS.md",
+   "quote": "$3.86B volume",
+   "candidates": [
+    "intents_volume_30d"
+   ]
+  },
+  {
+   "id": "apih-intents_fees_30d-099",
+   "source": "apih",
+   "family": "intents_fees_30d",
+   "value": 5750000.0,
+   "unit": "USD",
+   "file": "FINDINGS.md",
+   "quote": "$5.75M fees",
+   "candidates": [
+    "intents_fees_30d"
+   ]
+  },
+  {
+   "id": "apih-intents_capture_share-100",
+   "source": "apih",
+   "family": "intents_capture_share",
+   "value": 36.9,
+   "unit": "%",
+   "file": "FINDINGS.md",
+   "quote": "$2.12M captured = 36.9% of fees",
+   "candidates": [
+    "intents_capture_share_30d",
+    "intents_capture_share_90d",
+    "intents_capture_share_365d"
+   ]
+  },
+  {
+   "id": "apih-intents_revenue_annualized-101",
+   "source": "apih",
+   "family": "intents_revenue_annualized",
+   "value": 25800000.0,
+   "unit": "USD/yr",
+   "file": "FINDINGS.md",
+   "quote": "buybacks are $25.8M a year",
+   "candidates": [
+    "intents_revenue_annualized_30d",
+    "intents_revenue_annualized_90d"
+   ]
+  },
+  {
+   "id": "apih-revenue_yield_on_mcap-102",
+   "source": "apih",
+   "family": "revenue_yield_on_mcap",
+   "value": 0.45,
+   "unit": "%/yr",
+   "file": "README.md",
+   "quote": "**0.45% of market cap per year**",
+   "candidates": [
+    "revenue_yield_on_mcap_pct_30d"
+   ]
+  },
+  {
+   "id": "apih-mcap_over_revenue-103",
+   "source": "apih",
+   "family": "mcap_over_revenue",
+   "value": 224,
+   "unit": "x",
+   "file": "README.md",
+   "quote": "NEAR trades at ≈ **224x** its annual buyback",
+   "candidates": [
+    "mcap_over_intents_revenue_annualized_30d"
+   ]
+  },
+  {
+   "id": "apih-intents_take_rate_bps-104",
+   "source": "apih",
+   "family": "intents_take_rate_bps",
+   "value": 14.9,
+   "unit": "bps",
+   "file": "README.md",
+   "quote": "0.149% of volume",
+   "candidates": [
+    "intents_take_rate_bps_30d",
+    "intents_take_rate_bps_90d",
+    "intents_take_rate_bps_365d"
+   ]
+  },
+  {
+   "id": "apih-breakeven_multiple-105",
+   "source": "apih",
+   "family": "breakeven_multiple",
+   "value": 5.6,
+   "unit": "x",
+   "file": "FINDINGS.md",
+   "quote": "issuance ≈ 5.6x buybacks",
+   "candidates": [
+    "breakeven_multiple_30d",
+    "breakeven_multiple_90d",
+    "breakeven_multiple_365d"
+   ]
+  },
+  {
+   "id": "emeka-intents_revenue_annualized-106",
+   "source": "emeka",
+   "family": "intents_revenue_annualized",
+   "value": 26200000.0,
+   "unit": "USD/yr",
+   "file": "THESIS.md",
+   "quote": "captured revenue annualizes to $26.2M",
+   "candidates": [
+    "intents_revenue_annualized_30d",
+    "intents_revenue_annualized_90d"
+   ]
+  },
+  {
+   "id": "emeka-revenue_yield_on_mcap-107",
+   "source": "emeka",
+   "family": "revenue_yield_on_mcap",
+   "value": 0.43,
+   "unit": "%/yr",
+   "file": "THESIS.md",
+   "quote": "annualized captured revenue is 0.43% of market cap",
+   "candidates": [
+    "revenue_yield_on_mcap_pct_30d"
+   ]
+  },
+  {
+   "id": "emeka-intents_take_rate_bps-108",
+   "source": "emeka",
+   "family": "intents_take_rate_bps",
+   "value": 15.9,
+   "unit": "bps",
+   "file": "THESIS.md",
+   "quote": "Gross fees run 15.9 bps of reported volume",
+   "candidates": [
+    "intents_take_rate_bps_30d",
+    "intents_take_rate_bps_90d",
+    "intents_take_rate_bps_365d"
+   ]
+  },
+  {
+   "id": "emeka-intents_capture_share-109",
+   "source": "emeka",
+   "family": "intents_capture_share",
+   "value": 34,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "NEAR captures 34% of that",
+   "candidates": [
+    "intents_capture_share_30d",
+    "intents_capture_share_90d",
+    "intents_capture_share_365d"
+   ]
+  },
+  {
+   "id": "shelby-staked_share-110",
+   "source": "shelby",
+   "family": "staked_share",
+   "value": 44.31,
+   "unit": "%",
+   "file": "ANALYSIS.md",
+   "quote": "(44.31% of total supply)",
+   "candidates": [
+    "staked_share_pct"
+   ]
+  },
+  {
+   "id": "shelby-validators-111",
+   "source": "shelby",
+   "family": "validators",
+   "value": 339,
+   "unit": "count",
+   "file": "ANALYSIS.md",
+   "quote": "Validators: **339**",
+   "candidates": [
+    "validators_current"
+   ]
+  },
+  {
+   "id": "shelby-validators_to_one_third-112",
+   "source": "shelby",
+   "family": "validators_to_one_third",
+   "value": 9,
+   "unit": "count",
+   "file": "ANALYSIS.md",
+   "quote": "Nakamoto coefficient is **9**",
+   "candidates": [
+    "validators_to_one_third"
+   ]
+  },
+  {
+   "id": "bear-intents_volume_alltime-113",
+   "source": "bear",
+   "family": "intents_volume_alltime",
+   "value": 37006000000.0,
+   "unit": "USD",
+   "file": "README.md",
+   "quote": "DefiLlama cumulative volume $37.006B",
+   "candidates": [
+    "intents_volume_alltime"
+   ]
+  },
+  {
+   "id": "bear-active_accounts_per_day-114",
+   "source": "bear",
+   "family": "active_accounts_per_day",
+   "value": 58223,
+   "unit": "per day",
+   "file": "README.md",
+   "quote": "Trailing-30d daily active accounts average 58,223",
+   "candidates": [
+    "active_accounts_per_day_30d"
+   ]
+  },
+  {
+   "id": "oren-tx_yoy-115",
+   "source": "oren",
+   "family": "tx_yoy",
+   "value": -84.4,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "| Daily transactions | 733,948 | **-84.4%** |",
+   "candidates": [
+    "tx_yoy_30d",
+    "tx_yoy_90d"
+   ]
+  },
+  {
+   "id": "oren-active_accounts_yoy-116",
+   "source": "oren",
+   "family": "active_accounts_yoy",
+   "value": -76.2,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "| Daily active accounts | 71,044 | **-76.2%** |",
+   "candidates": [
+    "active_accounts_yoy_30d",
+    "active_accounts_yoy_90d"
+   ]
+  },
+  {
+   "id": "oren-l1_fees_usd_yoy-117",
+   "source": "oren",
+   "family": "l1_fees_usd_yoy",
+   "value": -55.3,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "| Daily fees (USD) | $3,934 | **-55.3%** |",
+   "candidates": [
+    "l1_fees_usd_yoy_30d",
+    "l1_fees_usd_yoy_90d"
+   ]
+  },
+  {
+   "id": "oren-price_yoy-118",
+   "source": "oren",
+   "family": "price_yoy",
+   "value": 97.3,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "| NEAR price | $1.73 → $4.29 | **+97.3%** |",
+   "candidates": [
+    "price_yoy",
+    "price_yoy_30d_avg",
+    "price_yoy_90d_avg"
    ]
   }
  ]

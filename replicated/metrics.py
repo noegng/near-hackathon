@@ -143,6 +143,7 @@ def compute(raw: dict, asof: int | None = None) -> dict:
         now30 = wavg(s, asof, 30)
         put(f"{name}_per_day_30d", now30, "per day", f"Mean daily {key}, 30 days to asof.")
         put(f"{name}_yoy_30d", pct_change(now30, wavg(s, asof - 365 * DAY, 30)), "%", f"30-day mean {key} vs the 30 days ending 365 days earlier.")
+        put(f"{name}_yoy_90d", pct_change(wavg(s, asof, 90), wavg(s, asof - 365 * DAY, 90)), "%", f"90-day mean {key} vs the 90 days ending 365 days earlier.")
         pk, pk_day = peak_avg(s, asof, 30)
         put(f"{name}_vs_peak_30d", pct_change(now30, pk), "%", f"30-day mean {key} vs the highest 30-day mean on record (ending {iso(pk_day)}).")
         pk1, pk1_day = max((v, d) for d, v in s.items() if d <= asof)
@@ -180,6 +181,7 @@ def compute(raw: dict, asof: int | None = None) -> dict:
         put(f"intents_fees_over_l1_fees_{n}d", wsum(fees, asof, n) / wsum(nb["fee_usd"], asof, n), "x", f"Gross Intents fees / L1 fees in USD, {n} days.")
         put(f"intents_revenue_over_l1_fees_{n}d", wsum(rev, asof, n) / wsum(nb["fee_usd"], asof, n), "x", f"Captured Intents revenue / L1 fees in USD, {n} days.")
     put("l1_fees_usd_yoy_30d", pct_change(wsum(nb["fee_usd"], asof, 30), wsum(nb["fee_usd"], asof - 365 * DAY, 30)), "%", "30-day L1 fees in USD vs a year earlier.")
+    put("l1_fees_usd_yoy_90d", pct_change(wsum(nb["fee_usd"], asof, 90), wsum(nb["fee_usd"], asof - 365 * DAY, 90)), "%", "90-day L1 fees in USD vs a year earlier.")
     put("l1_fees_near_yoy_30d", pct_change(wsum(nb["fee_near"], asof, 30), wsum(nb["fee_near"], asof - 365 * DAY, 30)), "%", "30-day L1 fees in NEAR vs a year earlier.")
 
     # --- Revenue wallets read on chain (independent of DefiLlama and Dune) ---
@@ -244,6 +246,7 @@ def compute(raw: dict, asof: int | None = None) -> dict:
     put("price_usd", nb["price"][asof], "USD", "NearBlocks daily price on asof.")
     put("price_yoy", pct_change(nb["price"][asof], nb["price"][asof - 365 * DAY]), "%", "Price on asof vs 365 days earlier.")
     put("price_yoy_30d_avg", pct_change(wavg(nb["price"], asof, 30), wavg(nb["price"], asof - 365 * DAY, 30)), "%", "30-day mean price vs a year earlier.")
+    put("price_yoy_90d_avg", pct_change(wavg(nb["price"], asof, 90), wavg(nb["price"], asof - 365 * DAY, 90)), "%", "90-day mean price vs a year earlier.")
     put("market_cap_usd", mc, "USD", "NearBlocks market cap on asof (circulating supply x price).")
     put("mcap_over_intents_fees_annualized_30d", mc / (wsum(fees, asof, 30) * 365 / 30), "x", "Market cap / (30-day gross fees annualized).")
     put("mcap_over_intents_revenue_annualized_30d", mc / (wsum(rev, asof, 30) * 365 / 30), "x", "Market cap / (30-day captured revenue annualized).")

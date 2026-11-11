@@ -11,13 +11,19 @@ from .fetch import http
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def raw_url(src: dict, file: str) -> str:
+    if src.get("host") == "gitlab":
+        return f"https://gitlab.com/{src['repo']}/-/raw/{src['commit']}/{file}"
+    return f"https://raw.githubusercontent.com/{src['repo']}/{src['commit']}/{file}"
+
+
 def main() -> int:
     reg = json.loads((ROOT / "claims" / "claims.json").read_text())
     cache: dict[str, str] = {}
     missing = 0
     for c in reg["claims"]:
         s = reg["sources"][c["source"]]
-        url = f"https://raw.githubusercontent.com/{s['repo']}/{s['commit']}/{c['file']}"
+        url = raw_url(s, c["file"])
         if url not in cache:
             cache[url] = http(url).decode("utf-8", "replace")
         if c["quote"] not in cache[url]:
