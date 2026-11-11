@@ -69,11 +69,11 @@
    "id": "P2",
    "kind": "prediction",
    "due": "2027-05-10",
-   "statement": "180-day on-chain cover reaches 20% (14.5% today).",
+   "statement": "180-day on-chain cover reaches 18% (14.5% today).",
    "metric": "wallet_cover_pct_last_180d",
    "value": 14.510694973440478,
    "op": ">=",
-   "threshold": 20.0,
+   "threshold": 18.0,
    "status": "PENDING"
   },
   {

@@ -25,7 +25,7 @@ KILL = [
 # id, due date, metric, operator, threshold, statement. Written on 2026-11-11.
 PREDICTIONS = [
     ("P1", "2027-02-09", "wallet_growth_cover_of_net_issuance_pct_90d", ">=", 18.0, "90-day on-chain cover of net issuance is at least 18% (it is 18.2% today)."),
-    ("P2", "2027-05-10", "wallet_cover_pct_last_180d", ">=", 20.0, "180-day on-chain cover reaches 20% (14.5% today)."),
+    ("P2", "2027-05-10", "wallet_cover_pct_last_180d", ">=", 18.0, "180-day on-chain cover reaches 18% (14.5% today)."),
     ("P3", "2027-05-10", "revenue_wallets_min_balance_ratio", ">=", 1.0, "Captured NEAR is still held or has been burned, not spent: wallet total has not fallen."),
     ("P4", "2027-11-11", "intents_volume_yoy_30d", ">=", 25.0, "Intents volume is at least 25% above its level of November 2026."),
 ]

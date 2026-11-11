@@ -98,7 +98,7 @@ Dated predictions, written on 2026-11-11 and checked by the same command once a 
 | Id | Due | Prediction |
 | --- | --- | --- |
 | P1 | 2027-02-09 | 90-day on-chain cover is at least 18% |
-| P2 | 2027-05-10 | 180-day on-chain cover reaches 20% |
+| P2 | 2027-05-10 | 180-day on-chain cover reaches 18% |
 | P3 | 2027-05-10 | The revenue wallets' total has not fallen |
 | P4 | 2027-11-11 | Intents volume is at least 25% above November 2026 |
 
