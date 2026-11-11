@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Raw snapshots are stored byte for byte: their SHA-256 is recorded in manifest.json
+data/raw/** -text

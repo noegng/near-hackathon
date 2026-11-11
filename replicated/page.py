@@ -12,7 +12,7 @@ from . import build, checks, compare, metrics
 
 ROOT = Path(__file__).resolve().parent.parent
 E = html.escape
-REPO_URL = ""  # set to the public repository URL once it exists; until then the page links relatively
+REPO_URL = "https://github.com/noegng/near-hackathon"  # empty makes the page link relatively
 
 CSS = """
 :root{color-scheme:light;--surface:#fcfcfb;--panel:#f3f2ef;--text:#0b0b0b;--text2:#52514e;--muted:#8a8985;--grid:#e3e2de;
