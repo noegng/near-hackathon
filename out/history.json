@@ -1,0 +1,30 @@
+{
+ "thesis_snapshot": "2026-11-11",
+ "snapshots": [
+  {
+   "snapshot": "2026-11-11",
+   "asof": "2026-11-10",
+   "metrics": {
+    "intents_volume_30d": 3757732084.0,
+    "intents_fees_30d": 5960786.0,
+    "intents_revenue_30d": 1817568.0,
+    "wallet_growth_cover_of_net_issuance_pct_90d": 18.21028405636626,
+    "wallet_growth_over_defillama_revenue_90d": 0.9765623744438459,
+    "tx_per_day_30d": 657883.6,
+    "price_usd": 3.62401893
+   },
+   "checks": {
+    "K1": "HOLDS",
+    "K2": "HOLDS",
+    "K3": "HOLDS",
+    "K4": "HOLDS",
+    "K5": "HOLDS",
+    "P1": "PENDING",
+    "P2": "PENDING",
+    "P3": "PENDING",
+    "P4": "PENDING"
+   }
+  }
+ ],
+ "restatements": []
+}

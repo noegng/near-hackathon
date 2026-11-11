@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import math
 from datetime import datetime, timezone
+from math import fsum  # exact float sums: the same result on every Python version
 
 DAY = 86400
 YOCTO = 10**24
@@ -55,7 +56,7 @@ def window(series: dict[int, float], end: int, days: int) -> list[float]:
 
 
 def wsum(series, end, days) -> float:
-    return sum(window(series, end, days))
+    return fsum(window(series, end, days))
 
 
 def wavg(series, end, days) -> float:
@@ -125,7 +126,7 @@ def compute(raw: dict, asof: int | None = None) -> dict:
         put(f"intents_revenue_{n}d", wsum(rev, asof, n), "USD", f"Sum of DefiLlama daily revenue captured by NEAR wallets, {n} days to asof.")
         put(f"intents_take_rate_bps_{n}d", wsum(fees, asof, n) / wsum(vol, asof, n) * 1e4, "bps", f"Gross fees / volume, {n} days.")
         put(f"intents_capture_share_{n}d", wsum(rev, asof, n) / wsum(fees, asof, n) * 100, "%", f"Captured revenue / gross fees, {n} days.")
-    put("intents_volume_alltime", sum(v for d, v in vol.items() if d <= asof), "USD", "Sum of the whole DefiLlama daily volume series to asof.")
+    put("intents_volume_alltime", fsum(v for d, v in vol.items() if d <= asof), "USD", "Sum of the whole DefiLlama daily volume series to asof.")
     put("intents_volume_avg_30d", wavg(vol, asof, 30), "USD/day", "Mean daily volume, 30 days to asof.")
     put("intents_volume_yoy_30d", pct_change(wavg(vol, asof, 30), wavg(vol, asof - 365 * DAY, 30)), "%",
         "30-day mean daily volume vs the 30 days ending 365 days earlier.")
@@ -161,7 +162,7 @@ def compute(raw: dict, asof: int | None = None) -> dict:
     for n in (30, 90, 365):
         fee_near = wsum(nb["fee_near"], asof, n)
         net = nb["supply_near"][asof] - nb["supply_near"][asof - n * DAY]
-        rev_near = sum(rev[asof - k * DAY] / nb["price"][asof - k * DAY] for k in range(n))
+        rev_near = fsum(rev[asof - k * DAY] / nb["price"][asof - k * DAY] for k in range(n))
         price = nb["price"][asof]
         put(f"l1_fees_near_{n}d", fee_near, "NEAR", f"Sum of NearBlocks daily txn_fee, {n} days.")
         put(f"l1_fees_usd_{n}d", wsum(nb["fee_usd"], asof, n), "USD", f"Sum of NearBlocks daily txn_fee_usd, {n} days.")
@@ -199,7 +200,7 @@ def compute(raw: dict, asof: int | None = None) -> dict:
                 grown = wb[end_rpc] - wb[d0]
                 net = supply_at(supply, end_rpc) - supply_at(supply, d0)
                 # RPC samples are taken at the first block of a day, so the window is the n days before end_rpc.
-                llama_near = sum(rev[end_rpc - k * DAY] / nb["price"][end_rpc - k * DAY] for k in range(1, n + 1))
+                llama_near = fsum(rev[end_rpc - k * DAY] / nb["price"][end_rpc - k * DAY] for k in range(1, n + 1))
                 put(f"revenue_wallets_growth_near_{n}d", grown, "NEAR", f"Change in revenue wallet holdings over the {n} days before {iso(end_rpc)}.")
                 put(f"wallet_growth_cover_of_net_issuance_pct_{n}d", grown / net * 100, "%",
                     f"Growth of revenue wallet holdings / growth of total supply, both from archival RPC, {n} days.")
@@ -217,7 +218,7 @@ def compute(raw: dict, asof: int | None = None) -> dict:
         cum, track = 0.0, []
         for x in ds:
             if x > ds[0]:
-                cum += sum(rev.get(x - k * DAY, 0.0) / nb["price"][x - k * DAY] for k in range(1, (x - prev) // DAY + 1) if nb["price"].get(x - k * DAY))
+                cum += fsum(rev.get(x - k * DAY, 0.0) / nb["price"][x - k * DAY] for k in range(1, (x - prev) // DAY + 1) if nb["price"].get(x - k * DAY))
             track.append({"day": iso(x), "wallets_near": wb[x], "defillama_cumulative_near": cum + wb[ds[0]]})
             prev = x
         series["wallets_vs_reported"] = track

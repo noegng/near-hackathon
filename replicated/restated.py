@@ -4,6 +4,7 @@ Usage: python3 -m replicated.restated <older> <newer>
 """
 from __future__ import annotations
 
+import math
 import sys
 
 from . import build, metrics
@@ -15,7 +16,7 @@ def diff(old: dict[int, float], new: dict[int, float]) -> dict:
     common = sorted(set(old) & set(new))
     changed = [(d, old[d], new[d]) for d in common if old[d] != new[d]]
     return {"days_compared": len(common), "days_changed": len(changed),
-            "sum_old": sum(old[d] for d in common), "sum_new": sum(new[d] for d in common), "changed": changed}
+            "sum_old": math.fsum(old[d] for d in common), "sum_new": math.fsum(new[d] for d in common), "changed": changed}
 
 
 def main(argv: list[str]) -> int:

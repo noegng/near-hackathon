@@ -108,7 +108,7 @@ def markdown(res: dict) -> str:
 
 
 def main() -> int:
-    res = run(build.latest_snapshot())
+    res = run(build.thesis_snapshot())
     out = ROOT / "out"
     out.mkdir(exist_ok=True)
     (out / "replication.json").write_text(json.dumps(res, indent=1, ensure_ascii=False) + "\n")

@@ -19,8 +19,19 @@ def latest_snapshot() -> str:
     return sorted(p.name for p in (ROOT / "data" / "raw").iterdir() if p.is_dir())[-1]
 
 
+def all_snapshots() -> list[str]:
+    return sorted(p.name for p in (ROOT / "data" / "raw").iterdir() if p.is_dir())
+
+
+def thesis_snapshot() -> str:
+    """The snapshot THESIS.md, out/ and the page are written from. New snapshots are added
+    every day (see replicated.history); the thesis moves to one only when its text is revised."""
+    pin = ROOT / "data" / "THESIS_SNAPSHOT"
+    return pin.read_text().strip() if pin.exists() else latest_snapshot()
+
+
 def main(argv: list[str]) -> int:
-    snap = argv[1] if len(argv) > 1 else latest_snapshot()
+    snap = argv[1] if len(argv) > 1 else thesis_snapshot()
     result = {"snapshot": snap, **metrics.compute(load_raw(snap))}
     out = ROOT / "out"
     out.mkdir(exist_ok=True)

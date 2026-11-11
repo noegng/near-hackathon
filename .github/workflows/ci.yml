@@ -1,0 +1,28 @@
+name: tests and rebuild
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.9", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Tests (offline, standard library only)
+        run: python -m unittest discover -s tests
+      - name: Rebuild every output from the committed raw snapshots
+        run: |
+          python -m replicated.build
+          python -m replicated.compare
+          python -m replicated.checks
+          python -m replicated.history
+          python -m replicated.page
+      - name: The committed outputs are exactly what the build produces
+        run: git diff --exit-code -- out docs

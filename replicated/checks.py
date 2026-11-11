@@ -61,7 +61,7 @@ def evaluate(result: dict) -> list[dict]:
 
 
 def main() -> int:
-    snap = build.latest_snapshot()
+    snap = build.thesis_snapshot()
     result = metrics.compute(build.load_raw(snap))
     rows = evaluate(result)
     (ROOT / "out").mkdir(exist_ok=True)

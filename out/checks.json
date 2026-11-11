@@ -16,7 +16,7 @@
    "kind": "kill",
    "statement": "Reported captured revenue matches what the revenue wallets received on chain (90 days).",
    "metric": "wallet_growth_over_defillama_revenue_90d",
-   "value": 0.9765623744438456,
+   "value": 0.9765623744438459,
    "op": "between",
    "threshold": [
     0.9,

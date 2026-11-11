@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 class Page(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.html = page.render(build.latest_snapshot())
+        cls.html = page.render(build.thesis_snapshot())
 
     def test_committed_page_is_what_the_build_renders(self):
         self.assertEqual((ROOT / "docs" / "index.html").read_text(), self.html)

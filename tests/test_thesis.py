@@ -28,7 +28,7 @@ class Thesis(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.text = (ROOT / "THESIS.md").read_text()
-        cls.m = metrics.compute(build.load_raw(build.latest_snapshot()))["metrics"]
+        cls.m = metrics.compute(build.load_raw(build.thesis_snapshot()))["metrics"]
         table = cls.text.split("## Evidence table")[1]
         cls.rows = re.findall(r"^\| `(\w+)` \| ([^|]+) \|", table, re.M)
 

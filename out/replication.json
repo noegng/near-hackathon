@@ -1107,14 +1107,14 @@
    "url": "https://github.com/Axlnd3r/NePu/blob/eb9fe8468b8fddfd2607b3db85a779b73b9788af/THESIS.md",
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_365d",
-    "ours": 12.854507053994366,
-    "gap": 0.07120892116619719,
+    "ours": 12.854507053994352,
+    "gap": 0.071208921166196,
     "status": "close"
    },
    "best_dated": {
     "metric": "revenue_cover_of_gross_issuance_pct_365d",
-    "ours": 12.721113952325164,
-    "gap": 0.06009282936043029,
+    "ours": 12.721113952325153,
+    "gap": 0.0600928293604294,
     "status": "close",
     "asof": "2026-11-07"
    }
@@ -1135,8 +1135,8 @@
    },
    "best_dated": {
     "metric": "revenue_cover_of_gross_issuance_pct_30d",
-    "ours": 15.096421145811883,
-    "gap": 0.00023701021113356057,
+    "ours": 15.096421145811886,
+    "gap": 0.0002370102111333253,
     "status": "reproduced",
     "asof": "2026-11-08"
    }
@@ -1173,14 +1173,14 @@
    "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/README.md",
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_90d",
-    "ours": 18.42370667690785,
-    "gap": 0.023539259828213983,
+    "ours": 18.423706676907848,
+    "gap": 0.023539259828213786,
     "status": "reproduced"
    },
    "best_dated": {
     "metric": "usage_cover_of_net_issuance_pct_30d",
-    "ours": 17.990304233591182,
-    "gap": 0.0005386536893787763,
+    "ours": 17.990304233591175,
+    "gap": 0.0005386536893791711,
     "status": "reproduced",
     "asof": "2026-10-30"
    }
@@ -1195,14 +1195,14 @@
    "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/README.md",
    "at_snapshot": {
     "metric": "revenue_cover_of_net_issuance_pct_90d",
-    "ours": 18.647333269786447,
-    "gap": 0.018561406853344887,
+    "ours": 18.647333269786444,
+    "gap": 0.018561406853345074,
     "status": "reproduced"
    },
    "best_dated": {
     "metric": "usage_cover_of_net_issuance_pct_90d",
-    "ours": 19.03824999315285,
-    "gap": 0.002013157534360488,
+    "ours": 19.038249993152842,
+    "gap": 0.002013157534360114,
     "status": "reproduced",
     "asof": "2026-10-27"
    }
@@ -1217,14 +1217,14 @@
    "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
    "at_snapshot": {
     "metric": "usage_cover_of_net_issuance_pct_90d",
-    "ours": 19.86113132248173,
-    "gap": 0.035867411530013237,
+    "ours": 19.861131322481725,
+    "gap": 0.03586741153001341,
     "status": "reproduced"
    },
    "best_dated": {
     "metric": "usage_cover_of_net_issuance_pct_90d",
-    "ours": 19.86113132248173,
-    "gap": 0.035867411530013237,
+    "ours": 19.861131322481725,
+    "gap": 0.03586741153001341,
     "status": "reproduced",
     "asof": "2026-11-10"
    }
@@ -1239,14 +1239,14 @@
    "url": "https://github.com/tenxagent/near-agent-economy/blob/c54570d5fa4993e5d625a6c36b5da70354b198be/README.md",
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_90d",
-    "ours": 18.42370667690785,
-    "gap": 0.023539259828213983,
+    "ours": 18.423706676907848,
+    "gap": 0.023539259828213786,
     "status": "reproduced"
    },
    "best_dated": {
     "metric": "usage_cover_of_net_issuance_pct_30d",
-    "ours": 17.990304233591182,
-    "gap": 0.0005386536893787763,
+    "ours": 17.990304233591175,
+    "gap": 0.0005386536893791711,
     "status": "reproduced",
     "asof": "2026-10-30"
    }
@@ -1305,14 +1305,14 @@
    "url": "https://github.com/erfanmoheb/near-intents-thesis/blob/8bf528276c2f209394c0c9334ada3de2e6142168/THESIS.md",
    "at_snapshot": {
     "metric": "burn70_cover_of_gross_issuance_pct_90d",
-    "ours": 0.842500260656238,
-    "gap": 0.0029765007812356963,
+    "ours": 0.8425002606562381,
+    "gap": 0.0029765007812358286,
     "status": "reproduced"
    },
    "best_dated": {
     "metric": "burn70_cover_of_gross_issuance_pct_90d",
-    "ours": 0.8402084889287946,
-    "gap": 0.00024820110570792736,
+    "ours": 0.8402084889287943,
+    "gap": 0.00024820110570753087,
     "status": "reproduced",
     "asof": "2026-10-29"
    }
@@ -1399,8 +1399,8 @@
    },
    "best_dated": {
     "metric": "burn_cover_of_net_issuance_pct_365d",
-    "ours": 1.9730914644641009,
-    "gap": 0.013454267767949557,
+    "ours": 1.9730914644641013,
+    "gap": 0.013454267767949335,
     "status": "reproduced",
     "asof": "2026-10-27"
    }
@@ -1415,14 +1415,14 @@
    "url": "https://github.com/Axlnd3r/NePu/blob/eb9fe8468b8fddfd2607b3db85a779b73b9788af/README.md",
    "at_snapshot": {
     "metric": "breakeven_multiple_365d",
-    "ours": 6.806676691144792,
-    "gap": 0.10438464590200107,
+    "ours": 6.806676691144798,
+    "gap": 0.10438464590200025,
     "status": "close"
    },
    "best_dated": {
     "metric": "breakeven_multiple_365d",
-    "ours": 6.858812531268928,
-    "gap": 0.09752466693829892,
+    "ours": 6.858812531268931,
+    "gap": 0.09752466693829845,
     "status": "close",
     "asof": "2026-11-07"
    }
@@ -1437,14 +1437,14 @@
    "url": "https://github.com/IhorMuliar/nearbooks/blob/39f8c94a5d99fc4893a14e3b16283fb162e4455a/THESIS.md",
    "at_snapshot": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.096074156567643,
-    "gap": 0.03847657423252014,
+    "ours": 5.096074156567644,
+    "gap": 0.038476574232519975,
     "status": "reproduced"
    },
    "best_dated": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.309606713684275,
-    "gap": 0.0018125874875990595,
+    "ours": 5.3096067136842775,
+    "gap": 0.0018125874875995621,
     "status": "reproduced",
     "asof": "2026-10-28"
    }
@@ -1459,14 +1459,14 @@
    "url": "https://github.com/Raindess69/near-usage-thesis/blob/b3a9061544208bf5001e11deb7e8fcbb874df251/README.md",
    "at_snapshot": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.096074156567643,
-    "gap": 0.03847657423252014,
+    "ours": 5.096074156567644,
+    "gap": 0.038476574232519975,
     "status": "reproduced"
    },
    "best_dated": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.309606713684275,
-    "gap": 0.0018125874875990595,
+    "ours": 5.3096067136842775,
+    "gap": 0.0018125874875995621,
     "status": "reproduced",
     "asof": "2026-10-28"
    }
@@ -1481,14 +1481,14 @@
    "url": "https://github.com/soldanoandrea/near-thesis/blob/13b580f37e97d04fa0403f5c1a785f962886bddd/README.md",
    "at_snapshot": {
     "metric": "breakeven_multiple_365d",
-    "ours": 6.806676691144792,
-    "gap": 0.054628237341001196,
+    "ours": 6.806676691144798,
+    "gap": 0.05462823734100033,
     "status": "close"
    },
    "best_dated": {
     "metric": "breakeven_multiple_365d",
-    "ours": 6.858812531268928,
-    "gap": 0.04738714843487115,
+    "ours": 6.858812531268931,
+    "gap": 0.04738714843487066,
     "status": "reproduced",
     "asof": "2026-11-07"
    }
@@ -1899,8 +1899,8 @@
    "url": "https://github.com/luongs3/near-intents-thesis/blob/81f3ecce6fa0a619817a8f7f243b1aa336866b96/THESIS.md",
    "at_snapshot": {
     "metric": "intents_fees_over_l1_fees_365d",
-    "ours": 46.434893623796036,
-    "gap": 0.03260638283758258,
+    "ours": 46.434893623796015,
+    "gap": 0.03260638283758303,
     "status": "reproduced"
    },
    "best_dated": {
@@ -2125,8 +2125,8 @@
    },
    "best_dated": {
     "metric": "price_yoy_30d_avg",
-    "ours": 96.40388460137885,
-    "gap": 4.0296694801275354e-05,
+    "ours": 96.40388460137883,
+    "gap": 4.029669480112794e-05,
     "status": "reproduced",
     "asof": "2026-10-30"
    }
@@ -2427,8 +2427,8 @@
    "url": "https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md",
    "at_snapshot": {
     "metric": "l1_fees_usd_365d",
-    "ours": 1163484.1987085696,
-    "gap": 0.022282185959185186,
+    "ours": 1163484.19870857,
+    "gap": 0.022282185959184794,
     "status": "reproduced"
    },
    "best_dated": {
@@ -2499,8 +2499,8 @@
    },
    "best_dated": {
     "metric": "l1_fees_usd_yoy_30d",
-    "ours": -27.630056556237392,
-    "gap": 0.0010890056607750164,
+    "ours": -27.63005655623738,
+    "gap": 0.0010890056607746302,
     "status": "reproduced",
     "asof": "2026-10-31"
    }
@@ -2713,14 +2713,14 @@
    "url": "https://github.com/Apihpih96/near-intents-thesis/blob/cdbe83dfba1fb6fcc9294ad01ecd37f4035da3f3/FINDINGS.md",
    "at_snapshot": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.096074156567643,
-    "gap": 0.08998675775577797,
+    "ours": 5.096074156567644,
+    "gap": 0.0899867577557778,
     "status": "close"
    },
    "best_dated": {
     "metric": "breakeven_multiple_30d",
-    "ours": 5.600411495397405,
-    "gap": 7.348132096526454e-05,
+    "ours": 5.600411495397408,
+    "gap": 7.348132096574034e-05,
     "status": "reproduced",
     "asof": "2026-10-28"
    }
@@ -2977,14 +2977,14 @@
    "url": "https://gitlab.com/orenrot/near-thesis/-/blob/3c0171d81d93c555fe16d33d97e7b57b1616df27/THESIS.md",
    "at_snapshot": {
     "metric": "l1_fees_usd_yoy_90d",
-    "ours": -52.66433681257239,
-    "gap": 0.047661178796159324,
+    "ours": -52.66433681257241,
+    "gap": 0.047661178796158936,
     "status": "reproduced"
    },
    "best_dated": {
     "metric": "l1_fees_usd_yoy_90d",
-    "ours": -55.29653317204178,
-    "gap": 6.269128315046328e-05,
+    "ours": -55.296533172041784,
+    "gap": 6.26912831503348e-05,
     "status": "reproduced",
     "asof": "2026-11-02"
    }

@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import html
 import json
+import math
 from pathlib import Path
 
 from . import build, checks, compare, metrics
@@ -91,7 +92,7 @@ def spread(ys: list[float], gap: float) -> list[float]:
     for a, b in zip(order, order[1:]):
         if out[b] - out[a] < gap:
             out[b] = out[a] + gap
-    shift = (sum(out) - sum(ys)) / len(ys)
+    shift = (math.fsum(out) - math.fsum(ys)) / len(ys)
     return [y - shift for y in out]
 
 
@@ -287,7 +288,7 @@ def render(snapshot: str) -> str:
 
 
 def main() -> int:
-    snap = build.latest_snapshot()
+    snap = build.thesis_snapshot()
     out = ROOT / "docs"
     out.mkdir(exist_ok=True)
     (out / "index.html").write_text(render(snap))

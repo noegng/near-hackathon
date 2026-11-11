@@ -22,7 +22,7 @@ class Compare(unittest.TestCase):
 
     def test_registry_is_well_formed(self):
         reg = json.loads((ROOT / "claims" / "claims.json").read_text())
-        known = set(build.metrics.compute(build.load_raw(build.latest_snapshot()))["metrics"])
+        known = set(build.metrics.compute(build.load_raw(build.thesis_snapshot()))["metrics"])
         ids = [c["id"] for c in reg["claims"]]
         self.assertEqual(len(ids), len(set(ids)))
         for c in reg["claims"]:
@@ -35,7 +35,7 @@ class Compare(unittest.TestCase):
             self.assertRegex(s["commit"], r"^[0-9a-f]{40}$")
 
     def test_dated_match_is_never_worse_than_snapshot_match(self):
-        res = compare.run(build.latest_snapshot())
+        res = compare.run(build.thesis_snapshot())
         for r in res["claims"]:
             self.assertLessEqual(r["best_dated"]["gap"], r["at_snapshot"]["gap"] + 1e-12, r["id"])
         self.assertEqual(sum(res["summary"]["at_snapshot"].values()), res["summary"]["claims"])

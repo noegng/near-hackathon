@@ -14,12 +14,22 @@ Needs Python 3.9+ and nothing else (standard library only).
 
 | Do | See |
 | --- | --- |
-| `python3 -m unittest discover -s tests` | 38 tests pass, offline, in about a second |
+| `python3 -m unittest discover -s tests` | 40 tests pass, offline, in about a second |
 | `python3 -m replicated.build` | `out/metrics.json`: about 130 metrics, each with its definition, from the committed raw snapshot |
 | `python3 -m replicated.compare` | `out/replication.md`: every published claim next to our number, and the spread per metric |
 | `python3 -m replicated.checks` | the thesis's five kill conditions evaluated (all hold today) and four dated predictions (pending) |
+| `python3 -m replicated.history` | `out/history.md`: every committed snapshot side by side, the kill conditions evaluated on each, and the past days a source changed between two snapshots |
 | `python3 -m replicated.verify_claims` | (network) every quoted claim is found verbatim in its source file at the pinned commit |
 | `python3 -m replicated.fetch` | (network, about 4 minutes) a new raw snapshot under `data/raw/<today>/` |
+
+## Reproducibility
+
+[![tests and rebuild](https://github.com/noegng/near-hackathon/actions/workflows/ci.yml/badge.svg)](https://github.com/noegng/near-hackathon/actions/workflows/ci.yml)
+
+On every push, GitHub Actions runs the tests on Python 3.9 and 3.13, rebuilds `out/` and `docs/` from the
+committed raw data, and fails if one byte differs from what is committed. Float sums use `math.fsum`, so
+the outputs are identical on every Python version. `THESIS.md`, `out/` and the page are written from the
+snapshot named in `data/THESIS_SNAPSHOT`; later snapshots only feed `out/history.md`.
 
 ## How it works
 
@@ -57,8 +67,9 @@ Needs Python 3.9+ and nothing else (standard library only).
 - The dated search tries several definitions and 15 days per claim. A match shows that a standard
   definition on a nearby day gives the published number, not that the team computed it that way.
 - DefiLlama restates recent days: three teams quote a 30-day fee total of $5,458,382 that the current series does
-  not give for any end day in the two weeks before our snapshot (closest: 6% away). `python3 -m replicated.restated <older> <newer>` compares two snapshots; only one
-  snapshot is committed so far.
+  not give for any end day in the two weeks before our snapshot (closest: 6% away). `python3 -m replicated.restated <older> <newer>` compares two snapshots, and
+  [`out/history.md`](out/history.md) lists the changed days for every pair of consecutive snapshots. A scheduled job
+  (`.github/workflows/snapshot.yml`) commits one snapshot per day from 2026-11-12.
 - NearBlocks API v1 (`/v1/charts`) is announced to switch off on 2026-11-22; the committed snapshot keeps
   the build reproducible after that.
 

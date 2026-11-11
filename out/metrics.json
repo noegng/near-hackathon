@@ -304,7 +304,7 @@
    "definition": "Captured Intents revenue / L1 fees in USD, 30 days."
   },
   "l1_fees_near_90d": {
-   "value": 96572.19242706272,
+   "value": 96572.19242706274,
    "unit": "NEAR",
    "definition": "Sum of NearBlocks daily txn_fee, 90 days."
   },
@@ -324,7 +324,7 @@
    "definition": "Net supply growth over 90 days, annualized linearly."
   },
   "burn_cover_of_net_issuance_pct_90d": {
-   "value": 1.2137980526952807,
+   "value": 1.213798052695281,
    "unit": "%",
    "definition": "L1 fees / net supply growth, 90 days. Treats all fees as burnt."
   },
@@ -334,32 +334,32 @@
    "definition": "L1 fees / (net supply growth + fees), 90 days. Treats all fees as burnt."
   },
   "burn70_cover_of_gross_issuance_pct_90d": {
-   "value": 0.842500260656238,
+   "value": 0.8425002606562381,
    "unit": "%",
    "definition": "As above with 70% of fees burnt, the rule before protocol version 87."
   },
   "intents_revenue_near_90d": {
-   "value": 1483619.002998576,
+   "value": 1483619.0029985758,
    "unit": "NEAR",
    "definition": "Daily captured revenue / that day's NEAR price, summed over 90 days."
   },
   "revenue_cover_of_gross_issuance_pct_90d": {
-   "value": 18.42370667690785,
+   "value": 18.423706676907848,
    "unit": "%",
    "definition": "Captured Intents revenue in NEAR at daily prices / gross issuance, 90 days."
   },
   "revenue_cover_of_net_issuance_pct_90d": {
-   "value": 18.647333269786447,
+   "value": 18.647333269786444,
    "unit": "%",
    "definition": "Captured Intents revenue in NEAR at daily prices / net supply growth, 90 days."
   },
   "usage_cover_of_gross_issuance_pct_90d": {
-   "value": 19.62294835743775,
+   "value": 19.622948357437746,
    "unit": "%",
    "definition": "(Captured revenue + L1 fees) / gross issuance, 90 days."
   },
   "usage_cover_of_net_issuance_pct_90d": {
-   "value": 19.86113132248173,
+   "value": 19.861131322481725,
    "unit": "%",
    "definition": "(Captured revenue + L1 fees) / net supply growth, 90 days."
   },
@@ -369,7 +369,7 @@
    "definition": "Gross Intents fees / gross issuance valued at the asof price, 90 days."
   },
   "breakeven_multiple_90d": {
-   "value": 5.096074156567643,
+   "value": 5.096074156567644,
    "unit": "x",
    "definition": "Gross issuance / (captured revenue + L1 fees), 90 days: how many times usage must grow to offset issuance."
   },
@@ -389,7 +389,7 @@
    "definition": "Sum of NearBlocks daily txn_fee, 365 days."
   },
   "l1_fees_usd_365d": {
-   "value": 1163484.1987085696,
+   "value": 1163484.19870857,
    "unit": "USD",
    "definition": "Sum of NearBlocks daily txn_fee_usd, 365 days."
   },
@@ -419,27 +419,27 @@
    "definition": "As above with 70% of fees burnt, the rule before protocol version 87."
   },
   "intents_revenue_near_365d": {
-   "value": 4156484.8105226615,
+   "value": 4156484.8105226574,
    "unit": "NEAR",
    "definition": "Daily captured revenue / that day's NEAR price, summed over 365 days."
   },
   "revenue_cover_of_gross_issuance_pct_365d": {
-   "value": 12.854507053994366,
+   "value": 12.854507053994352,
    "unit": "%",
    "definition": "Captured Intents revenue in NEAR at daily prices / gross issuance, 365 days."
   },
   "revenue_cover_of_net_issuance_pct_365d": {
-   "value": 13.09505673155376,
+   "value": 13.095056731553747,
    "unit": "%",
    "definition": "Captured Intents revenue in NEAR at daily prices / net supply growth, 365 days."
   },
   "usage_cover_of_gross_issuance_pct_365d": {
-   "value": 14.691457305456554,
+   "value": 14.69145730545654,
    "unit": "%",
    "definition": "(Captured revenue + L1 fees) / gross issuance, 365 days."
   },
   "usage_cover_of_net_issuance_pct_365d": {
-   "value": 14.966382302802684,
+   "value": 14.966382302802666,
    "unit": "%",
    "definition": "(Captured revenue + L1 fees) / net supply growth, 365 days."
   },
@@ -449,17 +449,17 @@
    "definition": "Gross Intents fees / gross issuance valued at the asof price, 365 days."
   },
   "breakeven_multiple_365d": {
-   "value": 6.806676691144792,
+   "value": 6.806676691144798,
    "unit": "x",
    "definition": "Gross issuance / (captured revenue + L1 fees), 365 days: how many times usage must grow to offset issuance."
   },
   "intents_fees_over_l1_fees_365d": {
-   "value": 46.434893623796036,
+   "value": 46.434893623796015,
    "unit": "x",
    "definition": "Gross Intents fees / L1 fees in USD, 365 days."
   },
   "intents_revenue_over_l1_fees_365d": {
-   "value": 8.043344344845783,
+   "value": 8.04334434484578,
    "unit": "x",
    "definition": "Captured Intents revenue / L1 fees in USD, 365 days."
   },
@@ -469,7 +469,7 @@
    "definition": "30-day L1 fees in USD vs a year earlier."
   },
   "l1_fees_usd_yoy_90d": {
-   "value": -52.66433681257239,
+   "value": -52.66433681257241,
    "unit": "%",
    "definition": "90-day L1 fees in USD vs a year earlier."
   },
@@ -519,7 +519,7 @@
    "definition": "Growth of revenue wallet holdings / growth of total supply, both from archival RPC, 90 days."
   },
   "wallet_growth_over_defillama_revenue_90d": {
-   "value": 0.9765623744438456,
+   "value": 0.9765623744438459,
    "unit": "x",
    "definition": "Growth of wallet holdings / DefiLlama captured revenue in NEAR over the same 90 days. 1.0 means all reported revenue is still held."
   },
@@ -534,7 +534,7 @@
    "definition": "Growth of revenue wallet holdings / growth of total supply, both from archival RPC, 360 days."
   },
   "wallet_growth_over_defillama_revenue_360d": {
-   "value": 0.9826194098827893,
+   "value": 0.9826194098827903,
    "unit": "x",
    "definition": "Growth of wallet holdings / DefiLlama captured revenue in NEAR over the same 360 days. 1.0 means all reported revenue is still held."
   },
@@ -584,7 +584,7 @@
    "definition": "30-day mean price vs a year earlier."
   },
   "price_yoy_90d_avg": {
-   "value": 38.31426178494528,
+   "value": 38.31426178494522,
    "unit": "%",
    "definition": "90-day mean price vs a year earlier."
   },
