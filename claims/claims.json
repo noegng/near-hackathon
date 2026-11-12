@@ -120,7 +120,7 @@
    ]
   },
   "luong": {
-   "project": "NEAR Intents Thesis — Tested",
+   "project": "NEAR Intents Thesis \u2014 Tested",
    "repo": "luongs3/near-intents-thesis",
    "commit": "81f3ecce6fa0a619817a8f7f243b1aa336866b96",
    "mentions": [
@@ -237,7 +237,12 @@
    "quote": "It settled $3,727,751,510 in the 30 days ending 9 Nov 2026",
    "candidates": [
     "intents_volume_30d"
-   ]
+   ],
+   "stated_asof": "2026-11-09",
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "tope-intents_volume_30d-001",
@@ -249,7 +254,11 @@
    "quote": "30d volume $3,757,732,084",
    "candidates": [
     "intents_volume_30d"
-   ]
+   ],
+   "published": {
+    "commit": "4ac4045c2cfa6028ebf77473f18024c4a71972a4",
+    "date": "2026-11-11T09:34:23Z"
+   }
   },
   {
    "id": "rida-intents_volume_365d-002",
@@ -261,7 +270,11 @@
    "quote": "NEAR Intents settled $32.91B over the last year",
    "candidates": [
     "intents_volume_365d"
-   ]
+   ],
+   "published": {
+    "commit": "39fede7aa774ae738215d4d4a7bfd8fc190b13ba",
+    "date": "2026-11-11T10:56:51Z"
+   }
   },
   {
    "id": "lval-intents_volume_365d-003",
@@ -273,7 +286,11 @@
    "quote": "$32.8B settled in 12 months",
    "candidates": [
     "intents_volume_365d"
-   ]
+   ],
+   "published": {
+    "commit": "d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6",
+    "date": "2026-11-01T09:03:29Z"
+   }
   },
   {
    "id": "lval-intents_volume_alltime-004",
@@ -285,7 +302,11 @@
    "quote": "($35.7B all time)",
    "candidates": [
     "intents_volume_alltime"
-   ]
+   ],
+   "published": {
+    "commit": "d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6",
+    "date": "2026-11-01T09:03:29Z"
+   }
   },
   {
    "id": "sem-intents_volume_alltime-005",
@@ -297,7 +318,11 @@
    "quote": "Cumulative Intents volume since 2024-12-10: **$37.0B**",
    "candidates": [
     "intents_volume_alltime"
-   ]
+   ],
+   "published": {
+    "commit": "89de9a3a4ccab4a5490fabc25ab12d7e9b9a53e0",
+    "date": "2026-11-09T23:17:56Z"
+   }
   },
   {
    "id": "ledger-intents_volume_alltime-006",
@@ -309,7 +334,11 @@
    "quote": "($37.17B against $38.11B)",
    "candidates": [
     "intents_volume_alltime"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "nepu-intents_volume_avg_30d-007",
@@ -321,7 +350,11 @@
    "quote": "7.6x its $130.4M average",
    "candidates": [
     "intents_volume_avg_30d"
-   ]
+   ],
+   "published": {
+    "commit": "5a883ba452c477bfdf04bde3f71083befe98864d",
+    "date": "2026-11-03T07:53:49Z"
+   }
   },
   {
    "id": "rajesh-intents_volume_avg_30d-008",
@@ -333,7 +366,11 @@
    "quote": "30-day average of **$129.9M a day**",
    "candidates": [
     "intents_volume_avg_30d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "ledger-intents_volume_avg_30d-009",
@@ -345,7 +382,11 @@
    "quote": "an average of $124,258,384 a day",
    "candidates": [
     "intents_volume_avg_30d"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "rain-intents_volume_avg_30d-010",
@@ -357,7 +398,11 @@
    "quote": "now $127.59M",
    "candidates": [
     "intents_volume_avg_30d"
-   ]
+   ],
+   "published": {
+    "commit": "c8d103c3ea761a6101cecb6457e03eb58a334203",
+    "date": "2026-11-02T22:24:01Z"
+   }
   },
   {
    "id": "books-intents_volume_avg_30d-011",
@@ -369,7 +414,11 @@
    "quote": "5.3x today's $149M",
    "candidates": [
     "intents_volume_avg_30d"
-   ]
+   ],
+   "published": {
+    "commit": "4e435fcd5bd297cdd06eafb04d6e375d55975545",
+    "date": "2026-10-21T14:17:50Z"
+   }
   },
   {
    "id": "ledger-intents_volume_yoy-012",
@@ -381,7 +430,11 @@
    "quote": "up 59% from $77,935,548 a day",
    "candidates": [
     "intents_volume_yoy_30d"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "rajesh-intents_volume_yoy-013",
@@ -393,7 +446,11 @@
    "quote": "more than double a year earlier (+128%)",
    "candidates": [
     "intents_volume_yoy_30d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "sem-intents_volume_yoy-014",
@@ -405,7 +462,11 @@
    "quote": "(+60% YoY volume)",
    "candidates": [
     "intents_volume_yoy_30d"
-   ]
+   ],
+   "published": {
+    "commit": "89de9a3a4ccab4a5490fabc25ab12d7e9b9a53e0",
+    "date": "2026-11-09T23:17:56Z"
+   }
   },
   {
    "id": "rida-intents_volume_30d_vs_prev-015",
@@ -417,7 +478,11 @@
    "quote": "The last 30 days were -20.7% vs the 30 days before",
    "candidates": [
     "intents_volume_30d_vs_prev_30d"
-   ]
+   ],
+   "published": {
+    "commit": "39fede7aa774ae738215d4d4a7bfd8fc190b13ba",
+    "date": "2026-11-11T10:56:51Z"
+   }
   },
   {
    "id": "erfan-intents_fees_30d-016",
@@ -429,7 +494,11 @@
    "quote": "$6.13M in fees over the last 30 days",
    "candidates": [
     "intents_fees_30d"
-   ]
+   ],
+   "published": {
+    "commit": "8bf528276c2f209394c0c9334ada3de2e6142168",
+    "date": "2026-11-07T00:49:40Z"
+   }
   },
   {
    "id": "ledger-intents_fees_30d-017",
@@ -441,7 +510,11 @@
    "quote": "Fees were $5,458,382 over the trailing 30 days",
    "candidates": [
     "intents_fees_30d"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "rida-intents_fees_30d-018",
@@ -453,7 +526,11 @@
    "quote": "$5.5M of Intents fees in 30 days",
    "candidates": [
     "intents_fees_30d"
-   ]
+   ],
+   "published": {
+    "commit": "39fede7aa774ae738215d4d4a7bfd8fc190b13ba",
+    "date": "2026-11-11T10:56:51Z"
+   }
   },
   {
    "id": "tope-intents_fees_30d-019",
@@ -465,7 +542,11 @@
    "quote": "grossed $5,458,382 of fees in 30 days",
    "candidates": [
     "intents_fees_30d"
-   ]
+   ],
+   "published": {
+    "commit": "4ac4045c2cfa6028ebf77473f18024c4a71972a4",
+    "date": "2026-11-11T09:34:23Z"
+   }
   },
   {
    "id": "sem-intents_fees_30d-020",
@@ -477,7 +558,11 @@
    "quote": "($5.78M vs $0.17M)",
    "candidates": [
     "intents_fees_30d"
-   ]
+   ],
+   "published": {
+    "commit": "89de9a3a4ccab4a5490fabc25ab12d7e9b9a53e0",
+    "date": "2026-11-09T23:17:56Z"
+   }
   },
   {
    "id": "erfan-intents_fees_annualized-021",
@@ -489,7 +574,11 @@
    "quote": "**$74.5M a year**",
    "candidates": [
     "intents_fees_annualized_30d"
-   ]
+   ],
+   "published": {
+    "commit": "8bf528276c2f209394c0c9334ada3de2e6142168",
+    "date": "2026-11-07T00:49:40Z"
+   }
   },
   {
    "id": "rajesh-intents_fees_365d-022",
@@ -501,7 +590,11 @@
    "quote": "$54.2M over the last 365 days",
    "candidates": [
     "intents_fees_365d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "luong-intents_fees_90d-023",
@@ -513,7 +606,11 @@
    "quote": "($17.4M vs $0.36M)",
    "candidates": [
     "intents_fees_90d"
-   ]
+   ],
+   "published": {
+    "commit": "81f3ecce6fa0a619817a8f7f243b1aa336866b96",
+    "date": "2026-11-04T07:47:52Z"
+   }
   },
   {
    "id": "sem-intents_take_rate_bps-024",
@@ -527,7 +624,11 @@
     "intents_take_rate_bps_30d",
     "intents_take_rate_bps_90d",
     "intents_take_rate_bps_365d"
-   ]
+   ],
+   "published": {
+    "commit": "89de9a3a4ccab4a5490fabc25ab12d7e9b9a53e0",
+    "date": "2026-11-09T23:17:56Z"
+   }
   },
   {
    "id": "tope-intents_take_rate_bps-025",
@@ -541,7 +642,11 @@
     "intents_take_rate_bps_30d",
     "intents_take_rate_bps_90d",
     "intents_take_rate_bps_365d"
-   ]
+   ],
+   "published": {
+    "commit": "4ac4045c2cfa6028ebf77473f18024c4a71972a4",
+    "date": "2026-11-11T09:34:23Z"
+   }
   },
   {
    "id": "sem-intents_capture_share-026",
@@ -555,7 +660,11 @@
     "intents_capture_share_30d",
     "intents_capture_share_90d",
     "intents_capture_share_365d"
-   ]
+   ],
+   "published": {
+    "commit": "89de9a3a4ccab4a5490fabc25ab12d7e9b9a53e0",
+    "date": "2026-11-09T23:17:56Z"
+   }
   },
   {
    "id": "tope-intents_capture_share-027",
@@ -569,7 +678,11 @@
     "intents_capture_share_30d",
     "intents_capture_share_90d",
     "intents_capture_share_365d"
-   ]
+   ],
+   "published": {
+    "commit": "4ac4045c2cfa6028ebf77473f18024c4a71972a4",
+    "date": "2026-11-11T09:34:23Z"
+   }
   },
   {
    "id": "rajesh-intents_revenue_365d-028",
@@ -581,7 +694,11 @@
    "quote": "$9.35M over 365 days",
    "candidates": [
     "intents_revenue_365d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "rajesh-intents_revenue_annualized-029",
@@ -594,7 +711,11 @@
    "candidates": [
     "intents_revenue_annualized_30d",
     "intents_revenue_annualized_90d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "sem-intents_revenue_annualized-030",
@@ -607,7 +728,11 @@
    "candidates": [
     "intents_revenue_annualized_30d",
     "intents_revenue_annualized_90d"
-   ]
+   ],
+   "published": {
+    "commit": "89de9a3a4ccab4a5490fabc25ab12d7e9b9a53e0",
+    "date": "2026-11-09T23:17:56Z"
+   }
   },
   {
    "id": "tenx-intents_revenue_annualized-031",
@@ -620,7 +745,11 @@
    "candidates": [
     "intents_revenue_annualized_30d",
     "intents_revenue_annualized_90d"
-   ]
+   ],
+   "published": {
+    "commit": "c54570d5fa4993e5d625a6c36b5da70354b198be",
+    "date": "2026-11-11T06:40:35Z"
+   }
   },
   {
    "id": "nepu-issuance_cover-032",
@@ -643,7 +772,11 @@
     "usage_cover_of_net_issuance_pct_30d",
     "usage_cover_of_net_issuance_pct_90d",
     "usage_cover_of_net_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "f3165a2944b098c2607de628ae38b0d021282e68",
+    "date": "2026-11-03T07:47:36Z"
+   }
   },
   {
    "id": "census-issuance_cover-033",
@@ -666,7 +799,11 @@
     "usage_cover_of_net_issuance_pct_30d",
     "usage_cover_of_net_issuance_pct_90d",
     "usage_cover_of_net_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "c786bed61d55d0c9b6b22a5a7c34ee8bf6a1288f",
+    "date": "2026-11-10T11:39:15Z"
+   }
   },
   {
    "id": "books-issuance_cover-034",
@@ -689,7 +826,11 @@
     "usage_cover_of_net_issuance_pct_30d",
     "usage_cover_of_net_issuance_pct_90d",
     "usage_cover_of_net_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "4e435fcd5bd297cdd06eafb04d6e375d55975545",
+    "date": "2026-10-21T14:17:50Z"
+   }
   },
   {
    "id": "rain-issuance_cover-035",
@@ -712,7 +853,11 @@
     "usage_cover_of_net_issuance_pct_30d",
     "usage_cover_of_net_issuance_pct_90d",
     "usage_cover_of_net_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "c8d103c3ea761a6101cecb6457e03eb58a334203",
+    "date": "2026-11-02T22:24:01Z"
+   }
   },
   {
    "id": "rain-issuance_cover-036",
@@ -735,7 +880,11 @@
     "usage_cover_of_net_issuance_pct_30d",
     "usage_cover_of_net_issuance_pct_90d",
     "usage_cover_of_net_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "c8d103c3ea761a6101cecb6457e03eb58a334203",
+    "date": "2026-11-02T22:24:01Z"
+   }
   },
   {
    "id": "rajesh-issuance_cover-037",
@@ -758,7 +907,11 @@
     "usage_cover_of_net_issuance_pct_30d",
     "usage_cover_of_net_issuance_pct_90d",
     "usage_cover_of_net_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "tenx-issuance_cover-038",
@@ -781,7 +934,11 @@
     "usage_cover_of_net_issuance_pct_30d",
     "usage_cover_of_net_issuance_pct_90d",
     "usage_cover_of_net_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "be2e8ecc3af8f908adb19850d06e805d6de0ac1c",
+    "date": "2026-11-10T22:37:54Z"
+   }
   },
   {
    "id": "census-burn_cover-039",
@@ -801,7 +958,11 @@
     "burn70_cover_of_gross_issuance_pct_30d",
     "burn70_cover_of_gross_issuance_pct_90d",
     "burn70_cover_of_gross_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "c786bed61d55d0c9b6b22a5a7c34ee8bf6a1288f",
+    "date": "2026-11-10T11:39:15Z"
+   }
   },
   {
    "id": "rida-burn_cover-040",
@@ -821,7 +982,11 @@
     "burn70_cover_of_gross_issuance_pct_30d",
     "burn70_cover_of_gross_issuance_pct_90d",
     "burn70_cover_of_gross_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "39fede7aa774ae738215d4d4a7bfd8fc190b13ba",
+    "date": "2026-11-11T10:56:51Z"
+   }
   },
   {
    "id": "erfan-burn_cover-041",
@@ -841,7 +1006,11 @@
     "burn70_cover_of_gross_issuance_pct_30d",
     "burn70_cover_of_gross_issuance_pct_90d",
     "burn70_cover_of_gross_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "8bf528276c2f209394c0c9334ada3de2e6142168",
+    "date": "2026-11-07T00:49:40Z"
+   }
   },
   {
    "id": "rain-burn_cover-042",
@@ -861,7 +1030,11 @@
     "burn70_cover_of_gross_issuance_pct_30d",
     "burn70_cover_of_gross_issuance_pct_90d",
     "burn70_cover_of_gross_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "c8d103c3ea761a6101cecb6457e03eb58a334203",
+    "date": "2026-11-02T22:24:01Z"
+   }
   },
   {
    "id": "ledger-burn_cover-043",
@@ -881,7 +1054,11 @@
     "burn70_cover_of_gross_issuance_pct_30d",
     "burn70_cover_of_gross_issuance_pct_90d",
     "burn70_cover_of_gross_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "rajesh-burn_cover-044",
@@ -901,7 +1078,11 @@
     "burn70_cover_of_gross_issuance_pct_30d",
     "burn70_cover_of_gross_issuance_pct_90d",
     "burn70_cover_of_gross_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "lval-burn_cover-045",
@@ -921,7 +1102,11 @@
     "burn70_cover_of_gross_issuance_pct_30d",
     "burn70_cover_of_gross_issuance_pct_90d",
     "burn70_cover_of_gross_issuance_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6",
+    "date": "2026-11-01T09:03:29Z"
+   }
   },
   {
    "id": "nepu-breakeven_multiple-046",
@@ -935,7 +1120,11 @@
     "breakeven_multiple_30d",
     "breakeven_multiple_90d",
     "breakeven_multiple_365d"
-   ]
+   ],
+   "published": {
+    "commit": "5a883ba452c477bfdf04bde3f71083befe98864d",
+    "date": "2026-11-03T07:53:49Z"
+   }
   },
   {
    "id": "books-breakeven_multiple-047",
@@ -949,7 +1138,11 @@
     "breakeven_multiple_30d",
     "breakeven_multiple_90d",
     "breakeven_multiple_365d"
-   ]
+   ],
+   "published": {
+    "commit": "4e435fcd5bd297cdd06eafb04d6e375d55975545",
+    "date": "2026-10-21T14:17:50Z"
+   }
   },
   {
    "id": "rain-breakeven_multiple-048",
@@ -963,7 +1156,11 @@
     "breakeven_multiple_30d",
     "breakeven_multiple_90d",
     "breakeven_multiple_365d"
-   ]
+   ],
+   "published": {
+    "commit": "c8d103c3ea761a6101cecb6457e03eb58a334203",
+    "date": "2026-11-02T22:24:01Z"
+   }
   },
   {
    "id": "soldano-breakeven_multiple-049",
@@ -977,7 +1174,11 @@
     "breakeven_multiple_30d",
     "breakeven_multiple_90d",
     "breakeven_multiple_365d"
-   ]
+   ],
+   "published": {
+    "commit": "e229cf5334ea6642bbb739beebab8bf9cd5a836f",
+    "date": "2026-11-01T17:20:45Z"
+   }
   },
   {
    "id": "rida-tx_yoy-050",
@@ -990,7 +1191,11 @@
    "candidates": [
     "tx_yoy_30d",
     "tx_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "bc56b84cb2101640d99f073683c56b9c465d2d92",
+    "date": "2026-11-10T11:11:13Z"
+   }
   },
   {
    "id": "lisa-tx_yoy-051",
@@ -1003,7 +1208,11 @@
    "candidates": [
     "tx_yoy_30d",
     "tx_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "1e61facf7c79d23da8c0d8ec97871b9d24dd6951",
+    "date": "2026-11-01T02:09:47Z"
+   }
   },
   {
    "id": "ledger-tx_yoy-052",
@@ -1016,7 +1225,11 @@
    "candidates": [
     "tx_yoy_30d",
     "tx_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "lval-tx_yoy-053",
@@ -1025,11 +1238,15 @@
    "value": -84,
    "unit": "%",
    "file": "THESIS.md",
-   "quote": "txns −84% YoY",
+   "quote": "txns \u221284% YoY",
    "candidates": [
     "tx_yoy_30d",
     "tx_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6",
+    "date": "2026-11-01T09:03:29Z"
+   }
   },
   {
    "id": "rajesh-tx_yoy-054",
@@ -1038,11 +1255,15 @@
    "value": -85,
    "unit": "%",
    "file": "THESIS.md",
-   "quote": "(−85% YoY)",
+   "quote": "(\u221285% YoY)",
    "candidates": [
     "tx_yoy_30d",
     "tx_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "sem-tx_yoy-055",
@@ -1051,11 +1272,15 @@
    "value": -85,
    "unit": "%",
    "file": "README.md",
-   "quote": "(tx/day −85% YoY)",
+   "quote": "(tx/day \u221285% YoY)",
    "candidates": [
     "tx_yoy_30d",
     "tx_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "89de9a3a4ccab4a5490fabc25ab12d7e9b9a53e0",
+    "date": "2026-11-09T23:17:56Z"
+   }
   },
   {
    "id": "erfan-tx_vs_peak-056",
@@ -1064,11 +1289,15 @@
    "value": -91.8,
    "unit": "%",
    "file": "THESIS.md",
-   "quote": "(−91.8%)",
+   "quote": "(\u221291.8%)",
    "candidates": [
     "tx_vs_peak_30d",
     "tx_vs_peak_day"
-   ]
+   ],
+   "published": {
+    "commit": "8bf528276c2f209394c0c9334ada3de2e6142168",
+    "date": "2026-11-07T00:49:40Z"
+   }
   },
   {
    "id": "tope-tx_vs_peak-057",
@@ -1081,7 +1310,11 @@
    "candidates": [
     "tx_vs_peak_30d",
     "tx_vs_peak_day"
-   ]
+   ],
+   "published": {
+    "commit": "4ac4045c2cfa6028ebf77473f18024c4a71972a4",
+    "date": "2026-11-11T09:34:23Z"
+   }
   },
   {
    "id": "rain-tx_vs_peak-058",
@@ -1094,7 +1327,11 @@
    "candidates": [
     "tx_vs_peak_30d",
     "tx_vs_peak_day"
-   ]
+   ],
+   "published": {
+    "commit": "c8d103c3ea761a6101cecb6457e03eb58a334203",
+    "date": "2026-11-02T22:24:01Z"
+   }
   },
   {
    "id": "lisa-active_accounts_yoy-059",
@@ -1107,7 +1344,11 @@
    "candidates": [
     "active_accounts_yoy_30d",
     "active_accounts_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "1e61facf7c79d23da8c0d8ec97871b9d24dd6951",
+    "date": "2026-11-01T02:09:47Z"
+   }
   },
   {
    "id": "lval-active_accounts_yoy-060",
@@ -1116,11 +1357,15 @@
    "value": -76,
    "unit": "%",
    "file": "THESIS.md",
-   "quote": "Active accounts −76%",
+   "quote": "Active accounts \u221276%",
    "candidates": [
     "active_accounts_yoy_30d",
     "active_accounts_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6",
+    "date": "2026-11-01T09:03:29Z"
+   }
   },
   {
    "id": "rajesh-active_accounts_yoy-061",
@@ -1129,11 +1374,15 @@
    "value": -77,
    "unit": "%",
    "file": "THESIS.md",
-   "quote": "(−77% YoY)",
+   "quote": "(\u221277% YoY)",
    "candidates": [
     "active_accounts_yoy_30d",
     "active_accounts_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "ledger-active_accounts_yoy-062",
@@ -1146,7 +1395,11 @@
    "candidates": [
     "active_accounts_yoy_30d",
     "active_accounts_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "erfan-active_accounts_vs_peak-063",
@@ -1155,11 +1408,15 @@
    "value": -97,
    "unit": "%",
    "file": "THESIS.md",
-   "quote": "Active accounts: −97%",
+   "quote": "Active accounts: \u221297%",
    "candidates": [
     "active_accounts_vs_peak_30d",
     "active_accounts_vs_peak_day"
-   ]
+   ],
+   "published": {
+    "commit": "8bf528276c2f209394c0c9334ada3de2e6142168",
+    "date": "2026-11-07T00:49:40Z"
+   }
   },
   {
    "id": "tope-active_accounts_vs_peak-064",
@@ -1172,7 +1429,11 @@
    "candidates": [
     "active_accounts_vs_peak_30d",
     "active_accounts_vs_peak_day"
-   ]
+   ],
+   "published": {
+    "commit": "4ac4045c2cfa6028ebf77473f18024c4a71972a4",
+    "date": "2026-11-11T09:34:23Z"
+   }
   },
   {
    "id": "lisa-new_accounts_yoy-065",
@@ -1185,7 +1446,11 @@
    "candidates": [
     "new_accounts_yoy_30d",
     "new_accounts_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "1e61facf7c79d23da8c0d8ec97871b9d24dd6951",
+    "date": "2026-11-01T02:09:47Z"
+   }
   },
   {
    "id": "ledger-new_accounts_yoy-066",
@@ -1198,7 +1463,11 @@
    "candidates": [
     "new_accounts_yoy_30d",
     "new_accounts_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "rajesh-new_accounts_yoy-067",
@@ -1207,11 +1476,15 @@
    "value": -96,
    "unit": "%",
    "file": "THESIS.md",
-   "quote": "new accounts −96%",
+   "quote": "new accounts \u221296%",
    "candidates": [
     "new_accounts_yoy_30d",
     "new_accounts_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "luong-fees_over_l1_fees-068",
@@ -1225,7 +1498,11 @@
     "intents_fees_over_l1_fees_30d",
     "intents_fees_over_l1_fees_90d",
     "intents_fees_over_l1_fees_365d"
-   ]
+   ],
+   "published": {
+    "commit": "81f3ecce6fa0a619817a8f7f243b1aa336866b96",
+    "date": "2026-11-04T07:47:52Z"
+   }
   },
   {
    "id": "sem-fees_over_l1_fees-069",
@@ -1234,12 +1511,16 @@
    "value": 34.9,
    "unit": "x",
    "file": "THESIS.md",
-   "quote": "**Intents gross fees are 34.9× NEAR",
+   "quote": "**Intents gross fees are 34.9\u00d7 NEAR",
    "candidates": [
     "intents_fees_over_l1_fees_30d",
     "intents_fees_over_l1_fees_90d",
     "intents_fees_over_l1_fees_365d"
-   ]
+   ],
+   "published": {
+    "commit": "89de9a3a4ccab4a5490fabc25ab12d7e9b9a53e0",
+    "date": "2026-11-09T23:17:56Z"
+   }
   },
   {
    "id": "rajesh-revenue_over_l1_fees-070",
@@ -1253,7 +1534,11 @@
     "intents_revenue_over_l1_fees_30d",
     "intents_revenue_over_l1_fees_90d",
     "intents_revenue_over_l1_fees_365d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "rain-revenue_over_l1_fees-071",
@@ -1267,7 +1552,11 @@
     "intents_revenue_over_l1_fees_30d",
     "intents_revenue_over_l1_fees_90d",
     "intents_revenue_over_l1_fees_365d"
-   ]
+   ],
+   "published": {
+    "commit": "c8d103c3ea761a6101cecb6457e03eb58a334203",
+    "date": "2026-11-02T22:24:01Z"
+   }
   },
   {
    "id": "erfan-mcap_over_fees-072",
@@ -1276,10 +1565,14 @@
    "value": 70.4,
    "unit": "x",
    "file": "THESIS.md",
-   "quote": "**70.4×** annualized Intents fees",
+   "quote": "**70.4\u00d7** annualized Intents fees",
    "candidates": [
     "mcap_over_intents_fees_annualized_30d"
-   ]
+   ],
+   "published": {
+    "commit": "8bf528276c2f209394c0c9334ada3de2e6142168",
+    "date": "2026-11-07T00:49:40Z"
+   }
   },
   {
    "id": "soldano-mcap_over_fees-073",
@@ -1291,7 +1584,11 @@
    "quote": "73.9x counting Intents fees",
    "candidates": [
     "mcap_over_intents_fees_annualized_30d"
-   ]
+   ],
+   "published": {
+    "commit": "e229cf5334ea6642bbb739beebab8bf9cd5a836f",
+    "date": "2026-11-01T17:20:45Z"
+   }
   },
   {
    "id": "rajesh-mcap_over_revenue-074",
@@ -1303,7 +1600,11 @@
    "quote": "Market cap is **206x** annualized Intents revenue",
    "candidates": [
     "mcap_over_intents_revenue_annualized_30d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "sem-mcap_over_revenue-075",
@@ -1312,10 +1613,14 @@
    "value": 211,
    "unit": "x",
    "file": "THESIS.md",
-   "quote": "~211× captured revenue",
+   "quote": "~211\u00d7 captured revenue",
    "candidates": [
     "mcap_over_intents_revenue_annualized_30d"
-   ]
+   ],
+   "published": {
+    "commit": "89de9a3a4ccab4a5490fabc25ab12d7e9b9a53e0",
+    "date": "2026-11-09T23:17:56Z"
+   }
   },
   {
    "id": "sem-revenue_yield_on_mcap-076",
@@ -1327,7 +1632,11 @@
    "quote": "= 0.47%** of NEAR market cap",
    "candidates": [
     "revenue_yield_on_mcap_pct_30d"
-   ]
+   ],
+   "published": {
+    "commit": "89de9a3a4ccab4a5490fabc25ab12d7e9b9a53e0",
+    "date": "2026-11-09T23:17:56Z"
+   }
   },
   {
    "id": "tenx-revenue_yield_on_mcap-077",
@@ -1339,7 +1648,11 @@
    "quote": "0.45% a year of NEAR",
    "candidates": [
     "revenue_yield_on_mcap_pct_30d"
-   ]
+   ],
+   "published": {
+    "commit": "c54570d5fa4993e5d625a6c36b5da70354b198be",
+    "date": "2026-11-11T06:40:35Z"
+   }
   },
   {
    "id": "lisa-price_yoy-078",
@@ -1353,7 +1666,11 @@
     "price_yoy",
     "price_yoy_30d_avg",
     "price_yoy_90d_avg"
-   ]
+   ],
+   "published": {
+    "commit": "1e61facf7c79d23da8c0d8ec97871b9d24dd6951",
+    "date": "2026-11-01T02:09:47Z"
+   }
   },
   {
    "id": "ledger-price_yoy-079",
@@ -1367,7 +1684,11 @@
     "price_yoy",
     "price_yoy_30d_avg",
     "price_yoy_90d_avg"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "ledger-staked_share-080",
@@ -1379,7 +1700,11 @@
    "quote": "44.3% of the 1,311,369,535 NEAR supply",
    "candidates": [
     "staked_share_pct"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "lval-staked_share-081",
@@ -1391,7 +1716,11 @@
    "quote": "**45.3%** of supply staked across 379 validators",
    "candidates": [
     "staked_share_pct"
-   ]
+   ],
+   "published": {
+    "commit": "d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6",
+    "date": "2026-11-01T09:03:29Z"
+   }
   },
   {
    "id": "rida-staked_share-082",
@@ -1403,7 +1732,11 @@
    "quote": "44.4% of supply is staked across 351 validators",
    "candidates": [
     "staked_share_pct"
-   ]
+   ],
+   "published": {
+    "commit": "bc56b84cb2101640d99f073683c56b9c465d2d92",
+    "date": "2026-11-10T11:11:13Z"
+   }
   },
   {
    "id": "rajesh-staked_share-083",
@@ -1415,7 +1748,11 @@
    "quote": "43.8% of supply is staked across 335 validators",
    "candidates": [
     "staked_share_pct"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "ledger-validators-084",
@@ -1427,7 +1764,11 @@
    "quote": "counts 338 current validators",
    "candidates": [
     "validators_current"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "lval-validators-085",
@@ -1439,7 +1780,11 @@
    "quote": "staked across 379 validators",
    "candidates": [
     "validators_current"
-   ]
+   ],
+   "published": {
+    "commit": "d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6",
+    "date": "2026-11-01T09:03:29Z"
+   }
   },
   {
    "id": "rida-validators-086",
@@ -1451,7 +1796,11 @@
    "quote": "staked across 351 validators",
    "candidates": [
     "validators_current"
-   ]
+   ],
+   "published": {
+    "commit": "bc56b84cb2101640d99f073683c56b9c465d2d92",
+    "date": "2026-11-10T11:11:13Z"
+   }
   },
   {
    "id": "rajesh-validators-087",
@@ -1463,7 +1812,11 @@
    "quote": "staked across 335 validators",
    "candidates": [
     "validators_current"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "rajesh-validators_to_one_third-088",
@@ -1475,7 +1828,11 @@
    "quote": "the largest **9** hold more than a third of stake",
    "candidates": [
     "validators_to_one_third"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "lval-net_inflation-089",
@@ -1489,7 +1846,11 @@
     "net_inflation_annual_pct_30d",
     "net_inflation_annual_pct_90d",
     "net_inflation_annual_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "d774e4528ec8f12a8c55ad2e6e1cf5c37a3e7eb6",
+    "date": "2026-11-01T09:03:29Z"
+   }
   },
   {
    "id": "rain-net_inflation-090",
@@ -1503,7 +1864,11 @@
     "net_inflation_annual_pct_30d",
     "net_inflation_annual_pct_90d",
     "net_inflation_annual_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "c8d103c3ea761a6101cecb6457e03eb58a334203",
+    "date": "2026-11-02T22:24:01Z"
+   }
   },
   {
    "id": "census-net_inflation-091",
@@ -1517,7 +1882,11 @@
     "net_inflation_annual_pct_30d",
     "net_inflation_annual_pct_90d",
     "net_inflation_annual_pct_365d"
-   ]
+   ],
+   "published": {
+    "commit": "c786bed61d55d0c9b6b22a5a7c34ee8bf6a1288f",
+    "date": "2026-11-10T11:39:15Z"
+   }
   },
   {
    "id": "rajesh-l1_fees_usd_365d-092",
@@ -1529,7 +1898,11 @@
    "quote": "$1.19M over the last 365 days",
    "candidates": [
     "l1_fees_usd_365d"
-   ]
+   ],
+   "published": {
+    "commit": "764ac92cfd07992d1d38ef29590877c2fbc5c81c",
+    "date": "2026-11-05T00:51:05Z"
+   }
   },
   {
    "id": "rida-l1_fees_usd_30d-093",
@@ -1541,7 +1914,11 @@
    "quote": "$136,746 of L1 gas fees",
    "candidates": [
     "l1_fees_usd_30d"
-   ]
+   ],
+   "published": {
+    "commit": "39fede7aa774ae738215d4d4a7bfd8fc190b13ba",
+    "date": "2026-11-11T10:56:51Z"
+   }
   },
   {
    "id": "rida-l1_fees_usd_yoy-094",
@@ -1554,7 +1931,11 @@
    "candidates": [
     "l1_fees_usd_yoy_30d",
     "l1_fees_usd_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "39fede7aa774ae738215d4d4a7bfd8fc190b13ba",
+    "date": "2026-11-11T10:56:51Z"
+   }
   },
   {
    "id": "lisa-l1_fees_usd_yoy-095",
@@ -1567,7 +1948,11 @@
    "candidates": [
     "l1_fees_usd_yoy_30d",
     "l1_fees_usd_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "1e61facf7c79d23da8c0d8ec97871b9d24dd6951",
+    "date": "2026-11-01T02:09:47Z"
+   }
   },
   {
    "id": "ledger-intents_share_of_near_dex_volume-096",
@@ -1579,7 +1964,11 @@
    "quote": "it was 92.6% of the $4,024,785,541",
    "candidates": [
     "intents_share_of_near_dex_volume_30d"
-   ]
+   ],
+   "published": {
+    "commit": "5e828a1d4709f39e9272f4049f274341e1e11960",
+    "date": "2026-11-11T02:17:39Z"
+   }
   },
   {
    "id": "erfan-intents_share_of_near_dex_volume-097",
@@ -1591,7 +1980,11 @@
    "quote": "Intents was 83.9% of all DEX volume attributed to NEAR over the last 90 days",
    "candidates": [
     "intents_share_of_near_dex_volume_30d"
-   ]
+   ],
+   "published": {
+    "commit": "8bf528276c2f209394c0c9334ada3de2e6142168",
+    "date": "2026-11-07T00:49:40Z"
+   }
   },
   {
    "id": "apih-intents_volume_30d-098",
@@ -1603,7 +1996,11 @@
    "quote": "$3.86B volume",
    "candidates": [
     "intents_volume_30d"
-   ]
+   ],
+   "published": {
+    "commit": "23fbf289f08ae05e86117643175b356543ee3ebc",
+    "date": "2026-11-01T06:21:13Z"
+   }
   },
   {
    "id": "apih-intents_fees_30d-099",
@@ -1615,7 +2012,11 @@
    "quote": "$5.75M fees",
    "candidates": [
     "intents_fees_30d"
-   ]
+   ],
+   "published": {
+    "commit": "23fbf289f08ae05e86117643175b356543ee3ebc",
+    "date": "2026-11-01T06:21:13Z"
+   }
   },
   {
    "id": "apih-intents_capture_share-100",
@@ -1629,7 +2030,11 @@
     "intents_capture_share_30d",
     "intents_capture_share_90d",
     "intents_capture_share_365d"
-   ]
+   ],
+   "published": {
+    "commit": "23fbf289f08ae05e86117643175b356543ee3ebc",
+    "date": "2026-11-01T06:21:13Z"
+   }
   },
   {
    "id": "apih-intents_revenue_annualized-101",
@@ -1642,7 +2047,11 @@
    "candidates": [
     "intents_revenue_annualized_30d",
     "intents_revenue_annualized_90d"
-   ]
+   ],
+   "published": {
+    "commit": "23fbf289f08ae05e86117643175b356543ee3ebc",
+    "date": "2026-11-01T06:21:13Z"
+   }
   },
   {
    "id": "apih-revenue_yield_on_mcap-102",
@@ -1654,7 +2063,11 @@
    "quote": "**0.45% of market cap per year**",
    "candidates": [
     "revenue_yield_on_mcap_pct_30d"
-   ]
+   ],
+   "published": {
+    "commit": "b69b585d2c3ab914411fc52e79b55f7fe8979f53",
+    "date": "2026-11-01T00:19:52Z"
+   }
   },
   {
    "id": "apih-mcap_over_revenue-103",
@@ -1663,10 +2076,14 @@
    "value": 224,
    "unit": "x",
    "file": "README.md",
-   "quote": "NEAR trades at ≈ **224x** its annual buyback",
+   "quote": "NEAR trades at \u2248 **224x** its annual buyback",
    "candidates": [
     "mcap_over_intents_revenue_annualized_30d"
-   ]
+   ],
+   "published": {
+    "commit": "23fbf289f08ae05e86117643175b356543ee3ebc",
+    "date": "2026-11-01T06:21:13Z"
+   }
   },
   {
    "id": "apih-intents_take_rate_bps-104",
@@ -1680,7 +2097,11 @@
     "intents_take_rate_bps_30d",
     "intents_take_rate_bps_90d",
     "intents_take_rate_bps_365d"
-   ]
+   ],
+   "published": {
+    "commit": "23fbf289f08ae05e86117643175b356543ee3ebc",
+    "date": "2026-11-01T06:21:13Z"
+   }
   },
   {
    "id": "apih-breakeven_multiple-105",
@@ -1689,12 +2110,16 @@
    "value": 5.6,
    "unit": "x",
    "file": "FINDINGS.md",
-   "quote": "issuance ≈ 5.6x buybacks",
+   "quote": "issuance \u2248 5.6x buybacks",
    "candidates": [
     "breakeven_multiple_30d",
     "breakeven_multiple_90d",
     "breakeven_multiple_365d"
-   ]
+   ],
+   "published": {
+    "commit": "23fbf289f08ae05e86117643175b356543ee3ebc",
+    "date": "2026-11-01T06:21:13Z"
+   }
   },
   {
    "id": "emeka-intents_revenue_annualized-106",
@@ -1707,7 +2132,11 @@
    "candidates": [
     "intents_revenue_annualized_30d",
     "intents_revenue_annualized_90d"
-   ]
+   ],
+   "published": {
+    "commit": "a41b4e4b1b48ac6afb0dccef6d0dbbb9a0a6f161",
+    "date": "2026-11-02T11:07:45Z"
+   }
   },
   {
    "id": "emeka-revenue_yield_on_mcap-107",
@@ -1719,7 +2148,11 @@
    "quote": "annualized captured revenue is 0.43% of market cap",
    "candidates": [
     "revenue_yield_on_mcap_pct_30d"
-   ]
+   ],
+   "published": {
+    "commit": "4e8b08cdcfb0882cd9e78b3afe745ab47cd5b1db",
+    "date": "2026-10-30T10:01:25Z"
+   }
   },
   {
    "id": "emeka-intents_take_rate_bps-108",
@@ -1733,7 +2166,11 @@
     "intents_take_rate_bps_30d",
     "intents_take_rate_bps_90d",
     "intents_take_rate_bps_365d"
-   ]
+   ],
+   "published": {
+    "commit": "2b616b99df1912885ff7a015e5a2b1c4133b1e20",
+    "date": "2026-10-30T08:21:01Z"
+   }
   },
   {
    "id": "emeka-intents_capture_share-109",
@@ -1747,7 +2184,11 @@
     "intents_capture_share_30d",
     "intents_capture_share_90d",
     "intents_capture_share_365d"
-   ]
+   ],
+   "published": {
+    "commit": "2b616b99df1912885ff7a015e5a2b1c4133b1e20",
+    "date": "2026-10-30T08:21:01Z"
+   }
   },
   {
    "id": "shelby-staked_share-110",
@@ -1759,7 +2200,11 @@
    "quote": "(44.31% of total supply)",
    "candidates": [
     "staked_share_pct"
-   ]
+   ],
+   "published": {
+    "commit": "cd7fd9f88b39488e6bde3f1f9d520013db1e709f",
+    "date": "2026-11-09T10:26:11Z"
+   }
   },
   {
    "id": "shelby-validators-111",
@@ -1771,7 +2216,11 @@
    "quote": "Validators: **339**",
    "candidates": [
     "validators_current"
-   ]
+   ],
+   "published": {
+    "commit": "cd7fd9f88b39488e6bde3f1f9d520013db1e709f",
+    "date": "2026-11-09T10:26:11Z"
+   }
   },
   {
    "id": "shelby-validators_to_one_third-112",
@@ -1783,7 +2232,11 @@
    "quote": "Nakamoto coefficient is **9**",
    "candidates": [
     "validators_to_one_third"
-   ]
+   ],
+   "published": {
+    "commit": "cd7fd9f88b39488e6bde3f1f9d520013db1e709f",
+    "date": "2026-11-09T10:26:11Z"
+   }
   },
   {
    "id": "bear-intents_volume_alltime-113",
@@ -1795,7 +2248,11 @@
    "quote": "DefiLlama cumulative volume $37.006B",
    "candidates": [
     "intents_volume_alltime"
-   ]
+   ],
+   "published": {
+    "commit": "94e2351273624570966dad056203a53ba7434e3f",
+    "date": "2026-11-10T02:31:09Z"
+   }
   },
   {
    "id": "bear-active_accounts_per_day-114",
@@ -1807,7 +2264,11 @@
    "quote": "Trailing-30d daily active accounts average 58,223",
    "candidates": [
     "active_accounts_per_day_30d"
-   ]
+   ],
+   "published": {
+    "commit": "94e2351273624570966dad056203a53ba7434e3f",
+    "date": "2026-11-10T02:31:09Z"
+   }
   },
   {
    "id": "oren-tx_yoy-115",
@@ -1820,7 +2281,11 @@
    "candidates": [
     "tx_yoy_30d",
     "tx_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "de175d0374eab3c14606f5af114d46e01fb6a325",
+    "date": "2026-11-03T15:26:26Z"
+   }
   },
   {
    "id": "oren-active_accounts_yoy-116",
@@ -1833,7 +2298,11 @@
    "candidates": [
     "active_accounts_yoy_30d",
     "active_accounts_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "de175d0374eab3c14606f5af114d46e01fb6a325",
+    "date": "2026-11-03T15:26:26Z"
+   }
   },
   {
    "id": "oren-l1_fees_usd_yoy-117",
@@ -1846,7 +2315,11 @@
    "candidates": [
     "l1_fees_usd_yoy_30d",
     "l1_fees_usd_yoy_90d"
-   ]
+   ],
+   "published": {
+    "commit": "de175d0374eab3c14606f5af114d46e01fb6a325",
+    "date": "2026-11-03T15:26:26Z"
+   }
   },
   {
    "id": "oren-price_yoy-118",
@@ -1855,12 +2328,16 @@
    "value": 97.3,
    "unit": "%",
    "file": "THESIS.md",
-   "quote": "| NEAR price | $1.73 → $4.29 | **+97.3%** |",
+   "quote": "| NEAR price | $1.73 \u2192 $4.29 | **+97.3%** |",
    "candidates": [
     "price_yoy",
     "price_yoy_30d_avg",
     "price_yoy_90d_avg"
-   ]
+   ],
+   "published": {
+    "commit": "de175d0374eab3c14606f5af114d46e01fb6a325",
+    "date": "2026-11-03T15:26:26Z"
+   }
   }
  ]
 }

@@ -1,7 +1,9 @@
 name: daily snapshot
 on:
   schedule:
-    - cron: "40 0 * * *"
+    # 15:00 UTC: the thesis snapshot was taken at 14:22 UTC and its newest day was already final;
+    # a fetch at 07:38 UTC (2026-11-12) got a newest day DefiLlama had not finished filling.
+    - cron: "0 15 * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -14,16 +16,28 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-      - name: Fetch raw public data (no API key)
-        run: python -m replicated.fetch
+      - name: Fetch raw public data (no API key), at most once per UTC day
+        id: fetch
+        run: |
+          if [ -d "data/raw/$(date -u +%F)" ]; then
+            echo "data/raw/$(date -u +%F) is already committed; a committed snapshot is never overwritten"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            python -m replicated.fetch
+          fi
+      - name: Re-evaluate the kill conditions, list restated days, update the page
+        if: steps.fetch.outputs.skip != 'true'
+        run: |
+          python -m replicated.history || echo "::warning::a kill condition fails on the new snapshot"
+          python -m replicated.page
       - name: Tests, including the integrity of the new snapshot
+        if: steps.fetch.outputs.skip != 'true'
         run: python -m unittest discover -s tests
-      - name: Re-evaluate the kill conditions and list restated days
-        run: python -m replicated.history || echo "::warning::a kill condition fails on the new snapshot"
       - name: Commit the snapshot
+        if: steps.fetch.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/raw out/history.md out/history.json
+          git add data/raw out/history.md out/history.json docs/index.html
           git diff --cached --quiet || git commit -m "Snapshot $(date -u +%F)"
           git push

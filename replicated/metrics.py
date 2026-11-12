@@ -16,6 +16,14 @@ from datetime import datetime, timezone
 from math import fsum  # exact float sums: the same result on every Python version
 
 DAY = 86400
+# Metrics that describe the snapshot itself (live RPC state, or block samples fixed by the snapshot):
+# compute(raw, asof) returns the same value for any asof, so they cannot be dated to another day.
+SNAPSHOT_ONLY_IDS = ("validators_current", "staked_share_pct", "validators_to_one_third", "max_inflation_rate_pct", "protocol_version")
+SNAPSHOT_ONLY_PREFIXES = ("revenue_wallets_near", "revenue_wallets_share_of_supply_pct", "revenue_wallets_min_balance_ratio", "wallet_cover_pct_")
+
+
+def snapshot_only(metric_id: str) -> bool:
+    return metric_id in SNAPSHOT_ONLY_IDS or metric_id.startswith(SNAPSHOT_ONLY_PREFIXES) or metric_id.endswith("_rpc")
 YOCTO = 10**24
 
 

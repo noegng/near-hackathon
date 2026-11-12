@@ -9,7 +9,7 @@ import json
 import math
 from pathlib import Path
 
-from . import build, checks, compare, metrics
+from . import build, checks, compare, history, metrics
 
 ROOT = Path(__file__).resolve().parent.parent
 E = html.escape
@@ -51,8 +51,9 @@ details{margin:14px 0;border-top:1px solid var(--grid);padding-top:12px}summary{
 .scroll{overflow-x:auto}
 .mx td,.mx th{padding-right:12px}.mx td{white-space:nowrap}.mx td:first-child{white-space:normal;min-width:15em}.mx tfoot td{border-top:1px solid var(--text);border-bottom:0;font-weight:600}.mx th{white-space:normal;vertical-align:bottom}
 .m{display:inline-block;width:11px;height:11px;margin:0 3px 0 0;border-radius:50%;vertical-align:-1px;text-decoration:none}
-.m.same{background:var(--good)}.m.dated{border:2px solid var(--good)}.m.close{background:var(--warn);border-radius:2px}
+.m.same{background:var(--good)}.m.close{background:var(--warn);border-radius:2px}
 .m.miss{width:auto;height:auto;font:700 14px/11px var(--sans);color:var(--crit);vertical-align:0}.m:hover{outline:2px solid var(--text);outline-offset:1px}
+.live{margin:30px 0 0;padding:12px 16px;background:var(--panel);border-radius:3px;font:.86rem/1.55 var(--sans);color:var(--text2);max-width:none}.live b{color:var(--text)}.live .st{margin-right:2px}
 footer{margin-top:84px;border-top:1px solid var(--text);padding-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px 40px;font:.82rem/1.6 var(--sans);color:var(--text2)}
 footer b{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}footer p{margin:0}
 #tip{position:fixed;pointer-events:none;background:var(--text);color:var(--surface);padding:6px 9px;border-radius:4px;font:.78rem/1.35 var(--sans);display:none;z-index:9;max-width:260px}
@@ -203,9 +204,12 @@ def group_of(family: str) -> str:
 
 
 def mark_class(c: dict) -> str:
-    if c["at_snapshot"]["status"] == "reproduced":
-        return "same"
-    return {"reproduced": "dated", "close": "close"}.get(c["best_dated"]["status"], "miss")
+    return {"reproduced": "same", "close": "close"}.get(c["at_publication"]["status"], "miss")
+
+
+def compared_on(p: dict) -> str:
+    return f'on {p["asof"]}' if p["dated"] else f'on our snapshot day {p["asof"]}'
+
 
 
 def matrix(claims: list[dict]) -> str:
@@ -213,7 +217,7 @@ def matrix(claims: list[dict]) -> str:
     by = {}
     for c in claims:
         by.setdefault(c["project"], []).append(c)
-    ok = lambda cs: sum(c["best_dated"]["status"] == "reproduced" for c in cs)
+    ok = lambda cs: sum(c["at_publication"]["status"] == "reproduced" for c in cs)
     head = "<th>Team</th>" + "".join(f"<th>{E(g)}</th>" for g, _ in GROUPS) + '<th class="n">Within 5%</th>'
     body = []
     for project, cs in sorted(by.items(), key=lambda kv: (-len(kv[1]), kv[0].lower())):
@@ -222,8 +226,9 @@ def matrix(claims: list[dict]) -> str:
         for g, _ in GROUPS:
             marks = []
             for c in sorted((c for c in cs if group_of(c["family"]) == g), key=lambda c: c["id"]):
-                b, cls = c["best_dated"], mark_class(c)
-                tip = f'{c["family"]}: published {compare.fmt(c["claimed"], c["unit"])}, ours {compare.fmt(b["ours"], c["unit"])} on {b["asof"]} ({b["gap"]:.1%} apart)'
+                b, cls = c["at_publication"], mark_class(c)
+                tip = (f'{c["family"]}: {compare.fmt(c["claimed"], c["unit"])} published {c["published"][:10]}, '
+                       f'ours {compare.fmt(b["ours"], c["unit"])} {compared_on(b)} ({b["gap"]:.1%} apart)')
                 marks.append(f'<a class="m {cls}" href="{E(c["url"])}" data-tip="{E(tip)}" aria-label="{E(tip)}">{"&times;" if cls == "miss" else ""}</a>')
             cells.append(f"<td>{''.join(marks)}</td>")
         body.append(f'<tr><td><a href="{E(repo)}">{E(project)}</a></td>{"".join(cells)}<td class="n">{ok(cs)} of {len(cs)}</td></tr>')
@@ -275,10 +280,29 @@ def render(snapshot: str) -> str:
     unit = lambda c: {"%": "%", "x": "x"}.get(res["metrics"][c["metric"]]["unit"], "")
     check_rows = [[E(c["id"]), E(c["statement"]), E(c.get("due", "now")), f'{c["value"]:.3g}{unit(c)}',
                    f'<span class="st {status_cls[c["status"]]}">{c["status"].capitalize()}</span>'] for c in chk]
-    claim_rows = [[E(c["family"]), E(c["project"]), compare.fmt(c["claimed"], c["unit"]), compare.fmt(c["best_dated"]["ours"], c["unit"]),
-                   f'{c["best_dated"]["gap"]:.1%}', E(c["best_dated"]["status"]), f'<a href="{E(c["url"])}">quote</a>']
+    claim_rows = [[E(c["family"]), E(c["project"]), compare.fmt(c["claimed"], c["unit"]), E(c["published"][:10]), E(c["at_publication"]["asof"]),
+                   compare.fmt(c["at_publication"]["ours"], c["unit"]), f'{c["at_publication"]["gap"]:.1%}', E(c["at_publication"]["status"]),
+                   f'<a href="{E(c["url"])}">quote</a>']
                   for c in sorted(rep["claims"], key=lambda c: (c["family"], c["claimed"]))]
     lo, hi = m["wallet_growth_cover_of_net_issuance_pct_360d"], m["wallet_growth_cover_of_net_issuance_pct_90d"]
+
+    hist = history.run()
+    newest = hist["snapshots"][-1]
+    res_new = res if newest["snapshot"] == snapshot else metrics.compute(build.load_raw(newest["snapshot"]))
+    chk_new = {c["id"]: c for c in checks.evaluate(res_new)}
+    for row, c in zip(check_rows, chk):
+        n = chk_new[c["id"]]
+        row += [f'{n["value"]:.3g}{unit(n)}', f'<span class="st {status_cls[n["status"]]}">{n["status"].capitalize()}</span>']
+    kills = [c for c in chk_new.values() if c["id"].startswith("K")]
+    failed = [c["id"] for c in kills if c["status"] == "FAILS"]
+    restated_new = [x for x in hist["restatements"] if x["newer"] == newest["snapshot"]]
+    changed = sum(x["days_changed"] for x in restated_new)
+    hist_url = REPO_URL + "/blob/main/out/history.md" if REPO_URL else "../out/history.md"
+    live = (f'<b>Re-checked every day.</b> Newest snapshot {E(newest["snapshot"])} (data to {E(newest["asof"])}, {len(hist["snapshots"])} snapshots so far): '
+            + (f'<span class="st ok">all {len(kills)} kill conditions hold</span>' if not failed else f'<span class="st bad">{E(", ".join(failed))} fails</span>')
+            + f'; 90-day on-chain cover of net issuance {res_new["metrics"]["wallet_growth_cover_of_net_issuance_pct_90d"]["value"]:.1f}%'
+            + (f'; past days changed by DefiLlama since the snapshot before: {changed}' if restated_new else "")
+            + f'. <a href="{hist_url}">Every snapshot side by side</a>.')
 
     repo = f'<a href="{REPO_URL}">{E(REPO_URL.split("//")[-1])}</a>' if REPO_URL else "the repository"
     thesis = REPO_URL + "/blob/main/THESIS.md" if REPO_URL else "../THESIS.md"
@@ -288,19 +312,20 @@ def render(snapshot: str) -> str:
 <h1>About thirty teams measured NEAR. Do their numbers agree?</h1>
 <p class="lede">We recomputed {s['claims']} numbers published by {s['sources']} of them from raw public data, kept what replicates, and built one thesis on it: NEAR is a growth bet on Intents revenue that today offsets {lo:.0f}% to {hi:.0f}% of new supply, and that revenue can be counted on chain.</p>
 <div class="keys">
-<div class="key"><b>{s['best_dated']['reproduced']} of {s['claims']}</b><span>published numbers are within 5% of our recomputation ({s['at_snapshot']['reproduced']} on the snapshot day itself)</span></div>
+<div class="key"><b>{s['at_publication']['reproduced']} of {s['claims']}</b><span>published numbers are within 5% of our recomputation for the day each was published ({s['at_snapshot']['reproduced']} if all are recomputed on our snapshot day)</span></div>
 <div class="key"><b>{lo:.0f}&ndash;{hi:.0f}%</b><span>of net issuance is offset by captured Intents revenue, depending on the window</span></div>
 <div class="key"><b>{m['revenue_wallets_near'] / 1e6:.2f}M</b><span>NEAR held by the three revenue wallets, read from an archival node; the total has never fallen</span></div>
 <div class="key"><b>{m['growth_multiple_to_offset_issuance_90d']:.1f}&times;</b><span>growth in captured revenue needed before issuance is offset</span></div>
 </div>
 <p class="note" style="margin-top:8px">Snapshot {E(snapshot)}. Every figure on this page is generated by <code>python3 -m replicated.page</code> from raw data committed with its hashes. The full argument, with the evidence against, is in <a href="{thesis}">THESIS.md</a>.</p>
+<p class="live">{live}</p>
 
 <section><p class="kicker">1 &middot; Replication</p>
 <h2>{s['sources']} teams, {s['claims']} published numbers, one recomputation</h2>
 <p>Each mark is one number a team published, placed under the kind of quantity it measures. Hover for both values; click for the sentence it was read from, at a pinned commit.</p>
-<div class="legend"><span><i class="m same"></i>Within 5% on our snapshot day</span><span><i class="m dated"></i>Within 5% on a day in the two weeks before</span><span><i class="m close"></i>Within 15%</span><span><i class="m miss">&times;</i>Not reproduced</span></div>
+<div class="legend"><span><i class="m same"></i>Within 5%</span><span><i class="m close"></i>Within 15%</span><span><i class="m miss">&times;</i>Not reproduced</span></div>
 {matrix(rep["claims"])}
-<p class="note">A hollow mark usually means the team measured on an earlier day or over another window. The dated search tries several definitions and {rep['lookback_days'] + 1} days, so a match shows that a standard definition gives the published number, not that the team computed it that way.</p></section>
+<p class="note">Each number is compared on one day: the end day its sentence states, otherwise the last complete day before the commit that wrote it. There is no search over days. Where a family has several standard definitions (30, 90 or 365 days; net or gross issuance), the closest is used and named in section 6, so a match shows that a standard definition gives the number, not that the team computed it that way. Validators and stake ({s['undated']} numbers) are compared on our snapshot day, the only day the snapshot holds.</p></section>
 
 <section><p class="kicker">2 &middot; Definitions</p>
 <h2>Where the teams disagree, it is the definition</h2>
@@ -330,14 +355,14 @@ def render(snapshot: str) -> str:
 
 <section><p class="kicker">5 &middot; Falsification</p>
 <h2>What would change our mind</h2>
-<p>K rows are kill conditions: if one fails on a new snapshot, the thesis is dropped and <code>python3 -m replicated.checks</code> exits with an error. P rows are predictions written on 2026-11-11.</p>
-{table(["Id", "Condition", "Due", "Today", "Status"], check_rows, num_cols=(3,))}</section>
+<p>K rows are kill conditions: if one fails on a new snapshot, the thesis is dropped and <code>python3 -m replicated.checks</code> exits with an error. P rows are predictions written on 2026-11-11. A scheduled job adds a snapshot every day and evaluates them again.</p>
+{table(["Id", "Condition", "Due", f"Thesis snapshot {snapshot}", "Status", f"Newest snapshot {newest['snapshot']}", "Status"], check_rows, num_cols=(3, 5))}</section>
 
 <section><p class="kicker">6 &middot; Data</p>
 <h2>Every claim we checked</h2>
-<p class="note">"Ours" is the closest standard definition on the best day within {rep['lookback_days']} days before the snapshot. A match means a standard definition gives the published number, not that the team computed it that way.</p>
+<p class="note">"Commit date" is when the sentence quoting the number was committed. "Ours" is the closest standard definition on the day in "Compared on". A match means a standard definition gives the published number, not that the team computed it that way.</p>
 <details><summary>All {s['claims']} claims from {s['sources']} repositories</summary>
-{table(["Metric", "Project", "Published", "Ours", "Gap", "Result", "Source"], claim_rows, num_cols=(2, 3, 4))}</details>
+{table(["Metric", "Project", "Published", "Commit date", "Compared on", "Ours", "Gap", "Result", "Source"], claim_rows, num_cols=(2, 5, 6))}</details>
 <details><summary>Data behind the charts</summary>
 {table(["Sample", "Wallets, NEAR", "Reported cumulative, NEAR"], [[x['day'], f"{x['wallets_near']:,.0f}", f"{x['defillama_cumulative_near']:,.0f}"] for x in wv], num_cols=(1, 2))}
 {table(["Step ending", "Wallet growth, NEAR", "Net issuance, NEAR", "Offset"], [[x['to'], f"{x['wallet_growth_near']:,.0f}", f"{x['net_issuance_near']:,.0f}", f"{x['cover_pct']:.1f}%"] for x in steps], num_cols=(1, 2, 3))}
