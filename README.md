@@ -80,9 +80,11 @@ snapshot named in `data/THESIS_SNAPSHOT`; later snapshots only feed `out/history
 - The dated search tries several definitions and 15 days per claim. A match shows that a standard
   definition on a nearby day gives the published number, not that the team computed it that way.
 - The 30-day fee total of $5,458,382 (finding 3) is closest to our series at 6% away. The source changing past
-  days is one possible cause and is not established: two snapshots taken three hours apart were identical. `python3 -m replicated.restated <older> <newer>` compares two snapshots, and
-  [`out/history.md`](out/history.md) lists the changed days for every pair of consecutive snapshots. A scheduled job
-  (`.github/workflows/snapshot.yml`) commits one snapshot per day from 2026-11-12.
+  days is one possible cause and is not supported so far: the snapshots of 2026-11-11 and 2026-11-12, taken a day
+  apart, agree on every past day of the three DefiLlama Intents series (0 of 701, 550 and 550 days changed).
+  `python3 -m replicated.restated <older> <newer>` compares two snapshots, and [`out/history.md`](out/history.md)
+  lists the changed days for every pair of consecutive snapshots. A scheduled job (`.github/workflows/snapshot.yml`)
+  commits one snapshot per day; the thesis stays pinned to 2026-11-11, the day its claims were matched.
 - NearBlocks API v1 (`/v1/charts`) is announced to switch off on 2026-11-22; the committed snapshot keeps
   the build reproducible after that.
 
