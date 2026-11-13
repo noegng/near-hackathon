@@ -1,4 +1,6 @@
-# NEAR, replicated
+# Proof of Numbers
+
+Published NEAR numbers, recomputed from raw data.
 
 Built at NEAR HACKATHON, track **Investment Thesis** (`thesis`). The thesis: [`THESIS.md`](THESIS.md).
 The results on one page, generated from the build: <https://noegng.github.io/near-hackathon/>.

@@ -583,8 +583,8 @@ def render(snapshot: str) -> str:
     ISSUANCE = term("new supply", "NEAR creates new tokens every epoch to pay validators (about 2.5% a year). Each new token dilutes existing holders.")
     CAPTURED = term("captured revenue", "The part of Intents fees that NEAR keeps. It arrives as NEAR in three public wallets.")
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NEAR, replicated</title><meta name="description" content="{s['claims']} published NEAR numbers recomputed from raw data, and the investment thesis that survives."><style>{CSS}</style></head><body><main>
-<nav class="toc"><a class="brand" href="#summary"><span>&#10035;</span> NEAR, replicated</a><a href="#findings">Findings</a><a href="#thesis">Thesis</a><a href="#tests">Kill switches</a><a href="#teams">Teams</a><a href="#data">Data</a><a class="btn" href="{REPO_URL or '..'}">Code &#8599;</a></nav>
+<title>Proof of Numbers: NEAR, recomputed</title><meta name="description" content="{s['claims']} published NEAR numbers recomputed from raw data, and the investment thesis that survives."><style>{CSS}</style></head><body><main>
+<nav class="toc"><a class="brand" href="#summary"><span>&#10035;</span> Proof of Numbers</a><a href="#findings">Findings</a><a href="#thesis">Thesis</a><a href="#tests">Kill switches</a><a href="#teams">Teams</a><a href="#data">Data</a><a class="btn" href="{REPO_URL or '..'}">Code &#8599;</a></nav>
 
 <header id="summary">
 <div class="hero"><div class="aura"><svg aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg></div>
