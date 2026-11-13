@@ -85,7 +85,7 @@ h3.pro{color:var(--good)}h3.con{color:var(--crit)}
 @media (max-width:560px){body{font-size:15px}main{padding:0 18px 56px}nav.toc{padding:12px 18px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}nav.toc .brand{margin-right:12px}
 .hero{min-height:0;padding:80px 0 30px}h1 em{padding-left:0}section{margin-top:80px}.g-r{font-size:.78rem}.g-gap{margin-left:0}.big{font-size:2.6rem}}
 </style></head><body><main>
-<nav class="toc"><a class="brand" href="#summary"><span>&#10035;</span> Proof of Numbers</a><a href="#findings">Findings</a><a href="#thesis">Thesis</a><a href="#tests">Kill switches</a><a href="#teams">Teams</a><a href="#data">Data</a><a class="btn" href="https://github.com/noegng/near-hackathon">Code &#8599;</a></nav>
+<nav class="toc"><a class="brand" href="#summary"><span>&#10035;</span> Proof of Numbers</a><a href="#findings">Findings</a><a href="#thesis">Thesis</a><a href="#tests">Kill switches</a><a href="#teams">Teams</a><a href="#data">Data</a><a class="btn" href="https://github.com/noegng/proof-of-numbers">Code &#8599;</a></nav>
 
 <header id="summary">
 <div class="hero"><div class="aura"><svg aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg></div>
@@ -115,7 +115,7 @@ h3.pro{color:var(--good)}h3.con{color:var(--crit)}
 <li><span><b>Build and test</b>A thesis from what replicates. Its 5 kill conditions run as code and are re-checked every day.</span></li>
 </ol></div>
 </div>
-<p class="live"><b>Re-checked every day.</b> Newest snapshot 2026-11-12 (data to 2026-11-11, 2 snapshots so far): <span class="st ok">all 5 kill conditions hold</span>; 90-day on-chain cover of net issuance 18.3%; past days changed by DefiLlama since the snapshot before: 0. <a href="https://github.com/noegng/near-hackathon/blob/main/out/history.md">Every snapshot side by side</a>.</p>
+<p class="live"><b>Re-checked every day.</b> Newest snapshot 2026-11-12 (data to 2026-11-11, 2 snapshots so far): <span class="st ok">all 5 kill conditions hold</span>; 90-day on-chain cover of net issuance 18.3%; past days changed by DefiLlama since the snapshot before: 0. <a href="https://github.com/noegng/proof-of-numbers/blob/main/out/history.md">Every snapshot side by side</a>.</p>
 </header>
 
 <section id="findings"><p class="kicker">Three findings</p>
@@ -163,7 +163,7 @@ h3.pro{color:var(--good)}h3.con{color:var(--crit)}
 <li><b>The yield is thin:</b> captured revenue is 0.47% of a $4.8B market cap a year; the market pays 215&times; revenue.</li>
 <li><b>The captured NEAR is held, not burned:</b> it could be spent. The thesis depends on it not being spent.</li></ul></div>
 </div>
-<p class="note">Full argument, with every figure tied to the metric that produced it (a test fails if they disagree): <a href="https://github.com/noegng/near-hackathon/blob/main/THESIS.md">THESIS.md</a>.</p></section>
+<p class="note">Full argument, with every figure tied to the metric that produced it (a test fails if they disagree): <a href="https://github.com/noegng/proof-of-numbers/blob/main/THESIS.md">THESIS.md</a>.</p></section>
 
 <section id="tests"><p class="kicker">Falsification</p>
 <h2>Five kill switches, checked automatically every day</h2>
@@ -218,7 +218,7 @@ h3.pro{color:var(--good)}h3.con{color:var(--crit)}
 </details></section>
 
 <footer>
-<div><b>Reproduce</b><p>Python 3.9+, standard library only. Clone <a href="https://github.com/noegng/near-hackathon">github.com/noegng/near-hackathon</a>, then <code>python3 -m replicated.build</code>. Runs offline from the committed snapshot.</p></div>
+<div><b>Reproduce</b><p>Python 3.9+, standard library only. Clone <a href="https://github.com/noegng/proof-of-numbers">github.com/noegng/proof-of-numbers</a>, then <code>python3 -m replicated.build</code>. Runs offline from the committed snapshot.</p></div>
 <div><b>Sources</b><p>DefiLlama (Intents volume, fees, revenue), NearBlocks (daily charts), a public archival RPC node (supply, wallet balances, validators). No API key.</p></div>
 <div><b>Credit</b><p>The numbers under test belong to the teams quoted in the claims table, each linked to its source. Not investment advice. MIT license.</p></div>
 </footer>

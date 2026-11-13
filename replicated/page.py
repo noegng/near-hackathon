@@ -13,7 +13,7 @@ from . import build, checks, compare, history, metrics
 
 ROOT = Path(__file__).resolve().parent.parent
 E = html.escape
-REPO_URL = "https://github.com/noegng/near-hackathon"  # empty makes the page link relatively
+REPO_URL = "https://github.com/noegng/proof-of-numbers"  # empty makes the page link relatively
 
 CSS = """
 :root{color-scheme:dark;--sans:"Space Grotesk",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;

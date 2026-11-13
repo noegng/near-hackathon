@@ -3,7 +3,7 @@
 Published NEAR numbers, recomputed from raw data.
 
 Built at NEAR HACKATHON, track **Investment Thesis** (`thesis`). The thesis: [`THESIS.md`](THESIS.md).
-The results on one page, generated from the build: <https://noegng.github.io/near-hackathon/>.
+The results on one page, generated from the build: <https://noegng.github.io/proof-of-numbers/>.
 
 Many teams in this track measured the same chain independently and published their numbers. This project
 treats those numbers as evidence: it records each one with its source, recomputes it from raw public data,
@@ -14,7 +14,7 @@ thesis is then built only on numbers that replicate, and its conditions run as c
 
 119 numbers published by 20 teams were recomputed from raw data, each for the day it was published: 101 are
 within 5% of ours, 15 within 15%, 3 further apart. Recomputed on our snapshot day instead, only 89 are within 5%:
-a correct 30-day number drifts as the window moves on. Team by team: <https://noegng.github.io/near-hackathon/>.
+a correct 30-day number drifts as the window moves on. Team by team: <https://noegng.github.io/proof-of-numbers/>.
 
 1. **The teams agree because they read one source.** 15 of the 20 repositories publish NEAR Intents volume,
    fees or revenue, and all 15 cite DefiLlama, whose adapter reads datasets NEAR uploads to Dune. Their
@@ -46,7 +46,7 @@ Needs Python 3.9+ and nothing else (standard library only).
 
 ## Reproducibility
 
-[![tests and rebuild](https://github.com/noegng/near-hackathon/actions/workflows/ci.yml/badge.svg)](https://github.com/noegng/near-hackathon/actions/workflows/ci.yml)
+[![tests and rebuild](https://github.com/noegng/proof-of-numbers/actions/workflows/ci.yml/badge.svg)](https://github.com/noegng/proof-of-numbers/actions/workflows/ci.yml)
 
 On every push, GitHub Actions runs the tests on Python 3.9 and 3.13, rebuilds `out/` and `docs/` from the
 committed raw data, and fails if one byte differs from what is committed. Float sums use `math.fsum`, so
