@@ -27,9 +27,22 @@ class Page(unittest.TestCase):
             self.assertNotRegex(self.html, rf'[">,\s]{bad}[",<\s%]')
 
     def test_charts_and_tables_are_present(self):
-        self.assertEqual(self.html.count("<svg"), 5)
+        # waffle, source diagram, price number line, fee windows, strip, three line charts, bar chart
+        self.assertEqual(self.html.count("<svg"), 9)
         self.assertGreaterEqual(self.html.count("<table"), 4)
-        self.assertEqual(self.html.count("<polyline"), 4)
+        self.assertEqual(self.html.count("<polyline"), 5)
+
+    def test_one_square_per_claim_and_every_kill_condition_has_a_card(self):
+        self.assertEqual(len(re.findall(r'<rect x="\d+" y="\d+" width="22"', self.html)), 119)
+        self.assertEqual(len(re.findall(r'<div class="chk (?:ok|bad|wait)"><div class="chk-h"><b>K', self.html)), 5)
+
+    def test_label_placement_keeps_gap_and_bounds(self):
+        out = page.place([20.0, 400.0, 405.0], 150, 80, 440)
+        self.assertGreaterEqual(min(out), 80)
+        self.assertLessEqual(max(out), 440)
+        s = sorted(out)
+        self.assertTrue(all(b - a >= 150 - 1e-9 for a, b in zip(s, s[1:])))
+        self.assertEqual(page.day_label("2026-11-08"), "8 Nov")
 
     def test_helpers(self):
         self.assertEqual(page.money(125_257_736), "$125M")

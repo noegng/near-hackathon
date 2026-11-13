@@ -33,7 +33,7 @@ Needs Python 3.9+ and nothing else (standard library only).
 
 | Do | See |
 | --- | --- |
-| `python3 -m unittest discover -s tests` | 42 tests pass, offline, in about a second |
+| `python3 -m unittest discover -s tests` | 44 tests pass, offline, in about a second |
 | `python3 -m replicated.build` | `out/metrics.json`: about 130 metrics, each with its definition, from the committed raw snapshot |
 | `python3 -m replicated.compare` | `out/replication.md`: every published claim next to our number, and the spread per metric |
 | `python3 -m replicated.checks` | the thesis's five kill conditions evaluated (all hold today) and four dated predictions (pending) |
