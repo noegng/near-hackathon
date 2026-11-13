@@ -20,15 +20,15 @@ class Page(unittest.TestCase):
         """No scripts, styles, fonts or images are loaded from elsewhere; links to sources are allowed."""
         self.assertFalse(re.findall(r'<(?:script|img|link|iframe)[^>]*\s(?:src|href)=', self.html))
         self.assertNotIn("@import", self.html)
-        self.assertNotIn("url(", self.html)
+        self.assertFalse(re.findall(r"url\((?!#)", self.html), "only in-page references such as url(#grain) are allowed")
 
     def test_no_broken_numbers(self):
         for bad in ("nan", "NaN", "inf", "None"):
             self.assertNotRegex(self.html, rf'[">,\s]{bad}[",<\s%]')
 
     def test_charts_and_tables_are_present(self):
-        # waffle, source diagram, price number line, fee windows, strip, three line charts, bar chart
-        self.assertEqual(self.html.count("<svg"), 9)
+        # hero grain, waffle, source diagram, price number line, fee windows, strip, three line charts, bar chart
+        self.assertEqual(self.html.count("<svg"), 10)
         self.assertGreaterEqual(self.html.count("<table"), 4)
         self.assertEqual(self.html.count("<polyline"), 5)
 
