@@ -559,6 +559,7 @@ def render(snapshot: str) -> str:
 
     hist = history.run()
     newest = hist["snapshots"][-1]
+    nm = newest["metrics"]
     res_new = res if newest["snapshot"] == snapshot else metrics.compute(build.load_raw(newest["snapshot"]))
     chk_new = {c["id"]: c for c in checks.evaluate(res_new)}
     for row, c in zip(check_rows, chk):
@@ -572,6 +573,8 @@ def render(snapshot: str) -> str:
     live = (f'<b>Re-checked every day.</b> Newest snapshot {E(newest["snapshot"])} (data to {E(newest["asof"])}, {len(hist["snapshots"])} snapshots so far): '
             + (f'<span class="st ok">all {len(kills)} kill conditions hold</span>' if not failed else f'<span class="st bad">{E(", ".join(failed))} fails</span>')
             + f'; 90-day on-chain cover of net issuance {res_new["metrics"]["wallet_growth_cover_of_net_issuance_pct_90d"]["value"]:.1f}%'
+            + f'; last 30 days: Intents volume {history.money(nm["intents_volume_30d"])}, fees {history.money(nm["intents_fees_30d"])},'
+            + f' captured revenue {history.money(nm["intents_revenue_30d"])}, {nm["tx_per_day_30d"]:,.0f} transactions a day; NEAR ${nm["price_usd"]:.2f}'
             + (f'; past days changed by DefiLlama since the snapshot before: {changed}' if restated_new else "")
             + f'. <a href="{hist_url}">Every snapshot side by side</a>.')
 
