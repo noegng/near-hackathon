@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NEAR, replicated</title><meta name="description" content="119 published NEAR numbers recomputed from raw data, and the investment thesis that survives."><style>
 :root{color-scheme:dark;--sans:"Space Grotesk",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
---surface:#020202;--panel:#0b0b0c;--panel2:#141415;--line:#1c1c1f;--text:#fff;--text2:#a4a8bd;--muted:#777b91;--grid:#26262a;
+--surface:#020202;--panel:rgba(11,11,12,.9);--panel2:#141415;--line:#1c1c1f;--text:#fff;--text2:#a4a8bd;--muted:#777b91;--grid:#26262a;
 --s1:#6a8cff;--s2:#ff7a45;--good:#00ec97;--warn:#f5c443;--crit:#ff5a5f;--blue:#3c50e0}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--surface);color:var(--text);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 main{max-width:1120px;margin:0 auto;padding:0 28px 72px}
@@ -80,6 +80,7 @@ h3.pro{color:var(--good)}h3.con{color:var(--crit)}
 .gauge{display:flex;height:56px;border-radius:12px;overflow:hidden;background:var(--panel2);font:600 1rem/1 var(--sans)}
 .gauge>div{display:flex;align-items:center;white-space:nowrap}.g-i{background:var(--good);color:#020202;padding-left:14px}.g-b{background:var(--warn)}.g-r{flex:1;padding-left:16px;color:var(--text);font-weight:500;overflow:hidden}
 .g-leg{display:flex;flex-wrap:wrap;gap:6px 22px;font:.8rem/1.4 var(--sans);color:var(--text2);margin-top:12px}.g-leg i{display:inline-block;width:9px;height:9px;margin-right:7px;border-radius:2px}.g-gap{margin-left:auto}.g-leg b{color:var(--text)}
+#bg{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1;pointer-events:none}.gl .aura{display:none}
 #tip{position:fixed;pointer-events:none;background:var(--text);color:var(--surface);padding:7px 10px;border-radius:8px;font:.78rem/1.35 var(--sans);display:none;z-index:9;max-width:280px}
 @media (max-width:560px){body{font-size:15px}main{padding:0 18px 56px}nav.toc{padding:12px 18px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}nav.toc .brand{margin-right:12px}
 .hero{min-height:0;padding:80px 0 30px}h1 em{padding-left:0}section{margin-top:80px}.g-r{font-size:.78rem}.g-gap{margin-left:0}.big{font-size:2.6rem}}
@@ -226,4 +227,37 @@ const tip=document.getElementById('tip');
 document.addEventListener('mousemove',e=>{const t=e.target.closest('[data-tip]');if(!t){tip.style.display='none';return}
 tip.textContent=t.dataset.tip;tip.style.display='block';const w=tip.offsetWidth;
 tip.style.left=Math.min(e.clientX+14,innerWidth-w-8)+'px';tip.style.top=(e.clientY+14)+'px'});
+// Background: a slow green WebGL gradient behind the whole page. Full strength behind the hero; further down it dims
+// and darkens the centre column, so text always sits on near-black. Without WebGL the static CSS gradient stays.
+(()=>{const cv=document.createElement('canvas');cv.id='bg';const gl=cv.getContext('webgl',{antialias:false,alpha:false});if(!gl)return;
+const VS='attribute vec2 a;void main(){gl_Position=vec4(a,0.,1.);}';
+const FS=`precision mediump float;uniform vec2 R;uniform float T,K,C;
+float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+1.),f.x),f.y);}
+float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<4;i++){v+=a*n(p);p=p*2.03+7.1;a*=.5;}return v;}
+void main(){vec2 uv=gl_FragCoord.xy/R;uv.y=1.-uv.y;vec2 p=uv*vec2(R.x/R.y,1.)*1.3;float s=T*.05;
+vec2 q=vec2(fbm(p+s),fbm(p+vec2(5.2,1.3)-s));float f=fbm(p+2.2*q+vec2(1.7,9.2)+.6*s);
+float y=.30+.30*uv.x+.10*sin(uv.x*2.6+s*3.)+.12*(q.x-.5);float d=uv.y-y;
+float band=exp(-d*d*16.),core=exp(-d*d*120.);
+vec3 deep=vec3(.0,.13,.09),green=vec3(0.,.93,.59),mint=vec3(.75,1.,.9),blue=vec3(.20,.28,.85);
+vec3 col=deep*smoothstep(.15,.75,f)*1.4;
+col+=green*band*(.45+.55*f);col+=mint*core*.22*f;col+=blue*exp(-pow(uv.y-y+.22,2.)*20.)*.35*q.y;
+float side=mix(1.,.18+.82*smoothstep(.16,.48,abs(uv.x-.5)),C);
+col*=K*side;col+=(h(gl_FragCoord.xy+fract(T*7.))-.5)*.05*(.4+K);
+gl_FragColor=vec4(max(col,0.),1.);}`;
+const sh=(t,src)=>{const o=gl.createShader(t);gl.shaderSource(o,src);gl.compileShader(o);return gl.getShaderParameter(o,gl.COMPILE_STATUS)?o:null};
+const v=sh(gl.VERTEX_SHADER,VS),f=sh(gl.FRAGMENT_SHADER,FS);if(!v||!f)return;
+const pr=gl.createProgram();gl.attachShader(pr,v);gl.attachShader(pr,f);gl.linkProgram(pr);if(!gl.getProgramParameter(pr,gl.LINK_STATUS))return;
+gl.useProgram(pr);gl.bindBuffer(gl.ARRAY_BUFFER,gl.createBuffer());gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+const al=gl.getAttribLocation(pr,'a');gl.enableVertexAttribArray(al);gl.vertexAttribPointer(al,2,gl.FLOAT,false,0,0);
+const U=k=>gl.getUniformLocation(pr,k),uR=U('R'),uT=U('T'),uK=U('K'),uC=U('C');
+document.body.prepend(cv);document.documentElement.classList.add('gl');
+const hero=document.querySelector('.hero'),still=matchMedia('(prefers-reduced-motion:reduce)').matches,S=.5;
+let last=0,raf=0;
+function size(){cv.width=Math.ceil(innerWidth*S);cv.height=Math.ceil(innerHeight*S);gl.viewport(0,0,cv.width,cv.height)}
+function draw(ms){const m=Math.min(1,Math.max(0,scrollY/((hero?hero.offsetHeight:innerHeight)*.8)));
+gl.uniform2f(uR,cv.width,cv.height);gl.uniform1f(uT,still?12.:ms/1000);gl.uniform1f(uK,.78-.42*m);gl.uniform1f(uC,.4+.6*m);gl.drawArrays(gl.TRIANGLES,0,3)}
+function loop(ms){raf=requestAnimationFrame(loop);if(ms-last<33)return;last=ms;draw(ms)}
+size();addEventListener('resize',()=>{size();draw(performance.now())});
+if(still){draw(0);addEventListener('scroll',()=>draw(0),{passive:true})}else raf=requestAnimationFrame(loop)})();
 </script></body></html>
