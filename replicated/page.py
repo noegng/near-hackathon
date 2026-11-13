@@ -38,7 +38,7 @@ h1 em{font-style:normal;display:block;padding-left:1em}
 p{margin:10px 0;max-width:40em;color:var(--text2)}p b{color:var(--text)}.note{font-size:.82rem;line-height:1.55;color:var(--muted);max-width:62em}
 a{color:inherit;text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{text-decoration-color:var(--good);color:var(--text)}
 code{font:.82em var(--mono);background:var(--panel2);padding:2px 6px;border-radius:5px;white-space:nowrap;color:var(--text)}
-section,header{scroll-margin-top:64px}section{margin-top:120px}
+html{scroll-padding-top:72px}section{margin-top:120px}
 .kicker{font:500 .72rem/1 var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--good);margin:0}
 h2{font:500 clamp(2rem,4.4vw,3.2rem)/1.06 var(--sans);letter-spacing:-.035em;margin:14px 0 18px;max-width:18em}
 h3{font:600 .98rem/1.3 var(--sans);letter-spacing:-.01em;margin:0 0 4px}
@@ -54,7 +54,11 @@ table{border-collapse:collapse;width:100%;font:.84rem/1.45 var(--sans);font-vari
 th,td{text-align:left;padding:10px 16px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}th:last-child,td:last-child{padding-right:0}
 th{font:500 .68rem/1.3 var(--mono);letter-spacing:.03em;text-transform:uppercase;color:var(--muted);border-bottom-color:var(--grid);white-space:nowrap}
 td.n,th.n{text-align:right;white-space:nowrap}td:first-child{white-space:nowrap;color:var(--text)}
-details{margin:16px 0;border-top:1px solid var(--line);padding-top:14px}summary{cursor:pointer;font:600 .88rem/1.3 var(--sans)}summary:hover{color:var(--good)}
+details{margin:16px 0;border-top:1px solid var(--line);padding-top:14px}
+summary{cursor:pointer;font:600 .88rem/1.3 var(--sans);list-style:none;display:flex;align-items:center;gap:10px}summary::-webkit-details-marker{display:none}summary:hover{color:var(--good)}
+summary::before{content:"\\203A";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:6px;background:var(--panel2);color:var(--good);font:600 1rem/1 var(--sans);rotate:0deg}
+details[open]>summary::before{rotate:90deg}
+details::details-content{interpolate-size:allow-keywords;overflow:clip;contain:layout}details:not([open])::details-content{block-size:0}
 .st{font-weight:600;white-space:nowrap}.st.ok::before{content:"\\2713  ";color:var(--good)}.st.bad::before{content:"\\2717  ";color:var(--crit)}.st.wait::before{content:"\\25CB  ";color:var(--muted)}
 .scroll{overflow-x:auto}
 .mx td,.mx th{padding-right:12px}.mx td{white-space:nowrap}.mx td:first-child{white-space:normal;min-width:15em}.mx tfoot td{border-top:1px solid var(--grid);border-bottom:0;font-weight:600;color:var(--text)}.mx th{white-space:normal;vertical-align:bottom}
@@ -97,6 +101,16 @@ h3.pro{color:var(--good)}h3.con{color:var(--crit)}
 .gauge>div{display:flex;align-items:center;white-space:nowrap}.g-i{background:var(--good);color:#020202;padding-left:14px}.g-b{background:var(--warn)}.g-r{flex:1;padding-left:16px;color:var(--text);font-weight:500;overflow:hidden}
 .g-leg{display:flex;flex-wrap:wrap;gap:6px 22px;font:.8rem/1.4 var(--sans);color:var(--text2);margin-top:12px}.g-leg i{display:inline-block;width:9px;height:9px;margin-right:7px;border-radius:2px}.g-gap{margin-left:auto}.g-leg b{color:var(--text)}
 #bg{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1;pointer-events:none}.gl .aura{display:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.scroll.tall{max-block-size:min(640px,75vh);overflow:auto;border:1px solid var(--line);border-radius:12px;margin-top:14px}.scroll.tall table{margin-top:0}
+.scroll.tall thead th{position:sticky;inset-block-start:0;z-index:1;background:#0b0b0c;padding-top:12px}.scroll.tall th:first-child,.scroll.tall td:first-child{padding-left:16px}.scroll.tall td{white-space:nowrap}.scroll.tall td:nth-child(2){white-space:normal;min-width:14em}
+.scroll:focus-visible,.term:focus-visible,.m:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--good);outline-offset:3px;border-radius:4px}
+h1,h2,h3,.fh{text-wrap:balance}p,li,figcaption{text-wrap:pretty}
+@media (prefers-reduced-motion:no-preference){summary::before{transition:rotate .2s}
+details::details-content{transition:block-size .3s ease-in-out,content-visibility .3s allow-discrete}
+@supports ((animation-timeline:view()) and (animation-range:entry)){
+@keyframes rise{from{opacity:0;translate:0 28px}}
+.card,.glance>*,.finding>*,.chk,.grid2>*,.gwrap,.live{animation:rise auto ease-out backwards;animation-timeline:view();animation-range:entry 0% entry 70%}}}
 #tip{position:fixed;pointer-events:none;background:var(--text);color:var(--surface);padding:7px 10px;border-radius:8px;font:.78rem/1.35 var(--sans);display:none;z-index:9;max-width:280px}
 @media (max-width:560px){body{font-size:15px}main{padding:0 18px 56px}nav.toc{padding:12px 18px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}nav.toc .brand{margin-right:12px}
 .hero{min-height:0;padding:80px 0 30px}h1 em{padding-left:0}section{margin-top:80px}.g-r{font-size:.78rem}.g-gap{margin-left:0}.big{font-size:2.6rem}}
@@ -105,9 +119,13 @@ h3.pro{color:var(--good)}h3.con{color:var(--crit)}
 
 JS = """
 const tip=document.getElementById('tip');
-document.addEventListener('mousemove',e=>{const t=e.target.closest('[data-tip]');if(!t){tip.style.display='none';return}
-tip.textContent=t.dataset.tip;tip.style.display='block';const w=tip.offsetWidth;
-tip.style.left=Math.min(e.clientX+14,innerWidth-w-8)+'px';tip.style.top=(e.clientY+14)+'px'});
+const show=(t,x,y)=>{tip.textContent=t.dataset.tip;tip.style.display='block';const w=tip.offsetWidth;
+tip.style.left=Math.max(8,Math.min(x,innerWidth-w-8))+'px';tip.style.top=y+'px'};
+document.addEventListener('mousemove',e=>{const t=e.target.closest('[data-tip]');if(!t){tip.style.display='none';return}show(t,e.clientX+14,e.clientY+14)});
+// Keyboard: a focused element shows its tip below itself; Escape dismisses it (WCAG 1.4.13).
+document.addEventListener('focusin',e=>{const t=e.target.closest('[data-tip]');if(!t){tip.style.display='none';return}const b=t.getBoundingClientRect();show(t,b.left,b.bottom+8)});
+document.addEventListener('focusout',()=>{tip.style.display='none'});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')tip.style.display='none'});
 // Background: a slow green WebGL gradient behind the whole page. Full strength behind the hero; further down it dims
 // and darkens the centre column, so text always sits on near-black. Without WebGL the static CSS gradient stays.
 (()=>{const cv=document.createElement('canvas');cv.id='bg';const gl=cv.getContext('webgl',{antialias:false,alpha:false});if(!gl)return;
@@ -329,13 +347,14 @@ def matrix(claims: list[dict]) -> str:
     foot = "<td>All teams</td>" + "".join(
         f"<td>{ok(g_cs)} of {len(g_cs)}</td>" for g_cs in ([c for c in claims if group_of(c["family"]) == g] for g, _ in GROUPS)
     ) + f'<td class="n">{ok(claims)} of {len(claims)}</td>'
-    return f'<div class="scroll"><table class="mx"><thead><tr>{head}</tr></thead><tbody>{"".join(body)}</tbody><tfoot><tr>{foot}</tr></tfoot></table></div>'
+    return f'<div class="scroll" tabindex="0" role="region" aria-label="Published numbers by team and metric"><table class="mx"><thead><tr>{head}</tr></thead><tbody>{"".join(body)}</tbody><tfoot><tr>{foot}</tr></tfoot></table></div>'
 
 
-def table(head: list[str], rows: list[list[str]], num_cols=()) -> str:
+def table(head: list[str], rows: list[list[str]], num_cols=(), label="Table", tall=False) -> str:
+    """tall: the table scrolls inside its own box with the header row kept in view."""
     th = "".join(f'<th class="{"n" if i in num_cols else ""}">{E(h)}</th>' for i, h in enumerate(head))
     body = "".join("<tr>" + "".join(f'<td class="{"n" if i in num_cols else ""}">{c}</td>' for i, c in enumerate(r)) + "</tr>" for r in rows)
-    return f'<div class="scroll"><table><thead><tr>{th}</tr></thead><tbody>{body}</tbody></table></div>'
+    return f'<div class="scroll{" tall" if tall else ""}" tabindex="0" role="region" aria-label="{E(label)}"><table><thead><tr>{th}</tr></thead><tbody>{body}</tbody></table></div>'
 
 
 STATUS_COLOR = {"reproduced": "--good", "close": "--warn", "not reproduced": "--crit"}
@@ -578,7 +597,7 @@ def render(snapshot: str) -> str:
 
     repo = f'<a href="{REPO_URL}">{E(REPO_URL.split("//")[-1])}</a>' if REPO_URL else "the repository"
     thesis = REPO_URL + "/blob/main/THESIS.md" if REPO_URL else "../THESIS.md"
-    term = lambda word, tip: f'<span class="term" data-tip="{E(tip)}">{word}</span>'
+    term = lambda word, tip: f'<span class="term" tabindex="0" data-tip="{E(tip)}">{word}<span class="sr"> ({E(tip)})</span></span>'
     INTENTS = term("NEAR Intents", "NEAR's cross-chain swap and settlement product. Users trade, NEAR takes a fee.")
     ISSUANCE = term("new supply", "NEAR creates new tokens every epoch to pay validators (about 2.5% a year). Each new token dilutes existing holders.")
     CAPTURED = term("captured revenue", "The part of Intents fees that NEAR keeps. It arrives as NEAR in three public wallets.")
@@ -671,7 +690,7 @@ def render(snapshot: str) -> str:
 <h3 style="margin-top:30px">Four dated predictions, written on 2026-11-11</h3>
 <div class="chks">{pred_cards}</div>
 <details><summary>Same conditions as a table, thesis snapshot next to the newest one</summary>
-{table(["Id", "Condition", "Due", f"Thesis snapshot {snapshot}", "Status", f"Newest snapshot {newest['snapshot']}", "Status"], check_rows, num_cols=(3, 5))}</details></section>
+{table(["Id", "Condition", "Due", f"Thesis snapshot {snapshot}", "Status", f"Newest snapshot {newest['snapshot']}", "Status"], check_rows, num_cols=(3, 5), label="Kill conditions and predictions")}</details></section>
 
 <section id="teams"><p class="kicker">Go deeper &middot; Team by team</p>
 <h2>{s['sources']} teams, {s['claims']} published numbers, one recomputation</h2>
@@ -710,10 +729,10 @@ def render(snapshot: str) -> str:
 <h2>Every claim we checked</h2>
 <p class="note">"Commit date" is when the sentence quoting the number was committed. "Ours" is the closest standard definition on the day in "Compared on". A match means a standard definition gives the published number, not that the team computed it that way. Snapshot {E(snapshot)}; every figure on this page is generated by <code>python3 -m replicated.page</code> from raw data committed with its hashes.</p>
 <details><summary>All {s['claims']} claims from {s['sources']} repositories</summary>
-{table(["Metric", "Project", "Published", "Commit date", "Compared on", "Ours", "Gap", "Result", "Source"], claim_rows, num_cols=(2, 5, 6))}</details>
+{table(["Metric", "Project", "Published", "Commit date", "Compared on", "Ours", "Gap", "Result", "Source"], claim_rows, num_cols=(2, 5, 6), label="Every claim we checked", tall=True)}</details>
 <details><summary>Data behind the charts</summary>
-{table(["Sample", "Wallets, NEAR", "Reported cumulative, NEAR"], [[x['day'], f"{x['wallets_near']:,.0f}", f"{x['defillama_cumulative_near']:,.0f}"] for x in wv], num_cols=(1, 2))}
-{table(["Step ending", "Wallet growth, NEAR", "Net issuance, NEAR", "Offset"], [[x['to'], f"{x['wallet_growth_near']:,.0f}", f"{x['net_issuance_near']:,.0f}", f"{x['cover_pct']:.1f}%"] for x in steps], num_cols=(1, 2, 3))}
+{table(["Sample", "Wallets, NEAR", "Reported cumulative, NEAR"], [[x['day'], f"{x['wallets_near']:,.0f}", f"{x['defillama_cumulative_near']:,.0f}"] for x in wv], num_cols=(1, 2), label="Revenue wallets against reported revenue")}
+{table(["Step ending", "Wallet growth, NEAR", "Net issuance, NEAR", "Offset"], [[x['to'], f"{x['wallet_growth_near']:,.0f}", f"{x['net_issuance_near']:,.0f}", f"{x['cover_pct']:.1f}%"] for x in steps], num_cols=(1, 2, 3), label="Share of new supply offset, per 30-day step")}
 </details></section>
 
 <footer>
@@ -721,7 +740,7 @@ def render(snapshot: str) -> str:
 <div><b>Sources</b><p>DefiLlama (Intents volume, fees, revenue), NearBlocks (daily charts), a public archival RPC node (supply, wallet balances, validators). No API key.</p></div>
 <div><b>Credit</b><p>The numbers under test belong to the teams quoted in the claims table, each linked to its source. Not investment advice. MIT license.</p></div>
 </footer>
-</main><div id="tip"></div><script>{JS}</script></body></html>
+</main><div id="tip" role="tooltip"></div><script>{JS}</script></body></html>
 """
 
 
