@@ -19,7 +19,7 @@ class Page(unittest.TestCase):
 
     def test_page_is_self_contained(self):
         """No scripts, styles, fonts or images are loaded from elsewhere; links to sources are allowed."""
-        self.assertFalse(re.findall(r'<(?:script|img|link|iframe)[^>]*\s(?:src|href)=', self.html))
+        self.assertFalse(re.findall(r'<(?:script|img|link|iframe)[^>]*\s(?:src|href)="(?!data:)', self.html))  # data: URIs (the tab icon) are inline
         self.assertNotIn("@import", self.html)
         self.assertFalse(re.findall(r"url\((?!#)", self.html), "only in-page references such as url(#grain) are allowed")
 

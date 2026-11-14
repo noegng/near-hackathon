@@ -23,17 +23,17 @@ CSS = """
 main{max-width:1120px;margin:0 auto;padding:0 28px 72px}
 nav.toc{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:6px 22px;flex-wrap:wrap;margin:0 calc(50% - 50vw);padding:14px max(28px,calc(50vw - 532px));background:rgba(2,2,2,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);font:500 .74rem/1.4 var(--sans);letter-spacing:.02em;text-transform:uppercase}
 nav.toc .brand{font:600 1.05rem/1 var(--sans);text-transform:none;letter-spacing:-.02em;margin-right:auto;text-decoration:none;color:var(--text)}nav.toc .brand span{color:var(--good)}
-nav.toc a{text-decoration:none;color:var(--text2)}nav.toc a:hover{color:var(--text)}
+nav.toc .links{display:flex;align-items:center;gap:6px 22px;flex-wrap:wrap}nav.toc a{text-decoration:none;color:var(--text2)}nav.toc a:hover{color:var(--text)}
 nav.toc a.btn{background:var(--panel2);color:var(--text);padding:9px 14px;border-radius:10px}nav.toc a.btn:hover{background:var(--good);color:#020202}
-.hero{position:relative;min-height:min(86vh,820px);display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 40px;isolation:isolate}
+.hero{position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:96px 0 28px;isolation:isolate}
 .aura{position:absolute;z-index:-1;top:-70px;bottom:0;left:50%;width:100vw;transform:translateX(-50%);overflow:hidden;pointer-events:none;background-color:var(--surface);
 background-image:radial-gradient(38% 55% at 30% 52%,rgba(0,236,151,.72),transparent 70%),radial-gradient(34% 60% at 62% 30%,rgba(60,80,224,.85),transparent 70%),radial-gradient(30% 40% at 80% 70%,rgba(0,190,210,.45),transparent 72%),radial-gradient(25% 30% at 48% 40%,rgba(230,255,245,.35),transparent 70%)}
 .aura svg{position:absolute;inset:0;width:100%;height:100%;mix-blend-mode:overlay;opacity:.9}
 .aura::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,2,2,0) 55%,var(--surface) 98%)}
-h1{font:500 clamp(2.8rem,8vw,6.2rem)/.98 var(--sans);letter-spacing:-.04em;margin:0 0 30px;max-width:11.5em;text-shadow:0 2px 40px rgba(0,0,0,.35)}
+h1{font:500 clamp(2.6rem,6.4vw,4.8rem)/.98 var(--sans);letter-spacing:-.04em;margin:0 0 22px;max-width:11.5em;text-shadow:0 2px 40px rgba(0,0,0,.35)}
 h1 em{font-style:normal;display:block;padding-left:1em}
 .lede{font-size:1.2rem;line-height:1.5;max-width:34em;margin:0;color:#e9eaf0}
-.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px 28px;margin-top:56px;font:.82rem/1.4 var(--sans);color:var(--text2)}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px 28px;margin-top:32px;font:.82rem/1.4 var(--sans);color:var(--text2)}
 .meta b{display:block;color:var(--text);font-weight:600;text-transform:uppercase;letter-spacing:-.01em;font-size:.95rem;margin-top:4px}
 p{margin:10px 0;max-width:40em;color:var(--text2)}p b{color:var(--text)}.note{font-size:.82rem;line-height:1.55;color:var(--muted);max-width:62em}
 a{color:inherit;text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{text-decoration-color:var(--good);color:var(--text)}
@@ -112,8 +112,8 @@ details::details-content{transition:block-size .3s ease-in-out,content-visibilit
 @keyframes rise{from{opacity:0;translate:0 28px}}
 .card,.glance>*,.finding>*,.chk,.grid2>*,.gwrap,.live{animation:rise auto ease-out backwards;animation-timeline:view();animation-range:entry 0% entry 70%}}}
 #tip{position:fixed;pointer-events:none;background:var(--text);color:var(--surface);padding:7px 10px;border-radius:8px;font:.78rem/1.35 var(--sans);display:none;z-index:9;max-width:280px}
-@media (max-width:560px){body{font-size:15px}main{padding:0 18px 56px}nav.toc{padding:12px 18px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}nav.toc .brand{margin-right:12px}
-.hero{min-height:0;padding:80px 0 30px}h1 em{padding-left:0}section{margin-top:80px}.g-r{font-size:.78rem}.g-gap{margin-left:0}.big{font-size:2.6rem}}
+@media (max-width:560px){body{font-size:15px}main{padding:0 18px 56px}nav.toc{padding:10px 18px 0;gap:0 12px}nav.toc a.btn{padding:7px 12px}nav.toc .links{order:3;width:100%;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;gap:18px;padding:12px 0;scrollbar-width:none}nav.toc .links::-webkit-scrollbar{display:none}
+.hero{padding:56px 0 24px}h1 em{padding-left:0}section{margin-top:80px}.g-r{font-size:.78rem}.g-gap{margin-left:0}.big{font-size:2.6rem}}
 """
 
 
@@ -630,8 +630,8 @@ def render(snapshot: str) -> str:
     ISSUANCE = term("new supply", "NEAR creates new tokens every epoch to pay validators (about 2.5% a year). Each new token dilutes existing holders.")
     CAPTURED = term("captured revenue", "The part of Intents fees that NEAR keeps. It arrives as NEAR in three public wallets.")
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Proof of Numbers: NEAR, recomputed</title><meta name="description" content="{s['claims']} published NEAR numbers recomputed from raw data, and the investment thesis that survives."><style>{CSS}</style></head><body><main>
-<nav class="toc"><a class="brand" href="#summary"><span>&#10035;</span> Proof of Numbers</a><a href="#findings">Findings</a><a href="#thesis">Thesis</a><a href="#tests">Kill switches</a><a href="#teams">Teams</a><a href="#data">Data</a><a class="btn" href="{REPO_URL or '..'}">Code &#8599;</a></nav>
+<title>Proof of Numbers: NEAR, recomputed</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23020202'/%3E%3Cg stroke='%2300ec97' stroke-width='3.4' stroke-linecap='round'%3E%3Cpath d='M16 6v20M6 16h20M8.9 8.9l14.2 14.2M23.1 8.9 8.9 23.1'/%3E%3C/g%3E%3C/svg%3E"><meta name="description" content="{s['claims']} published NEAR numbers recomputed from raw data, and the investment thesis that survives."><style>{CSS}</style></head><body><main>
+<nav class="toc"><a class="brand" href="#summary"><span>&#10035;</span> Proof of Numbers</a><div class="links"><a href="#findings">Findings</a><a href="#thesis">Thesis</a><a href="#tests">Kill switches</a><a href="#teams">Teams</a><a href="#data">Data</a></div><a class="btn" href="{REPO_URL or '..'}">Code &#8599;</a></nav>
 
 <header id="summary">
 <div class="hero"><div class="aura"><svg aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg></div>

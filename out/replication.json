@@ -6,17 +6,17 @@
   "close": 0.15
  },
  "summary": {
-  "claims": 264,
-  "sources": 43,
+  "claims": 269,
+  "sources": 44,
   "undated": 22,
   "at_publication": {
-   "reproduced": 231,
-   "close": 28,
+   "reproduced": 235,
+   "close": 29,
    "not reproduced": 5
   },
   "at_snapshot": {
-   "reproduced": 194,
-   "close": 55,
+   "reproduced": 198,
+   "close": 56,
    "not reproduced": 15
   }
  },
@@ -162,34 +162,34 @@
    "reproduced_at_snapshot": 9
   },
   "issuance_cover": {
-   "n": 20,
+   "n": 22,
    "unit": "%",
    "min": 8.7,
    "max": 21.0,
-   "median": 18.55,
-   "spread_pct_of_median": 66.30727762803235,
-   "reproduced_at_publication": 16,
-   "reproduced_at_snapshot": 18
+   "median": 18.3,
+   "spread_pct_of_median": 67.21311475409836,
+   "reproduced_at_publication": 18,
+   "reproduced_at_snapshot": 20
   },
   "burn_cover": {
-   "n": 11,
+   "n": 12,
    "unit": "%",
    "min": 0.58,
    "max": 2,
-   "median": 1.15,
-   "spread_pct_of_median": 123.47826086956522,
+   "median": 1.075,
+   "spread_pct_of_median": 132.09302325581396,
    "reproduced_at_publication": 9,
    "reproduced_at_snapshot": 8
   },
   "breakeven_multiple": {
-   "n": 9,
+   "n": 10,
    "unit": "x",
    "min": 5.1,
    "max": 7.6,
    "median": 5.3,
    "spread_pct_of_median": 47.16981132075472,
-   "reproduced_at_publication": 6,
-   "reproduced_at_snapshot": 2
+   "reproduced_at_publication": 7,
+   "reproduced_at_snapshot": 3
   },
   "tx_yoy": {
    "n": 12,
@@ -332,14 +332,14 @@
    "reproduced_at_snapshot": 0
   },
   "net_inflation": {
-   "n": 13,
+   "n": 14,
    "unit": "%/yr",
    "min": 2.41,
    "max": 2.51,
    "median": 2.48,
    "spread_pct_of_median": 4.032258064516115,
-   "reproduced_at_publication": 13,
-   "reproduced_at_snapshot": 13
+   "reproduced_at_publication": 14,
+   "reproduced_at_snapshot": 14
   },
   "l1_fees_usd_365d": {
    "n": 4,
@@ -6990,6 +6990,131 @@
     "metric": "net_inflation_annual_pct_90d",
     "ours": 2.472571812699009,
     "gap": 0.001041219716197828,
+    "status": "reproduced"
+   }
+  },
+  {
+   "id": "nearhub-issuance_cover-264",
+   "family": "issuance_cover",
+   "project": "NEAR Hub: The Long Case",
+   "claimed": 16.1,
+   "unit": "%",
+   "quote": "came to 16.1% of that",
+   "published": "2026-11-13T10:25:26Z",
+   "published_commit": "8e6e2bc4abaaaeebc8f80f2848de45f9084ff05e",
+   "url": "https://github.com/mojtb/near-hub/blob/1c7a96c746628aff40e5b21c51f5f2748da0c646/THESIS.md",
+   "at_publication": {
+    "metric": "usage_cover_of_gross_issuance_pct_30d",
+    "ours": 16.198334407284484,
+    "gap": 0.006107727160526891,
+    "status": "reproduced",
+    "dated": true,
+    "asof": "2026-11-09"
+   },
+   "at_snapshot": {
+    "metric": "revenue_cover_of_net_issuance_pct_30d",
+    "ours": 15.923645947404427,
+    "gap": 0.010953667863079131,
+    "status": "reproduced"
+   }
+  },
+  {
+   "id": "nearhub-issuance_cover-265",
+   "family": "issuance_cover",
+   "project": "NEAR Hub: The Long Case",
+   "claimed": 15.1,
+   "unit": "%",
+   "quote": "15.1% received and held by the wallets",
+   "published": "2026-11-13T10:25:26Z",
+   "published_commit": "8e6e2bc4abaaaeebc8f80f2848de45f9084ff05e",
+   "url": "https://github.com/mojtb/near-hub/blob/1c7a96c746628aff40e5b21c51f5f2748da0c646/THESIS.md",
+   "at_publication": {
+    "metric": "revenue_cover_of_net_issuance_pct_30d",
+    "ours": 15.15971530211396,
+    "gap": 0.0039546557691365,
+    "status": "reproduced",
+    "dated": true,
+    "asof": "2026-11-09"
+   },
+   "at_snapshot": {
+    "metric": "usage_cover_of_net_issuance_pct_365d",
+    "ours": 15.080287583677812,
+    "gap": 0.001305458034581958,
+    "status": "reproduced"
+   }
+  },
+  {
+   "id": "nearhub-burn_cover-266",
+   "family": "burn_cover",
+   "project": "NEAR Hub: The Long Case",
+   "claimed": 1.0,
+   "unit": "%",
+   "quote": "1.0% burned",
+   "published": "2026-11-13T10:25:26Z",
+   "published_commit": "8e6e2bc4abaaaeebc8f80f2848de45f9084ff05e",
+   "url": "https://github.com/mojtb/near-hub/blob/1c7a96c746628aff40e5b21c51f5f2748da0c646/THESIS.md",
+   "at_publication": {
+    "metric": "burn70_cover_of_gross_issuance_pct_30d",
+    "ours": 0.8601024060584694,
+    "gap": 0.13989759394153056,
+    "status": "close",
+    "dated": true,
+    "asof": "2026-11-09"
+   },
+   "at_snapshot": {
+    "metric": "burn_cover_of_gross_issuance_pct_30d",
+    "ours": 1.0953015226009382,
+    "gap": 0.09530152260093816,
+    "status": "close"
+   }
+  },
+  {
+   "id": "nearhub-net_inflation-267",
+   "family": "net_inflation",
+   "project": "NEAR Hub: The Long Case",
+   "claimed": 2.47,
+   "unit": "%/yr",
+   "quote": "so total supply grows 2.47% a year",
+   "published": "2026-11-13T10:25:26Z",
+   "published_commit": "8e6e2bc4abaaaeebc8f80f2848de45f9084ff05e",
+   "url": "https://github.com/mojtb/near-hub/blob/1c7a96c746628aff40e5b21c51f5f2748da0c646/THESIS.md",
+   "at_publication": {
+    "metric": "net_inflation_annual_pct_30d",
+    "ours": 2.476893694549991,
+    "gap": 0.002790969453437518,
+    "status": "reproduced",
+    "dated": true,
+    "asof": "2026-11-09"
+   },
+   "at_snapshot": {
+    "metric": "net_inflation_annual_pct_90d",
+    "ours": 2.472571812699009,
+    "gap": 0.001041219716197828,
+    "status": "reproduced"
+   }
+  },
+  {
+   "id": "nearhub-breakeven_multiple-268",
+   "family": "breakeven_multiple",
+   "project": "NEAR Hub: The Long Case",
+   "claimed": 5.2,
+   "unit": "x",
+   "quote": "Intents volume would have to be 5.2× what it is",
+   "published": "2026-11-13T10:25:26Z",
+   "published_commit": "8e6e2bc4abaaaeebc8f80f2848de45f9084ff05e",
+   "url": "https://github.com/mojtb/near-hub/blob/1c7a96c746628aff40e5b21c51f5f2748da0c646/THESIS.md",
+   "at_publication": {
+    "metric": "breakeven_multiple_90d",
+    "ours": 5.118222327546451,
+    "gap": 0.01572647547183644,
+    "status": "reproduced",
+    "dated": true,
+    "asof": "2026-11-09"
+   },
+   "at_snapshot": {
+    "metric": "breakeven_multiple_90d",
+    "ours": 5.010107857090482,
+    "gap": 0.036517719790291996,
     "status": "reproduced"
    }
   }

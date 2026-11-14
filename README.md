@@ -12,11 +12,11 @@ thesis is then built only on numbers that replicate, and its conditions run as c
 
 ## What it found
 
-264 numbers published by 43 teams were recomputed from raw data, each for the day it was published: 231 are
-within 5% of ours, 28 within 15%, 5 further apart. Recomputed on our snapshot day instead, only 194 are within 5%:
+269 numbers published by 44 teams were recomputed from raw data, each for the day it was published: 235 are
+within 5% of ours, 29 within 15%, 5 further apart. Recomputed on our snapshot day instead, only 198 are within 5%:
 a correct 30-day number drifts as the window moves on. Team by team: <https://noegng.github.io/proof-of-numbers/>.
 
-1. **The teams agree because they read one source.** 34 of the 43 repositories publish NEAR Intents volume,
+1. **The teams agree because they read one source.** 34 of the 44 repositories publish NEAR Intents volume,
    fees or revenue, and all 34 cite DefiLlama, whose adapter reads datasets NEAR uploads to Dune. Their
    agreement is one measurement read 34 times. We added a second one: the three revenue wallets, read from an
    archival node at past block heights, grew by 0.98 to 1.01 times the reported revenue.
@@ -71,16 +71,18 @@ the kill conditions on it, and updates `out/history.md` and the "Re-checked ever
 - `replicated/compare.py`: matches each claim to the closest definition on the day it was published: the end
   day its quote states, otherwise the last complete UTC day before the commit that wrote it. One day per claim,
   no search over days. A day after the thesis snapshot (data to 12 Nov) is read from the first later daily snapshot
-  that holds it, or from the newest one until one does: 145 numbers were added on 14 Nov from 23 more repositories,
+  that holds it, or from the newest one until one does: 145 numbers were added on 14 Nov from 23 more repositories, and 5 from NEAR Hub (`mojtb/near-hub`) the same day,
   many published on 12 to 14 Nov. The same comparison on our snapshot day is kept for reference.
 
 ## Results (snapshot 2026-11-13)
 
-- 264 numbers from 43 repositories: 231 are within 5% of our recomputation for the day each was published, 194 on
+- 269 numbers from 44 repositories: 235 are within 5% of our recomputation for the day each was published, 198 on
   our snapshot day. Full table, with each commit date: [`out/replication.md`](out/replication.md).
 - Our own variants show the same spread as the teams: NEAR's price change over one year is +41% from day to day
   and +91% between 30-day averages (to 12 Nov; +19% and +98% to 10 Nov).
-- The wallet growth is 0.98 to 1.01 times DefiLlama's reported revenue over 30, 90 and 360 days.
+- The wallet growth is 0.98 to 1.01 times DefiLlama's reported revenue over 30, 90 and 360 days. NEAR Hub finds the
+  same agreement with DefiLlama from wallet transfers (0.29% apart, all time), and a 15.7% gap with NEAR's own monthly
+  revenue page (revenue.near.org), which we did not download.
 - That revenue equals 13% to 19% of net issuance depending on the window, and all of it is still in the wallets.
 
 ## Limits

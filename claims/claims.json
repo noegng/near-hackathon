@@ -502,6 +502,18 @@
     "nearblocks",
     "rpc"
    ]
+  },
+  "nearhub": {
+   "project": "NEAR Hub: The Long Case",
+   "repo": "mojtb/near-hub",
+   "commit": "1c7a96c746628aff40e5b21c51f5f2748da0c646",
+   "mentions": [
+    "defillama",
+    "dune",
+    "intents_explorer",
+    "nearblocks",
+    "rpc"
+   ]
   }
  },
  "claims": [
@@ -5221,6 +5233,125 @@
    "published": {
     "commit": "b48c23be5e253f9d615160421e5e59d88af7872e",
     "date": "2026-11-13T17:03:28Z"
+   }
+  },
+  {
+   "id": "nearhub-issuance_cover-264",
+   "source": "nearhub",
+   "family": "issuance_cover",
+   "value": 16.1,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "came to 16.1% of that",
+   "candidates": [
+    "revenue_cover_of_gross_issuance_pct_30d",
+    "revenue_cover_of_gross_issuance_pct_90d",
+    "revenue_cover_of_gross_issuance_pct_365d",
+    "revenue_cover_of_net_issuance_pct_30d",
+    "revenue_cover_of_net_issuance_pct_90d",
+    "revenue_cover_of_net_issuance_pct_365d",
+    "usage_cover_of_gross_issuance_pct_30d",
+    "usage_cover_of_gross_issuance_pct_90d",
+    "usage_cover_of_gross_issuance_pct_365d",
+    "usage_cover_of_net_issuance_pct_30d",
+    "usage_cover_of_net_issuance_pct_90d",
+    "usage_cover_of_net_issuance_pct_365d"
+   ],
+   "stated_asof": "2026-11-09",
+   "published": {
+    "commit": "8e6e2bc4abaaaeebc8f80f2848de45f9084ff05e",
+    "date": "2026-11-13T10:25:26Z"
+   }
+  },
+  {
+   "id": "nearhub-issuance_cover-265",
+   "source": "nearhub",
+   "family": "issuance_cover",
+   "value": 15.1,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "15.1% received and held by the wallets",
+   "candidates": [
+    "revenue_cover_of_gross_issuance_pct_30d",
+    "revenue_cover_of_gross_issuance_pct_90d",
+    "revenue_cover_of_gross_issuance_pct_365d",
+    "revenue_cover_of_net_issuance_pct_30d",
+    "revenue_cover_of_net_issuance_pct_90d",
+    "revenue_cover_of_net_issuance_pct_365d",
+    "usage_cover_of_gross_issuance_pct_30d",
+    "usage_cover_of_gross_issuance_pct_90d",
+    "usage_cover_of_gross_issuance_pct_365d",
+    "usage_cover_of_net_issuance_pct_30d",
+    "usage_cover_of_net_issuance_pct_90d",
+    "usage_cover_of_net_issuance_pct_365d"
+   ],
+   "stated_asof": "2026-11-09",
+   "published": {
+    "commit": "8e6e2bc4abaaaeebc8f80f2848de45f9084ff05e",
+    "date": "2026-11-13T10:25:26Z"
+   }
+  },
+  {
+   "id": "nearhub-burn_cover-266",
+   "source": "nearhub",
+   "family": "burn_cover",
+   "value": 1.0,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "1.0% burned",
+   "candidates": [
+    "burn_cover_of_net_issuance_pct_30d",
+    "burn_cover_of_net_issuance_pct_90d",
+    "burn_cover_of_net_issuance_pct_365d",
+    "burn_cover_of_gross_issuance_pct_30d",
+    "burn_cover_of_gross_issuance_pct_90d",
+    "burn_cover_of_gross_issuance_pct_365d",
+    "burn70_cover_of_gross_issuance_pct_30d",
+    "burn70_cover_of_gross_issuance_pct_90d",
+    "burn70_cover_of_gross_issuance_pct_365d"
+   ],
+   "stated_asof": "2026-11-09",
+   "published": {
+    "commit": "8e6e2bc4abaaaeebc8f80f2848de45f9084ff05e",
+    "date": "2026-11-13T10:25:26Z"
+   }
+  },
+  {
+   "id": "nearhub-net_inflation-267",
+   "source": "nearhub",
+   "family": "net_inflation",
+   "value": 2.47,
+   "unit": "%/yr",
+   "file": "THESIS.md",
+   "quote": "so total supply grows 2.47% a year",
+   "candidates": [
+    "net_inflation_annual_pct_30d",
+    "net_inflation_annual_pct_90d",
+    "net_inflation_annual_pct_365d"
+   ],
+   "stated_asof": "2026-11-09",
+   "published": {
+    "commit": "8e6e2bc4abaaaeebc8f80f2848de45f9084ff05e",
+    "date": "2026-11-13T10:25:26Z"
+   }
+  },
+  {
+   "id": "nearhub-breakeven_multiple-268",
+   "source": "nearhub",
+   "family": "breakeven_multiple",
+   "value": 5.2,
+   "unit": "x",
+   "file": "THESIS.md",
+   "quote": "Intents volume would have to be 5.2\u00d7 what it is",
+   "candidates": [
+    "breakeven_multiple_30d",
+    "breakeven_multiple_90d",
+    "breakeven_multiple_365d"
+   ],
+   "stated_asof": "2026-11-09",
+   "published": {
+    "commit": "8e6e2bc4abaaaeebc8f80f2848de45f9084ff05e",
+    "date": "2026-11-13T10:25:26Z"
    }
   }
  ]

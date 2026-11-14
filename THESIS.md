@@ -20,10 +20,10 @@ of the metric that produced it; a test fails if the text and the computation dis
 
 ## How this thesis was built
 
-Dozens of teams in this track measured NEAR independently. We recorded 264 of their published numbers from
-43 public repositories, with the exact quote and commit, and recomputed each from raw data
-([`out/replication.md`](out/replication.md)). 231 are within 5% of our number for the day each was
-published (the last complete day before the commit that wrote it), and 194 if all are recomputed on our snapshot day. The thesis uses only
+Dozens of teams in this track measured NEAR independently. We recorded 269 of their published numbers from
+44 public repositories, with the exact quote and commit, and recomputed each from raw data
+([`out/replication.md`](out/replication.md)). 235 are within 5% of our number for the day each was
+published (the last complete day before the commit that wrote it), and 198 if all are recomputed on our snapshot day. The thesis uses only
 quantities that replicate, and takes its uncertainty from the spread between teams instead of from one model.
 
 Two things came out of the comparison that no single thesis shows.
@@ -38,7 +38,9 @@ Dune (`dune.near.dataset_near_intents_metrics`, `..._fees`). Thirty-four matchin
 wallets from an archival RPC node at 15 block heights. Their growth equals 1.01x, 0.98x and 0.98x of
 DefiLlama's reported revenue over 30, 90 and 360 days. So the revenue series is confirmed by a second, on-chain
 route, and no net outflow shows: the total never fell between two samples. The list of wallets itself comes from
-DefiLlama's adapter; revenue sent anywhere else would not appear in either route.
+DefiLlama's adapter; revenue sent anywhere else would not appear in either route. One team rebuilt the same revenue from wallet
+transfers and also finds it 0.29% from DefiLlama all time, but 15.7% below NEAR's own monthly revenue page
+(revenue.near.org) ([NEAR Hub](https://github.com/mojtb/near-hub)); we did not download that page.
 
 ## Evidence for
 
@@ -75,9 +77,9 @@ The spread between teams is mostly definition, not error, and it sets the error 
 
 | Quantity | Teams publish | Our variants | What moves it |
 | --- | --- | --- | --- |
-| Share of issuance offset by Intents revenue | 8.7% to 21.0% (20 numbers) | 13.0% (360 d), 16.0% (30 d), 18.6% (90 d) | Window length. Sweeps into the wallets are lumpy: single 30-day steps range from 6.9% to 20.1% since April. |
-| Share offset by fee burn | 0.58% to 2.00% (11 numbers) | 1.11% (30 d) to 1.86% (365 d) | Window, and whether 70% or 100% of fees is counted as burnt. |
-| Growth needed to offset issuance | 5.1x to 7.6x (9 numbers) | 5.4x (90 d, on chain) | Same as the first row. |
+| Share of issuance offset by Intents revenue | 8.7% to 21.0% (22 numbers) | 13.0% (360 d), 16.0% (30 d), 18.6% (90 d) | Window length. Sweeps into the wallets are lumpy: single 30-day steps range from 6.9% to 20.1% since April. |
+| Share offset by fee burn | 0.58% to 2.00% (12 numbers) | 1.11% (30 d) to 1.86% (365 d) | Window, and whether 70% or 100% of fees is counted as burnt. |
+| Growth needed to offset issuance | 5.1x to 7.6x (10 numbers) | 5.4x (90 d, on chain) | Same as the first row. |
 | NEAR price change over a year | +19% to +97% (5 numbers) | +41% day to day, +91% between 30-day means | NEAR's price rose sharply in early November 2025, so the comparison day decides the result. |
 | L1 fees in USD, change over a year | -27.6% to -55.3% (3 numbers) | -42% (30 d), -52% (90 d) | Window length: the same series gives either figure. |
 
