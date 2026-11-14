@@ -13,7 +13,7 @@ thesis is then built only on numbers that replicate, and its conditions run as c
 ## What it found
 
 264 numbers published by 43 teams were recomputed from raw data, each for the day it was published: 231 are
-within 5% of ours, 28 within 15%, 5 further apart. Recomputed on our snapshot day instead, only 210 are within 5%:
+within 5% of ours, 28 within 15%, 5 further apart. Recomputed on our snapshot day instead, only 194 are within 5%:
 a correct 30-day number drifts as the window moves on. Team by team: <https://noegng.github.io/proof-of-numbers/>.
 
 1. **The teams agree because they read one source.** 34 of the 43 repositories publish NEAR Intents volume,
@@ -70,18 +70,18 @@ the kill conditions on it, and updates `out/history.md` and the "Re-checked ever
 - `tests/test_thesis.py`: fails if a figure in `THESIS.md` differs from the computed metric.
 - `replicated/compare.py`: matches each claim to the closest definition on the day it was published: the end
   day its quote states, otherwise the last complete UTC day before the commit that wrote it. One day per claim,
-  no search over days. A day after the thesis snapshot (data to 10 Nov) is read from the first later daily snapshot
+  no search over days. A day after the thesis snapshot (data to 12 Nov) is read from the first later daily snapshot
   that holds it, or from the newest one until one does: 145 numbers were added on 14 Nov from 23 more repositories,
   many published on 12 to 14 Nov. The same comparison on our snapshot day is kept for reference.
 
-## Results (snapshot 2026-11-11)
+## Results (snapshot 2026-11-13)
 
-- 264 numbers from 43 repositories: 231 are within 5% of our recomputation for the day each was published, 210 on
+- 264 numbers from 43 repositories: 231 are within 5% of our recomputation for the day each was published, 194 on
   our snapshot day. Full table, with each commit date: [`out/replication.md`](out/replication.md).
-- Our own variants show the same spread as the teams: NEAR's price change over one year is +19% from day to day
-  and +98% between 30-day averages.
+- Our own variants show the same spread as the teams: NEAR's price change over one year is +41% from day to day
+  and +91% between 30-day averages (to 12 Nov; +19% and +98% to 10 Nov).
 - The wallet growth is 0.98 to 1.01 times DefiLlama's reported revenue over 30, 90 and 360 days.
-- That revenue equals 13% to 18% of net issuance depending on the window, and all of it is still in the wallets.
+- That revenue equals 13% to 19% of net issuance depending on the window, and all of it is still in the wallets.
 
 ## Limits
 
@@ -96,18 +96,23 @@ the kill conditions on it, and updates `out/history.md` and the "Re-checked ever
 - Each claim is compared on one day only. A team that downloaded its data some days before committing shows a
   gap here even if its method matches ours. Where a family has several standard definitions (30, 90 or 365 days;
   net or gross issuance), the closest one is used and named, so a match shows that a standard definition gives
-  the published number, not that the team computed it that way. Validators and stake (12 claims) can only be
-  compared on our snapshot day, the only day the snapshot holds.
+  the published number, not that the team computed it that way. Validators and stake (22 claims) have no
+  history in the data: each is compared on the first daily snapshot fetched on or after the day it was committed,
+  or on the earliest (2026-11-11) if it was committed before, so an older count meets a later validator set.
 - The newest day of a DefiLlama series may still be filling when it is downloaded: at 07:38 UTC on 2026-11-12,
-  Intents fees for 2026-11-11 read $23,742, against $195k to $298k on each of the three days before. The daily
-  job therefore runs at 15:00 UTC, the time of day of the thesis snapshot, whose newest day the next snapshot
-  confirmed unchanged.
+  Intents fees for 2026-11-11 read $23,742, against $195k to $298k on each of the three days before; the next
+  snapshot read $233,899 for that day. The daily job therefore runs at 15:00 UTC. The thesis snapshot (fetched at
+  14:31 UTC on 2026-11-13) is the newest one, so its newest day, 2026-11-12, is not yet confirmed by a later
+  snapshot; [`out/history.md`](out/history.md) will show it if it changes.
 - The 30-day fee total of $5,458,382 (finding 3) is closest to our series at 6% away. The source changing past
-  days is one possible cause and is not supported so far: the snapshots of 2026-11-11 and 2026-11-12, taken a day
-  apart, agree on every past day of the three DefiLlama Intents series (0 of 701, 550 and 550 days changed).
+  days is one possible cause and is not supported so far: from 2026-11-11 to 2026-11-12 no past day of the three
+  DefiLlama Intents series changed (0 of 701, 550 and 550 days), and from 2026-11-12 to 2026-11-13 only the four
+  newest days of fees and two of revenue did (apart from the day still filling, by 0.2% or less for fees and 4.6%
+  for one day of revenue). The 30-day fee total ending 10 Nov moved by 0.01% across the three snapshots.
   `python3 -m replicated.restated <older> <newer>` compares two snapshots, and [`out/history.md`](out/history.md)
   lists the changed days for every pair of consecutive snapshots. A scheduled job (`.github/workflows/snapshot.yml`)
-  commits one snapshot per day; the thesis stays pinned to 2026-11-11, the day its claims were matched.
+  commits one snapshot per day. The thesis was written on snapshot 2026-11-11 and moved to 2026-11-13 on
+  2026-11-14; it moves again only when its text is revised.
 - NearBlocks API v1 (`/v1/charts`) is announced to switch off on 2026-11-22; the committed snapshot keeps
   the build reproducible after that.
 

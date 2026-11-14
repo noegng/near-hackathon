@@ -10,8 +10,10 @@ produced it (different windows, net vs gross issuance, ...). We report:
                     holds it, or the newest snapshot, capped at its last day, until one does.
   * at_snapshot:    the closest candidate as of our snapshot's last complete day, for
                     reference: it shows how far a number drifts once the data moves on.
-Metrics that only describe the snapshot (validators, stake, RPC samples) are compared on
-the snapshot day in both cases; `dated` is false for them.
+Metrics that only describe the moment a snapshot was fetched (validators, stake, RPC samples)
+have no past days: at publication they are read from the first snapshot fetched on or after the
+day the quote was committed (the earliest snapshot for older quotes, the newest one until a later
+snapshot exists), and at_snapshot from our snapshot. `dated` is false for them.
 """
 from __future__ import annotations
 
@@ -65,6 +67,15 @@ def run(snapshot: str) -> dict:
             r = build.load_raw(s)
             later.append((metrics.day_of(metrics.compute(r)["asof"] + "T00:00:00Z"), r))
     by_day = {(0, last): base}
+    # Snapshot-only metrics (validators, stake) are read from the snapshot fetched closest after publication.
+    fetched = {s: (base if s == snapshot else None) for s in build.all_snapshots()}
+
+    def at_fetch(commit_date: str) -> tuple[str, dict]:
+        s = next((s for s in fetched if s >= commit_date[:10]), list(fetched)[-1])
+        if fetched[s] is None:
+            fetched[s] = metrics.compute(build.load_raw(s))
+        return s, fetched[s]
+
     rows = []
     for c in reg["claims"]:
         want = published_day(c)
@@ -78,13 +89,16 @@ def run(snapshot: str) -> dict:
         g0, id0, v0 = closest(base["metrics"], c["candidates"], c["value"])
         gp, idp, vp = closest(at["metrics"], c["candidates"], c["value"])
         dated = not metrics.snapshot_only(idp)
+        if not dated:
+            snap_u, at = at_fetch(c["published"]["date"])
+            gp, idp, vp = closest(at["metrics"], c["candidates"], c["value"])
         src = reg["sources"][c["source"]]
         rows.append({
             "id": c["id"], "family": c["family"], "project": src["project"], "claimed": c["value"], "unit": c["unit"],
             "quote": c["quote"], "published": c["published"]["date"], "published_commit": c["published"]["commit"],
             "url": f"https://{'gitlab.com' if src.get('host') == 'gitlab' else 'github.com'}/{src['repo']}/{'-/' if src.get('host') == 'gitlab' else ''}blob/{src['commit']}/{c['file']}",
             "at_publication": {"metric": idp, "ours": vp, "gap": gp, "status": status(gp), "dated": dated,
-                               "asof": at["asof"] if dated else base["asof"]},
+                               "asof": at["asof"] if dated else f"snapshot {snap_u}"},
             "at_snapshot": {"metric": id0, "ours": v0, "gap": g0, "status": status(g0)},
         })
     fams = {}
@@ -122,7 +136,7 @@ def markdown(res: dict) -> str:
          f"{s['claims']} published numbers from {s['sources']} thesis repositories, each recomputed from raw data.",
          f"Thresholds: reproduced = within {res['thresholds']['reproduced']:.0%} of the published value, close = within {res['thresholds']['close']:.0%}.",
          "Each claim is compared on one day: the end day its quote states, otherwise the last complete UTC day before the",
-         f"commit that wrote it. {s['undated']} claims use a metric that only describes the snapshot (validators, stake) and are compared on the snapshot day.", "",
+         f"commit that wrote it. {s['undated']} claims use a metric that only describes the moment of a snapshot (validators, stake) and are compared on the first snapshot fetched on or after the day they were committed, or the earliest snapshot for older quotes.", "",
          "| Compared on | Reproduced | Close | Not reproduced |", "| --- | --- | --- | --- |",
          f"| The day each number was published | {pub['reproduced']} | {pub['close']} | {pub['not reproduced']} |",
          f"| Our snapshot day, for reference | {snap['reproduced']} | {snap['close']} | {snap['not reproduced']} |", "",

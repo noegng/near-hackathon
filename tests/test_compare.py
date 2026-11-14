@@ -50,8 +50,10 @@ class Compare(unittest.TestCase):
         cap = compare.metrics.day_of(newest + "T00:00:00Z")
         for r in res["claims"]:
             p, c = r["at_publication"], reg[r["id"]]
-            if not p["dated"]:
-                self.assertEqual(p["asof"], res["asof"], r["id"])
+            if not p["dated"]:  # the first snapshot fetched on or after the commit day, else the newest
+                snaps = build.all_snapshots()
+                want = next((x for x in snaps if x >= c["published"]["date"][:10]), snaps[-1])
+                self.assertEqual(p["asof"], f"snapshot {want}", r["id"])
             elif "stated_asof" in c:
                 self.assertEqual(p["asof"], min(c["stated_asof"], newest), r["id"])
             else:  # the last complete UTC day before the commit, capped at the newest snapshot

@@ -1,7 +1,7 @@
 name: daily snapshot
 on:
   schedule:
-    # 15:00 UTC: the thesis snapshot was taken at 14:22 UTC and its newest day was already final;
+    # 15:00 UTC: the 2026-11-11 snapshot was taken at 14:22 UTC and its newest day was already final;
     # a fetch at 07:38 UTC (2026-11-12) got a newest day DefiLlama had not finished filling.
     - cron: "0 15 * * *"
   workflow_dispatch:

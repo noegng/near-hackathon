@@ -1,12 +1,12 @@
 {
- "snapshot": "2026-11-11",
+ "snapshot": "2026-11-13",
  "checks": [
   {
    "id": "K1",
    "kind": "kill",
    "statement": "Intents volume is higher than a year ago (30-day mean).",
    "metric": "intents_volume_yoy_30d",
-   "value": 57.824406747227975,
+   "value": 47.88268142343433,
    "op": ">",
    "threshold": 0.0,
    "status": "HOLDS"
@@ -16,7 +16,7 @@
    "kind": "kill",
    "statement": "Reported captured revenue matches what the revenue wallets received on chain (90 days).",
    "metric": "wallet_growth_over_defillama_revenue_90d",
-   "value": 0.9765623744438459,
+   "value": 0.9776571725127384,
    "op": "between",
    "threshold": [
     0.9,
@@ -29,7 +29,7 @@
    "kind": "kill",
    "statement": "Captured NEAR has not left the revenue wallets between any two samples.",
    "metric": "revenue_wallets_min_balance_ratio",
-   "value": 1.000000001099969,
+   "value": 1.0795984629095428,
    "op": ">=",
    "threshold": 1.0,
    "status": "HOLDS"
@@ -39,7 +39,7 @@
    "kind": "kill",
    "statement": "Captured revenue offsets at least 10% of net issuance (90 days, on chain).",
    "metric": "wallet_growth_cover_of_net_issuance_pct_90d",
-   "value": 18.21028405636626,
+   "value": 18.559447990443687,
    "op": ">=",
    "threshold": 10.0,
    "status": "HOLDS"
@@ -49,7 +49,7 @@
    "kind": "kill",
    "statement": "The cover over the last 180 days is higher than over the 180 days before.",
    "metric": "wallet_cover_pct_last_180d",
-   "value": 14.510694973440478,
+   "value": 14.62398748747476,
    "op": ">",
    "threshold": "wallet_cover_pct_first_180d",
    "status": "HOLDS"
@@ -58,9 +58,9 @@
    "id": "P1",
    "kind": "prediction",
    "due": "2027-02-09",
-   "statement": "90-day on-chain cover of net issuance is at least 18% (it is 18.2% today).",
+   "statement": "90-day on-chain cover of net issuance is at least 18% (18.2% when written).",
    "metric": "wallet_growth_cover_of_net_issuance_pct_90d",
-   "value": 18.21028405636626,
+   "value": 18.559447990443687,
    "op": ">=",
    "threshold": 18.0,
    "status": "PENDING"
@@ -69,9 +69,9 @@
    "id": "P2",
    "kind": "prediction",
    "due": "2027-05-10",
-   "statement": "180-day on-chain cover reaches 18% (14.5% today).",
+   "statement": "180-day on-chain cover reaches 18% (14.5% when written).",
    "metric": "wallet_cover_pct_last_180d",
-   "value": 14.510694973440478,
+   "value": 14.62398748747476,
    "op": ">=",
    "threshold": 18.0,
    "status": "PENDING"
@@ -82,7 +82,7 @@
    "due": "2027-05-10",
    "statement": "Captured NEAR is still held or has been burned, not spent: wallet total has not fallen.",
    "metric": "revenue_wallets_min_balance_ratio",
-   "value": 1.000000001099969,
+   "value": 1.0795984629095428,
    "op": ">=",
    "threshold": 1.0,
    "status": "PENDING"
@@ -93,7 +93,7 @@
    "due": "2027-11-11",
    "statement": "Intents volume is at least 25% above its level of November 2026.",
    "metric": "intents_volume_yoy_30d",
-   "value": 57.824406747227975,
+   "value": 47.88268142343433,
    "op": ">=",
    "threshold": 25.0,
    "status": "PENDING"

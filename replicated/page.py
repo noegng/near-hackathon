@@ -333,7 +333,7 @@ def mark_class(c: dict) -> str:
 
 
 def compared_on(p: dict) -> str:
-    return f'on {p["asof"]}' if p["dated"] else f'on our snapshot day {p["asof"]}'
+    return f'on {p["asof"]}'
 
 
 
@@ -567,6 +567,10 @@ def render(snapshot: str) -> str:
     t_ours = fee_vals[fee_iso.index(t_day)]
     best = min(range(len(fdays)), key=lambda i: abs(fee_vals[i] - target))
     others_ok = sum(c["at_publication"]["status"] == "reproduced" for c in fee_claims)
+    # Did the source rewrite the target's window? Its 30-day total as read in every committed snapshot.
+    t_all = [metrics.wsum(metrics.llama_series(build.load_raw(x)["llama_intents_fees"]), metrics.day_of(t_day + "T00:00:00Z"), 30)
+             for x in build.all_snapshots()]
+    t_moved = (max(t_all) - min(t_all)) / min(t_all)
 
     status_cls = {"HOLDS": "ok", "HIT": "ok", "FAILS": "bad", "MISS": "bad", "PENDING": "wait"}
     unit = lambda c: {"%": "%", "x": "x"}.get(res["metrics"][c["metric"]]["unit"], "")
@@ -682,7 +686,7 @@ def render(snapshot: str) -> str:
 <div class="finding"><div><span class="tag bad">Unexplained</span>
 <h3 class="fh"><span class="num">3</span>One figure does not replicate, and we say so</h3>
 <p>{n_target} teams print 30-day Intents fees of <b>${target:,.0f}</b> (or a rounded version), all committed the same day. Our total for the day before is <b>${t_ours / 1e6:.2f}M</b>, {abs(t_ours - target) / target:.0%} higher. No 30-day window in the chart comes within 5%: the closest is ${fee_vals[best] / 1e6:.2f}M, for the window ending {E(day_label(fee_iso[best]))}.</p>
-<p>Meanwhile {others_ok} other teams' fee totals land within 5% of our line on their own publication days. Nor did the source rewrite its history: two snapshots a day apart agree on every past day.</p>
+<p>Meanwhile {others_ok} other teams' fee totals land within 5% of our line on their own publication days. Nor did the source rewrite that window: across our {len(t_all)} daily snapshots its total moved by {t_moved:.2%}.</p>
 <p class="takeaway">We publish what we cannot explain instead of tuning it away.</p></div>
 <figure><h3>Intents fees over 30 days, by the day the window ends</h3>
 <div class="legend"><span><i style="background:var(--s1)"></i>Ours</span><span><i style="background:var(--good)"></i>Team, within 5%</span><span><i style="background:var(--warn)"></i>Team, 5 to 15% off</span></div>
@@ -721,7 +725,7 @@ def render(snapshot: str) -> str:
 <p>Each mark is one number a team published, placed under the kind of quantity it measures. Hover for both values; click for the sentence it was read from, at a pinned commit.</p>
 <div class="legend"><span><i class="m same"></i>Within 5%</span><span><i class="m close"></i>Within 15%</span><span><i class="m miss">&times;</i>Not reproduced</span></div>
 {matrix(rep["claims"])}
-<p class="note">Each number is compared on one day: the end day its sentence states, otherwise the last complete day before the commit that wrote it. There is no search over days. Where a family has several standard definitions (30, 90 or 365 days; net or gross issuance), the closest is used and named in the data tables below, so a match shows that a standard definition gives the number, not that the team computed it that way. Validators and stake ({s['undated']} numbers) are compared on our snapshot day, the only day the snapshot holds. On our snapshot day instead of each publication day, {s['at_snapshot']['reproduced']} of {s['claims']} are within 5%: a correct 30-day number drifts as the window moves on.</p></section>
+<p class="note">Each number is compared on one day: the end day its sentence states, otherwise the last complete day before the commit that wrote it. There is no search over days. Where a family has several standard definitions (30, 90 or 365 days; net or gross issuance), the closest is used and named in the data tables below, so a match shows that a standard definition gives the number, not that the team computed it that way. Validators and stake ({s['undated']} numbers) have no history in the data: each is compared on the first daily snapshot fetched on or after the day it was committed, or on our earliest ({E(build.all_snapshots()[0])}) if it was committed before. On our snapshot day instead of each publication day, {s['at_snapshot']['reproduced']} of {s['claims']} are within 5%: a correct 30-day number drifts as the window moves on.</p></section>
 
 <section><p class="kicker">Go deeper &middot; Definitions</p>
 <h2>Six quantities, the teams' numbers next to ours</h2>

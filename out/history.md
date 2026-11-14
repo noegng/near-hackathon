@@ -1,6 +1,6 @@
 # Snapshot history
 
-Raw snapshots committed: 3. THESIS.md is written from `2026-11-11`;
+Raw snapshots committed: 3. THESIS.md is written from `2026-11-13`;
 the conditions under which it is dropped are evaluated again on every later snapshot.
 
 | Snapshot | Data to | Intents volume 30 d | Fees 30 d | Captured 30 d | Cover of net issuance 90 d | Wallets / reported 90 d | Tx per day | Price | Kill conditions | Predictions |

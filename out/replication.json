@@ -1,6 +1,6 @@
 {
- "snapshot": "2026-11-11",
- "asof": "2026-11-10",
+ "snapshot": "2026-11-13",
+ "asof": "2026-11-12",
  "thresholds": {
   "reproduced": 0.05,
   "close": 0.15
@@ -15,8 +15,8 @@
    "not reproduced": 5
   },
   "at_snapshot": {
-   "reproduced": 210,
-   "close": 39,
+   "reproduced": 194,
+   "close": 55,
    "not reproduced": 15
   }
  },
@@ -29,7 +29,7 @@
    "median": 3757732084,
    "spread_pct_of_median": 41.780519869547994,
    "reproduced_at_publication": 8,
-   "reproduced_at_snapshot": 6
+   "reproduced_at_snapshot": 7
   },
   "intents_volume_365d": {
    "n": 8,
@@ -49,7 +49,7 @@
    "median": 37088000000.0,
    "spread_pct_of_median": 5.430563891285591,
    "reproduced_at_publication": 8,
-   "reproduced_at_snapshot": 8
+   "reproduced_at_snapshot": 6
   },
   "intents_volume_avg_30d": {
    "n": 10,
@@ -69,7 +69,7 @@
    "median": 59,
    "spread_pct_of_median": 142.3728813559322,
    "reproduced_at_publication": 3,
-   "reproduced_at_snapshot": 2
+   "reproduced_at_snapshot": 1
   },
   "intents_volume_30d_vs_prev": {
    "n": 1,
@@ -89,7 +89,7 @@
    "median": 5805000.0,
    "spread_pct_of_median": 13.809095607235141,
    "reproduced_at_publication": 6,
-   "reproduced_at_snapshot": 7
+   "reproduced_at_snapshot": 6
   },
   "intents_fees_annualized": {
    "n": 5,
@@ -99,7 +99,7 @@
    "median": 75000000,
    "spread_pct_of_median": 10.415061333333334,
    "reproduced_at_publication": 3,
-   "reproduced_at_snapshot": 4
+   "reproduced_at_snapshot": 3
   },
   "intents_fees_365d": {
    "n": 6,
@@ -159,7 +159,7 @@
    "median": 22600000.0,
    "spread_pct_of_median": 22.123893805309734,
    "reproduced_at_publication": 11,
-   "reproduced_at_snapshot": 8
+   "reproduced_at_snapshot": 9
   },
   "issuance_cover": {
    "n": 20,
@@ -169,7 +169,7 @@
    "median": 18.55,
    "spread_pct_of_median": 66.30727762803235,
    "reproduced_at_publication": 16,
-   "reproduced_at_snapshot": 16
+   "reproduced_at_snapshot": 18
   },
   "burn_cover": {
    "n": 11,
@@ -189,7 +189,7 @@
    "median": 5.3,
    "spread_pct_of_median": 47.16981132075472,
    "reproduced_at_publication": 6,
-   "reproduced_at_snapshot": 6
+   "reproduced_at_snapshot": 2
   },
   "tx_yoy": {
    "n": 12,
@@ -259,7 +259,7 @@
    "median": 13.485,
    "spread_pct_of_median": 77.1227289581016,
    "reproduced_at_publication": 3,
-   "reproduced_at_snapshot": 2
+   "reproduced_at_snapshot": 1
   },
   "mcap_over_fees": {
    "n": 6,
@@ -269,7 +269,7 @@
    "median": 68.245,
    "spread_pct_of_median": 18.902483698439454,
    "reproduced_at_publication": 4,
-   "reproduced_at_snapshot": 1
+   "reproduced_at_snapshot": 3
   },
   "mcap_over_revenue": {
    "n": 8,
@@ -279,7 +279,7 @@
    "median": 212.5,
    "spread_pct_of_median": 13.647058823529413,
    "reproduced_at_publication": 6,
-   "reproduced_at_snapshot": 7
+   "reproduced_at_snapshot": 6
   },
   "revenue_yield_on_mcap": {
    "n": 6,
@@ -289,7 +289,7 @@
    "median": 0.45999999999999996,
    "spread_pct_of_median": 19.565217391304355,
    "reproduced_at_publication": 6,
-   "reproduced_at_snapshot": 4
+   "reproduced_at_snapshot": 2
   },
   "price_yoy": {
    "n": 5,
@@ -299,7 +299,7 @@
    "median": 90.8,
    "spread_pct_of_median": 86.23348017621146,
    "reproduced_at_publication": 3,
-   "reproduced_at_snapshot": 3
+   "reproduced_at_snapshot": 2
   },
   "staked_share": {
    "n": 10,
@@ -319,7 +319,7 @@
    "median": 351,
    "spread_pct_of_median": 12.535612535612536,
    "reproduced_at_publication": 7,
-   "reproduced_at_snapshot": 7
+   "reproduced_at_snapshot": 3
   },
   "validators_to_one_third": {
    "n": 3,
@@ -329,7 +329,7 @@
    "median": 9,
    "spread_pct_of_median": 0.0,
    "reproduced_at_publication": 3,
-   "reproduced_at_snapshot": 3
+   "reproduced_at_snapshot": 0
   },
   "net_inflation": {
    "n": 13,
@@ -359,7 +359,7 @@
    "median": 134123.0,
    "spread_pct_of_median": 45.107848765685226,
    "reproduced_at_publication": 4,
-   "reproduced_at_snapshot": 2
+   "reproduced_at_snapshot": 3
   },
   "l1_fees_usd_yoy": {
    "n": 3,
@@ -369,7 +369,7 @@
    "median": -40.0,
    "spread_pct_of_median": 69.24999999999999,
    "reproduced_at_publication": 3,
-   "reproduced_at_snapshot": 2
+   "reproduced_at_snapshot": 0
   },
   "intents_share_of_near_dex_volume": {
    "n": 3,
@@ -413,8 +413,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
-    "ours": 3757732084.0,
-    "gap": 0.008042535539070843,
+    "ours": 3774153452.0,
+    "gap": 0.012447702556225375,
     "status": "reproduced"
    }
   },
@@ -438,8 +438,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
-    "ours": 3757732084.0,
-    "gap": 0.0,
+    "ours": 3774153452.0,
+    "gap": 0.004370020968211208,
     "status": "reproduced"
    }
   },
@@ -463,8 +463,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_365d",
-    "ours": 32910846701.0,
-    "gap": 2.5727772713460955e-05,
+    "ours": 32927090833.0,
+    "gap": 0.0005193203585536311,
     "status": "reproduced"
    }
   },
@@ -488,8 +488,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_365d",
-    "ours": 32910846701.0,
-    "gap": 0.003379472591463415,
+    "ours": 32927090833.0,
+    "gap": 0.003874720518292683,
     "status": "reproduced"
    }
   },
@@ -513,9 +513,9 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_alltime",
-    "ours": 37324522122.0,
-    "gap": 0.045504821344537816,
-    "status": "reproduced"
+    "ours": 37614087536.0,
+    "gap": 0.05361589736694678,
+    "status": "close"
    }
   },
   {
@@ -538,8 +538,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_alltime",
-    "ours": 37324522122.0,
-    "gap": 0.008770868162162162,
+    "ours": 37614087536.0,
+    "gap": 0.01659696043243243,
     "status": "reproduced"
    }
   },
@@ -563,8 +563,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_alltime",
-    "ours": 37324522122.0,
-    "gap": 0.004157173042776433,
+    "ours": 37614087536.0,
+    "gap": 0.011947472047350013,
     "status": "reproduced"
    }
   },
@@ -588,8 +588,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_avg_30d",
-    "ours": 125257736.13333334,
-    "gap": 0.039434538854805676,
+    "ours": 125805115.06666666,
+    "gap": 0.035236847648261786,
     "status": "reproduced"
    }
   },
@@ -613,8 +613,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_avg_30d",
-    "ours": 125257736.13333334,
-    "gap": 0.03573721221452394,
+    "ours": 125805115.06666666,
+    "gap": 0.0315233636130357,
     "status": "reproduced"
    }
   },
@@ -638,8 +638,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_avg_30d",
-    "ours": 125257736.13333334,
-    "gap": 0.008042532834913902,
+    "ours": 125805115.06666666,
+    "gap": 0.012447699840251123,
     "status": "reproduced"
    }
   },
@@ -663,8 +663,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_avg_30d",
-    "ours": 125257736.13333334,
-    "gap": 0.01827936254147394,
+    "ours": 125805115.06666666,
+    "gap": 0.013989222770854591,
     "status": "reproduced"
    }
   },
@@ -688,8 +688,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_avg_30d",
-    "ours": 125257736.13333334,
-    "gap": 0.15934405279642053,
+    "ours": 125805115.06666666,
+    "gap": 0.15567036868008952,
     "status": "not reproduced"
    }
   },
@@ -713,9 +713,9 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_yoy_30d",
-    "ours": 57.824406747227975,
-    "gap": 0.019925309369017367,
-    "status": "reproduced"
+    "ours": 47.88268142343433,
+    "gap": 0.18842912841636733,
+    "status": "not reproduced"
    }
   },
   {
@@ -738,8 +738,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_yoy_30d",
-    "ours": 57.824406747227975,
-    "gap": 0.5482468222872814,
+    "ours": 47.88268142343433,
+    "gap": 0.6259165513794194,
     "status": "not reproduced"
    }
   },
@@ -763,9 +763,9 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_yoy_30d",
-    "ours": 57.824406747227975,
-    "gap": 0.036259887546200416,
-    "status": "reproduced"
+    "ours": 47.88268142343433,
+    "gap": 0.20195530960942787,
+    "status": "not reproduced"
    }
   },
   {
@@ -788,8 +788,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_30d_vs_prev_30d",
-    "ours": -20.681798050544653,
-    "gap": 0.0008793212297268508,
+    "ours": -21.562608558123863,
+    "gap": 0.041671911020476494,
     "status": "reproduced"
    }
   },
@@ -813,8 +813,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.027604241435562806,
+    "ours": 6048207.0,
+    "gap": 0.013343066884176183,
     "status": "reproduced"
    }
   },
@@ -830,16 +830,16 @@
    "url": "https://github.com/hanafynst/near-demand-ledger/blob/1202e34a62258ba100256a42114b003091c3921f/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.09204266026086119,
+    "ours": 5960166.0,
+    "gap": 0.09192907348734479,
     "status": "close",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.09204266026086119,
+    "ours": 6048207.0,
+    "gap": 0.10805857853114714,
     "status": "close"
    }
   },
@@ -855,16 +855,16 @@
    "url": "https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.08377927272727273,
+    "ours": 5960166.0,
+    "gap": 0.08366654545454545,
     "status": "close",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.08377927272727273,
+    "ours": 6048207.0,
+    "gap": 0.099674,
     "status": "close"
    }
   },
@@ -880,16 +880,16 @@
    "url": "https://github.com/Topeseun/near-intents-investment-thesis/blob/a02982df090e1a2e3c386f8c303fe4eae4f05094/README.md",
    "at_publication": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.09204266026086119,
+    "ours": 5960166.0,
+    "gap": 0.09192907348734479,
     "status": "close",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.09204266026086119,
+    "ours": 6048207.0,
+    "gap": 0.10805857853114714,
     "status": "close"
    }
   },
@@ -905,16 +905,16 @@
    "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_30d",
-    "ours": 5781089.0,
-    "gap": 0.0001884083044982699,
+    "ours": 5781090.0,
+    "gap": 0.00018858131487889274,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-08"
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.031277854671280275,
+    "ours": 6048207.0,
+    "gap": 0.04640259515570934,
     "status": "reproduced"
    }
   },
@@ -938,8 +938,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_annualized_30d",
-    "ours": 72522896.33333333,
-    "gap": 0.02653830425055935,
+    "ours": 73586518.5,
+    "gap": 0.012261496644295301,
     "status": "reproduced"
    }
   },
@@ -963,8 +963,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_365d",
-    "ours": 54026265.0,
-    "gap": 0.0032054428044280443,
+    "ours": 54123578.0,
+    "gap": 0.00141,
     "status": "reproduced"
    }
   },
@@ -988,8 +988,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_90d",
-    "ours": 18757458.0,
-    "gap": 0.0780148275862069,
+    "ours": 19099853.0,
+    "gap": 0.09769270114942528,
     "status": "close"
    }
   },
@@ -1005,16 +1005,16 @@
    "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
    "at_publication": {
     "metric": "intents_take_rate_bps_30d",
-    "ours": 15.56271916150913,
-    "gap": 0.0001747533103553119,
+    "ours": 15.5627218535139,
+    "gap": 0.000174926318373963,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-08"
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_90d",
-    "ours": 15.500541663271859,
-    "gap": 0.003821229866847147,
+    "ours": 15.600569600750099,
+    "gap": 0.0026073008194150505,
     "status": "reproduced"
    }
   },
@@ -1030,16 +1030,16 @@
    "url": "https://github.com/Topeseun/near-intents-investment-thesis/blob/a02982df090e1a2e3c386f8c303fe4eae4f05094/README.md",
    "at_publication": {
     "metric": "intents_take_rate_bps_90d",
-    "ours": 15.500541663271859,
-    "gap": 0.06679570979159391,
+    "ours": 15.50002931581885,
+    "gap": 0.06676044843901242,
     "status": "close",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_90d",
-    "ours": 15.500541663271859,
-    "gap": 0.06679570979159391,
+    "ours": 15.600569600750099,
+    "gap": 0.07367994499312452,
     "status": "close"
    }
   },
@@ -1055,16 +1055,16 @@
    "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
    "at_publication": {
     "metric": "intents_capture_share_30d",
-    "ours": 32.14299243620017,
-    "gap": 0.0013393282305347565,
+    "ours": 32.14298687617733,
+    "gap": 0.0013391550211006434,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-08"
    },
    "at_snapshot": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.492086110791426,
-    "gap": 0.05009077536475312,
+    "ours": 30.466020756234037,
+    "gap": 0.050902780179625046,
     "status": "close"
    }
   },
@@ -1080,16 +1080,16 @@
    "url": "https://github.com/Topeseun/near-intents-investment-thesis/blob/a02982df090e1a2e3c386f8c303fe4eae4f05094/README.md",
    "at_publication": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.492086110791426,
-    "gap": 0.10105878211110186,
+    "ours": 30.448128458167105,
+    "gap": 0.10235470347384719,
     "status": "close",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.492086110791426,
-    "gap": 0.10105878211110186,
+    "ours": 30.466020756234037,
+    "gap": 0.10182721827140225,
     "status": "close"
    }
   },
@@ -1113,8 +1113,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_365d",
-    "ours": 9358304.05,
-    "gap": 0.0008881336898396519,
+    "ours": 9502663.05,
+    "gap": 0.016327598930481364,
     "status": "reproduced"
    }
   },
@@ -1138,8 +1138,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.136181875,
+    "ours": 22418884.0,
+    "gap": 0.12426234375,
     "status": "close"
    }
   },
@@ -1163,8 +1163,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.02151575221238938,
+    "ours": 22418884.0,
+    "gap": 0.008013982300884955,
     "status": "reproduced"
    }
   },
@@ -1180,16 +1180,16 @@
    "url": "https://github.com/tenxagent/near-agent-economy/blob/c54570d5fa4993e5d625a6c36b5da70354b198be/README.md",
    "at_publication": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.023784444444444445,
+    "ours": 22079567.833333332,
+    "gap": 0.022202214506172782,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
-    "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.023784444444444445,
+    "metric": "intents_revenue_annualized_90d",
+    "ours": 21077334.611111112,
+    "gap": 0.024197471707818892,
     "status": "reproduced"
    }
   },
@@ -1213,8 +1213,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_365d",
-    "ours": 12.854507053994352,
-    "gap": 0.071208921166196,
+    "ours": 12.982253093329504,
+    "gap": 0.08185442444412534,
     "status": "close"
    }
   },
@@ -1237,9 +1237,9 @@
     "asof": "2026-11-09"
    },
    "at_snapshot": {
-    "metric": "revenue_cover_of_gross_issuance_pct_30d",
-    "ours": 15.037013593855143,
-    "gap": 0.004171285175156083,
+    "metric": "usage_cover_of_net_issuance_pct_365d",
+    "ours": 15.080287583677812,
+    "gap": 0.001305458034581958,
     "status": "reproduced"
    }
   },
@@ -1263,9 +1263,9 @@
    },
    "at_snapshot": {
     "metric": "usage_cover_of_net_issuance_pct_30d",
-    "ours": 16.3280365003943,
-    "gap": 0.056182861248884365,
-    "status": "close"
+    "ours": 17.031077181170566,
+    "gap": 0.015544671608637824,
+    "status": "reproduced"
    }
   },
   {
@@ -1288,8 +1288,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_90d",
-    "ours": 18.423706676907848,
-    "gap": 0.023539259828213786,
+    "ours": 18.75488801702933,
+    "gap": 0.041938223168296124,
     "status": "reproduced"
    }
   },
@@ -1313,8 +1313,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_net_issuance_pct_90d",
-    "ours": 18.647333269786444,
-    "gap": 0.018561406853345074,
+    "ours": 18.98359518169019,
+    "gap": 0.0008634114899899415,
     "status": "reproduced"
    }
   },
@@ -1338,8 +1338,8 @@
    },
    "at_snapshot": {
     "metric": "usage_cover_of_net_issuance_pct_90d",
-    "ours": 19.861131322481725,
-    "gap": 0.03586741153001341,
+    "ours": 20.203048822006238,
+    "gap": 0.019269474659891424,
     "status": "reproduced"
    }
   },
@@ -1363,8 +1363,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_90d",
-    "ours": 18.423706676907848,
-    "gap": 0.023539259828213786,
+    "ours": 18.75488801702933,
+    "gap": 0.041938223168296124,
     "status": "reproduced"
    }
   },
@@ -1388,8 +1388,8 @@
    },
    "at_snapshot": {
     "metric": "burn70_cover_of_gross_issuance_pct_30d",
-    "ours": 0.7794638152387391,
-    "gap": 0.343903129721964,
+    "ours": 0.769238710814252,
+    "gap": 0.3262736393349173,
     "status": "not reproduced"
    }
   },
@@ -1413,8 +1413,8 @@
    },
    "at_snapshot": {
     "metric": "burn70_cover_of_gross_issuance_pct_30d",
-    "ours": 0.7794638152387391,
-    "gap": 0.025670230951576195,
+    "ours": 0.769238710814252,
+    "gap": 0.038451611482185066,
     "status": "reproduced"
    }
   },
@@ -1438,8 +1438,8 @@
    },
    "at_snapshot": {
     "metric": "burn70_cover_of_gross_issuance_pct_90d",
-    "ours": 0.8425002606562381,
-    "gap": 0.0029765007812358286,
+    "ours": 0.8463925925245974,
+    "gap": 0.0076102291959493475,
     "status": "reproduced"
    }
   },
@@ -1463,8 +1463,8 @@
    },
    "at_snapshot": {
     "metric": "burn_cover_of_net_issuance_pct_30d",
-    "ours": 1.122267404382724,
-    "gap": 0.02411530053676158,
+    "ours": 1.107431233766137,
+    "gap": 0.03701631846422867,
     "status": "reproduced"
    }
   },
@@ -1488,8 +1488,8 @@
    },
    "at_snapshot": {
     "metric": "burn_cover_of_net_issuance_pct_365d",
-    "ours": 1.8713255712489218,
-    "gap": 0.004614057846318109,
+    "ours": 1.856959330254478,
+    "gap": 0.012255675396554193,
     "status": "reproduced"
    }
   },
@@ -1513,8 +1513,8 @@
    },
    "at_snapshot": {
     "metric": "burn_cover_of_net_issuance_pct_365d",
-    "ours": 1.8713255712489218,
-    "gap": 0.01509180460583056,
+    "ours": 1.856959330254478,
+    "gap": 0.022652984076590475,
     "status": "reproduced"
    }
   },
@@ -1538,8 +1538,8 @@
    },
    "at_snapshot": {
     "metric": "burn_cover_of_net_issuance_pct_365d",
-    "ours": 1.8713255712489218,
-    "gap": 0.06433721437553908,
+    "ours": 1.856959330254478,
+    "gap": 0.071520334872761,
     "status": "close"
    }
   },
@@ -1563,8 +1563,8 @@
    },
    "at_snapshot": {
     "metric": "breakeven_multiple_365d",
-    "ours": 6.806676691144798,
-    "gap": 0.10438464590200025,
+    "ours": 6.754311465551865,
+    "gap": 0.11127480716422825,
     "status": "close"
    }
   },
@@ -1588,9 +1588,9 @@
    },
    "at_snapshot": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.096074156567644,
-    "gap": 0.038476574232519975,
-    "status": "reproduced"
+    "ours": 5.010107857090482,
+    "gap": 0.05469663073764491,
+    "status": "close"
    }
   },
   {
@@ -1613,9 +1613,9 @@
    },
    "at_snapshot": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.096074156567644,
-    "gap": 0.038476574232519975,
-    "status": "reproduced"
+    "ours": 5.010107857090482,
+    "gap": 0.05469663073764491,
+    "status": "close"
    }
   },
   {
@@ -1638,8 +1638,8 @@
    },
    "at_snapshot": {
     "metric": "breakeven_multiple_365d",
-    "ours": 6.806676691144798,
-    "gap": 0.05462823734100033,
+    "ours": 6.754311465551865,
+    "gap": 0.061901185340018774,
     "status": "close"
    }
   },
@@ -1663,8 +1663,8 @@
    },
    "at_snapshot": {
     "metric": "tx_yoy_30d",
-    "ours": -85.14222143833281,
-    "gap": 0.0004961391108439104,
+    "ours": -84.76440429768097,
+    "gap": 0.003943545268143663,
     "status": "reproduced"
    }
   },
@@ -1688,8 +1688,8 @@
    },
    "at_snapshot": {
     "metric": "tx_yoy_90d",
-    "ours": -84.02474537124363,
-    "gap": 0.0020814088925935562,
+    "ours": -83.85066656891587,
+    "gap": 0.0041488531007616795,
     "status": "reproduced"
    }
   },
@@ -1713,8 +1713,8 @@
    },
    "at_snapshot": {
     "metric": "tx_yoy_30d",
-    "ours": -85.14222143833281,
-    "gap": 0.0016731933921507187,
+    "ours": -84.76440429768097,
+    "gap": 0.002771714144929781,
     "status": "reproduced"
    }
   },
@@ -1738,8 +1738,8 @@
    },
    "at_snapshot": {
     "metric": "tx_yoy_90d",
-    "ours": -84.02474537124363,
-    "gap": 0.00029458775290030256,
+    "ours": -83.85066656891587,
+    "gap": 0.0017777789414777448,
     "status": "reproduced"
    }
   },
@@ -1763,8 +1763,8 @@
    },
    "at_snapshot": {
     "metric": "tx_yoy_30d",
-    "ours": -85.14222143833281,
-    "gap": 0.0016731933921507187,
+    "ours": -84.76440429768097,
+    "gap": 0.002771714144929781,
     "status": "reproduced"
    }
   },
@@ -1788,8 +1788,8 @@
    },
    "at_snapshot": {
     "metric": "tx_yoy_30d",
-    "ours": -85.14222143833281,
-    "gap": 0.0016731933921507187,
+    "ours": -84.76440429768097,
+    "gap": 0.002771714144929781,
     "status": "reproduced"
    }
   },
@@ -1813,8 +1813,8 @@
    },
    "at_snapshot": {
     "metric": "tx_vs_peak_30d",
-    "ours": -92.07008947606539,
-    "gap": 0.0029421511553964466,
+    "ours": -91.93382476780798,
+    "gap": 0.001457786141699124,
     "status": "reproduced"
    }
   },
@@ -1838,8 +1838,8 @@
    },
    "at_snapshot": {
     "metric": "tx_vs_peak_day",
-    "ours": -93.03568709392094,
-    "gap": 0.0003837321926982956,
+    "ours": -93.60245940518975,
+    "gap": 0.006478058120319871,
     "status": "reproduced"
    }
   },
@@ -1863,8 +1863,8 @@
    },
    "at_snapshot": {
     "metric": "tx_vs_peak_30d",
-    "ours": -92.07008947606539,
-    "gap": 0.011759225011707593,
+    "ours": -91.93382476780798,
+    "gap": 0.010261810635252491,
     "status": "reproduced"
    }
   },
@@ -1888,8 +1888,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_yoy_90d",
-    "ours": -75.34785886239067,
-    "gap": 0.025140936903274368,
+    "ours": -75.1911593708275,
+    "gap": 0.023008971031666752,
     "status": "reproduced"
    }
   },
@@ -1913,8 +1913,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_yoy_30d",
-    "ours": -76.28304789580271,
-    "gap": 0.0037243144184567114,
+    "ours": -75.56962370413251,
+    "gap": 0.005662845998256441,
     "status": "reproduced"
    }
   },
@@ -1938,8 +1938,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_yoy_30d",
-    "ours": -76.28304789580271,
-    "gap": 0.009311066288276493,
+    "ours": -75.56962370413251,
+    "gap": 0.018576315530746616,
     "status": "reproduced"
    }
   },
@@ -1963,8 +1963,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_yoy_30d",
-    "ours": -76.28304789580271,
-    "gap": 0.02201220646406782,
+    "ours": -75.56962370413251,
+    "gap": 0.03115867045983961,
     "status": "reproduced"
    }
   },
@@ -1988,8 +1988,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_vs_peak_30d",
-    "ours": -96.91179329835619,
-    "gap": 0.0009093474396269364,
+    "ours": -96.83191376393665,
+    "gap": 0.0017328477944674793,
     "status": "reproduced"
    }
   },
@@ -2013,8 +2013,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_vs_peak_day",
-    "ours": -92.13343425605535,
-    "gap": 0.0003630212383860803,
+    "ours": -96.21672740938226,
+    "gap": 0.04469845178482372,
     "status": "reproduced"
    }
   },
@@ -2038,8 +2038,8 @@
    },
    "at_snapshot": {
     "metric": "new_accounts_yoy_30d",
-    "ours": -95.61463795957636,
-    "gap": 0.006084844495048301,
+    "ours": -95.59351172310467,
+    "gap": 0.006304451942778938,
     "status": "reproduced"
    }
   },
@@ -2063,8 +2063,8 @@
    },
    "at_snapshot": {
     "metric": "new_accounts_yoy_30d",
-    "ours": -95.61463795957636,
-    "gap": 0.004014187921079622,
+    "ours": -95.59351172310467,
+    "gap": 0.004234252884326366,
     "status": "reproduced"
    }
   },
@@ -2088,8 +2088,8 @@
    },
    "at_snapshot": {
     "metric": "new_accounts_yoy_30d",
-    "ours": -95.61463795957636,
-    "gap": 0.004014187921079622,
+    "ours": -95.59351172310467,
+    "gap": 0.004234252884326366,
     "status": "reproduced"
    }
   },
@@ -2113,8 +2113,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_over_l1_fees_365d",
-    "ours": 46.434893623796015,
-    "gap": 0.03260638283758303,
+    "ours": 46.944789474427346,
+    "gap": 0.02198355261609697,
     "status": "reproduced"
    }
   },
@@ -2130,16 +2130,16 @@
    "url": "https://github.com/semilla1lab/semilla1-near-thesis/blob/94b8d27f2a7652db553b0ee6ac3ec4fa49237fa6/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_over_l1_fees_30d",
-    "ours": 34.880444123884786,
-    "gap": 0.000560340289834178,
+    "ours": 34.88045015742693,
+    "gap": 0.0005601674089705005,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-08"
    },
    "at_snapshot": {
     "metric": "intents_fees_over_l1_fees_30d",
-    "ours": 43.34928817297436,
-    "gap": 0.24209994764969522,
+    "ours": 46.00227770358125,
+    "gap": 0.31811683964416193,
     "status": "not reproduced"
    }
   },
@@ -2162,9 +2162,9 @@
     "asof": "2026-11-04"
    },
    "at_snapshot": {
-    "metric": "intents_revenue_over_l1_fees_90d",
-    "ours": 13.762610619337341,
-    "gap": 0.3446375895553647,
+    "metric": "intents_revenue_over_l1_fees_30d",
+    "ours": 14.015063473513486,
+    "gap": 0.3326160250707864,
     "status": "not reproduced"
    }
   },
@@ -2187,10 +2187,10 @@
     "asof": "2026-11-01"
    },
    "at_snapshot": {
-    "metric": "intents_revenue_over_l1_fees_30d",
-    "ours": 13.218102278118467,
-    "gap": 0.01677709831680515,
-    "status": "reproduced"
+    "metric": "intents_revenue_over_l1_fees_90d",
+    "ours": 13.924282865310486,
+    "gap": 0.07109868194696048,
+    "status": "close"
    }
   },
   {
@@ -2213,8 +2213,8 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_fees_annualized_30d",
-    "ours": 65.5249140858459,
-    "gap": 0.06924837946241637,
+    "ours": 63.89828351720648,
+    "gap": 0.09235392731240803,
     "status": "close"
    }
   },
@@ -2238,8 +2238,8 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_fees_annualized_30d",
-    "ours": 65.5249140858459,
-    "gap": 0.1133299853065509,
+    "ours": 63.89828351720648,
+    "gap": 0.13534122439504093,
     "status": "close"
    }
   },
@@ -2263,8 +2263,8 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 214.89154217840155,
-    "gap": 0.04316282610874539,
+    "ours": 209.73623049912564,
+    "gap": 0.018137041257891454,
     "status": "reproduced"
    }
   },
@@ -2288,8 +2288,8 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 214.89154217840155,
-    "gap": 0.01844332785972299,
+    "ours": 209.73623049912564,
+    "gap": 0.005989428914096495,
     "status": "reproduced"
    }
   },
@@ -2313,8 +2313,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_yield_on_mcap_pct_30d",
-    "ours": 0.4653510277150911,
-    "gap": 0.00989143039342308,
+    "ours": 0.47678934517904803,
+    "gap": 0.014445415274570333,
     "status": "reproduced"
    }
   },
@@ -2330,17 +2330,17 @@
    "url": "https://github.com/tenxagent/near-agent-economy/blob/c54570d5fa4993e5d625a6c36b5da70354b198be/README.md",
    "at_publication": {
     "metric": "revenue_yield_on_mcap_pct_30d",
-    "ours": 0.4653510277150911,
-    "gap": 0.0341133949224247,
+    "ours": 0.4646318408473361,
+    "gap": 0.0325152018829691,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "revenue_yield_on_mcap_pct_30d",
-    "ours": 0.4653510277150911,
-    "gap": 0.0341133949224247,
-    "status": "reproduced"
+    "ours": 0.47678934517904803,
+    "gap": 0.05953187817566226,
+    "status": "close"
    }
   },
   {
@@ -2363,9 +2363,9 @@
    },
    "at_snapshot": {
     "metric": "price_yoy_30d_avg",
-    "ours": 97.79631931610413,
-    "gap": 0.014484640208549025,
-    "status": "reproduced"
+    "ours": 90.64879145028361,
+    "gap": 0.05965983972734849,
+    "status": "close"
    }
   },
   {
@@ -2387,10 +2387,10 @@
     "asof": "2026-11-10"
    },
    "at_snapshot": {
-    "metric": "price_yoy",
-    "ours": 19.427924839522206,
-    "gap": 0.022522359974852923,
-    "status": "reproduced"
+    "metric": "price_yoy_90d_avg",
+    "ours": 40.26141126904024,
+    "gap": 1.11902164573896,
+    "status": "not reproduced"
    }
   },
   {
@@ -2409,12 +2409,12 @@
     "gap": 0.002397746904816553,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
-    "ours": 44.40622018788337,
-    "gap": 0.002397746904816553,
+    "ours": 44.95254392153723,
+    "gap": 0.014730111095648538,
     "status": "reproduced"
    }
   },
@@ -2434,12 +2434,12 @@
     "gap": 0.019730238678071232,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
-    "ours": 44.40622018788337,
-    "gap": 0.019730238678071232,
+    "ours": 44.95254392153723,
+    "gap": 0.007670112107345912,
     "status": "reproduced"
    }
   },
@@ -2459,12 +2459,12 @@
     "gap": 0.0001400943216975645,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
-    "ours": 44.40622018788337,
-    "gap": 0.0001400943216975645,
+    "ours": 44.95254392153723,
+    "gap": 0.012444682917505152,
     "status": "reproduced"
    }
   },
@@ -2484,12 +2484,12 @@
     "gap": 0.013840643558981127,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
-    "ours": 44.40622018788337,
-    "gap": 0.013840643558981127,
+    "ours": 44.95254392153723,
+    "gap": 0.026313788162950463,
     "status": "reproduced"
    }
   },
@@ -2509,13 +2509,13 @@
     "gap": 0.038461538461538464,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "validators_current",
-    "ours": 351,
-    "gap": 0.038461538461538464,
-    "status": "reproduced"
+    "ours": 356,
+    "gap": 0.05325443786982249,
+    "status": "close"
    }
   },
   {
@@ -2534,12 +2534,12 @@
     "gap": 0.07387862796833773,
     "status": "close",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "validators_current",
-    "ours": 351,
-    "gap": 0.07387862796833773,
+    "ours": 356,
+    "gap": 0.06068601583113457,
     "status": "close"
    }
   },
@@ -2559,12 +2559,12 @@
     "gap": 0.0,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "validators_current",
-    "ours": 351,
-    "gap": 0.0,
+    "ours": 356,
+    "gap": 0.014245014245014245,
     "status": "reproduced"
    }
   },
@@ -2584,13 +2584,13 @@
     "gap": 0.04776119402985075,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "validators_current",
-    "ours": 351,
-    "gap": 0.04776119402985075,
-    "status": "reproduced"
+    "ours": 356,
+    "gap": 0.0626865671641791,
+    "status": "close"
    }
   },
   {
@@ -2609,13 +2609,13 @@
     "gap": 0.0,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "validators_to_one_third",
-    "ours": 9,
-    "gap": 0.0,
-    "status": "reproduced"
+    "ours": 10,
+    "gap": 0.1111111111111111,
+    "status": "close"
    }
   },
   {
@@ -2638,8 +2638,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_365d",
-    "ours": 2.4804748388071127,
-    "gap": 0.00019146726093255764,
+    "ours": 2.479861463094125,
+    "gap": 5.58616555947839e-05,
     "status": "reproduced"
    }
   },
@@ -2663,8 +2663,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_365d",
-    "ours": 2.4804748388071127,
-    "gap": 0.0038253659409186696,
+    "ours": 2.479861463094125,
+    "gap": 0.004071701568624616,
     "status": "reproduced"
    }
   },
@@ -2688,8 +2688,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_90d",
-    "ours": 2.4755620881494704,
-    "gap": 0.027204185954137046,
+    "ours": 2.472571812699009,
+    "gap": 0.025963407758924764,
     "status": "reproduced"
    }
   },
@@ -2713,8 +2713,8 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_365d",
-    "ours": 1163484.19870857,
-    "gap": 0.022282185959184794,
+    "ours": 1152919.8150837,
+    "gap": 0.031159819257394958,
     "status": "reproduced"
    }
   },
@@ -2738,8 +2738,8 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_30d",
-    "ours": 137505.97186775,
-    "gap": 0.005557543677694348,
+    "ours": 131476.25078419,
+    "gap": 0.038536770478185885,
     "status": "reproduced"
    }
   },
@@ -2763,9 +2763,9 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_yoy_30d",
-    "ours": -39.21404783375275,
-    "gap": 0.01964880415618122,
-    "status": "reproduced"
+    "ours": -42.018955628047514,
+    "gap": 0.050473890701187865,
+    "status": "close"
    }
   },
   {
@@ -2788,8 +2788,8 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_yoy_30d",
-    "ours": -39.21404783375275,
-    "gap": 0.42079883455625905,
+    "ours": -42.018955628047514,
+    "gap": 0.5224259285524461,
     "status": "not reproduced"
    }
   },
@@ -2813,8 +2813,8 @@
    },
    "at_snapshot": {
     "metric": "intents_share_of_near_dex_volume_30d",
-    "ours": 92.78285112852154,
-    "gap": 0.001974634217295339,
+    "ours": 93.22417521707635,
+    "gap": 0.0067405531001766324,
     "status": "reproduced"
    }
   },
@@ -2838,8 +2838,8 @@
    },
    "at_snapshot": {
     "metric": "intents_share_of_near_dex_volume_30d",
-    "ours": 92.78285112852154,
-    "gap": 0.10587426851634728,
+    "ours": 93.22417521707635,
+    "gap": 0.11113438876133902,
     "status": "close"
    }
   },
@@ -2863,8 +2863,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
-    "ours": 3757732084.0,
-    "gap": 0.026494278756476683,
+    "ours": 3774153452.0,
+    "gap": 0.02224003834196891,
     "status": "reproduced"
    }
   },
@@ -2888,9 +2888,9 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.0366584347826087,
-    "status": "reproduced"
+    "ours": 6048207.0,
+    "gap": 0.05186208695652174,
+    "status": "close"
    }
   },
   {
@@ -2913,8 +2913,8 @@
    },
    "at_snapshot": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.492086110791426,
-    "gap": 0.17365620295958192,
+    "ours": 30.466020756234037,
+    "gap": 0.17436258113186887,
     "status": "not reproduced"
    }
   },
@@ -2938,8 +2938,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.1428781395348837,
+    "ours": 22418884.0,
+    "gap": 0.13105100775193798,
     "status": "close"
    }
   },
@@ -2963,9 +2963,9 @@
    },
    "at_snapshot": {
     "metric": "revenue_yield_on_mcap_pct_30d",
-    "ours": 0.4653510277150911,
-    "gap": 0.0341133949224247,
-    "status": "reproduced"
+    "ours": 0.47678934517904803,
+    "gap": 0.05953187817566226,
+    "status": "close"
    }
   },
   {
@@ -2988,9 +2988,9 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 214.89154217840155,
-    "gap": 0.040662758132135934,
-    "status": "reproduced"
+    "ours": 209.73623049912564,
+    "gap": 0.06367754241461768,
+    "status": "close"
    }
   },
   {
@@ -3013,8 +3013,8 @@
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_90d",
-    "ours": 15.500541663271859,
-    "gap": 0.040304809615560974,
+    "ours": 15.600569600750099,
+    "gap": 0.04701809401007371,
     "status": "reproduced"
    }
   },
@@ -3037,9 +3037,9 @@
     "asof": "2026-10-31"
    },
    "at_snapshot": {
-    "metric": "breakeven_multiple_90d",
-    "ours": 5.096074156567644,
-    "gap": 0.0899867577557778,
+    "metric": "breakeven_multiple_30d",
+    "ours": 5.936643358386619,
+    "gap": 0.06011488542618206,
     "status": "close"
    }
   },
@@ -3063,9 +3063,9 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.15596396946564886,
-    "status": "not reproduced"
+    "ours": 22418884.0,
+    "gap": 0.14431740458015266,
+    "status": "close"
    }
   },
   {
@@ -3088,8 +3088,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_yield_on_mcap_pct_30d",
-    "ours": 0.4653510277150911,
-    "gap": 0.08221169236067705,
+    "ours": 0.47678934517904803,
+    "gap": 0.10881243064894892,
     "status": "close"
    }
   },
@@ -3113,8 +3113,8 @@
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_30d",
-    "ours": 15.862722159944173,
-    "gap": 0.0023445182425048507,
+    "ours": 16.025334096563913,
+    "gap": 0.007882647582636033,
     "status": "reproduced"
    }
   },
@@ -3138,8 +3138,8 @@
    },
    "at_snapshot": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.492086110791426,
-    "gap": 0.10317393791789922,
+    "ours": 30.466020756234037,
+    "gap": 0.10394056599311655,
     "status": "close"
    }
   },
@@ -3159,12 +3159,12 @@
     "gap": 0.0021715230847070225,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
-    "ours": 44.40622018788337,
-    "gap": 0.0021715230847070225,
+    "ours": 44.95254392153723,
+    "gap": 0.01450110407441266,
     "status": "reproduced"
    }
   },
@@ -3184,13 +3184,13 @@
     "gap": 0.035398230088495575,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "validators_current",
-    "ours": 351,
-    "gap": 0.035398230088495575,
-    "status": "reproduced"
+    "ours": 356,
+    "gap": 0.05014749262536873,
+    "status": "close"
    }
   },
   {
@@ -3209,13 +3209,13 @@
     "gap": 0.0,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "validators_to_one_third",
-    "ours": 9,
-    "gap": 0.0,
-    "status": "reproduced"
+    "ours": 10,
+    "gap": 0.1111111111111111,
+    "status": "close"
    }
   },
   {
@@ -3238,8 +3238,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_alltime",
-    "ours": 37324522122.0,
-    "gap": 0.00860731021996433,
+    "ours": 37614087536.0,
+    "gap": 0.016432133599956763,
     "status": "reproduced"
    }
   },
@@ -3263,8 +3263,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_per_day_30d",
-    "ours": 62310.9,
-    "gap": 0.07021108496642223,
+    "ours": 63922.63333333333,
+    "gap": 0.09789315791582934,
     "status": "close"
    }
   },
@@ -3287,9 +3287,9 @@
     "asof": "2026-11-02"
    },
    "at_snapshot": {
-    "metric": "tx_yoy_90d",
-    "ours": -84.02474537124363,
-    "gap": 0.004446144890478439,
+    "metric": "tx_yoy_30d",
+    "ours": -84.76440429768097,
+    "gap": 0.004317586465414252,
     "status": "reproduced"
    }
   },
@@ -3313,8 +3313,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_yoy_30d",
-    "ours": -76.28304789580271,
-    "gap": 0.001089867398985659,
+    "ours": -75.56962370413251,
+    "gap": 0.008272654801410661,
     "status": "reproduced"
    }
   },
@@ -3338,9 +3338,9 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_yoy_90d",
-    "ours": -52.66433681257241,
-    "gap": 0.047661178796158936,
-    "status": "reproduced"
+    "ours": -51.91510285180754,
+    "gap": 0.061209713348869044,
+    "status": "close"
    }
   },
   {
@@ -3363,9 +3363,9 @@
    },
    "at_snapshot": {
     "metric": "price_yoy_30d_avg",
-    "ours": 97.79631931610413,
-    "gap": 0.005100917945571784,
-    "status": "reproduced"
+    "ours": 90.64879145028361,
+    "gap": 0.06835774460140172,
+    "status": "close"
    }
   },
   {
@@ -3388,8 +3388,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_avg_30d",
-    "ours": 125257736.13333334,
-    "gap": 0.004351006448876579,
+    "ours": 125805115.06666666,
+    "gap": 5.299201283908344e-10,
     "status": "reproduced"
    }
   },
@@ -3413,9 +3413,9 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_annualized_30d",
-    "ours": 72522896.33333333,
-    "gap": 0.04066932186503753,
-    "status": "reproduced"
+    "ours": 73586518.5,
+    "gap": 0.05593179778461657,
+    "status": "close"
    }
   },
   {
@@ -3438,8 +3438,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_alltime",
-    "ours": 37324522122.0,
-    "gap": 0.007698323499748873,
+    "ours": 37614087536.0,
+    "gap": 0.0,
     "status": "reproduced"
    }
   },
@@ -3463,8 +3463,8 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_fees_annualized_30d",
-    "ours": 65.5249140858459,
-    "gap": 0.008550248360631115,
+    "ours": 63.89828351720648,
+    "gap": 0.03316260376446548,
     "status": "reproduced"
    }
   },
@@ -3488,8 +3488,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_365d",
-    "ours": 32910846701.0,
-    "gap": 0.0003296869604863222,
+    "ours": 32927090833.0,
+    "gap": 0.0008234295744680851,
     "status": "reproduced"
    }
   },
@@ -3513,8 +3513,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_alltime",
-    "ours": 37324522122.0,
-    "gap": 0.003347368870967742,
+    "ours": 37614087536.0,
+    "gap": 0.011131385376344087,
     "status": "reproduced"
    }
   },
@@ -3530,16 +3530,16 @@
    "url": "https://github.com/AbdeldjalilChougui/NearThesis/blob/786865e153e47c14a2b541be8edecfa7cdb4fce4/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_365d",
-    "ours": 54026265.0,
-    "gap": 0.006075698324022346,
+    "ours": 54025645.0,
+    "gap": 0.0060641527001862195,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "intents_fees_365d",
-    "ours": 54026265.0,
-    "gap": 0.006075698324022346,
+    "ours": 54123578.0,
+    "gap": 0.007887858472998138,
     "status": "reproduced"
    }
   },
@@ -3563,8 +3563,8 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_365d",
-    "ours": 1163484.19870857,
-    "gap": 0.005569060932846071,
+    "ours": 1152919.8150837,
+    "gap": 0.014598448646410257,
     "status": "reproduced"
    }
   },
@@ -3580,16 +3580,16 @@
    "url": "https://github.com/AbdeldjalilChougui/NearThesis/blob/786865e153e47c14a2b541be8edecfa7cdb4fce4/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_over_l1_fees_365d",
-    "ours": 46.434893623796015,
-    "gap": 0.011653455856122354,
+    "ours": 46.43436074161276,
+    "gap": 0.01164184622250018,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
-    "metric": "intents_fees_over_l1_fees_365d",
-    "ours": 46.434893623796015,
-    "gap": 0.011653455856122354,
+    "metric": "intents_fees_over_l1_fees_30d",
+    "ours": 46.00227770358125,
+    "gap": 0.0022282724091775815,
     "status": "reproduced"
    }
   },
@@ -3613,8 +3613,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_365d",
-    "ours": 2.4804748388071127,
-    "gap": 0.011763012427445046,
+    "ours": 2.479861463094125,
+    "gap": 0.012007385221464092,
     "status": "reproduced"
    }
   },
@@ -3630,16 +3630,16 @@
    "url": "https://github.com/AbdeldjalilChougui/NearThesis/blob/786865e153e47c14a2b541be8edecfa7cdb4fce4/README.md",
    "at_publication": {
     "metric": "revenue_cover_of_net_issuance_pct_90d",
-    "ours": 18.647333269786444,
-    "gap": 0.002544799450883986,
+    "ours": 18.637591101507013,
+    "gap": 0.0020210269627425597,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
-    "metric": "revenue_cover_of_net_issuance_pct_90d",
-    "ours": 18.647333269786444,
-    "gap": 0.002544799450883986,
+    "metric": "revenue_cover_of_gross_issuance_pct_90d",
+    "ours": 18.75488801702933,
+    "gap": 0.008327312743512299,
     "status": "reproduced"
    }
   },
@@ -3663,8 +3663,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_yoy_90d",
-    "ours": -75.34785886239067,
-    "gap": 0.0006355758617618703,
+    "ours": -75.1911593708275,
+    "gap": 0.001445426682237594,
     "status": "reproduced"
    }
   },
@@ -3688,8 +3688,8 @@
    },
    "at_snapshot": {
     "metric": "tx_yoy_90d",
-    "ours": -84.02474537124363,
-    "gap": 0.00029458775290030256,
+    "ours": -83.85066656891587,
+    "gap": 0.0017777789414777448,
     "status": "reproduced"
    }
   },
@@ -3712,9 +3712,9 @@
     "asof": "2026-11-10"
    },
    "at_snapshot": {
-    "metric": "new_accounts_yoy_90d",
-    "ours": -95.60459606296729,
-    "gap": 4.8075972461242225e-05,
+    "metric": "new_accounts_yoy_30d",
+    "ours": -95.59351172310467,
+    "gap": 6.786900518122788e-05,
     "status": "reproduced"
    }
   },
@@ -3737,10 +3737,10 @@
     "asof": "2026-11-10"
    },
    "at_snapshot": {
-    "metric": "price_yoy_90d_avg",
-    "ours": 38.31426178494522,
-    "gap": 0.07453473949407687,
-    "status": "close"
+    "metric": "price_yoy",
+    "ours": 40.83176418357834,
+    "gap": 0.013725502812117277,
+    "status": "reproduced"
    }
   },
   {
@@ -3759,13 +3759,13 @@
     "gap": 0.038461538461538464,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "validators_current",
-    "ours": 351,
-    "gap": 0.038461538461538464,
-    "status": "reproduced"
+    "ours": 356,
+    "gap": 0.05325443786982249,
+    "status": "close"
    }
   },
   {
@@ -3784,13 +3784,13 @@
     "gap": 0.0,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "validators_to_one_third",
-    "ours": 9,
-    "gap": 0.0,
-    "status": "reproduced"
+    "ours": 10,
+    "gap": 0.1111111111111111,
+    "status": "close"
    }
   },
   {
@@ -3809,12 +3809,12 @@
     "gap": 0.002397746904816553,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
-    "ours": 44.40622018788337,
-    "gap": 0.002397746904816553,
+    "ours": 44.95254392153723,
+    "gap": 0.014730111095648538,
     "status": "reproduced"
    }
   },
@@ -3838,8 +3838,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_365d",
-    "ours": 32910846701.0,
-    "gap": 0.003379472591463415,
+    "ours": 32927090833.0,
+    "gap": 0.003874720518292683,
     "status": "reproduced"
    }
   },
@@ -3855,16 +3855,16 @@
    "url": "https://github.com/Alberto-Campos-de-la-Torre/near-settlement-thesis/blob/3af981ddf525a53923924c9eed3074905b91f38f/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_365d",
-    "ours": 54026265.0,
-    "gap": 0.0032054428044280443,
+    "ours": 54025645.0,
+    "gap": 0.0032168819188191883,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "intents_fees_365d",
-    "ours": 54026265.0,
-    "gap": 0.0032054428044280443,
+    "ours": 54123578.0,
+    "gap": 0.00141,
     "status": "reproduced"
    }
   },
@@ -3880,16 +3880,16 @@
    "url": "https://github.com/Alberto-Campos-de-la-Torre/near-settlement-thesis/blob/3af981ddf525a53923924c9eed3074905b91f38f/THESIS.md",
    "at_publication": {
     "metric": "intents_revenue_365d",
-    "ours": 9358304.05,
-    "gap": 0.006269252688172123,
+    "ours": 9355495.05,
+    "gap": 0.005967209677419435,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "intents_revenue_365d",
-    "ours": 9358304.05,
-    "gap": 0.006269252688172123,
+    "ours": 9502663.05,
+    "gap": 0.02179172580645169,
     "status": "reproduced"
    }
   },
@@ -3905,16 +3905,16 @@
    "url": "https://github.com/Alberto-Campos-de-la-Torre/near-settlement-thesis/blob/3af981ddf525a53923924c9eed3074905b91f38f/THESIS.md",
    "at_publication": {
     "metric": "intents_capture_share_365d",
-    "ours": 17.321767569903272,
-    "gap": 0.007079509878097279,
+    "ours": 17.316766972425782,
+    "gap": 0.006788777466615274,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "intents_capture_share_365d",
-    "ours": 17.321767569903272,
-    "gap": 0.007079509878097279,
+    "ours": 17.557344508894072,
+    "gap": 0.02077584354035308,
     "status": "reproduced"
    }
   },
@@ -3930,16 +3930,16 @@
    "url": "https://github.com/Alberto-Campos-de-la-Torre/near-settlement-thesis/blob/3af981ddf525a53923924c9eed3074905b91f38f/THESIS.md",
    "at_publication": {
     "metric": "intents_take_rate_bps_365d",
-    "ours": 16.41594501984004,
-    "gap": 0.005094241221815673,
+    "ours": 16.415756632100997,
+    "gap": 0.005105658660545616,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_365d",
-    "ours": 16.41594501984004,
-    "gap": 0.005094241221815673,
+    "ours": 16.437400520593997,
+    "gap": 0.0037939078427880854,
     "status": "reproduced"
    }
   },
@@ -3963,9 +3963,9 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_yoy_30d",
-    "ours": 57.824406747227975,
-    "gap": 0.20719011998388262,
-    "status": "not reproduced"
+    "ours": 47.88268142343433,
+    "gap": 0.0003615569220390637,
+    "status": "reproduced"
    }
   },
   {
@@ -3988,8 +3988,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_365d",
-    "ours": 2.4804748388071127,
-    "gap": 0.00781006447715491,
+    "ours": 2.479861463094125,
+    "gap": 0.008055414762350032,
     "status": "reproduced"
    }
   },
@@ -4012,9 +4012,9 @@
     "asof": "2026-11-12"
    },
    "at_snapshot": {
-    "metric": "usage_cover_of_net_issuance_pct_90d",
-    "ours": 19.861131322481725,
-    "gap": 0.00195319987529012,
+    "metric": "usage_cover_of_gross_issuance_pct_90d",
+    "ours": 19.95965014175822,
+    "gap": 0.0029974945607146976,
     "status": "reproduced"
    }
   },
@@ -4037,9 +4037,9 @@
     "asof": "2026-11-12"
    },
    "at_snapshot": {
-    "metric": "active_accounts_yoy_90d",
-    "ours": -75.34785886239067,
-    "gap": 0.0033352002329276238,
+    "metric": "active_accounts_yoy_30d",
+    "ours": -75.56962370413251,
+    "gap": 0.0004018028553899974,
     "status": "reproduced"
    }
   },
@@ -4063,8 +4063,8 @@
    },
    "at_snapshot": {
     "metric": "tx_yoy_30d",
-    "ours": -85.14222143833281,
-    "gap": 0.004035630169019032,
+    "ours": -84.76440429768097,
+    "gap": 0.00041976064055458174,
     "status": "reproduced"
    }
   },
@@ -4088,8 +4088,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_365d",
-    "ours": 32910846701.0,
-    "gap": 0.0003296869604863222,
+    "ours": 32927090833.0,
+    "gap": 0.0008234295744680851,
     "status": "reproduced"
    }
   },
@@ -4113,8 +4113,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_365d",
-    "ours": 54026265.0,
-    "gap": 0.0013629390018484288,
+    "ours": 54123578.0,
+    "gap": 0.000435822550831793,
     "status": "reproduced"
    }
   },
@@ -4138,8 +4138,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_365d",
-    "ours": 9358304.05,
-    "gap": 0.014915363157894658,
+    "ours": 9502663.05,
+    "gap": 0.0002803210526316574,
     "status": "reproduced"
    }
   },
@@ -4163,8 +4163,8 @@
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_90d",
-    "ours": 15.500541663271859,
-    "gap": 0.006375534405650049,
+    "ours": 15.600569600750099,
+    "gap": 3.651286859609243e-05,
     "status": "reproduced"
    }
   },
@@ -4188,8 +4188,8 @@
    },
    "at_snapshot": {
     "metric": "intents_capture_share_90d",
-    "ours": 27.06981404409915,
-    "gap": 0.004786248378707689,
+    "ours": 27.210424080227213,
+    "gap": 0.00038323824364756436,
     "status": "reproduced"
    }
   },
@@ -4209,12 +4209,12 @@
     "gap": 0.0011702432413636693,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-13"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
-    "ours": 44.40622018788337,
-    "gap": 0.010997323209724458,
+    "ours": 44.95254392153723,
+    "gap": 0.0011702432413636693,
     "status": "reproduced"
    }
   },
@@ -4234,12 +4234,12 @@
     "gap": 0.005649717514124294,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-13"
    },
    "at_snapshot": {
     "metric": "validators_current",
-    "ours": 351,
-    "gap": 0.00847457627118644,
+    "ours": 356,
+    "gap": 0.005649717514124294,
     "status": "reproduced"
    }
   },
@@ -4263,8 +4263,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_vs_peak_30d",
-    "ours": -96.91179329835619,
-    "gap": 0.0011548894458284092,
+    "ours": -96.83191376393665,
+    "gap": 0.0003296876439737329,
     "status": "reproduced"
    }
   },
@@ -4288,8 +4288,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_annualized_30d",
-    "ours": 72522896.33333333,
-    "gap": 0.035599782801418504,
+    "ours": 73586518.5,
+    "gap": 0.021455871010638297,
     "status": "reproduced"
    }
   },
@@ -4313,9 +4313,9 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.05898961702127659,
-    "status": "close"
+    "ours": 22418884.0,
+    "gap": 0.046004936170212764,
+    "status": "reproduced"
    }
   },
   {
@@ -4338,9 +4338,9 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_fees_annualized_30d",
-    "ours": 65.5249140858459,
-    "gap": 0.07417891944009661,
-    "status": "close"
+    "ours": 63.89828351720648,
+    "gap": 0.04751284454436852,
+    "status": "reproduced"
    }
   },
   {
@@ -4363,8 +4363,8 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 214.89154217840155,
-    "gap": 0.10200790860718743,
+    "ours": 209.73623049912564,
+    "gap": 0.07557041281602891,
     "status": "close"
    }
   },
@@ -4388,9 +4388,9 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_alltime",
-    "ours": 37324522122.0,
-    "gap": 0.048441632640449435,
-    "status": "reproduced"
+    "ours": 37614087536.0,
+    "gap": 0.056575492584269665,
+    "status": "close"
    }
   },
   {
@@ -4413,8 +4413,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_365d",
-    "ours": 2.4804748388071127,
-    "gap": 0.00019146726093255764,
+    "ours": 2.479861463094125,
+    "gap": 5.58616555947839e-05,
     "status": "reproduced"
    }
   },
@@ -4438,8 +4438,8 @@
    },
    "at_snapshot": {
     "metric": "tx_yoy_90d",
-    "ours": -84.02474537124363,
-    "gap": 0.012346329774019582,
+    "ours": -83.85066656891587,
+    "gap": 0.010248994806215295,
     "status": "reproduced"
    }
   },
@@ -4463,8 +4463,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_over_l1_fees_365d",
-    "ours": 8.04334434484578,
-    "gap": 0.2411939297315302,
+    "ours": 8.242258417000253,
+    "gap": 0.22242845122639124,
     "status": "not reproduced"
    }
   },
@@ -4488,8 +4488,8 @@
    },
    "at_snapshot": {
     "metric": "burn70_cover_of_gross_issuance_pct_90d",
-    "ours": 0.8425002606562381,
-    "gap": 0.0940857412298516,
+    "ours": 0.8463925925245974,
+    "gap": 0.08990043814559422,
     "status": "close"
    }
   },
@@ -4513,8 +4513,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_365d",
-    "ours": 2.4804748388071127,
-    "gap": 0.00019146726093255764,
+    "ours": 2.479861463094125,
+    "gap": 5.58616555947839e-05,
     "status": "reproduced"
    }
   },
@@ -4538,8 +4538,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
-    "ours": 3757732084.0,
-    "gap": 0.5337681975510205,
+    "ours": 3774153452.0,
+    "gap": 0.5404707967346939,
     "status": "not reproduced"
    }
   },
@@ -4563,8 +4563,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.004877128547579298,
+    "ours": 6048207.0,
+    "gap": 0.00971736227045075,
     "status": "reproduced"
    }
   },
@@ -4588,8 +4588,8 @@
    },
    "at_snapshot": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.492086110791426,
-    "gap": 0.1263012575704462,
+    "ours": 30.466020756234037,
+    "gap": 0.1270481158672195,
     "status": "close"
    }
   },
@@ -4609,12 +4609,12 @@
     "gap": 0.019080623196744702,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
-    "ours": 44.40622018788337,
-    "gap": 0.019080623196744702,
+    "ours": 44.95254392153723,
+    "gap": 0.007012504494428446,
     "status": "reproduced"
    }
   },
@@ -4634,12 +4634,12 @@
     "gap": 0.064,
     "status": "close",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "validators_current",
-    "ours": 351,
-    "gap": 0.064,
+    "ours": 356,
+    "gap": 0.050666666666666665,
     "status": "close"
    }
   },
@@ -4663,8 +4663,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
-    "ours": 3757732084.0,
-    "gap": 0.011123135789473684,
+    "ours": 3774153452.0,
+    "gap": 0.006801723157894737,
     "status": "reproduced"
    }
   },
@@ -4688,9 +4688,9 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_yoy_30d",
-    "ours": 57.824406747227975,
-    "gap": 0.31419106243699946,
-    "status": "not reproduced"
+    "ours": 47.88268142343433,
+    "gap": 0.08824275962350744,
+    "status": "close"
    }
   },
   {
@@ -4713,8 +4713,8 @@
    },
    "at_snapshot": {
     "metric": "tx_yoy_30d",
-    "ours": -85.14222143833281,
-    "gap": 0.0016731933921507187,
+    "ours": -84.76440429768097,
+    "gap": 0.002771714144929781,
     "status": "reproduced"
    }
   },
@@ -4738,8 +4738,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_yoy_90d",
-    "ours": -75.34785886239067,
-    "gap": 0.00463811816520888,
+    "ours": -75.1911593708275,
+    "gap": 0.0025487916110334178,
     "status": "reproduced"
    }
   },
@@ -4763,8 +4763,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_per_day_30d",
-    "ours": 62310.9,
-    "gap": 0.038412037037037015,
+    "ours": 63922.63333333333,
+    "gap": 0.013539609053497973,
     "status": "reproduced"
    }
   },
@@ -4788,8 +4788,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_365d",
-    "ours": 32910846701.0,
-    "gap": 0.002701615121212121,
+    "ours": 32927090833.0,
+    "gap": 0.002209368696969697,
     "status": "reproduced"
    }
   },
@@ -4813,8 +4813,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.02243327615780446,
+    "ours": 6048207.0,
+    "gap": 0.037428301886792456,
     "status": "reproduced"
    }
   },
@@ -4837,9 +4837,9 @@
     "asof": "2026-11-12"
    },
    "at_snapshot": {
-    "metric": "intents_fees_over_l1_fees_365d",
-    "ours": 46.434893623796015,
-    "gap": 0.03188652497324477,
+    "metric": "intents_fees_over_l1_fees_30d",
+    "ours": 46.00227770358125,
+    "gap": 0.022272837857361102,
     "status": "reproduced"
    }
   },
@@ -4863,9 +4863,9 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_30d",
-    "ours": 137505.97186775,
-    "gap": 0.06182217658494202,
-    "status": "close"
+    "ours": 131476.25078419,
+    "gap": 0.015260623816138944,
+    "status": "reproduced"
    }
   },
   {
@@ -4888,8 +4888,8 @@
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_90d",
-    "ours": 15.500541663271859,
-    "gap": 0.006528679433237567,
+    "ours": 15.600569600750099,
+    "gap": 0.013024000048707683,
     "status": "reproduced"
    }
   },
@@ -4913,8 +4913,8 @@
    },
    "at_snapshot": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.492086110791426,
-    "gap": 0.016384319006728185,
+    "ours": 30.466020756234037,
+    "gap": 0.01722513689567621,
     "status": "reproduced"
    }
   },
@@ -4938,8 +4938,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_90d",
-    "ours": 20592525.388888888,
-    "gap": 0.028654462788259998,
+    "ours": 21077334.611111112,
+    "gap": 0.005786103249475852,
     "status": "reproduced"
    }
   },
@@ -4963,8 +4963,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_365d",
-    "ours": 9358304.05,
-    "gap": 0.004435739361702049,
+    "ours": 9502663.05,
+    "gap": 0.010921601063829866,
     "status": "reproduced"
    }
   },
@@ -4988,8 +4988,8 @@
    },
    "at_snapshot": {
     "metric": "usage_cover_of_gross_issuance_pct_90d",
-    "ours": 19.622948357437746,
-    "gap": 0.00117083456315024,
+    "ours": 19.95965014175822,
+    "gap": 0.018349497028480592,
     "status": "reproduced"
    }
   },
@@ -5013,8 +5013,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_365d",
-    "ours": 12.854507053994352,
-    "gap": 0.47752954643613255,
+    "ours": 12.982253093329504,
+    "gap": 0.49221299923327644,
     "status": "not reproduced"
    }
   },
@@ -5038,8 +5038,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_yield_on_mcap_pct_30d",
-    "ours": 0.4653510277150911,
-    "gap": 0.00989143039342308,
+    "ours": 0.47678934517904803,
+    "gap": 0.014445415274570333,
     "status": "reproduced"
    }
   },
@@ -5063,8 +5063,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_vs_peak_30d",
-    "ours": -96.91179329835619,
-    "gap": 0.0011548894458284092,
+    "ours": -96.83191376393665,
+    "gap": 0.0003296876439737329,
     "status": "reproduced"
    }
   },
@@ -5088,8 +5088,8 @@
    },
    "at_snapshot": {
     "metric": "tx_vs_peak_30d",
-    "ours": -92.07008947606539,
-    "gap": 0.001850810403323017,
+    "ours": -91.93382476780798,
+    "gap": 0.0003680605855056698,
     "status": "reproduced"
    }
   },
@@ -5112,9 +5112,9 @@
     "asof": "2026-11-12"
    },
    "at_snapshot": {
-    "metric": "intents_revenue_over_l1_fees_90d",
-    "ours": 13.762610619337341,
-    "gap": 0.014845338630111643,
+    "metric": "intents_revenue_over_l1_fees_30d",
+    "ours": 14.015063473513486,
+    "gap": 0.0032257318191471125,
     "status": "reproduced"
    }
   },
@@ -5138,8 +5138,8 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_30d",
-    "ours": 137505.97186775,
-    "gap": 0.04567278986882123,
+    "ours": 131476.25078419,
+    "gap": 0.00018060240159700926,
     "status": "reproduced"
    }
   },
@@ -5163,8 +5163,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_90d",
-    "ours": 18.423706676907848,
-    "gap": 0.017884346790488767,
+    "ours": 18.75488801702933,
+    "gap": 0.03618165839941043,
     "status": "reproduced"
    }
   },
@@ -5187,10 +5187,10 @@
     "asof": "2026-11-12"
    },
    "at_snapshot": {
-    "metric": "breakeven_multiple_30d",
-    "ours": 6.193167647680158,
-    "gap": 0.030803185026579253,
-    "status": "reproduced"
+    "metric": "breakeven_multiple_365d",
+    "ours": 6.754311465551865,
+    "gap": 0.05701274891265498,
+    "status": "close"
    }
   },
   {
@@ -5213,8 +5213,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_alltime",
-    "ours": 37324522122.0,
-    "gap": 0.007590478011167243,
+    "ours": 37614087536.0,
+    "gap": 0.00010868215900026589,
     "status": "reproduced"
    }
   },
@@ -5238,8 +5238,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.008352286995515695,
+    "ours": 22418884.0,
+    "gap": 0.005331121076233184,
     "status": "reproduced"
    }
   },
@@ -5263,8 +5263,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_avg_30d",
-    "ours": 125257736.13333334,
-    "gap": 0.00431052358240588,
+    "ours": 125805115.06666666,
+    "gap": 4.0660307366158133e-05,
     "status": "reproduced"
    }
   },
@@ -5288,8 +5288,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_90d",
-    "ours": 2.4755620881494704,
-    "gap": 0.002251857550392807,
+    "ours": 2.472571812699009,
+    "gap": 0.001041219716197828,
     "status": "reproduced"
    }
   },
@@ -5313,8 +5313,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_annualized_30d",
-    "ours": 72522896.33333333,
-    "gap": 0.06422069247311835,
+    "ours": 73586518.5,
+    "gap": 0.050496535483870966,
     "status": "close"
    }
   },
@@ -5338,8 +5338,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_90d",
-    "ours": 18.423706676907848,
-    "gap": 0.004123963410386587,
+    "ours": 18.75488801702933,
+    "gap": 0.013777730650234063,
     "status": "reproduced"
    }
   },
@@ -5363,8 +5363,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_365d",
-    "ours": 2.4804748388071127,
-    "gap": 0.00019146726093255764,
+    "ours": 2.479861463094125,
+    "gap": 5.58616555947839e-05,
     "status": "reproduced"
    }
   },
@@ -5388,8 +5388,8 @@
    },
    "at_snapshot": {
     "metric": "intents_capture_share_90d",
-    "ours": 27.06981404409915,
-    "gap": 0.004786248378707689,
+    "ours": 27.210424080227213,
+    "gap": 0.00038323824364756436,
     "status": "reproduced"
    }
   },
@@ -5413,8 +5413,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_365d",
-    "ours": 32910846701.0,
-    "gap": 0.0003296869604863222,
+    "ours": 32927090833.0,
+    "gap": 0.0008234295744680851,
     "status": "reproduced"
    }
   },
@@ -5430,16 +5430,16 @@
    "url": "https://github.com/The-x-35/near-thesis/blob/6543af48d7250597d7a50cc88363483f62d1efb9/README.md",
    "at_publication": {
     "metric": "intents_fees_30d",
-    "ours": 5781901.0,
-    "gap": 0.03474106844741236,
+    "ours": 5991438.0,
+    "gap": 0.00024006677796327213,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.004877128547579298,
+    "ours": 6048207.0,
+    "gap": 0.00971736227045075,
     "status": "reproduced"
    }
   },
@@ -5455,16 +5455,16 @@
    "url": "https://github.com/The-x-35/near-thesis/blob/6543af48d7250597d7a50cc88363483f62d1efb9/README.md",
    "at_publication": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 21936451.333333332,
-    "gap": 0.0016644444444443877,
+    "ours": 21897797.833333332,
+    "gap": 0.00010055555555561226,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.00976,
+    "ours": 22418884.0,
+    "gap": 0.023693333333333334,
     "status": "reproduced"
    }
   },
@@ -5488,8 +5488,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_per_day_30d",
-    "ours": 62310.9,
-    "gap": 0.009885115916927503,
+    "ours": 63922.63333333333,
+    "gap": 0.01572518922240051,
     "status": "reproduced"
    }
   },
@@ -5513,8 +5513,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_vs_peak_30d",
-    "ours": -96.91179329835619,
-    "gap": 0.00012170586538886976,
+    "ours": -96.83191376393665,
+    "gap": 0.000702644335019104,
     "status": "reproduced"
    }
   },
@@ -5538,8 +5538,8 @@
    },
    "at_snapshot": {
     "metric": "intents_share_of_near_dex_volume_30d",
-    "ours": 92.78285112852154,
-    "gap": 0.0012610212215119804,
+    "ours": 93.22417521707635,
+    "gap": 0.003489507180584981,
     "status": "reproduced"
    }
   },
@@ -5555,16 +5555,16 @@
    "url": "https://github.com/The-x-35/near-thesis/blob/6543af48d7250597d7a50cc88363483f62d1efb9/README.md",
    "at_publication": {
     "metric": "usage_cover_of_gross_issuance_pct_90d",
-    "ours": 19.73390872482793,
-    "gap": 0.0033379431905085927,
+    "ours": 19.72300304872335,
+    "gap": 0.0038887349129621976,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
-    "metric": "usage_cover_of_net_issuance_pct_90d",
-    "ours": 19.861131322481725,
-    "gap": 0.003087440529380024,
+    "metric": "usage_cover_of_gross_issuance_pct_90d",
+    "ours": 19.95965014175822,
+    "gap": 0.00806313847263739,
     "status": "reproduced"
    }
   },
@@ -5580,16 +5580,16 @@
    "url": "https://github.com/The-x-35/near-thesis/blob/6543af48d7250597d7a50cc88363483f62d1efb9/README.md",
    "at_publication": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 214.26105249628196,
-    "gap": 0.045175865835521765,
+    "ours": 214.63926128493276,
+    "gap": 0.04702078675576955,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 214.89154217840155,
-    "gap": 0.04825142526049537,
+    "ours": 209.73623049912564,
+    "gap": 0.023103563410368972,
     "status": "reproduced"
    }
   },
@@ -5613,8 +5613,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
-    "ours": 3757732084.0,
-    "gap": 0.007434875067024129,
+    "ours": 3774153452.0,
+    "gap": 0.011837386595174262,
     "status": "reproduced"
    }
   },
@@ -5638,8 +5638,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_avg_30d",
-    "ours": 125257736.13333334,
-    "gap": 0.01014303333333339,
+    "ours": 125805115.06666666,
+    "gap": 0.014557379569892441,
     "status": "reproduced"
    }
   },
@@ -5655,16 +5655,16 @@
    "url": "https://github.com/The-x-35/near-thesis/blob/6543af48d7250597d7a50cc88363483f62d1efb9/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_365d",
-    "ours": 53874065.0,
-    "gap": 0.004176247689463956,
+    "ours": 54083602.0,
+    "gap": 0.00030310536044362294,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "intents_fees_365d",
-    "ours": 54026265.0,
-    "gap": 0.0013629390018484288,
+    "ours": 54123578.0,
+    "gap": 0.000435822550831793,
     "status": "reproduced"
    }
   },
@@ -5679,17 +5679,17 @@
    "published_commit": "784a3492e454266730baecfaf04b9ccc17e73a3c",
    "url": "https://github.com/The-x-35/near-thesis/blob/6543af48d7250597d7a50cc88363483f62d1efb9/THESIS.md",
    "at_publication": {
-    "metric": "intents_take_rate_bps_365d",
-    "ours": 16.366281779140127,
-    "gap": 0.016539240940380492,
+    "metric": "intents_take_rate_bps_30d",
+    "ours": 16.05700347695168,
+    "gap": 0.0026705914936844596,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_30d",
-    "ours": 15.862722159944173,
-    "gap": 0.01473775404073467,
+    "ours": 16.025334096563913,
+    "gap": 0.004637633753794294,
     "status": "reproduced"
    }
   },
@@ -5705,16 +5705,16 @@
    "url": "https://github.com/The-x-35/near-thesis/blob/6543af48d7250597d7a50cc88363483f62d1efb9/THESIS.md",
    "at_publication": {
     "metric": "intents_capture_share_30d",
-    "ours": 31.18344641321254,
-    "gap": 0.03944821377375132,
+    "ours": 30.039850199568118,
+    "gap": 0.0013283399856039324,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.492086110791426,
-    "gap": 0.01640287035971421,
+    "ours": 30.466020756234037,
+    "gap": 0.01553402520780125,
     "status": "reproduced"
    }
   },
@@ -5730,17 +5730,17 @@
    "url": "https://github.com/The-x-35/near-thesis/blob/6543af48d7250597d7a50cc88363483f62d1efb9/THESIS.md",
    "at_publication": {
     "metric": "mcap_over_intents_fees_annualized_30d",
-    "ours": 66.81398048956326,
-    "gap": 0.08817557800591637,
+    "ours": 64.47731255945341,
+    "gap": 0.05011909705950181,
     "status": "close",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_fees_annualized_30d",
-    "ours": 65.5249140858459,
-    "gap": 0.06718101117012858,
-    "status": "close"
+    "ours": 63.89828351720648,
+    "gap": 0.04068865663202738,
+    "status": "reproduced"
    }
   },
   {
@@ -5759,12 +5759,12 @@
     "gap": 0.0015668997813507717,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-12"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
-    "ours": 44.40622018788337,
-    "gap": 0.0021074115082388664,
+    "ours": 44.95254392153723,
+    "gap": 0.010169526326679265,
     "status": "reproduced"
    }
   },
@@ -5784,12 +5784,12 @@
     "gap": 0.0028328611898017,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-12"
    },
    "at_snapshot": {
     "metric": "validators_current",
-    "ours": 351,
-    "gap": 0.0056657223796034,
+    "ours": 356,
+    "gap": 0.0084985835694051,
     "status": "reproduced"
    }
   },
@@ -5805,16 +5805,16 @@
    "url": "https://github.com/The-x-35/near-thesis/blob/6543af48d7250597d7a50cc88363483f62d1efb9/THESIS.md",
    "at_publication": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.067419809953132,
-    "gap": 0.006388272558209296,
+    "ours": 5.070221799031406,
+    "gap": 0.005838862935018446,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.096074156567644,
-    "gap": 0.0007697732220305277,
+    "ours": 5.010107857090482,
+    "gap": 0.017625910374415268,
     "status": "reproduced"
    }
   },
@@ -5838,8 +5838,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_net_issuance_pct_90d",
-    "ours": 18.647333269786444,
-    "gap": 0.018561406853345074,
+    "ours": 18.98359518169019,
+    "gap": 0.0008634114899899415,
     "status": "reproduced"
    }
   },
@@ -5863,8 +5863,8 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 214.89154217840155,
-    "gap": 0.014258980833020409,
+    "ours": 209.73623049912564,
+    "gap": 0.037907199545295235,
     "status": "reproduced"
    }
   },
@@ -5888,8 +5888,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.0051701818181818186,
+    "ours": 22418884.0,
+    "gap": 0.019040181818181817,
     "status": "reproduced"
    }
   },
@@ -5913,8 +5913,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_yoy_30d",
-    "ours": -76.28304789580271,
-    "gap": 0.0037243144184567114,
+    "ours": -75.56962370413251,
+    "gap": 0.005662845998256441,
     "status": "reproduced"
    }
   },
@@ -5938,9 +5938,9 @@
    },
    "at_snapshot": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.096074156567644,
-    "gap": 0.038476574232519975,
-    "status": "reproduced"
+    "ours": 5.010107857090482,
+    "gap": 0.05469663073764491,
+    "status": "close"
    }
   },
   {
@@ -5963,8 +5963,8 @@
    },
    "at_snapshot": {
     "metric": "usage_cover_of_gross_issuance_pct_90d",
-    "ours": 19.622948357437746,
-    "gap": 0.0039112508914849325,
+    "ours": 19.95965014175822,
+    "gap": 0.0131802102415341,
     "status": "reproduced"
    }
   },
@@ -5988,8 +5988,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_avg_30d",
-    "ours": 125257736.13333334,
-    "gap": 0.00431052358240588,
+    "ours": 125805115.06666666,
+    "gap": 4.0660307366158133e-05,
     "status": "reproduced"
    }
   },
@@ -6005,16 +6005,16 @@
    "url": "https://github.com/gourab337/near-holders-claim-thesis/blob/ec1d62d96a317f1cbb7d0391efc35b9e1294419b/README.md",
    "at_publication": {
     "metric": "usage_cover_of_gross_issuance_pct_30d",
-    "ours": 16.146825936071355,
-    "gap": 0.009176621004459706,
+    "ours": 16.118064637493465,
+    "gap": 0.007379039843341539,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
-    "metric": "usage_cover_of_gross_issuance_pct_30d",
-    "ours": 16.146825936071355,
-    "gap": 0.009176621004459706,
+    "metric": "revenue_cover_of_net_issuance_pct_30d",
+    "ours": 15.923645947404427,
+    "gap": 0.004772128287223287,
     "status": "reproduced"
    }
   },
@@ -6038,8 +6038,8 @@
    },
    "at_snapshot": {
     "metric": "burn70_cover_of_gross_issuance_pct_30d",
-    "ours": 0.7794638152387391,
-    "gap": 0.025670230951576195,
+    "ours": 0.769238710814252,
+    "gap": 0.038451611482185066,
     "status": "reproduced"
    }
   },
@@ -6063,9 +6063,9 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
-    "ours": 3757732084.0,
-    "gap": 0.053467988916876576,
-    "status": "close"
+    "ours": 3774153452.0,
+    "gap": 0.0493316241813602,
+    "status": "reproduced"
    }
   },
   {
@@ -6088,8 +6088,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_avg_30d",
-    "ours": 125257736.13333334,
-    "gap": 0.011774928379106141,
+    "ours": 125805115.06666666,
+    "gap": 0.01619640603123314,
     "status": "reproduced"
    }
   },
@@ -6105,16 +6105,16 @@
    "url": "https://github.com/lightokey839-rgb/Near-thesis-/blob/5bdd392cb8cbba71fdbdb900e347c1a395cc49db/THESIS.md",
    "at_publication": {
     "metric": "intents_capture_share_30d",
-    "ours": 32.14299243620017,
-    "gap": 0.004468513631255222,
+    "ours": 32.14298687617733,
+    "gap": 0.0044683398805416275,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-08"
    },
    "at_snapshot": {
     "metric": "intents_capture_share_30d",
-    "ours": 30.492086110791426,
-    "gap": 0.04712230903776793,
+    "ours": 30.466020756234037,
+    "gap": 0.04793685136768633,
     "status": "reproduced"
    }
   },
@@ -6130,16 +6130,16 @@
    "url": "https://github.com/lightokey839-rgb/Near-thesis-/blob/5bdd392cb8cbba71fdbdb900e347c1a395cc49db/THESIS.md",
    "at_publication": {
     "metric": "intents_take_rate_bps_30d",
-    "ours": 15.56271916150913,
-    "gap": 0.002389797339158365,
+    "ours": 15.5627218535139,
+    "gap": 0.0023896247747500184,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-08"
    },
    "at_snapshot": {
     "metric": "intents_take_rate_bps_90d",
-    "ours": 15.500541663271859,
-    "gap": 0.006375534405650049,
+    "ours": 15.600569600750099,
+    "gap": 3.651286859609243e-05,
     "status": "reproduced"
    }
   },
@@ -6163,8 +6163,8 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 214.89154217840155,
-    "gap": 0.009716395491237094,
+    "ours": 209.73623049912564,
+    "gap": 0.03347359216992793,
     "status": "reproduced"
    }
   },
@@ -6188,8 +6188,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.02151575221238938,
+    "ours": 22418884.0,
+    "gap": 0.008013982300884955,
     "status": "reproduced"
    }
   },
@@ -6205,16 +6205,16 @@
    "url": "https://github.com/lightokey839-rgb/Near-thesis-/blob/5bdd392cb8cbba71fdbdb900e347c1a395cc49db/THESIS.md",
    "at_publication": {
     "metric": "revenue_cover_of_gross_issuance_pct_90d",
-    "ours": 18.423706676907848,
-    "gap": 0.023539259828213786,
+    "ours": 18.414081340771013,
+    "gap": 0.023004518931722926,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-10"
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_gross_issuance_pct_90d",
-    "ours": 18.423706676907848,
-    "gap": 0.023539259828213786,
+    "ours": 18.75488801702933,
+    "gap": 0.041938223168296124,
     "status": "reproduced"
    }
   },
@@ -6234,12 +6234,12 @@
     "gap": 0.0001400943216975645,
     "status": "reproduced",
     "dated": false,
-    "asof": "2026-11-10"
+    "asof": "snapshot 2026-11-11"
    },
    "at_snapshot": {
     "metric": "staked_share_pct",
-    "ours": 44.40622018788337,
-    "gap": 0.0001400943216975645,
+    "ours": 44.95254392153723,
+    "gap": 0.012444682917505152,
     "status": "reproduced"
    }
   },
@@ -6263,8 +6263,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_365d",
-    "ours": 2.4804748388071127,
-    "gap": 0.00019146726093255764,
+    "ours": 2.479861463094125,
+    "gap": 5.58616555947839e-05,
     "status": "reproduced"
    }
   },
@@ -6288,8 +6288,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_365d",
-    "ours": 32910846701.0,
-    "gap": 0.0005816367749772244,
+    "ours": 32927090833.0,
+    "gap": 8.834397206194959e-05,
     "status": "reproduced"
    }
   },
@@ -6313,8 +6313,8 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_365d",
-    "ours": 1163484.19870857,
-    "gap": 0.011725390181365302,
+    "ours": 1152919.8150837,
+    "gap": 0.0025389696379999995,
     "status": "reproduced"
    }
   },
@@ -6338,8 +6338,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_30d",
-    "ours": 5960786.0,
-    "gap": 0.04779776357827476,
+    "ours": 6048207.0,
+    "gap": 0.03383274760383387,
     "status": "reproduced"
    }
   },
@@ -6363,8 +6363,8 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_30d",
-    "ours": 137505.97186775,
-    "gap": 0.27628435859078954,
+    "ours": 131476.25078419,
+    "gap": 0.3080197327147895,
     "status": "not reproduced"
    }
   },
@@ -6388,8 +6388,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_over_l1_fees_30d",
-    "ours": 43.34928817297436,
-    "gap": 0.3546652554054488,
+    "ours": 46.00227770358125,
+    "gap": 0.43757117823691405,
     "status": "not reproduced"
    }
   },
@@ -6413,8 +6413,8 @@
    },
    "at_snapshot": {
     "metric": "intents_fees_annualized_30d",
-    "ours": 72522896.33333333,
-    "gap": 0.03302804888888895,
+    "ours": 73586518.5,
+    "gap": 0.01884642,
     "status": "reproduced"
    }
   },
@@ -6438,8 +6438,8 @@
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_fees_annualized_30d",
-    "ours": 65.5249140858459,
-    "gap": 0.07711388611484658,
+    "ours": 63.89828351720648,
+    "gap": 0.10002417581399324,
     "status": "close"
    }
   },
@@ -6463,8 +6463,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
-    "ours": 3757732084.0,
-    "gap": 0.0652407751243781,
+    "ours": 3774153452.0,
+    "gap": 0.06115585771144279,
     "status": "close"
    }
   },
@@ -6488,8 +6488,8 @@
    },
    "at_snapshot": {
     "metric": "revenue_yield_on_mcap_pct_30d",
-    "ours": 0.4653510277150911,
-    "gap": 0.10509417747097864,
+    "ours": 0.47678934517904803,
+    "gap": 0.08309741311721536,
     "status": "close"
    }
   },
@@ -6513,8 +6513,8 @@
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.09739820408163265,
+    "ours": 22418884.0,
+    "gap": 0.08494351020408163,
     "status": "close"
    }
   },
@@ -6538,9 +6538,9 @@
    },
    "at_snapshot": {
     "metric": "price_yoy_30d_avg",
-    "ours": 97.79631931610413,
-    "gap": 0.07705197484696184,
-    "status": "close"
+    "ours": 90.64879145028361,
+    "gap": 0.0016652923977575622,
+    "status": "reproduced"
    }
   },
   {
@@ -6563,9 +6563,9 @@
    },
    "at_snapshot": {
     "metric": "usage_cover_of_net_issuance_pct_90d",
-    "ours": 19.861131322481725,
-    "gap": 0.054231841786584516,
-    "status": "close"
+    "ours": 20.203048822006238,
+    "gap": 0.037950056094941044,
+    "status": "reproduced"
    }
   },
   {
@@ -6588,8 +6588,8 @@
    },
    "at_snapshot": {
     "metric": "intents_volume_30d",
-    "ours": 3757732084.0,
-    "gap": 0.007434875067024129,
+    "ours": 3774153452.0,
+    "gap": 0.011837386595174262,
     "status": "reproduced"
    }
   },
@@ -6605,16 +6605,16 @@
    "url": "https://github.com/wwaterfall2027/near-thesis-lab/blob/f0dc113ec0caac0df71a7f367150512ce0b02f85/THESIS.md",
    "at_publication": {
     "metric": "intents_revenue_365d",
-    "ours": 9406491.05,
-    "gap": 0.000372895855472822,
+    "ours": 9403314.05,
+    "gap": 0.0007105154091391345,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "intents_revenue_365d",
-    "ours": 9358304.05,
-    "gap": 0.005493724760892588,
+    "ours": 9502663.05,
+    "gap": 0.009847295430393277,
     "status": "reproduced"
    }
   },
@@ -6630,16 +6630,16 @@
    "url": "https://github.com/wwaterfall2027/near-thesis-lab/blob/f0dc113ec0caac0df71a7f367150512ce0b02f85/THESIS.md",
    "at_publication": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 21936451.333333332,
-    "gap": 0.0016644444444443877,
+    "ours": 21897797.833333332,
+    "gap": 0.00010055555555561226,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "intents_revenue_annualized_30d",
-    "ours": 22113744.0,
-    "gap": 0.00976,
+    "ours": 22418884.0,
+    "gap": 0.023693333333333334,
     "status": "reproduced"
    }
   },
@@ -6663,8 +6663,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_365d",
-    "ours": 2.4804748388071127,
-    "gap": 0.00019146726093255764,
+    "ours": 2.479861463094125,
+    "gap": 5.58616555947839e-05,
     "status": "reproduced"
    }
   },
@@ -6680,16 +6680,16 @@
    "url": "https://github.com/wwaterfall2027/near-thesis-lab/blob/f0dc113ec0caac0df71a7f367150512ce0b02f85/README.md",
    "at_publication": {
     "metric": "revenue_cover_of_net_issuance_pct_90d",
-    "ours": 18.757696625652535,
-    "gap": 0.012752809176182356,
+    "ours": 18.746658312555255,
+    "gap": 0.013333773023407653,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "revenue_cover_of_net_issuance_pct_90d",
-    "ours": 18.647333269786444,
-    "gap": 0.018561406853345074,
+    "ours": 18.98359518169019,
+    "gap": 0.0008634114899899415,
     "status": "reproduced"
    }
   },
@@ -6705,16 +6705,16 @@
    "url": "https://github.com/wwaterfall2027/near-thesis-lab/blob/f0dc113ec0caac0df71a7f367150512ce0b02f85/THESIS.md",
    "at_publication": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 214.26105249628196,
-    "gap": 0.0012198714779530957,
+    "ours": 214.63926128493276,
+    "gap": 0.0029872022660409237,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "mcap_over_intents_revenue_annualized_30d",
-    "ours": 214.89154217840155,
-    "gap": 0.004166084945801639,
+    "ours": 209.73623049912564,
+    "gap": 0.019924156546141873,
     "status": "reproduced"
    }
   },
@@ -6738,8 +6738,8 @@
    },
    "at_snapshot": {
     "metric": "burn70_cover_of_gross_issuance_pct_365d",
-    "ours": 1.2929906545475602,
-    "gap": 0.005391804194184467,
+    "ours": 1.2831916877387741,
+    "gap": 0.012929470970173785,
     "status": "reproduced"
    }
   },
@@ -6755,16 +6755,16 @@
    "url": "https://github.com/wwaterfall2027/near-thesis-lab/blob/f0dc113ec0caac0df71a7f367150512ce0b02f85/THESIS.md",
    "at_publication": {
     "metric": "intents_capture_share_365d",
-    "ours": 17.46014719698616,
-    "gap": 0.027067482175656465,
+    "ours": 17.386626818975557,
+    "gap": 0.02274275405738572,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "intents_capture_share_365d",
-    "ours": 17.321767569903272,
-    "gap": 0.018927504111957205,
+    "ours": 17.557344508894072,
+    "gap": 0.03278497111141602,
     "status": "reproduced"
    }
   },
@@ -6780,16 +6780,16 @@
    "url": "https://github.com/wwaterfall2027/near-thesis-lab/blob/f0dc113ec0caac0df71a7f367150512ce0b02f85/THESIS.md",
    "at_publication": {
     "metric": "intents_fees_365d",
-    "ours": 53874065.0,
-    "gap": 0.00048116883116883116,
+    "ours": 54083602.0,
+    "gap": 0.003406345083487941,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "intents_fees_365d",
-    "ours": 54026265.0,
-    "gap": 0.0023425788497217067,
+    "ours": 54123578.0,
+    "gap": 0.004148014842300557,
     "status": "reproduced"
    }
   },
@@ -6805,16 +6805,16 @@
    "url": "https://github.com/wwaterfall2027/near-thesis-lab/blob/f0dc113ec0caac0df71a7f367150512ce0b02f85/THESIS.md",
    "at_publication": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.067419809953132,
-    "gap": 0.025496190393628448,
+    "ours": 5.070221799031406,
+    "gap": 0.024957346340114345,
     "status": "reproduced",
     "dated": true,
     "asof": "2026-11-11"
    },
    "at_snapshot": {
     "metric": "breakeven_multiple_90d",
-    "ours": 5.096074156567644,
-    "gap": 0.019985739121606966,
+    "ours": 5.010107857090482,
+    "gap": 0.036517719790291996,
     "status": "reproduced"
    }
   },
@@ -6838,8 +6838,8 @@
    },
    "at_snapshot": {
     "metric": "active_accounts_yoy_30d",
-    "ours": -76.28304789580271,
-    "gap": 0.002405359997407566,
+    "ours": -75.56962370413251,
+    "gap": 0.0069694651230944,
     "status": "reproduced"
    }
   },
@@ -6862,9 +6862,9 @@
     "asof": "2026-11-03"
    },
    "at_snapshot": {
-    "metric": "tx_yoy_90d",
-    "ours": -84.02474537124363,
-    "gap": 0.004446144890478439,
+    "metric": "tx_yoy_30d",
+    "ours": -84.76440429768097,
+    "gap": 0.004317586465414252,
     "status": "reproduced"
    }
   },
@@ -6888,8 +6888,8 @@
    },
    "at_snapshot": {
     "metric": "new_accounts_yoy_30d",
-    "ours": -95.61463795957636,
-    "gap": 0.0008919753440297449,
+    "ours": -95.59351172310467,
+    "gap": 0.001112730166095443,
     "status": "reproduced"
    }
   },
@@ -6913,8 +6913,8 @@
    },
    "at_snapshot": {
     "metric": "l1_fees_usd_365d",
-    "ours": 1163484.19870857,
-    "gap": 0.03458113552675985,
+    "ours": 1152919.8150837,
+    "gap": 0.043347094922085036,
     "status": "reproduced"
    }
   },
@@ -6938,8 +6938,8 @@
    },
    "at_snapshot": {
     "metric": "burn70_cover_of_gross_issuance_pct_365d",
-    "ours": 1.2929906545475602,
-    "gap": 0.03508160108391033,
+    "ours": 1.2831916877387741,
+    "gap": 0.04239426288151191,
     "status": "reproduced"
    }
   },
@@ -6963,8 +6963,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_365d",
-    "ours": 2.4804748388071127,
-    "gap": 0.00019146726093255764,
+    "ours": 2.479861463094125,
+    "gap": 5.58616555947839e-05,
     "status": "reproduced"
    }
   },
@@ -6988,8 +6988,8 @@
    },
    "at_snapshot": {
     "metric": "net_inflation_annual_pct_90d",
-    "ours": 2.4755620881494704,
-    "gap": 0.002251857550392807,
+    "ours": 2.472571812699009,
+    "gap": 0.001041219716197828,
     "status": "reproduced"
    }
   }

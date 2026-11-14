@@ -1,630 +1,630 @@
 {
- "snapshot": "2026-11-11",
- "asof": "2026-11-10",
- "asof_rpc_supply": "2026-11-11",
+ "snapshot": "2026-11-13",
+ "asof": "2026-11-12",
+ "asof_rpc_supply": "2026-11-13",
  "metrics": {
   "intents_volume_30d": {
-   "value": 3757732084.0,
+   "value": 3774153452.0,
    "unit": "USD",
    "definition": "Sum of DefiLlama daily NEAR Intents volume, 30 days to asof."
   },
   "intents_fees_30d": {
-   "value": 5960786.0,
+   "value": 6048207.0,
    "unit": "USD",
    "definition": "Sum of DefiLlama daily gross fees (protocol + affiliate), 30 days to asof."
   },
   "intents_revenue_30d": {
-   "value": 1817568.0,
+   "value": 1842648.0,
    "unit": "USD",
    "definition": "Sum of DefiLlama daily revenue captured by NEAR wallets, 30 days to asof."
   },
   "intents_take_rate_bps_30d": {
-   "value": 15.862722159944173,
+   "value": 16.025334096563913,
    "unit": "bps",
    "definition": "Gross fees / volume, 30 days."
   },
   "intents_capture_share_30d": {
-   "value": 30.492086110791426,
+   "value": 30.466020756234037,
    "unit": "%",
    "definition": "Captured revenue / gross fees, 30 days."
   },
   "intents_volume_90d": {
-   "value": 12101162919.0,
+   "value": 12243048484.0,
    "unit": "USD",
    "definition": "Sum of DefiLlama daily NEAR Intents volume, 90 days to asof."
   },
   "intents_fees_90d": {
-   "value": 18757458.0,
+   "value": 19099853.0,
    "unit": "USD",
    "definition": "Sum of DefiLlama daily gross fees (protocol + affiliate), 90 days to asof."
   },
   "intents_revenue_90d": {
-   "value": 5077609.0,
+   "value": 5197151.0,
    "unit": "USD",
    "definition": "Sum of DefiLlama daily revenue captured by NEAR wallets, 90 days to asof."
   },
   "intents_take_rate_bps_90d": {
-   "value": 15.500541663271859,
+   "value": 15.600569600750099,
    "unit": "bps",
    "definition": "Gross fees / volume, 90 days."
   },
   "intents_capture_share_90d": {
-   "value": 27.06981404409915,
+   "value": 27.210424080227213,
    "unit": "%",
    "definition": "Captured revenue / gross fees, 90 days."
   },
   "intents_volume_365d": {
-   "value": 32910846701.0,
+   "value": 32927090833.0,
    "unit": "USD",
    "definition": "Sum of DefiLlama daily NEAR Intents volume, 365 days to asof."
   },
   "intents_fees_365d": {
-   "value": 54026265.0,
+   "value": 54123578.0,
    "unit": "USD",
    "definition": "Sum of DefiLlama daily gross fees (protocol + affiliate), 365 days to asof."
   },
   "intents_revenue_365d": {
-   "value": 9358304.05,
+   "value": 9502663.05,
    "unit": "USD",
    "definition": "Sum of DefiLlama daily revenue captured by NEAR wallets, 365 days to asof."
   },
   "intents_take_rate_bps_365d": {
-   "value": 16.41594501984004,
+   "value": 16.437400520593997,
    "unit": "bps",
    "definition": "Gross fees / volume, 365 days."
   },
   "intents_capture_share_365d": {
-   "value": 17.321767569903272,
+   "value": 17.557344508894072,
    "unit": "%",
    "definition": "Captured revenue / gross fees, 365 days."
   },
   "intents_volume_alltime": {
-   "value": 37324522122.0,
+   "value": 37614087536.0,
    "unit": "USD",
    "definition": "Sum of the whole DefiLlama daily volume series to asof."
   },
   "intents_volume_avg_30d": {
-   "value": 125257736.13333334,
+   "value": 125805115.06666666,
    "unit": "USD/day",
    "definition": "Mean daily volume, 30 days to asof."
   },
   "intents_volume_yoy_30d": {
-   "value": 57.824406747227975,
+   "value": 47.88268142343433,
    "unit": "%",
    "definition": "30-day mean daily volume vs the 30 days ending 365 days earlier."
   },
   "intents_volume_30d_vs_prev_30d": {
-   "value": -20.681798050544653,
+   "value": -21.562608558123863,
    "unit": "%",
    "definition": "Last 30 days of volume vs the 30 days before."
   },
   "intents_fees_annualized_30d": {
-   "value": 72522896.33333333,
+   "value": 73586518.5,
    "unit": "USD/yr",
    "definition": "30-day gross fees x 365/30."
   },
   "intents_revenue_annualized_30d": {
-   "value": 22113744.0,
+   "value": 22418884.0,
    "unit": "USD/yr",
    "definition": "30-day captured revenue x 365/30."
   },
   "intents_revenue_annualized_90d": {
-   "value": 20592525.388888888,
+   "value": 21077334.611111112,
    "unit": "USD/yr",
    "definition": "90-day captured revenue x 365/90."
   },
   "intents_share_of_near_dex_volume_30d": {
-   "value": 92.78285112852154,
+   "value": 93.22417521707635,
    "unit": "%",
    "definition": "Intents volume / all DEX volume DefiLlama attributes to Near, 30 days."
   },
   "tx_per_day_30d": {
-   "value": 657883.6,
+   "value": 669188.4333333333,
    "unit": "per day",
    "definition": "Mean daily txns, 30 days to asof."
   },
   "tx_yoy_30d": {
-   "value": -85.14222143833281,
+   "value": -84.76440429768097,
    "unit": "%",
    "definition": "30-day mean txns vs the 30 days ending 365 days earlier."
   },
   "tx_yoy_90d": {
-   "value": -84.02474537124363,
+   "value": -83.85066656891587,
    "unit": "%",
    "definition": "90-day mean txns vs the 90 days ending 365 days earlier."
   },
   "tx_vs_peak_30d": {
-   "value": -92.07008947606539,
+   "value": -91.93382476780798,
    "unit": "%",
    "definition": "30-day mean txns vs the highest 30-day mean on record (ending 2025-01-01)."
   },
   "tx_vs_peak_day": {
-   "value": -93.03568709392094,
+   "value": -93.60245940518975,
    "unit": "%",
    "definition": "txns on asof vs the single highest day (2023-12-01)."
   },
   "active_accounts_per_day_30d": {
-   "value": 62310.9,
+   "value": 63922.63333333333,
    "unit": "per day",
    "definition": "Mean daily active_accounts, 30 days to asof."
   },
   "active_accounts_yoy_30d": {
-   "value": -76.28304789580271,
+   "value": -75.56962370413251,
    "unit": "%",
    "definition": "30-day mean active_accounts vs the 30 days ending 365 days earlier."
   },
   "active_accounts_yoy_90d": {
-   "value": -75.34785886239067,
+   "value": -75.1911593708275,
    "unit": "%",
    "definition": "90-day mean active_accounts vs the 90 days ending 365 days earlier."
   },
   "active_accounts_vs_peak_30d": {
-   "value": -96.91179329835619,
+   "value": -96.83191376393665,
    "unit": "%",
    "definition": "30-day mean active_accounts vs the highest 30-day mean on record (ending 2024-07-09)."
   },
   "active_accounts_vs_peak_day": {
-   "value": -92.13343425605535,
+   "value": -96.21672740938226,
    "unit": "%",
    "definition": "active_accounts on asof vs the single highest day (2024-04-22)."
   },
   "new_accounts_per_day_30d": {
-   "value": 9596.733333333334,
+   "value": 9599.866666666667,
    "unit": "per day",
    "definition": "Mean daily new_accounts, 30 days to asof."
   },
   "new_accounts_yoy_30d": {
-   "value": -95.61463795957636,
+   "value": -95.59351172310467,
    "unit": "%",
    "definition": "30-day mean new_accounts vs the 30 days ending 365 days earlier."
   },
   "new_accounts_yoy_90d": {
-   "value": -95.60459606296729,
+   "value": -95.57115536486691,
    "unit": "%",
    "definition": "90-day mean new_accounts vs the 90 days ending 365 days earlier."
   },
   "new_accounts_vs_peak_30d": {
-   "value": -98.27229010826046,
+   "value": -98.27172601099882,
    "unit": "%",
    "definition": "30-day mean new_accounts vs the highest 30-day mean on record (ending 2024-07-06)."
   },
   "new_accounts_vs_peak_day": {
-   "value": -99.36357478282362,
+   "value": -99.14243170424345,
    "unit": "%",
    "definition": "new_accounts on asof vs the single highest day (2023-12-21)."
   },
   "net_issuance_near_30d_rpc": {
-   "value": 2665053.867871523,
+   "value": 2661111.7283124924,
    "unit": "NEAR",
-   "definition": "total_supply in block headers: first block of 2026-11-11 minus first block 30 days earlier (archival RPC)."
+   "definition": "total_supply in block headers: first block of 2026-11-13 minus first block 30 days earlier (archival RPC)."
   },
   "net_inflation_annual_pct_30d_rpc": {
-   "value": 2.477627345019886,
+   "value": 2.4736157014815907,
    "unit": "%/yr",
    "definition": "Net supply growth over 30 days, annualized linearly, from block headers."
   },
   "net_issuance_near_90d_rpc": {
-   "value": 7956199.320415258,
+   "value": 7947734.910334587,
    "unit": "NEAR",
-   "definition": "total_supply in block headers: first block of 2026-11-11 minus first block 90 days earlier (archival RPC)."
+   "definition": "total_supply in block headers: first block of 2026-11-13 minus first block 90 days earlier (archival RPC)."
   },
   "net_inflation_annual_pct_90d_rpc": {
-   "value": 2.4755620879666655,
+   "value": 2.4725718125703846,
    "unit": "%/yr",
    "definition": "Net supply growth over 90 days, annualized linearly, from block headers."
   },
   "net_issuance_near_360d_rpc": {
-   "value": 31324981.436734915,
+   "value": 31320770.56121874,
    "unit": "NEAR",
-   "definition": "total_supply in block headers: first block of 2026-11-11 minus first block 360 days earlier (archival RPC)."
+   "definition": "total_supply in block headers: first block of 2026-11-13 minus first block 360 days earlier (archival RPC)."
   },
   "net_inflation_annual_pct_360d_rpc": {
-   "value": 2.4811674377316715,
+   "value": 2.4804778931396956,
    "unit": "%/yr",
    "definition": "Net supply growth over 360 days, annualized linearly, from block headers."
   },
   "l1_fees_near_30d": {
-   "value": 29909.03089269054,
+   "value": 29469.982367546036,
    "unit": "NEAR",
    "definition": "Sum of NearBlocks daily txn_fee, 30 days."
   },
   "l1_fees_usd_30d": {
-   "value": 137505.97186775,
+   "value": 131476.25078419,
    "unit": "USD",
    "definition": "Sum of NearBlocks daily txn_fee_usd, 30 days."
   },
   "net_issuance_near_30d": {
-   "value": 2665053.8700392246,
+   "value": 2661111.7213413715,
    "unit": "NEAR",
    "definition": "NearBlocks daily total_supply on asof minus 30 days earlier."
   },
   "net_inflation_annual_pct_30d": {
-   "value": 2.4776273470336094,
+   "value": 2.4736156949849413,
    "unit": "%/yr",
    "definition": "Net supply growth over 30 days, annualized linearly."
   },
   "burn_cover_of_net_issuance_pct_30d": {
-   "value": 1.122267404382724,
+   "value": 1.107431233766137,
    "unit": "%",
    "definition": "L1 fees / net supply growth, 30 days. Treats all fees as burnt."
   },
   "burn_cover_of_gross_issuance_pct_30d": {
-   "value": 1.109812342216215,
+   "value": 1.0953015226009382,
    "unit": "%",
    "definition": "L1 fees / (net supply growth + fees), 30 days. Treats all fees as burnt."
   },
   "burn70_cover_of_gross_issuance_pct_30d": {
-   "value": 0.7794638152387391,
+   "value": 0.769238710814252,
    "unit": "%",
    "definition": "As above with 70% of fees burnt, the rule before protocol version 87."
   },
   "intents_revenue_near_30d": {
-   "value": 405241.93776248494,
+   "value": 423746.00877127954,
    "unit": "NEAR",
    "definition": "Daily captured revenue / that day's NEAR price, summed over 30 days."
   },
   "revenue_cover_of_gross_issuance_pct_30d": {
-   "value": 15.037013593855143,
+   "value": 15.749234010888927,
    "unit": "%",
    "definition": "Captured Intents revenue in NEAR at daily prices / gross issuance, 30 days."
   },
   "revenue_cover_of_net_issuance_pct_30d": {
-   "value": 15.205769096011576,
+   "value": 15.923645947404427,
    "unit": "%",
    "definition": "Captured Intents revenue in NEAR at daily prices / net supply growth, 30 days."
   },
   "usage_cover_of_gross_issuance_pct_30d": {
-   "value": 16.146825936071355,
+   "value": 16.844535533489864,
    "unit": "%",
    "definition": "(Captured revenue + L1 fees) / gross issuance, 30 days."
   },
   "usage_cover_of_net_issuance_pct_30d": {
-   "value": 16.3280365003943,
+   "value": 17.031077181170566,
    "unit": "%",
    "definition": "(Captured revenue + L1 fees) / net supply growth, 30 days."
   },
   "fees_cover_of_gross_issuance_usd_pct_30d": {
-   "value": 61.032376612636206,
+   "value": 62.696566605772475,
    "unit": "%",
    "definition": "Gross Intents fees / gross issuance valued at the asof price, 30 days."
   },
   "breakeven_multiple_30d": {
-   "value": 6.193167647680158,
+   "value": 5.936643358386619,
    "unit": "x",
    "definition": "Gross issuance / (captured revenue + L1 fees), 30 days: how many times usage must grow to offset issuance."
   },
   "intents_fees_over_l1_fees_30d": {
-   "value": 43.34928817297436,
+   "value": 46.00227770358125,
    "unit": "x",
    "definition": "Gross Intents fees / L1 fees in USD, 30 days."
   },
   "intents_revenue_over_l1_fees_30d": {
-   "value": 13.218102278118467,
+   "value": 14.015063473513486,
    "unit": "x",
    "definition": "Captured Intents revenue / L1 fees in USD, 30 days."
   },
   "l1_fees_near_90d": {
-   "value": 96572.19242706274,
+   "value": 96918.94269189336,
    "unit": "NEAR",
    "definition": "Sum of NearBlocks daily txn_fee, 90 days."
   },
   "l1_fees_usd_90d": {
-   "value": 368942.28431237,
+   "value": 373243.71030609,
    "unit": "USD",
    "definition": "Sum of NearBlocks daily txn_fee_usd, 90 days."
   },
   "net_issuance_near_90d": {
-   "value": 7956199.321017265,
+   "value": 7947734.910756826,
    "unit": "NEAR",
    "definition": "NearBlocks daily total_supply on asof minus 90 days earlier."
   },
   "net_inflation_annual_pct_90d": {
-   "value": 2.4755620881494704,
+   "value": 2.472571812699009,
    "unit": "%/yr",
    "definition": "Net supply growth over 90 days, annualized linearly."
   },
   "burn_cover_of_net_issuance_pct_90d": {
-   "value": 1.213798052695281,
+   "value": 1.2194536403160459,
    "unit": "%",
    "definition": "L1 fees / net supply growth, 90 days. Treats all fees as burnt."
   },
   "burn_cover_of_gross_issuance_pct_90d": {
-   "value": 1.1992416805298989,
+   "value": 1.2047621247288904,
    "unit": "%",
    "definition": "L1 fees / (net supply growth + fees), 90 days. Treats all fees as burnt."
   },
   "burn70_cover_of_gross_issuance_pct_90d": {
-   "value": 0.8425002606562381,
+   "value": 0.8463925925245974,
    "unit": "%",
    "definition": "As above with 70% of fees burnt, the rule before protocol version 87."
   },
   "intents_revenue_near_90d": {
-   "value": 1483619.0029985758,
+   "value": 1508765.8215719422,
    "unit": "NEAR",
    "definition": "Daily captured revenue / that day's NEAR price, summed over 90 days."
   },
   "revenue_cover_of_gross_issuance_pct_90d": {
-   "value": 18.423706676907848,
+   "value": 18.75488801702933,
    "unit": "%",
    "definition": "Captured Intents revenue in NEAR at daily prices / gross issuance, 90 days."
   },
   "revenue_cover_of_net_issuance_pct_90d": {
-   "value": 18.647333269786444,
+   "value": 18.98359518169019,
    "unit": "%",
    "definition": "Captured Intents revenue in NEAR at daily prices / net supply growth, 90 days."
   },
   "usage_cover_of_gross_issuance_pct_90d": {
-   "value": 19.622948357437746,
+   "value": 19.95965014175822,
    "unit": "%",
    "definition": "(Captured revenue + L1 fees) / gross issuance, 90 days."
   },
   "usage_cover_of_net_issuance_pct_90d": {
-   "value": 19.861131322481725,
+   "value": 20.203048822006238,
    "unit": "%",
    "definition": "(Captured revenue + L1 fees) / net supply growth, 90 days."
   },
   "fees_cover_of_gross_issuance_usd_pct_90d": {
-   "value": 64.27441734516619,
+   "value": 66.21950950317617,
    "unit": "%",
    "definition": "Gross Intents fees / gross issuance valued at the asof price, 90 days."
   },
   "breakeven_multiple_90d": {
-   "value": 5.096074156567644,
+   "value": 5.010107857090482,
    "unit": "x",
    "definition": "Gross issuance / (captured revenue + L1 fees), 90 days: how many times usage must grow to offset issuance."
   },
   "intents_fees_over_l1_fees_90d": {
-   "value": 50.84117163463634,
+   "value": 51.17260511727466,
    "unit": "x",
    "definition": "Gross Intents fees / L1 fees in USD, 90 days."
   },
   "intents_revenue_over_l1_fees_90d": {
-   "value": 13.762610619337341,
+   "value": 13.924282865310486,
    "unit": "x",
    "definition": "Captured Intents revenue / L1 fees in USD, 90 days."
   },
   "l1_fees_near_365d": {
-   "value": 593974.9992603424,
+   "value": 589353.4683747482,
    "unit": "NEAR",
    "definition": "Sum of NearBlocks daily txn_fee, 365 days."
   },
   "l1_fees_usd_365d": {
-   "value": 1163484.19870857,
+   "value": 1152919.8150837,
    "unit": "USD",
    "definition": "Sum of NearBlocks daily txn_fee_usd, 365 days."
   },
   "net_issuance_near_365d": {
-   "value": 31740869.06020975,
+   "value": 31737553.901839256,
    "unit": "NEAR",
    "definition": "NearBlocks daily total_supply on asof minus 365 days earlier."
   },
   "net_inflation_annual_pct_365d": {
-   "value": 2.4804748388071127,
+   "value": 2.479861463094125,
    "unit": "%/yr",
    "definition": "Net supply growth over 365 days, annualized linearly."
   },
   "burn_cover_of_net_issuance_pct_365d": {
-   "value": 1.8713255712489218,
+   "value": 1.856959330254478,
    "unit": "%",
    "definition": "L1 fees / net supply growth, 365 days. Treats all fees as burnt."
   },
   "burn_cover_of_gross_issuance_pct_365d": {
-   "value": 1.8369502514621887,
+   "value": 1.8231050116404832,
    "unit": "%",
    "definition": "L1 fees / (net supply growth + fees), 365 days. Treats all fees as burnt."
   },
   "burn70_cover_of_gross_issuance_pct_365d": {
-   "value": 1.2929906545475602,
+   "value": 1.2831916877387741,
    "unit": "%",
    "definition": "As above with 70% of fees burnt, the rule before protocol version 87."
   },
   "intents_revenue_near_365d": {
-   "value": 4156484.8105226574,
+   "value": 4196760.932047371,
    "unit": "NEAR",
    "definition": "Daily captured revenue / that day's NEAR price, summed over 365 days."
   },
   "revenue_cover_of_gross_issuance_pct_365d": {
-   "value": 12.854507053994352,
+   "value": 12.982253093329504,
    "unit": "%",
    "definition": "Captured Intents revenue in NEAR at daily prices / gross issuance, 365 days."
   },
   "revenue_cover_of_net_issuance_pct_365d": {
-   "value": 13.095056731553747,
+   "value": 13.223328253423336,
    "unit": "%",
    "definition": "Captured Intents revenue in NEAR at daily prices / net supply growth, 365 days."
   },
   "usage_cover_of_gross_issuance_pct_365d": {
-   "value": 14.69145730545654,
+   "value": 14.805358104969985,
    "unit": "%",
    "definition": "(Captured revenue + L1 fees) / gross issuance, 365 days."
   },
   "usage_cover_of_net_issuance_pct_365d": {
-   "value": 14.966382302802666,
+   "value": 15.080287583677812,
    "unit": "%",
    "definition": "(Captured revenue + L1 fees) / net supply growth, 365 days."
   },
   "fees_cover_of_gross_issuance_usd_pct_365d": {
-   "value": 46.10454242360192,
+   "value": 46.69664049369365,
    "unit": "%",
    "definition": "Gross Intents fees / gross issuance valued at the asof price, 365 days."
   },
   "breakeven_multiple_365d": {
-   "value": 6.806676691144798,
+   "value": 6.754311465551865,
    "unit": "x",
    "definition": "Gross issuance / (captured revenue + L1 fees), 365 days: how many times usage must grow to offset issuance."
   },
   "intents_fees_over_l1_fees_365d": {
-   "value": 46.434893623796015,
+   "value": 46.944789474427346,
    "unit": "x",
    "definition": "Gross Intents fees / L1 fees in USD, 365 days."
   },
   "intents_revenue_over_l1_fees_365d": {
-   "value": 8.04334434484578,
+   "value": 8.242258417000253,
    "unit": "x",
    "definition": "Captured Intents revenue / L1 fees in USD, 365 days."
   },
   "l1_fees_usd_yoy_30d": {
-   "value": -39.21404783375275,
+   "value": -42.018955628047514,
    "unit": "%",
    "definition": "30-day L1 fees in USD vs a year earlier."
   },
   "l1_fees_usd_yoy_90d": {
-   "value": -52.66433681257241,
+   "value": -51.91510285180754,
    "unit": "%",
    "definition": "90-day L1 fees in USD vs a year earlier."
   },
   "l1_fees_near_yoy_30d": {
-   "value": -69.70717940273981,
+   "value": -69.97936552431217,
    "unit": "%",
    "definition": "30-day L1 fees in NEAR vs a year earlier."
   },
   "revenue_wallets_near": {
-   "value": 4240658.340058343,
+   "value": 4282005.770835555,
    "unit": "NEAR",
-   "definition": "NEAR + wNEAR held by the three Intents revenue wallets at the first block of 2026-11-11."
+   "definition": "NEAR + wNEAR held by the three Intents revenue wallets at the first block of 2026-11-13."
   },
   "revenue_wallets_share_of_supply_pct": {
-   "value": 0.32337628485915576,
+   "value": 0.326484589544451,
    "unit": "%",
    "definition": "Revenue wallet holdings / total supply."
   },
   "revenue_wallets_min_balance_ratio": {
-   "value": 1.000000001099969,
+   "value": 1.0795984629095428,
    "unit": "x",
    "definition": "Smallest ratio between consecutive samples of total holdings; >= 1 means the total never fell between samples."
   },
   "revenue_wallets_growth_near_30d": {
-   "value": 408899.17275729915,
+   "value": 426685.40857913764,
    "unit": "NEAR",
-   "definition": "Change in revenue wallet holdings over the 30 days before 2026-11-11."
+   "definition": "Change in revenue wallet holdings over the 30 days before 2026-11-13."
   },
   "wallet_growth_cover_of_net_issuance_pct_30d": {
-   "value": 15.342998416908973,
+   "value": 16.034103492892964,
    "unit": "%",
    "definition": "Growth of revenue wallet holdings / growth of total supply, both from archival RPC, 30 days."
   },
   "wallet_growth_over_defillama_revenue_30d": {
-   "value": 1.0090248186429256,
+   "value": 1.0069367020503188,
    "unit": "x",
    "definition": "Growth of wallet holdings / DefiLlama captured revenue in NEAR over the same 30 days. 1.0 means all reported revenue is still held."
   },
   "revenue_wallets_growth_near_90d": {
-   "value": 1448846.4963383004,
+   "value": 1475055.7271018839,
    "unit": "NEAR",
-   "definition": "Change in revenue wallet holdings over the 90 days before 2026-11-11."
+   "definition": "Change in revenue wallet holdings over the 90 days before 2026-11-13."
   },
   "wallet_growth_cover_of_net_issuance_pct_90d": {
-   "value": 18.21028405636626,
+   "value": 18.559447990443687,
    "unit": "%",
    "definition": "Growth of revenue wallet holdings / growth of total supply, both from archival RPC, 90 days."
   },
   "wallet_growth_over_defillama_revenue_90d": {
-   "value": 0.9765623744438459,
+   "value": 0.9776571725127384,
    "unit": "x",
    "definition": "Growth of wallet holdings / DefiLlama captured revenue in NEAR over the same 90 days. 1.0 means all reported revenue is still held."
   },
   "revenue_wallets_growth_near_360d": {
-   "value": 4025513.8590253205,
+   "value": 4066861.289802533,
    "unit": "NEAR",
-   "definition": "Change in revenue wallet holdings over the 360 days before 2026-11-11."
+   "definition": "Change in revenue wallet holdings over the 360 days before 2026-11-13."
   },
   "wallet_growth_cover_of_net_issuance_pct_360d": {
-   "value": 12.850810038484447,
+   "value": 12.984550561594757,
    "unit": "%",
    "definition": "Growth of revenue wallet holdings / growth of total supply, both from archival RPC, 360 days."
   },
   "wallet_growth_over_defillama_revenue_360d": {
-   "value": 0.9826194098827903,
+   "value": 0.9830475788125406,
    "unit": "x",
    "definition": "Growth of wallet holdings / DefiLlama captured revenue in NEAR over the same 360 days. 1.0 means all reported revenue is still held."
   },
   "wallet_cover_pct_first_180d": {
-   "value": 11.151328561447043,
+   "value": 11.30147628202001,
    "unit": "%",
    "definition": "Wallet growth / supply growth, days 360 to 180 before the snapshot (RPC)."
   },
   "wallet_cover_pct_last_180d": {
-   "value": 14.510694973440478,
+   "value": 14.62398748747476,
    "unit": "%",
    "definition": "Wallet growth / supply growth, last 180 days (RPC)."
   },
   "growth_multiple_to_offset_issuance_90d": {
-   "value": 5.49140253334161,
+   "value": 5.388091286523731,
    "unit": "x",
    "definition": "1 / (90-day wallet cover of net issuance): how many times captured revenue must grow, at constant issuance and price ratio."
   },
   "years_to_offset_issuance_at_measured_volume_growth": {
-   "value": 3.7324909521428897,
+   "value": 4.304652165537321,
    "unit": "years",
-   "definition": "ln(multiple) / ln(1 + g) with g = 57.8% a year. A projection, not a measurement: assumes captured revenue grows at g and issuance in NEAR stays as is."
+   "definition": "ln(multiple) / ln(1 + g) with g = 47.9% a year. A projection, not a measurement: assumes captured revenue grows at g and issuance in NEAR stays as is."
   },
   "years_to_offset_issuance_at_half_measured_volume_growth": {
-   "value": 6.706466977520324,
+   "value": 7.846651393043586,
    "unit": "years",
-   "definition": "ln(multiple) / ln(1 + g) with g = 28.9% a year. A projection, not a measurement: assumes captured revenue grows at g and issuance in NEAR stays as is."
+   "definition": "ln(multiple) / ln(1 + g) with g = 23.9% a year. A projection, not a measurement: assumes captured revenue grows at g and issuance in NEAR stays as is."
   },
   "years_to_offset_issuance_at_25pct_growth": {
-   "value": 7.632681668000157,
+   "value": 7.547568330106094,
    "unit": "years",
    "definition": "ln(multiple) / ln(1 + g) with g = 25.0% a year. A projection, not a measurement: assumes captured revenue grows at g and issuance in NEAR stays as is."
   },
   "price_usd": {
-   "value": 3.62401893,
+   "value": 3.58539248,
    "unit": "USD",
    "definition": "NearBlocks daily price on asof."
   },
   "price_yoy": {
-   "value": 19.427924839522206,
+   "value": 40.83176418357834,
    "unit": "%",
    "definition": "Price on asof vs 365 days earlier."
   },
   "price_yoy_30d_avg": {
-   "value": 97.79631931610413,
+   "value": 90.64879145028361,
    "unit": "%",
    "definition": "30-day mean price vs a year earlier."
   },
   "price_yoy_90d_avg": {
-   "value": 38.31426178494522,
+   "value": 40.26141126904024,
    "unit": "%",
    "definition": "90-day mean price vs a year earlier."
   },
   "market_cap_usd": {
-   "value": 4752056551.498374,
+   "value": 4702052222.15716,
    "unit": "USD",
    "definition": "NearBlocks market cap on asof (circulating supply x price)."
   },
   "mcap_over_intents_fees_annualized_30d": {
-   "value": 65.5249140858459,
+   "value": 63.89828351720648,
    "unit": "x",
    "definition": "Market cap / (30-day gross fees annualized)."
   },
   "mcap_over_intents_revenue_annualized_30d": {
-   "value": 214.89154217840155,
+   "value": 209.73623049912564,
    "unit": "x",
    "definition": "Market cap / (30-day captured revenue annualized)."
   },
   "revenue_yield_on_mcap_pct_30d": {
-   "value": 0.4653510277150911,
+   "value": 0.47678934517904803,
    "unit": "%/yr",
    "definition": "30-day captured revenue annualized / market cap."
   },
   "intents_volume_365d_over_mcap": {
-   "value": 6.925600809742649,
+   "value": 7.002706324238577,
    "unit": "x",
    "definition": "365-day Intents volume / market cap."
   },
   "validators_current": {
-   "value": 351,
+   "value": 356,
    "unit": "count",
    "definition": "Length of current_validators in the RPC `validators` response."
   },
   "staked_share_pct": {
-   "value": 44.40622018788337,
+   "value": 44.95254392153723,
    "unit": "%",
    "definition": "Sum of current validator stake / total_supply from the latest sampled block header."
   },
   "validators_to_one_third": {
-   "value": 9,
+   "value": 10,
    "unit": "count",
    "definition": "Smallest number of validators whose stake exceeds one third of current stake."
   },
@@ -642,654 +642,659 @@
  "series": {
   "wallet_cover_steps": [
    {
-    "from": "2025-10-17",
-    "to": "2025-11-16",
+    "from": "2025-10-19",
+    "to": "2025-11-18",
     "wallet_growth_near": 215132.48090299152,
-    "net_issuance_near": 3620086.1816432476,
-    "cover_pct": 5.94274473336813
+    "net_issuance_near": 3487888.4953267574,
+    "cover_pct": 6.167986195408382
    },
    {
-    "from": "2025-11-16",
-    "to": "2025-12-16",
-    "wallet_growth_near": 212379.62052179407,
-    "net_issuance_near": 2534763.086633444,
-    "cover_pct": 8.378677346286707
+    "from": "2025-11-18",
+    "to": "2025-12-18",
+    "wallet_growth_near": 212379.62075715698,
+    "net_issuance_near": 2533786.5678818226,
+    "cover_pct": 8.381906489254959
    },
    {
-    "from": "2025-12-16",
-    "to": "2026-01-15",
-    "wallet_growth_near": 0.0004702633013948798,
-    "net_issuance_near": 2559589.8440201283,
-    "cover_pct": 1.837260381750373e-08
+    "from": "2025-12-18",
+    "to": "2026-01-17",
+    "wallet_growth_near": 206811.72456963535,
+    "net_issuance_near": 2558375.9875872135,
+    "cover_pct": 8.083711134448148
    },
    {
-    "from": "2026-01-15",
-    "to": "2026-02-14",
-    "wallet_growth_near": 593230.8932248289,
-    "net_issuance_near": 2574889.6293640137,
-    "cover_pct": 23.03908045065816
+    "from": "2026-01-17",
+    "to": "2026-02-16",
+    "wallet_growth_near": 404150.9459633728,
+    "net_issuance_near": 2548642.7406947613,
+    "cover_pct": 15.857496992819051
    },
    {
-    "from": "2026-02-14",
-    "to": "2026-03-16",
-    "wallet_growth_near": 333070.4087339385,
-    "net_issuance_near": 2577439.5212295055,
-    "cover_pct": 12.922530518778391
+    "from": "2026-02-16",
+    "to": "2026-03-18",
+    "wallet_growth_near": 333316.6429536564,
+    "net_issuance_near": 2577215.437826872,
+    "cover_pct": 12.9332083791455
    },
    {
-    "from": "2026-03-16",
-    "to": "2026-04-15",
-    "wallet_growth_near": 416204.4685460776,
-    "net_issuance_near": 2600945.300524473,
-    "cover_pct": 16.002046196901993
+    "from": "2026-03-18",
+    "to": "2026-04-17",
+    "wallet_growth_near": 407872.2700214272,
+    "net_issuance_near": 2604474.766003132,
+    "cover_pct": 15.660442379610934
    },
    {
-    "from": "2026-04-15",
-    "to": "2026-05-15",
-    "wallet_growth_near": 171103.6815266069,
-    "net_issuance_near": 2630251.002968073,
-    "cover_pct": 6.505222556080281
+    "from": "2026-04-17",
+    "to": "2026-05-17",
+    "wallet_growth_near": 182078.5227549828,
+    "net_issuance_near": 2632208.677008152,
+    "cover_pct": 6.917328566895341
    },
    {
-    "from": "2026-05-15",
-    "to": "2026-06-14",
-    "wallet_growth_near": 395894.5068559679,
-    "net_issuance_near": 2624835.5308344364,
-    "cover_pct": 15.08264050091218
+    "from": "2026-05-17",
+    "to": "2026-06-16",
+    "wallet_growth_near": 394248.3142556939,
+    "net_issuance_near": 2625952.735213518,
+    "cover_pct": 15.013534286771439
    },
    {
-    "from": "2026-06-14",
-    "to": "2026-07-14",
-    "wallet_growth_near": 187286.79218620015,
-    "net_issuance_near": 2647596.4670271873,
-    "cover_pct": 7.073842049520946
+    "from": "2026-06-16",
+    "to": "2026-07-16",
+    "wallet_growth_near": 187534.17938679783,
+    "net_issuance_near": 2650850.6778678894,
+    "cover_pct": 7.074490500446966
    },
    {
-    "from": "2026-07-14",
-    "to": "2026-08-13",
-    "wallet_growth_near": 267496.9906213428,
-    "net_issuance_near": 2618471.7337183952,
-    "cover_pct": 10.215767738744317
+    "from": "2026-07-16",
+    "to": "2026-08-15",
+    "wallet_growth_near": 263413.34203792596,
+    "net_issuance_near": 2641528.060800791,
+    "cover_pct": 9.972006201519248
    },
    {
-    "from": "2026-08-13",
-    "to": "2026-09-12",
-    "wallet_growth_near": 521219.6285285414,
-    "net_issuance_near": 2666028.548877716,
-    "cover_pct": 19.550414370016878
+    "from": "2026-08-15",
+    "to": "2026-09-14",
+    "wallet_growth_near": 531207.2021476761,
+    "net_issuance_near": 2641818.7464425564,
+    "cover_pct": 20.10763239768034
    },
    {
-    "from": "2026-09-12",
-    "to": "2026-10-12",
-    "wallet_growth_near": 518727.69505245984,
-    "net_issuance_near": 2625116.9036660194,
-    "cover_pct": 19.760175035559293
+    "from": "2026-09-14",
+    "to": "2026-10-14",
+    "wallet_growth_near": 517163.11637507007,
+    "net_issuance_near": 2644804.4355795383,
+    "cover_pct": 19.553926536793163
    },
    {
-    "from": "2026-10-12",
-    "to": "2026-11-11",
-    "wallet_growth_near": 408899.17275729915,
-    "net_issuance_near": 2665053.867871523,
-    "cover_pct": 15.342998416908973
+    "from": "2026-10-14",
+    "to": "2026-11-13",
+    "wallet_growth_near": 426685.40857913764,
+    "net_issuance_near": 2661111.7283124924,
+    "cover_pct": 16.034103492892964
    }
   ],
   "wallets_vs_reported": [
    {
-    "day": "2025-09-17",
+    "day": "2025-09-19",
     "wallets_near": 0.0,
     "defillama_cumulative_near": 0.0
    },
    {
-    "day": "2025-10-17",
+    "day": "2025-10-19",
     "wallets_near": 12.000130030524344,
     "defillama_cumulative_near": 12.107502474764765
    },
    {
-    "day": "2025-11-16",
+    "day": "2025-11-18",
     "wallets_near": 215144.48103302205,
     "defillama_cumulative_near": 262641.3641946103
    },
    {
-    "day": "2025-12-16",
-    "wallets_near": 427524.1015548161,
+    "day": "2025-12-18",
+    "wallets_near": 427524.10179017903,
     "defillama_cumulative_near": 453400.219002703
    },
    {
-    "day": "2026-01-15",
-    "wallets_near": 427524.1020250794,
-    "defillama_cumulative_near": 453400.219002703
+    "day": "2026-01-17",
+    "wallets_near": 634335.8263598144,
+    "defillama_cumulative_near": 650765.323362859
    },
    {
-    "day": "2026-02-14",
-    "wallets_near": 1020754.9952499083,
-    "defillama_cumulative_near": 1047521.5026060368
+    "day": "2026-02-16",
+    "wallets_near": 1038486.7723231872,
+    "defillama_cumulative_near": 1065351.8913799343
    },
    {
-    "day": "2026-03-16",
-    "wallets_near": 1353825.4039838468,
-    "defillama_cumulative_near": 1381687.09087683
+    "day": "2026-03-18",
+    "wallets_near": 1371803.4152768436,
+    "defillama_cumulative_near": 1400494.5613729851
    },
    {
-    "day": "2026-04-15",
-    "wallets_near": 1770029.8725299244,
-    "defillama_cumulative_near": 1791529.1766408596
+    "day": "2026-04-17",
+    "wallets_near": 1779675.6852982708,
+    "defillama_cumulative_near": 1801486.8537777558
    },
    {
-    "day": "2026-05-15",
-    "wallets_near": 1941133.5540565313,
-    "defillama_cumulative_near": 2010405.5306916607
+    "day": "2026-05-17",
+    "wallets_near": 1961754.2080532536,
+    "defillama_cumulative_near": 2030563.368843627
    },
    {
-    "day": "2026-06-14",
-    "wallets_near": 2337028.060912499,
-    "defillama_cumulative_near": 2403095.6931238347
+    "day": "2026-06-16",
+    "wallets_near": 2356002.5223089475,
+    "defillama_cumulative_near": 2423293.49840066
    },
    {
-    "day": "2026-07-14",
-    "wallets_near": 2524314.8530986994,
-    "defillama_cumulative_near": 2602452.199410007
+    "day": "2026-07-16",
+    "wallets_near": 2543536.7016957453,
+    "defillama_cumulative_near": 2630070.073390048
    },
    {
-    "day": "2026-08-13",
-    "wallets_near": 2791811.843720042,
-    "defillama_cumulative_near": 2875739.583081052
+    "day": "2026-08-15",
+    "wallets_near": 2806950.0437336713,
+    "defillama_cumulative_near": 2890868.8860323993
    },
    {
-    "day": "2026-09-12",
-    "wallets_near": 3313031.4722485836,
-    "defillama_cumulative_near": 3413883.2099567596
+    "day": "2026-09-14",
+    "wallets_near": 3338157.2458813475,
+    "defillama_cumulative_near": 3438641.3610569984
    },
    {
-    "day": "2026-10-12",
-    "wallets_near": 3831759.1673010434,
-    "defillama_cumulative_near": 3954116.6483171433
+    "day": "2026-10-14",
+    "wallets_near": 3855320.3622564175,
+    "defillama_cumulative_near": 3975888.698833062
    },
    {
-    "day": "2026-11-11",
-    "wallets_near": 4240658.340058343,
-    "defillama_cumulative_near": 4359358.586079628
+    "day": "2026-11-13",
+    "wallets_near": 4282005.770835555,
+    "defillama_cumulative_near": 4399634.707604341
    }
   ],
   "weekly_30d_means": [
    {
-    "day": "2025-01-14",
-    "tx_per_day": 7416363.866666666,
-    "intents_volume_usd_per_day": 108785.8
+    "day": "2025-01-09",
+    "tx_per_day": 7873533.166666667,
+    "intents_volume_usd_per_day": 128100.26666666666
    },
    {
-    "day": "2025-01-21",
-    "tx_per_day": 7148671.6,
-    "intents_volume_usd_per_day": 200247.86666666667
+    "day": "2025-01-16",
+    "tx_per_day": 7278209.266666667,
+    "intents_volume_usd_per_day": 102799.13333333333
    },
    {
-    "day": "2025-01-28",
-    "tx_per_day": 7215027.6,
-    "intents_volume_usd_per_day": 209588.96666666667
+    "day": "2025-01-23",
+    "tx_per_day": 7254207.966666667,
+    "intents_volume_usd_per_day": 198247.46666666667
    },
    {
-    "day": "2025-02-04",
-    "tx_per_day": 7004391.066666666,
-    "intents_volume_usd_per_day": 229105.96666666667
+    "day": "2025-01-30",
+    "tx_per_day": 7180113.2,
+    "intents_volume_usd_per_day": 210235.36666666667
    },
    {
-    "day": "2025-02-11",
-    "tx_per_day": 7215032.933333334,
-    "intents_volume_usd_per_day": 318001.23333333334
+    "day": "2025-02-06",
+    "tx_per_day": 7060937.633333334,
+    "intents_volume_usd_per_day": 228519.76666666666
    },
    {
-    "day": "2025-02-18",
-    "tx_per_day": 7319238.9,
-    "intents_volume_usd_per_day": 383070.0333333333
+    "day": "2025-02-13",
+    "tx_per_day": 7292596.733333333,
+    "intents_volume_usd_per_day": 330848.0333333333
    },
    {
-    "day": "2025-02-25",
-    "tx_per_day": 6920780.466666667,
-    "intents_volume_usd_per_day": 376854.63333333336
+    "day": "2025-02-20",
+    "tx_per_day": 7154992.1,
+    "intents_volume_usd_per_day": 347911.5333333333
    },
    {
-    "day": "2025-03-04",
-    "tx_per_day": 6914979.266666667,
-    "intents_volume_usd_per_day": 637077.8666666667
+    "day": "2025-02-27",
+    "tx_per_day": 6905229.033333333,
+    "intents_volume_usd_per_day": 439774.63333333336
    },
    {
-    "day": "2025-03-11",
-    "tx_per_day": 6789755.733333333,
-    "intents_volume_usd_per_day": 704161.8333333334
+    "day": "2025-03-06",
+    "tx_per_day": 6935971.466666667,
+    "intents_volume_usd_per_day": 665583.0333333333
    },
    {
-    "day": "2025-03-18",
-    "tx_per_day": 6509187.466666667,
-    "intents_volume_usd_per_day": 702967.1
+    "day": "2025-03-13",
+    "tx_per_day": 6732629.4,
+    "intents_volume_usd_per_day": 700959.3333333334
    },
    {
-    "day": "2025-03-25",
-    "tx_per_day": 6620831.466666667,
-    "intents_volume_usd_per_day": 735794.9666666667
+    "day": "2025-03-20",
+    "tx_per_day": 6660041.066666666,
+    "intents_volume_usd_per_day": 687545.4333333333
    },
    {
-    "day": "2025-04-01",
-    "tx_per_day": 6605126.7,
-    "intents_volume_usd_per_day": 661913.5333333333
+    "day": "2025-03-27",
+    "tx_per_day": 6616856.966666667,
+    "intents_volume_usd_per_day": 796648.9666666667
    },
    {
-    "day": "2025-04-08",
-    "tx_per_day": 6667234.933333334,
-    "intents_volume_usd_per_day": 654376.4333333333
+    "day": "2025-04-03",
+    "tx_per_day": 6604052.5,
+    "intents_volume_usd_per_day": 605649.4
    },
    {
-    "day": "2025-04-15",
-    "tx_per_day": 6830917.866666666,
-    "intents_volume_usd_per_day": 945270.1333333333
+    "day": "2025-04-10",
+    "tx_per_day": 6679338.033333333,
+    "intents_volume_usd_per_day": 643641.8
    },
    {
-    "day": "2025-04-22",
-    "tx_per_day": 6569042.033333333,
-    "intents_volume_usd_per_day": 1117369.2
+    "day": "2025-04-17",
+    "tx_per_day": 6913599.4,
+    "intents_volume_usd_per_day": 1017641.1333333333
    },
    {
-    "day": "2025-04-29",
-    "tx_per_day": 6269603.433333334,
-    "intents_volume_usd_per_day": 1440285.1
+    "day": "2025-04-24",
+    "tx_per_day": 6510559.8,
+    "intents_volume_usd_per_day": 1127323.1
    },
    {
-    "day": "2025-05-06",
-    "tx_per_day": 6053592.466666667,
-    "intents_volume_usd_per_day": 1729793.8
+    "day": "2025-05-01",
+    "tx_per_day": 6228978.833333333,
+    "intents_volume_usd_per_day": 1646759.8333333333
    },
    {
-    "day": "2025-05-13",
-    "tx_per_day": 5737326.433333334,
-    "intents_volume_usd_per_day": 1829939.2333333334
+    "day": "2025-05-08",
+    "tx_per_day": 5972535.833333333,
+    "intents_volume_usd_per_day": 1803723.5333333334
    },
    {
-    "day": "2025-05-20",
-    "tx_per_day": 5445349.133333334,
-    "intents_volume_usd_per_day": 1980743.1666666667
+    "day": "2025-05-15",
+    "tx_per_day": 5603967.666666667,
+    "intents_volume_usd_per_day": 1790419.0666666667
    },
    {
-    "day": "2025-05-27",
-    "tx_per_day": 5315019.533333333,
-    "intents_volume_usd_per_day": 2547860.9
+    "day": "2025-05-22",
+    "tx_per_day": 5419930.666666667,
+    "intents_volume_usd_per_day": 2137200.7666666666
    },
    {
-    "day": "2025-06-03",
-    "tx_per_day": 5187663.033333333,
-    "intents_volume_usd_per_day": 2905189.933333333
+    "day": "2025-05-29",
+    "tx_per_day": 5289976.933333334,
+    "intents_volume_usd_per_day": 2455425.6
    },
    {
-    "day": "2025-06-10",
-    "tx_per_day": 5069543.6,
-    "intents_volume_usd_per_day": 3001154.933333333
+    "day": "2025-06-05",
+    "tx_per_day": 5155993.4,
+    "intents_volume_usd_per_day": 2984202.3
    },
    {
-    "day": "2025-06-17",
-    "tx_per_day": 4993412.933333334,
-    "intents_volume_usd_per_day": 3545881.6666666665
+    "day": "2025-06-12",
+    "tx_per_day": 5035968.5,
+    "intents_volume_usd_per_day": 3198744.533333333
    },
    {
-    "day": "2025-06-24",
-    "tx_per_day": 4889012.733333333,
-    "intents_volume_usd_per_day": 5030809.5
+    "day": "2025-06-19",
+    "tx_per_day": 4938168.533333333,
+    "intents_volume_usd_per_day": 3664298.533333333
    },
    {
-    "day": "2025-07-01",
-    "tx_per_day": 4895585.6,
-    "intents_volume_usd_per_day": 6305188.6
+    "day": "2025-06-26",
+    "tx_per_day": 4904894.2,
+    "intents_volume_usd_per_day": 5829769.666666667
    },
    {
-    "day": "2025-07-08",
-    "tx_per_day": 4844663.366666666,
-    "intents_volume_usd_per_day": 7198829.666666667
+    "day": "2025-07-03",
+    "tx_per_day": 4886452.833333333,
+    "intents_volume_usd_per_day": 6864686.333333333
    },
    {
-    "day": "2025-07-15",
-    "tx_per_day": 4667100.933333334,
-    "intents_volume_usd_per_day": 7622026.066666666
+    "day": "2025-07-10",
+    "tx_per_day": 4816573.9,
+    "intents_volume_usd_per_day": 7511575.866666666
    },
    {
-    "day": "2025-07-22",
-    "tx_per_day": 4660833.866666666,
-    "intents_volume_usd_per_day": 8001695.766666667
+    "day": "2025-07-17",
+    "tx_per_day": 4660418.033333333,
+    "intents_volume_usd_per_day": 7559399.866666666
    },
    {
-    "day": "2025-07-29",
-    "tx_per_day": 4742599.5,
-    "intents_volume_usd_per_day": 7096297.366666666
+    "day": "2025-07-24",
+    "tx_per_day": 4683097.666666667,
+    "intents_volume_usd_per_day": 7758238.933333334
    },
    {
-    "day": "2025-08-05",
-    "tx_per_day": 4904040.766666667,
-    "intents_volume_usd_per_day": 8717632.533333333
+    "day": "2025-07-31",
+    "tx_per_day": 4806661.433333334,
+    "intents_volume_usd_per_day": 7677307.1
    },
    {
-    "day": "2025-08-12",
-    "tx_per_day": 5080850.266666667,
-    "intents_volume_usd_per_day": 10382432.166666666
+    "day": "2025-08-07",
+    "tx_per_day": 4937535.1,
+    "intents_volume_usd_per_day": 8755353.266666668
    },
    {
-    "day": "2025-08-19",
-    "tx_per_day": 5174631.733333333,
-    "intents_volume_usd_per_day": 10933614.733333332
+    "day": "2025-08-14",
+    "tx_per_day": 5129881.566666666,
+    "intents_volume_usd_per_day": 10919480.333333334
    },
    {
-    "day": "2025-08-26",
-    "tx_per_day": 5156070.5,
-    "intents_volume_usd_per_day": 11389305.866666667
+    "day": "2025-08-21",
+    "tx_per_day": 5181481.766666667,
+    "intents_volume_usd_per_day": 10675774.733333332
    },
    {
-    "day": "2025-09-02",
-    "tx_per_day": 4966790.666666667,
-    "intents_volume_usd_per_day": 10091637.833333334
+    "day": "2025-08-28",
+    "tx_per_day": 5092728.533333333,
+    "intents_volume_usd_per_day": 11395164.866666667
    },
    {
-    "day": "2025-09-09",
-    "tx_per_day": 4924593.066666666,
-    "intents_volume_usd_per_day": 10685271.266666668
+    "day": "2025-09-04",
+    "tx_per_day": 4944250.066666666,
+    "intents_volume_usd_per_day": 10204187.4
    },
    {
-    "day": "2025-09-16",
-    "tx_per_day": 4860678.933333334,
-    "intents_volume_usd_per_day": 12481553.5
+    "day": "2025-09-11",
+    "tx_per_day": 4921255.766666667,
+    "intents_volume_usd_per_day": 10877030.7
    },
    {
-    "day": "2025-09-23",
-    "tx_per_day": 4752492.133333334,
-    "intents_volume_usd_per_day": 13702623.933333334
+    "day": "2025-09-18",
+    "tx_per_day": 4830843.6,
+    "intents_volume_usd_per_day": 13376990.766666668
    },
    {
-    "day": "2025-09-30",
-    "tx_per_day": 4677697.666666667,
-    "intents_volume_usd_per_day": 16126372.666666666
+    "day": "2025-09-25",
+    "tx_per_day": 4722121.766666667,
+    "intents_volume_usd_per_day": 14064818.433333334
    },
    {
-    "day": "2025-10-07",
-    "tx_per_day": 4598405.666666667,
-    "intents_volume_usd_per_day": 26561986.066666666
+    "day": "2025-10-02",
+    "tx_per_day": 4655322.866666666,
+    "intents_volume_usd_per_day": 19973087.766666666
    },
    {
-    "day": "2025-10-14",
-    "tx_per_day": 4588632.433333334,
-    "intents_volume_usd_per_day": 34672269.53333333
+    "day": "2025-10-09",
+    "tx_per_day": 4589786.3,
+    "intents_volume_usd_per_day": 28396702.933333334
    },
    {
-    "day": "2025-10-21",
-    "tx_per_day": 4590081.166666667,
-    "intents_volume_usd_per_day": 41451558.46666667
+    "day": "2025-10-16",
+    "tx_per_day": 4592090.233333333,
+    "intents_volume_usd_per_day": 36820287.56666667
    },
    {
-    "day": "2025-10-28",
-    "tx_per_day": 4557873.166666667,
-    "intents_volume_usd_per_day": 50679240.13333333
+    "day": "2025-10-23",
+    "tx_per_day": 4583342.0,
+    "intents_volume_usd_per_day": 43434605.93333333
    },
    {
-    "day": "2025-11-04",
-    "tx_per_day": 4520155.833333333,
-    "intents_volume_usd_per_day": 63953092.4
+    "day": "2025-10-30",
+    "tx_per_day": 4555229.033333333,
+    "intents_volume_usd_per_day": 54467499.266666666
    },
    {
-    "day": "2025-11-11",
-    "tx_per_day": 4406587.233333333,
-    "intents_volume_usd_per_day": 81095852.0
+    "day": "2025-11-06",
+    "tx_per_day": 4495024.0,
+    "intents_volume_usd_per_day": 69829060.26666667
    },
    {
-    "day": "2025-11-18",
-    "tx_per_day": 4351636.6,
-    "intents_volume_usd_per_day": 102642108.5
+    "day": "2025-11-13",
+    "tx_per_day": 4378808.166666667,
+    "intents_volume_usd_per_day": 88045805.26666667
    },
    {
-    "day": "2025-11-25",
-    "tx_per_day": 4317933.3,
-    "intents_volume_usd_per_day": 123611625.4
+    "day": "2025-11-20",
+    "tx_per_day": 4328871.633333334,
+    "intents_volume_usd_per_day": 109372797.3
    },
    {
-    "day": "2025-12-02",
-    "tx_per_day": 4257366.666666667,
-    "intents_volume_usd_per_day": 123683540.63333334
+    "day": "2025-11-27",
+    "tx_per_day": 4292190.7,
+    "intents_volume_usd_per_day": 123725349.86666666
    },
    {
-    "day": "2025-12-09",
-    "tx_per_day": 4202066.366666666,
-    "intents_volume_usd_per_day": 105400923.66666667
+    "day": "2025-12-04",
+    "tx_per_day": 4246518.533333333,
+    "intents_volume_usd_per_day": 117989711.13333334
    },
    {
-    "day": "2025-12-16",
-    "tx_per_day": 4083311.9,
-    "intents_volume_usd_per_day": 88623801.63333334
+    "day": "2025-12-11",
+    "tx_per_day": 4176524.3,
+    "intents_volume_usd_per_day": 102146391.03333333
    },
    {
-    "day": "2025-12-23",
-    "tx_per_day": 3969528.2,
-    "intents_volume_usd_per_day": 67579291.16666667
+    "day": "2025-12-18",
+    "tx_per_day": 4057768.3666666667,
+    "intents_volume_usd_per_day": 84647208.03333333
    },
    {
-    "day": "2025-12-30",
-    "tx_per_day": 3850062.3,
-    "intents_volume_usd_per_day": 65369533.03333333
+    "day": "2025-12-25",
+    "tx_per_day": 3936457.7666666666,
+    "intents_volume_usd_per_day": 66854227.833333336
    },
    {
-    "day": "2026-01-06",
-    "tx_per_day": 3741935.9,
-    "intents_volume_usd_per_day": 61894173.233333334
+    "day": "2026-01-01",
+    "tx_per_day": 3810637.1,
+    "intents_volume_usd_per_day": 59754439.96666667
    },
    {
-    "day": "2026-01-13",
-    "tx_per_day": 3654772.466666667,
-    "intents_volume_usd_per_day": 69462221.6
+    "day": "2026-01-08",
+    "tx_per_day": 3723708.9,
+    "intents_volume_usd_per_day": 65046122.03333333
    },
    {
-    "day": "2026-01-20",
-    "tx_per_day": 3588488.2,
-    "intents_volume_usd_per_day": 76552936.8
+    "day": "2026-01-15",
+    "tx_per_day": 3654921.033333333,
+    "intents_volume_usd_per_day": 71742847.0
    },
    {
-    "day": "2026-01-27",
-    "tx_per_day": 3523382.8,
-    "intents_volume_usd_per_day": 83160064.13333334
+    "day": "2026-01-22",
+    "tx_per_day": 3565379.8333333335,
+    "intents_volume_usd_per_day": 79781209.56666666
    },
    {
-    "day": "2026-02-03",
-    "tx_per_day": 3500189.9,
-    "intents_volume_usd_per_day": 95687507.63333334
+    "day": "2026-01-29",
+    "tx_per_day": 3513016.2333333334,
+    "intents_volume_usd_per_day": 86154391.43333334
    },
    {
-    "day": "2026-02-10",
-    "tx_per_day": 3481123.0,
-    "intents_volume_usd_per_day": 103176604.2
+    "day": "2026-02-05",
+    "tx_per_day": 3496948.2333333334,
+    "intents_volume_usd_per_day": 100466538.66666667
    },
    {
-    "day": "2026-02-17",
-    "tx_per_day": 3511077.933333333,
-    "intents_volume_usd_per_day": 99623911.63333334
+    "day": "2026-02-12",
+    "tx_per_day": 3505138.2666666666,
+    "intents_volume_usd_per_day": 102528509.2
    },
    {
-    "day": "2026-02-24",
-    "tx_per_day": 3462175.066666667,
-    "intents_volume_usd_per_day": 90003501.4
+    "day": "2026-02-19",
+    "tx_per_day": 3491367.3666666667,
+    "intents_volume_usd_per_day": 95641220.43333334
    },
    {
-    "day": "2026-03-03",
-    "tx_per_day": 3495571.3,
-    "intents_volume_usd_per_day": 83326024.33333333
+    "day": "2026-02-26",
+    "tx_per_day": 3484894.3,
+    "intents_volume_usd_per_day": 88310160.6
    },
    {
-    "day": "2026-03-10",
-    "tx_per_day": 3443694.3,
-    "intents_volume_usd_per_day": 67817170.93333334
+    "day": "2026-03-05",
+    "tx_per_day": 3481383.3333333335,
+    "intents_volume_usd_per_day": 80386654.33333333
    },
    {
-    "day": "2026-03-17",
-    "tx_per_day": 3371429.1,
-    "intents_volume_usd_per_day": 62945646.0
+    "day": "2026-03-12",
+    "tx_per_day": 3432117.4,
+    "intents_volume_usd_per_day": 65848726.166666664
    },
    {
-    "day": "2026-03-24",
-    "tx_per_day": 3361615.1333333333,
-    "intents_volume_usd_per_day": 67905830.56666666
+    "day": "2026-03-19",
+    "tx_per_day": 3344897.6333333333,
+    "intents_volume_usd_per_day": 65170460.3
    },
    {
-    "day": "2026-03-31",
-    "tx_per_day": 3475407.4,
-    "intents_volume_usd_per_day": 67684350.9
+    "day": "2026-03-26",
+    "tx_per_day": 3414696.2,
+    "intents_volume_usd_per_day": 68054847.9
    },
    {
-    "day": "2026-04-07",
-    "tx_per_day": 3006400.3333333335,
-    "intents_volume_usd_per_day": 69202754.6
+    "day": "2026-04-02",
+    "tx_per_day": 3402771.1666666665,
+    "intents_volume_usd_per_day": 69551051.23333333
    },
    {
-    "day": "2026-04-14",
-    "tx_per_day": 2461238.6666666665,
-    "intents_volume_usd_per_day": 73140696.53333333
+    "day": "2026-04-09",
+    "tx_per_day": 2848386.1,
+    "intents_volume_usd_per_day": 70886062.5
    },
    {
-    "day": "2026-04-21",
-    "tx_per_day": 1908192.7666666666,
-    "intents_volume_usd_per_day": 69408803.06666666
+    "day": "2026-04-16",
+    "tx_per_day": 2304978.3333333335,
+    "intents_volume_usd_per_day": 70828661.86666666
    },
    {
-    "day": "2026-04-28",
-    "tx_per_day": 1145787.9333333333,
-    "intents_volume_usd_per_day": 64906473.46666667
+    "day": "2026-04-23",
+    "tx_per_day": 1714684.4666666666,
+    "intents_volume_usd_per_day": 68210714.93333334
    },
    {
-    "day": "2026-05-05",
-    "tx_per_day": 817304.1333333333,
-    "intents_volume_usd_per_day": 60184296.9
+    "day": "2026-04-30",
+    "tx_per_day": 946610.4,
+    "intents_volume_usd_per_day": 63184683.4
    },
    {
-    "day": "2026-05-12",
-    "tx_per_day": 771660.3666666667,
-    "intents_volume_usd_per_day": 55852333.03333333
+    "day": "2026-05-07",
+    "tx_per_day": 807802.7333333333,
+    "intents_volume_usd_per_day": 59238495.06666667
    },
    {
-    "day": "2026-05-19",
-    "tx_per_day": 756472.5666666667,
-    "intents_volume_usd_per_day": 54518966.766666666
+    "day": "2026-05-14",
+    "tx_per_day": 768177.8333333334,
+    "intents_volume_usd_per_day": 54089909.43333333
    },
    {
-    "day": "2026-05-26",
-    "tx_per_day": 797198.2333333333,
-    "intents_volume_usd_per_day": 60325924.46666667
+    "day": "2026-05-21",
+    "tx_per_day": 757822.2333333333,
+    "intents_volume_usd_per_day": 54591180.86666667
    },
    {
-    "day": "2026-06-02",
-    "tx_per_day": 820728.2,
-    "intents_volume_usd_per_day": 68772924.16666667
+    "day": "2026-05-28",
+    "tx_per_day": 805016.2333333333,
+    "intents_volume_usd_per_day": 62592067.63333333
    },
    {
-    "day": "2026-06-09",
-    "tx_per_day": 854063.6666666666,
-    "intents_volume_usd_per_day": 79529482.63333334
+    "day": "2026-06-04",
+    "tx_per_day": 836670.3,
+    "intents_volume_usd_per_day": 71321695.46666667
    },
    {
-    "day": "2026-06-16",
-    "tx_per_day": 861427.1333333333,
-    "intents_volume_usd_per_day": 85168860.56666666
+    "day": "2026-06-11",
+    "tx_per_day": 856146.7333333333,
+    "intents_volume_usd_per_day": 81183243.4
    },
    {
-    "day": "2026-06-23",
-    "tx_per_day": 837654.0666666667,
-    "intents_volume_usd_per_day": 83647588.53333333
+    "day": "2026-06-18",
+    "tx_per_day": 863376.3666666667,
+    "intents_volume_usd_per_day": 85671613.16666667
    },
    {
-    "day": "2026-06-30",
-    "tx_per_day": 813834.8666666667,
-    "intents_volume_usd_per_day": 78489733.8
+    "day": "2026-06-25",
+    "tx_per_day": 826161.0333333333,
+    "intents_volume_usd_per_day": 82299913.96666667
    },
    {
-    "day": "2026-07-07",
-    "tx_per_day": 771219.6,
-    "intents_volume_usd_per_day": 71745270.06666666
+    "day": "2026-07-02",
+    "tx_per_day": 800962.7666666667,
+    "intents_volume_usd_per_day": 78641262.86666666
    },
    {
-    "day": "2026-07-14",
-    "tx_per_day": 766552.6666666666,
-    "intents_volume_usd_per_day": 72116974.46666667
+    "day": "2026-07-09",
+    "tx_per_day": 771750.7333333333,
+    "intents_volume_usd_per_day": 71615777.73333333
    },
    {
-    "day": "2026-07-21",
-    "tx_per_day": 748434.4666666667,
-    "intents_volume_usd_per_day": 73364549.2
+    "day": "2026-07-16",
+    "tx_per_day": 759710.7333333333,
+    "intents_volume_usd_per_day": 71651767.56666666
    },
    {
-    "day": "2026-07-28",
-    "tx_per_day": 742418.0,
-    "intents_volume_usd_per_day": 72189906.26666667
+    "day": "2026-07-23",
+    "tx_per_day": 746316.9,
+    "intents_volume_usd_per_day": 72948586.83333333
    },
    {
-    "day": "2026-08-04",
-    "tx_per_day": 730522.9,
-    "intents_volume_usd_per_day": 68578107.03333333
+    "day": "2026-07-30",
+    "tx_per_day": 738893.3,
+    "intents_volume_usd_per_day": 71240882.3
    },
    {
-    "day": "2026-08-11",
-    "tx_per_day": 701716.7333333333,
-    "intents_volume_usd_per_day": 67240853.83333333
+    "day": "2026-08-06",
+    "tx_per_day": 721554.9,
+    "intents_volume_usd_per_day": 67781697.8
    },
    {
-    "day": "2026-08-18",
-    "tx_per_day": 684429.9333333333,
-    "intents_volume_usd_per_day": 65878157.46666667
+    "day": "2026-08-13",
+    "tx_per_day": 694964.0333333333,
+    "intents_volume_usd_per_day": 65982899.7
    },
    {
-    "day": "2026-08-25",
-    "tx_per_day": 692819.8,
-    "intents_volume_usd_per_day": 82875353.86666666
+    "day": "2026-08-20",
+    "tx_per_day": 684408.4333333333,
+    "intents_volume_usd_per_day": 69194226.9
    },
    {
-    "day": "2026-09-01",
-    "tx_per_day": 681632.9,
-    "intents_volume_usd_per_day": 93876413.9
+    "day": "2026-08-27",
+    "tx_per_day": 690666.0333333333,
+    "intents_volume_usd_per_day": 87248572.76666667
    },
    {
-    "day": "2026-09-08",
-    "tx_per_day": 691697.5,
-    "intents_volume_usd_per_day": 111223807.7
+    "day": "2026-09-03",
+    "tx_per_day": 680831.9333333333,
+    "intents_volume_usd_per_day": 99973014.23333333
    },
    {
-    "day": "2026-09-15",
-    "tx_per_day": 708956.6666666666,
-    "intents_volume_usd_per_day": 127603732.96666667
+    "day": "2026-09-10",
+    "tx_per_day": 697344.3333333334,
+    "intents_volume_usd_per_day": 117744635.13333334
    },
    {
-    "day": "2026-09-22",
-    "tx_per_day": 741209.4,
-    "intents_volume_usd_per_day": 145735719.6
+    "day": "2026-09-17",
+    "tx_per_day": 718100.6333333333,
+    "intents_volume_usd_per_day": 136487764.8
    },
    {
-    "day": "2026-09-29",
-    "tx_per_day": 792196.3333333334,
-    "intents_volume_usd_per_day": 158452460.56666666
+    "day": "2026-09-24",
+    "tx_per_day": 744072.6666666666,
+    "intents_volume_usd_per_day": 149071076.3
    },
    {
-    "day": "2026-10-06",
-    "tx_per_day": 837424.6333333333,
-    "intents_volume_usd_per_day": 151365865.36666667
+    "day": "2026-10-01",
+    "tx_per_day": 816183.2,
+    "intents_volume_usd_per_day": 159893683.73333332
    },
    {
-    "day": "2026-10-13",
-    "tx_per_day": 870523.9333333333,
-    "intents_volume_usd_per_day": 160389213.3
+    "day": "2026-10-08",
+    "tx_per_day": 855278.6333333333,
+    "intents_volume_usd_per_day": 156759062.83333334
    },
    {
-    "day": "2026-10-20",
-    "tx_per_day": 837240.1,
-    "intents_volume_usd_per_day": 149012347.1
+    "day": "2026-10-15",
+    "tx_per_day": 879410.4333333333,
+    "intents_volume_usd_per_day": 160132475.3
    },
    {
-    "day": "2026-10-27",
-    "tx_per_day": 776853.7666666667,
-    "intents_volume_usd_per_day": 134030719.9
+    "day": "2026-10-22",
+    "tx_per_day": 815985.7333333333,
+    "intents_volume_usd_per_day": 142000659.0
    },
    {
-    "day": "2026-11-03",
-    "tx_per_day": 690247.3666666667,
-    "intents_volume_usd_per_day": 132353567.4
+    "day": "2026-10-29",
+    "tx_per_day": 745246.4,
+    "intents_volume_usd_per_day": 129782772.03333333
    },
    {
-    "day": "2026-11-10",
-    "tx_per_day": 657883.6,
-    "intents_volume_usd_per_day": 125257736.13333334
+    "day": "2026-11-05",
+    "tx_per_day": 682915.3,
+    "intents_volume_usd_per_day": 133406563.06666666
+   },
+   {
+    "day": "2026-11-12",
+    "tx_per_day": 669188.4333333333,
+    "intents_volume_usd_per_day": 125805115.06666666
    }
   ]
  }
