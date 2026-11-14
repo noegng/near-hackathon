@@ -20,18 +20,18 @@ of the metric that produced it; a test fails if the text and the computation dis
 
 ## How this thesis was built
 
-Dozens of teams in this track measured NEAR independently. We recorded 269 of their published numbers from
-44 public repositories, with the exact quote and commit, and recomputed each from raw data
-([`out/replication.md`](out/replication.md)). 235 are within 5% of our number for the day each was
-published (the last complete day before the commit that wrote it), and 198 if all are recomputed on our snapshot day. The thesis uses only
+Dozens of teams in this track measured NEAR independently. We recorded 362 of their published numbers from
+57 public repositories, with the exact quote and commit, and recomputed each from raw data
+([`out/replication.md`](out/replication.md)). 315 are within 5% of our number for the day each was
+published (the last complete day before the commit that wrote it), and 269 if all are recomputed on our snapshot day. The thesis uses only
 quantities that replicate, and takes its uncertainty from the spread between teams instead of from one model.
 
 Two things came out of the comparison that no single thesis shows.
 
-**The agreement on Intents volume and fees is not independent evidence.** All 34 repositories that publish an
+**The agreement on Intents volume and fees is not independent evidence.** All 45 repositories that publish an
 Intents number mention DefiLlama as a source. DefiLlama's adapter in turn reads datasets that NEAR itself uploads to
-Dune (`dune.near.dataset_near_intents_metrics`, `..._fees`). Thirty-four matching repositories are one number read
-34 times. We did not rebuild volume from `intents.near` events; one team reports doing so
+Dune (`dune.near.dataset_near_intents_metrics`, `..._fees`). Forty-five matching repositories are one number read
+45 times. We did not rebuild volume from `intents.near` events; one team reports doing so
 ([near-thesis](https://github.com/soldanoandrea/near-thesis)) and we have not replicated their work.
 
 **Captured revenue, in contrast, can be checked without trusting the party that reports it.** We read the balances of the three revenue
@@ -77,9 +77,9 @@ The spread between teams is mostly definition, not error, and it sets the error 
 
 | Quantity | Teams publish | Our variants | What moves it |
 | --- | --- | --- | --- |
-| Share of issuance offset by Intents revenue | 8.7% to 21.0% (22 numbers) | 13.0% (360 d), 16.0% (30 d), 18.6% (90 d) | Window length. Sweeps into the wallets are lumpy: single 30-day steps range from 6.9% to 20.1% since April. |
-| Share offset by fee burn | 0.58% to 2.00% (12 numbers) | 1.11% (30 d) to 1.86% (365 d) | Window, and whether 70% or 100% of fees is counted as burnt. |
-| Growth needed to offset issuance | 5.1x to 7.6x (10 numbers) | 5.4x (90 d, on chain) | Same as the first row. |
+| Share of issuance offset by Intents revenue | 8.7% to 21.0% (32 numbers) | 13.0% (360 d), 16.0% (30 d), 18.6% (90 d) | Window length. Sweeps into the wallets are lumpy: single 30-day steps range from 6.9% to 20.1% since April. |
+| Share offset by fee burn | 0.58% to 2.00% (16 numbers) | 1.11% (30 d) to 1.86% (365 d) | Window, and whether 70% or 100% of fees is counted as burnt. |
+| Growth needed to offset issuance | 4.9x to 9.4x (18 numbers) | 5.4x (90 d, on chain) | Same as the first row, and the share of revenue assumed to buy NEAR (9.4x at 72%, 6.7x at 100% in one thesis). |
 | NEAR price change over a year | +19% to +97% (5 numbers) | +41% day to day, +91% between 30-day means | NEAR's price rose sharply in early November 2025, so the comparison day decides the result. |
 | L1 fees in USD, change over a year | -27.6% to -55.3% (3 numbers) | -42% (30 d), -52% (90 d) | Window length: the same series gives either figure. |
 

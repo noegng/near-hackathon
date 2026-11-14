@@ -556,7 +556,9 @@ def render(snapshot: str) -> str:
     # fee chart reads the newest one; its past days match the thesis snapshot (out/history.md lists restatements).
     fees = metrics.llama_series(build.load_raw(build.latest_snapshot())["llama_intents_fees"])
     fee_claims = fam["intents_fees_30d"]
-    target = max(set(c["claimed"] for c in fee_claims), key=lambda v: sum(c["claimed"] == v for c in fee_claims))
+    # the figure most often printed among those that do not replicate on their publication day
+    missed = [c["claimed"] for c in fee_claims if c["at_publication"]["status"] != "reproduced"]
+    target = max(set(missed), key=missed.count)
     n_target = sum(abs(c["claimed"] - target) / target < 0.01 for c in fee_claims)
     last = max(metrics.day_of(c["at_publication"]["asof"] + "T00:00:00Z") for c in fee_claims + [{"at_publication": {"asof": res["asof"]}}])
     first = min(metrics.day_of(c["at_publication"]["asof"] + "T00:00:00Z") for c in fee_claims) - 4 * metrics.DAY

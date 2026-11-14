@@ -12,13 +12,13 @@ thesis is then built only on numbers that replicate, and its conditions run as c
 
 ## What it found
 
-269 numbers published by 44 teams were recomputed from raw data, each for the day it was published: 235 are
-within 5% of ours, 29 within 15%, 5 further apart. Recomputed on our snapshot day instead, only 198 are within 5%:
+362 numbers published by 57 teams were recomputed from raw data, each for the day it was published: 315 are
+within 5% of ours, 40 within 15%, 7 further apart. Recomputed on our snapshot day instead, only 269 are within 5%:
 a correct 30-day number drifts as the window moves on. Team by team: <https://noegng.github.io/proof-of-numbers/>.
 
-1. **The teams agree because they read one source.** 34 of the 44 repositories publish NEAR Intents volume,
-   fees or revenue, and all 34 cite DefiLlama, whose adapter reads datasets NEAR uploads to Dune. Their
-   agreement is one measurement read 34 times. We added a second one: the three revenue wallets, read from an
+1. **The teams agree because they read one source.** 45 of the 57 repositories publish NEAR Intents volume,
+   fees or revenue, and all 45 cite DefiLlama, whose adapter reads datasets NEAR uploads to Dune. Their
+   agreement is one measurement read 45 times. We added a second one: the three revenue wallets, read from an
    archival node at past block heights, grew by 0.98 to 1.01 times the reported revenue.
 2. **Where published numbers differ, the definition differs, not the data.** NEAR's price over a year is +19%
    in one thesis and +96% or +97% in two others; L1 fees in USD fell 28%, 40% or 55%. Each of these six numbers
@@ -27,7 +27,7 @@ a correct 30-day number drifts as the window moves on. Team by team: <https://no
 3. **One figure does not replicate, and we do not know why.** Two teams print 30-day Intents fees of
    $5,458,382 to the dollar and a third rounds it to $5.5M, all three committed on 11 Nov. Our 30-day total for
    10 Nov, the day before, is $5.96M (9% higher), and no 30-day window ending between 27 Oct and 10 Nov comes
-   within 5% (closest: $5.78M, ending 8 Nov). Six other teams' fee totals are within 5% of ours on their own
+   within 5% (closest: $5.78M, ending 8 Nov). Nine other teams' fee totals are within 5% of ours on their own
    publication days.
 
 ## Try it
@@ -71,12 +71,13 @@ the kill conditions on it, and updates `out/history.md` and the "Re-checked ever
 - `replicated/compare.py`: matches each claim to the closest definition on the day it was published: the end
   day its quote states, otherwise the last complete UTC day before the commit that wrote it. One day per claim,
   no search over days. A day after the thesis snapshot (data to 12 Nov) is read from the first later daily snapshot
-  that holds it, or from the newest one until one does: 145 numbers were added on 14 Nov from 23 more repositories, and 5 from NEAR Hub (`mojtb/near-hub`) the same day,
-  many published on 12 to 14 Nov. The same comparison on our snapshot day is kept for reference.
+  that holds it, or from the newest one until one does: 145 numbers were added on 14 Nov from 23 more repositories,
+  5 from NEAR Hub (`mojtb/near-hub`) and 93 from 13 repositories listed on nearhunt.xyz the same day, many published
+  on 11 to 14 Nov. The same comparison on our snapshot day is kept for reference.
 
 ## Results (snapshot 2026-11-13)
 
-- 269 numbers from 44 repositories: 235 are within 5% of our recomputation for the day each was published, 198 on
+- 362 numbers from 57 repositories: 315 are within 5% of our recomputation for the day each was published, 269 on
   our snapshot day. Full table, with each commit date: [`out/replication.md`](out/replication.md).
 - Our own variants show the same spread as the teams: NEAR's price change over one year is +41% from day to day
   and +91% between 30-day averages (to 12 Nov; +19% and +98% to 10 Nov).
@@ -94,7 +95,10 @@ the kill conditions on it, and updates `out/history.md` and the "Re-checked ever
   On 14 Nov we searched GitHub again for thesis repositories created since 15 Oct and read 37 more; 14 publish
   no number in these families in their README or THESIS (developer activity, payments samples, 1Click-only volume,
   monthly comparisons, solver attribution), among them `Dhruva-0206/builders-first`, `naimuli74/near-payments-rail-thesis`,
-  `sammy-XXIV/lithium` and `mikeyfx/near-thesis-lab`.
+  `sammy-XXIV/lithium` and `mikeyfx/near-thesis-lab`. The same day we compared the registry with the 110 projects of the
+  thesis track on [nearhunt.xyz](https://nearhunt.xyz/?track=thesis): 40 link no repository; of the 40 repositories
+  not yet read, 13 publish numbers in these families and are now in the registry, and 27 do not (dashboards, apps,
+  1Click or launchpad samples, staking, credit and governance models).
 - Each claim is compared on one day only. A team that downloaded its data some days before committing shows a
   gap here even if its method matches ours. Where a family has several standard definitions (30, 90 or 365 days;
   net or gross issuance), the closest one is used and named, so a match shows that a standard definition gives
