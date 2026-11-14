@@ -662,6 +662,32 @@
     "nearblocks",
     "rpc"
    ]
+  },
+  "peers": {
+   "project": "NEAR to its peers",
+   "repo": "TheodoreRoussard/NEAR-to-its-peers",
+   "commit": "651569d8dd760c682b2e167e99826dc23e63a7b5",
+   "mentions": [
+    "bigquery",
+    "coingecko",
+    "defillama",
+    "intents_explorer",
+    "nearblocks"
+   ]
+  },
+  "coverage": {
+   "project": "Coverage",
+   "repo": "nice-bills/Coverage",
+   "commit": "716fae96edd247b6157694a6b45fd39fdee05ed9",
+   "mentions": [
+    "bigquery",
+    "coingecko",
+    "defillama",
+    "dune",
+    "intents_explorer",
+    "nearblocks",
+    "rpc"
+   ]
   }
  },
  "claims": [
@@ -7251,6 +7277,112 @@
    "published": {
     "commit": "6c8ccf1200d4f801b685ff87c373376ac86ee6bb",
     "date": "2026-11-13T19:56:29Z"
+   }
+  },
+  {
+   "id": "peers-intents_capture_share-362",
+   "source": "peers",
+   "family": "intents_capture_share",
+   "value": 27.52,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "from 19.56% over the prior 90-day window to 27.52% over the last one",
+   "candidates": [
+    "intents_capture_share_30d",
+    "intents_capture_share_90d",
+    "intents_capture_share_365d"
+   ],
+   "published": {
+    "commit": "1a19c2120278c3fd7e8d48ead0ed2d035fec5ab0",
+    "date": "2026-11-13T10:03:36Z"
+   }
+  },
+  {
+   "id": "peers-l1_fees_usd_365d-363",
+   "source": "peers",
+   "family": "l1_fees_usd_365d",
+   "value": 1150000.0,
+   "unit": "USD",
+   "file": "THESIS.md",
+   "quote": "| **BASE** | \\$1.15M | 4,072x |",
+   "candidates": [
+    "l1_fees_usd_365d"
+   ],
+   "published": {
+    "commit": "1a19c2120278c3fd7e8d48ead0ed2d035fec5ab0",
+    "date": "2026-11-13T10:03:36Z"
+   }
+  },
+  {
+   "id": "coverage-burn_cover-364",
+   "source": "coverage",
+   "family": "burn_cover",
+   "value": 0.92,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "| Burnt in gas fees (exact) | 829 | 0.92% |",
+   "candidates": [
+    "burn_cover_of_net_issuance_pct_30d",
+    "burn_cover_of_net_issuance_pct_90d",
+    "burn_cover_of_net_issuance_pct_365d",
+    "burn_cover_of_gross_issuance_pct_30d",
+    "burn_cover_of_gross_issuance_pct_90d",
+    "burn_cover_of_gross_issuance_pct_365d",
+    "burn70_cover_of_gross_issuance_pct_30d",
+    "burn70_cover_of_gross_issuance_pct_90d",
+    "burn70_cover_of_gross_issuance_pct_365d"
+   ],
+   "stated_asof": "2026-11-12",
+   "published": {
+    "commit": "cb9c6abdc0dac312e031e79c065d935bcd2fea50",
+    "date": "2026-11-12T21:03:24Z"
+   }
+  },
+  {
+   "id": "coverage-issuance_cover-365",
+   "source": "coverage",
+   "family": "issuance_cover",
+   "value": 12.0,
+   "unit": "%",
+   "file": "THESIS.md",
+   "quote": "Burn plus buybacks equal 12.0% of issuance, not 0.92%.",
+   "candidates": [
+    "revenue_cover_of_gross_issuance_pct_30d",
+    "revenue_cover_of_gross_issuance_pct_90d",
+    "revenue_cover_of_gross_issuance_pct_365d",
+    "revenue_cover_of_net_issuance_pct_30d",
+    "revenue_cover_of_net_issuance_pct_90d",
+    "revenue_cover_of_net_issuance_pct_365d",
+    "usage_cover_of_gross_issuance_pct_30d",
+    "usage_cover_of_gross_issuance_pct_90d",
+    "usage_cover_of_gross_issuance_pct_365d",
+    "usage_cover_of_net_issuance_pct_30d",
+    "usage_cover_of_net_issuance_pct_90d",
+    "usage_cover_of_net_issuance_pct_365d"
+   ],
+   "stated_asof": "2026-11-12",
+   "published": {
+    "commit": "cb9c6abdc0dac312e031e79c065d935bcd2fea50",
+    "date": "2026-11-12T21:03:24Z"
+   }
+  },
+  {
+   "id": "coverage-breakeven_multiple-366",
+   "source": "coverage",
+   "family": "breakeven_multiple",
+   "value": 8.4,
+   "unit": "x",
+   "file": "THESIS.md",
+   "quote": "At today's flows, break-even is 8.4x away",
+   "candidates": [
+    "breakeven_multiple_30d",
+    "breakeven_multiple_90d",
+    "breakeven_multiple_365d"
+   ],
+   "stated_asof": "2026-11-12",
+   "published": {
+    "commit": "cb9c6abdc0dac312e031e79c065d935bcd2fea50",
+    "date": "2026-11-12T21:03:24Z"
    }
   }
  ]

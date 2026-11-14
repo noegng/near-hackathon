@@ -6,18 +6,18 @@
   "close": 0.15
  },
  "summary": {
-  "claims": 362,
-  "sources": 57,
+  "claims": 367,
+  "sources": 59,
   "undated": 31,
   "at_publication": {
-   "reproduced": 315,
-   "close": 40,
-   "not reproduced": 7
+   "reproduced": 317,
+   "close": 42,
+   "not reproduced": 8
   },
   "at_snapshot": {
-   "reproduced": 269,
-   "close": 74,
-   "not reproduced": 19
+   "reproduced": 271,
+   "close": 76,
+   "not reproduced": 20
   }
  },
  "families": {
@@ -132,14 +132,14 @@
    "reproduced_at_snapshot": 14
   },
   "intents_capture_share": {
-   "n": 20,
+   "n": 21,
    "unit": "%",
    "min": 17.0,
    "max": 36.9,
-   "median": 30.5,
-   "spread_pct_of_median": 65.24590163934427,
-   "reproduced_at_publication": 17,
-   "reproduced_at_snapshot": 11
+   "median": 30.0,
+   "spread_pct_of_median": 66.33333333333333,
+   "reproduced_at_publication": 18,
+   "reproduced_at_snapshot": 12
   },
   "intents_revenue_365d": {
    "n": 6,
@@ -162,17 +162,17 @@
    "reproduced_at_snapshot": 12
   },
   "issuance_cover": {
-   "n": 32,
+   "n": 33,
    "unit": "%",
    "min": 8.7,
    "max": 21.0,
-   "median": 18.05,
-   "spread_pct_of_median": 68.14404432132964,
+   "median": 18.0,
+   "spread_pct_of_median": 68.33333333333333,
    "reproduced_at_publication": 27,
    "reproduced_at_snapshot": 29
   },
   "burn_cover": {
-   "n": 16,
+   "n": 17,
    "unit": "%",
    "min": 0.58,
    "max": 2,
@@ -182,12 +182,12 @@
    "reproduced_at_snapshot": 9
   },
   "breakeven_multiple": {
-   "n": 18,
+   "n": 19,
    "unit": "x",
    "min": 4.9,
    "max": 9.4,
-   "median": 5.449999999999999,
-   "spread_pct_of_median": 82.56880733944956,
+   "median": 5.6,
+   "spread_pct_of_median": 80.35714285714286,
    "reproduced_at_publication": 13,
    "reproduced_at_snapshot": 9
   },
@@ -342,14 +342,14 @@
    "reproduced_at_snapshot": 21
   },
   "l1_fees_usd_365d": {
-   "n": 4,
+   "n": 5,
    "unit": "USD",
    "min": 1150000,
    "max": 1205160,
-   "median": 1180000.0,
-   "spread_pct_of_median": 4.6745762711864405,
-   "reproduced_at_publication": 4,
-   "reproduced_at_snapshot": 4
+   "median": 1170000,
+   "spread_pct_of_median": 4.714529914529915,
+   "reproduced_at_publication": 5,
+   "reproduced_at_snapshot": 5
   },
   "l1_fees_usd_30d": {
    "n": 6,
@@ -9441,6 +9441,131 @@
     "ours": 356,
     "gap": 0.014245014245014245,
     "status": "reproduced"
+   }
+  },
+  {
+   "id": "peers-intents_capture_share-362",
+   "family": "intents_capture_share",
+   "project": "NEAR to its peers",
+   "claimed": 27.52,
+   "unit": "%",
+   "quote": "from 19.56% over the prior 90-day window to 27.52% over the last one",
+   "published": "2026-11-13T10:03:36Z",
+   "published_commit": "1a19c2120278c3fd7e8d48ead0ed2d035fec5ab0",
+   "url": "https://github.com/TheodoreRoussard/NEAR-to-its-peers/blob/651569d8dd760c682b2e167e99826dc23e63a7b5/THESIS.md",
+   "at_publication": {
+    "metric": "intents_capture_share_90d",
+    "ours": 27.210424080227213,
+    "gap": 0.011249124991743697,
+    "status": "reproduced",
+    "dated": true,
+    "asof": "2026-11-12"
+   },
+   "at_snapshot": {
+    "metric": "intents_capture_share_90d",
+    "ours": 27.210424080227213,
+    "gap": 0.011249124991743697,
+    "status": "reproduced"
+   }
+  },
+  {
+   "id": "peers-l1_fees_usd_365d-363",
+   "family": "l1_fees_usd_365d",
+   "project": "NEAR to its peers",
+   "claimed": 1150000.0,
+   "unit": "USD",
+   "quote": "| **BASE** | \\$1.15M | 4,072x |",
+   "published": "2026-11-13T10:03:36Z",
+   "published_commit": "1a19c2120278c3fd7e8d48ead0ed2d035fec5ab0",
+   "url": "https://github.com/TheodoreRoussard/NEAR-to-its-peers/blob/651569d8dd760c682b2e167e99826dc23e63a7b5/THESIS.md",
+   "at_publication": {
+    "metric": "l1_fees_usd_365d",
+    "ours": 1152919.8150837,
+    "gap": 0.0025389696379999995,
+    "status": "reproduced",
+    "dated": true,
+    "asof": "2026-11-12"
+   },
+   "at_snapshot": {
+    "metric": "l1_fees_usd_365d",
+    "ours": 1152919.8150837,
+    "gap": 0.0025389696379999995,
+    "status": "reproduced"
+   }
+  },
+  {
+   "id": "coverage-burn_cover-364",
+   "family": "burn_cover",
+   "project": "Coverage",
+   "claimed": 0.92,
+   "unit": "%",
+   "quote": "| Burnt in gas fees (exact) | 829 | 0.92% |",
+   "published": "2026-11-12T21:03:24Z",
+   "published_commit": "cb9c6abdc0dac312e031e79c065d935bcd2fea50",
+   "url": "https://github.com/nice-bills/Coverage/blob/716fae96edd247b6157694a6b45fd39fdee05ed9/THESIS.md",
+   "at_publication": {
+    "metric": "burn70_cover_of_gross_issuance_pct_90d",
+    "ours": 0.8463925925245974,
+    "gap": 0.08000805160369849,
+    "status": "close",
+    "dated": true,
+    "asof": "2026-11-12"
+   },
+   "at_snapshot": {
+    "metric": "burn70_cover_of_gross_issuance_pct_90d",
+    "ours": 0.8463925925245974,
+    "gap": 0.08000805160369849,
+    "status": "close"
+   }
+  },
+  {
+   "id": "coverage-issuance_cover-365",
+   "family": "issuance_cover",
+   "project": "Coverage",
+   "claimed": 12.0,
+   "unit": "%",
+   "quote": "Burn plus buybacks equal 12.0% of issuance, not 0.92%.",
+   "published": "2026-11-12T21:03:24Z",
+   "published_commit": "cb9c6abdc0dac312e031e79c065d935bcd2fea50",
+   "url": "https://github.com/nice-bills/Coverage/blob/716fae96edd247b6157694a6b45fd39fdee05ed9/THESIS.md",
+   "at_publication": {
+    "metric": "revenue_cover_of_gross_issuance_pct_365d",
+    "ours": 12.982253093329504,
+    "gap": 0.08185442444412534,
+    "status": "close",
+    "dated": true,
+    "asof": "2026-11-12"
+   },
+   "at_snapshot": {
+    "metric": "revenue_cover_of_gross_issuance_pct_365d",
+    "ours": 12.982253093329504,
+    "gap": 0.08185442444412534,
+    "status": "close"
+   }
+  },
+  {
+   "id": "coverage-breakeven_multiple-366",
+   "family": "breakeven_multiple",
+   "project": "Coverage",
+   "claimed": 8.4,
+   "unit": "x",
+   "quote": "At today's flows, break-even is 8.4x away",
+   "published": "2026-11-12T21:03:24Z",
+   "published_commit": "cb9c6abdc0dac312e031e79c065d935bcd2fea50",
+   "url": "https://github.com/nice-bills/Coverage/blob/716fae96edd247b6157694a6b45fd39fdee05ed9/THESIS.md",
+   "at_publication": {
+    "metric": "breakeven_multiple_365d",
+    "ours": 6.754311465551865,
+    "gap": 0.19591530172001612,
+    "status": "not reproduced",
+    "dated": true,
+    "asof": "2026-11-12"
+   },
+   "at_snapshot": {
+    "metric": "breakeven_multiple_365d",
+    "ours": 6.754311465551865,
+    "gap": 0.19591530172001612,
+    "status": "not reproduced"
    }
   }
  ]

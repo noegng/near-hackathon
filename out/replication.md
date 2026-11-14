@@ -1,27 +1,27 @@
 # Replication table (snapshot 2026-11-13, data to 2026-11-12)
 
-362 published numbers from 57 thesis repositories, each recomputed from raw data.
+367 published numbers from 59 thesis repositories, each recomputed from raw data.
 Thresholds: reproduced = within 5% of the published value, close = within 15%.
 Each claim is compared on one day: the end day its quote states, otherwise the last complete UTC day before the
 commit that wrote it. 31 claims use a metric that only describes the moment of a snapshot (validators, stake) and are compared on the first snapshot fetched on or after the day they were committed, or the earliest snapshot for older quotes.
 
 | Compared on | Reproduced | Close | Not reproduced |
 | --- | --- | --- | --- |
-| The day each number was published | 315 | 40 | 7 |
-| Our snapshot day, for reference | 269 | 74 | 19 |
+| The day each number was published | 317 | 42 | 8 |
+| Our snapshot day, for reference | 271 | 76 | 20 |
 
 ## Spread between teams, per metric family
 
 | Family | Teams' numbers | Min | Median | Max | Spread / median | Reproduced (publication day) |
 | --- | --- | --- | --- | --- | --- | --- |
-| burn_cover | 16 | 0.58 | 1.00 | 2.00 | 142% | 10/16 |
+| burn_cover | 17 | 0.58 | 1.00 | 2.00 | 142% | 10/17 |
 | intents_volume_yoy | 7 | 44.00 | 60.00 | 128.00 | 140% | 4/7 |
 | price_yoy | 5 | 19.00 | 90.80 | 97.30 | 86% | 3/5 |
-| breakeven_multiple | 18 | 4.90 | 5.45 | 9.40 | 83% | 13/18 |
+| breakeven_multiple | 19 | 4.90 | 5.60 | 9.40 | 80% | 13/19 |
 | revenue_over_l1_fees | 5 | 10.60 | 13.00 | 21.00 | 80% | 4/5 |
 | l1_fees_usd_yoy | 3 | -55.30 | -40.00 | -27.60 | 69% | 3/3 |
-| issuance_cover | 32 | 8.70 | 18.05 | 21.00 | 68% | 27/32 |
-| intents_capture_share | 20 | 17.00 | 30.50 | 36.90 | 65% | 17/20 |
+| issuance_cover | 33 | 8.70 | 18.00 | 21.00 | 68% | 27/33 |
+| intents_capture_share | 21 | 17.00 | 30.00 | 36.90 | 66% | 18/21 |
 | l1_fees_usd_30d | 6 | $129,500 | $134,123 | $190,000 | 45% | 6/6 |
 | intents_volume_30d | 12 | $2.45B | $3.76B | $4.02B | 42% | 11/12 |
 | fees_over_l1_fees | 6 | 32.00 | 45.45 | 48.00 | 35% | 6/6 |
@@ -41,7 +41,7 @@ commit that wrote it. 31 claims use a metric that only describes the moment of a
 | active_accounts_yoy | 12 | -79.00 | -76.05 | -73.50 | 7% | 12/12 |
 | intents_volume_alltime | 10 | $35.60B | $37.09B | $37.61B | 5% | 10/10 |
 | active_accounts_vs_peak | 5 | -97.00 | -96.80 | -92.10 | 5% | 5/5 |
-| l1_fees_usd_365d | 4 | $1.15M | $1.18M | $1.21M | 5% | 4/4 |
+| l1_fees_usd_365d | 5 | $1.15M | $1.17M | $1.21M | 5% | 5/5 |
 | net_inflation | 21 | 2.41 | 2.48 | 2.51 | 4% | 21/21 |
 | intents_revenue_365d | 6 | $9.30M | $9.40M | $9.64M | 4% | 6/6 |
 | staked_share | 13 | 43.80 | 44.40 | 45.30 | 3% | 13/13 |
@@ -94,11 +94,13 @@ commit that wrote it. 31 claims use a metric that only describes the moment of a
 | breakeven_multiple | Price Is Not Revenue | 6.70 | 2026-11-12 | 6.66 `breakeven_multiple_365d` @ 2026-11-01 | 0.6% | 6.75 `breakeven_multiple_365d` | 0.8% | [quote](https://github.com/bennytimz/price-is-not-revenue/blob/c14d19d844cd2820e898ddf9d777f328f254a859/THESIS.md) |
 | breakeven_multiple | near-thesis: NEAR on the evidence | 7.20 | 2026-11-01 | 6.66 `breakeven_multiple_365d` @ 2026-10-31 | 7.5% | 6.75 `breakeven_multiple_365d` | 6.2% | [quote](https://github.com/soldanoandrea/near-thesis/blob/13b580f37e97d04fa0403f5c1a785f962886bddd/README.md) |
 | breakeven_multiple | NePu | 7.60 | 2026-11-03 | 6.65 `breakeven_multiple_365d` @ 2026-11-02 | 12.5% | 6.75 `breakeven_multiple_365d` | 11.1% | [quote](https://github.com/Axlnd3r/NePu/blob/eb9fe8468b8fddfd2607b3db85a779b73b9788af/README.md) |
+| breakeven_multiple | Coverage | 8.40 | 2026-11-12 | 6.75 `breakeven_multiple_365d` @ 2026-11-12 | 19.6% | 6.75 `breakeven_multiple_365d` | 19.6% | [quote](https://github.com/nice-bills/Coverage/blob/716fae96edd247b6157694a6b45fd39fdee05ed9/THESIS.md) |
 | breakeven_multiple | Price Is Not Revenue | 9.40 | 2026-11-12 | 6.66 `breakeven_multiple_365d` @ 2026-11-01 | 29.1% | 6.75 `breakeven_multiple_365d` | 28.1% | [quote](https://github.com/bennytimz/price-is-not-revenue/blob/c14d19d844cd2820e898ddf9d777f328f254a859/THESIS.md) |
 | burn_cover | NEAR Agent Census | 0.58 | 2026-11-10 | 0.84 `burn70_cover_of_gross_issuance_pct_90d` @ 2026-11-09 | 44.9% | 0.77 `burn70_cover_of_gross_issuance_pct_30d` | 32.6% | [quote](https://github.com/daodudestiny56-netizen/near-thesis-/blob/fc071ba8aebce367fbe07fa87c0f2d635503b8f0/README.md) |
 | burn_cover | NEAR Investment Thesis: the evidence | 0.80 | 2026-11-11 | 0.78 `burn70_cover_of_gross_issuance_pct_30d` @ 2026-11-10 | 2.6% | 0.77 `burn70_cover_of_gross_issuance_pct_30d` | 3.8% | [quote](https://github.com/ridakalam52-design/near-investment-thesis/blob/39fede7aa774ae738215d4d4a7bfd8fc190b13ba/THESIS.md) |
 | burn_cover | NEAR Holders' Claim | 0.80 | 2026-11-11 | 0.78 `burn70_cover_of_gross_issuance_pct_30d` @ 2026-11-10 | 2.6% | 0.77 `burn70_cover_of_gross_issuance_pct_30d` | 3.8% | [quote](https://github.com/gourab337/near-holders-claim-thesis/blob/ec1d62d96a317f1cbb7d0391efc35b9e1294419b/THESIS.md) |
 | burn_cover | NEAR Intents thesis: usage vs value capture | 0.84 | 2026-11-07 | 0.84 `burn70_cover_of_gross_issuance_pct_90d` @ 2026-11-06 | 0.2% | 0.85 `burn70_cover_of_gross_issuance_pct_90d` | 0.8% | [quote](https://github.com/erfanmoheb/near-intents-thesis/blob/8bf528276c2f209394c0c9334ada3de2e6142168/THESIS.md) |
+| burn_cover | Coverage | 0.92 | 2026-11-12 | 0.85 `burn70_cover_of_gross_issuance_pct_90d` @ 2026-11-12 | 8.0% | 0.85 `burn70_cover_of_gross_issuance_pct_90d` | 8.0% | [quote](https://github.com/nice-bills/Coverage/blob/716fae96edd247b6157694a6b45fd39fdee05ed9/THESIS.md) |
 | burn_cover | Headroom | 0.93 | 2026-11-14 | 0.85 `burn70_cover_of_gross_issuance_pct_90d` @ 2026-11-12 | 9.0% | 0.85 `burn70_cover_of_gross_issuance_pct_90d` | 9.0% | [quote](https://github.com/Julianf6at/headroom/blob/e1326dc5ac23179ca03b884a67dfd9a3962e1b88/README.md) |
 | burn_cover | Epoch Ledger | 0.98 | 2026-11-12 | 1.10 `burn_cover_of_gross_issuance_pct_30d` @ 2026-11-11 | 12.5% | 1.10 `burn_cover_of_gross_issuance_pct_30d` | 11.8% | [quote](https://github.com/enerzy17/epoch-ledger/blob/faac58e104b9bd559c59e44b43f41e94e4d4367b/THESIS.md) |
 | burn_cover | NEAR Hub: The Long Case | 1.00 | 2026-11-13 | 0.86 `burn70_cover_of_gross_issuance_pct_30d` @ 2026-11-09 | 14.0% | 1.10 `burn_cover_of_gross_issuance_pct_30d` | 9.5% | [quote](https://github.com/mojtb/near-hub/blob/1c7a96c746628aff40e5b21c51f5f2748da0c646/THESIS.md) |
@@ -125,6 +127,7 @@ commit that wrote it. 31 claims use a metric that only describes the moment of a
 | intents_capture_share | NEAR Moat Map | 27.00 | 2026-11-14 | 27.21 `intents_capture_share_90d` @ 2026-11-12 | 0.8% | 27.21 `intents_capture_share_90d` | 0.8% | [quote](https://github.com/clatsonhacks/near-moat-map/blob/f647b413c6218fa3e6133b4eef22ef663cb66b77/THESIS.md) |
 | intents_capture_share | NEAR Thesis Lab (AmirAjaj) | 27.20 | 2026-11-13 | 27.21 `intents_capture_share_90d` @ 2026-11-12 | 0.0% | 27.21 `intents_capture_share_90d` | 0.0% | [quote](https://github.com/AmirAjaj/near-thesis-lab/blob/583627e049c8c6c2ed2775594d2d8ce12ece9295/THESIS.md) |
 | intents_capture_share | near-posterior | 27.20 | 2026-11-13 | 27.21 `intents_capture_share_90d` @ 2026-11-12 | 0.0% | 27.21 `intents_capture_share_90d` | 0.0% | [quote](https://github.com/Sorghobrayan-dotcom/near-posterior/blob/1e4732aed739dfbc2aae7ea4301a47c19cf2fa9c/THESIS.md) |
+| intents_capture_share | NEAR to its peers | 27.52 | 2026-11-13 | 27.21 `intents_capture_share_90d` @ 2026-11-12 | 1.1% | 27.21 `intents_capture_share_90d` | 1.1% | [quote](https://github.com/TheodoreRoussard/NEAR-to-its-peers/blob/651569d8dd760c682b2e167e99826dc23e63a7b5/THESIS.md) |
 | intents_capture_share | Tideline | 29.00 | 2026-11-14 | 30.47 `intents_capture_share_30d` @ 2026-11-12 | 5.1% | 30.47 `intents_capture_share_30d` | 5.1% | [quote](https://github.com/ervhint/tideline-thesis/blob/35090250f484baeef88e43f2a34bcfd96e285116/THESIS.md) |
 | intents_capture_share | NEAR Thesis (The-x-35) | 30.00 | 2026-11-12 | 30.04 `intents_capture_share_30d` @ 2026-11-11 | 0.1% | 30.47 `intents_capture_share_30d` | 1.6% | [quote](https://github.com/The-x-35/near-thesis/blob/6543af48d7250597d7a50cc88363483f62d1efb9/THESIS.md) |
 | intents_capture_share | Zygostat | 31.00 | 2026-11-14 | 30.47 `intents_capture_share_30d` @ 2026-11-12 | 1.7% | 30.47 `intents_capture_share_30d` | 1.7% | [quote](https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md) |
@@ -260,6 +263,7 @@ commit that wrote it. 31 claims use a metric that only describes the moment of a
 | issuance_cover | Zygostat | 8.70 | 2026-11-14 | 12.98 `revenue_cover_of_gross_issuance_pct_365d` @ 2026-11-12 | 49.2% | 12.98 `revenue_cover_of_gross_issuance_pct_365d` | 49.2% | [quote](https://github.com/Milliebanned/zygostat/blob/fe6d8b44c623cb253642eac91e22a892a121539b/THESIS.md) |
 | issuance_cover | Near Insight | 11.65 | 2026-11-13 | 12.80 `revenue_cover_of_gross_issuance_pct_365d` @ 2026-11-09 | 9.9% | 12.98 `revenue_cover_of_gross_issuance_pct_365d` | 11.4% | [quote](https://github.com/zunmax/near-insight/blob/6c8ccf1200d4f801b685ff87c373376ac86ee6bb/THESIS.md) |
 | issuance_cover | NePu | 12.00 | 2026-11-03 | 13.13 `revenue_cover_of_gross_issuance_pct_365d` @ 2026-11-02 | 9.4% | 12.98 `revenue_cover_of_gross_issuance_pct_365d` | 8.2% | [quote](https://github.com/Axlnd3r/NePu/blob/eb9fe8468b8fddfd2607b3db85a779b73b9788af/THESIS.md) |
+| issuance_cover | Coverage | 12.00 | 2026-11-12 | 12.98 `revenue_cover_of_gross_issuance_pct_365d` @ 2026-11-12 | 8.2% | 12.98 `revenue_cover_of_gross_issuance_pct_365d` | 8.2% | [quote](https://github.com/nice-bills/Coverage/blob/716fae96edd247b6157694a6b45fd39fdee05ed9/THESIS.md) |
 | issuance_cover | zeat | 15.00 | 2026-11-13 | 15.08 `usage_cover_of_net_issuance_pct_365d` @ 2026-11-12 | 0.5% | 15.08 `usage_cover_of_net_issuance_pct_365d` | 0.5% | [quote](https://github.com/Dydex/zeat/blob/c5a45e81739713be882b3b24c663fe60c2f7e496/THESIS.md) |
 | issuance_cover | Price Is Not Revenue | 15.00 | 2026-11-12 | 15.01 `usage_cover_of_gross_issuance_pct_365d` @ 2026-11-01 | 0.1% | 15.08 `usage_cover_of_net_issuance_pct_365d` | 0.5% | [quote](https://github.com/bennytimz/price-is-not-revenue/blob/c14d19d844cd2820e898ddf9d777f328f254a859/THESIS.md) |
 | issuance_cover | Epoch Ledger | 15.00 | 2026-11-12 | 14.99 `usage_cover_of_net_issuance_pct_365d` @ 2026-11-11 | 0.1% | 15.08 `usage_cover_of_net_issuance_pct_365d` | 0.5% | [quote](https://github.com/enerzy17/epoch-ledger/blob/faac58e104b9bd559c59e44b43f41e94e4d4367b/THESIS.md) |
@@ -296,6 +300,7 @@ commit that wrote it. 31 claims use a metric that only describes the moment of a
 | l1_fees_usd_30d | stakeout | $137,000 | 2026-11-14 | $131,476 `l1_fees_usd_30d` @ 2026-11-12 | 4.0% | $131,476 `l1_fees_usd_30d` | 4.0% | [quote](https://github.com/Eloneshj/stakeout/blob/a0ceae03c755cd89d3f9f11ebc236514903a7efb/THESIS.md) |
 | l1_fees_usd_30d | Usage Before Price? | $190,000 | 2026-11-01 | $193,164 `l1_fees_usd_30d` @ 2026-10-30 | 1.7% | $131,476 `l1_fees_usd_30d` | 30.8% | [quote](https://github.com/minorCoder/near-usage-before-price/blob/e1a5ae78d4c36c575199af5a39518f7c4d57d9ee/THESIS.md) |
 | l1_fees_usd_365d | thesis-ci | $1.15M | 2026-11-13 | $1.15M `l1_fees_usd_365d` @ 2026-11-12 | 0.3% | $1.15M `l1_fees_usd_365d` | 0.3% | [quote](https://github.com/mahadiul-hasan/thesis-ci/blob/6cd235f90003211dbd339825f13eaa91f67eff3a/README.md) |
+| l1_fees_usd_365d | NEAR to its peers | $1.15M | 2026-11-13 | $1.15M `l1_fees_usd_365d` @ 2026-11-12 | 0.3% | $1.15M `l1_fees_usd_365d` | 0.3% | [quote](https://github.com/TheodoreRoussard/NEAR-to-its-peers/blob/651569d8dd760c682b2e167e99826dc23e63a7b5/THESIS.md) |
 | l1_fees_usd_365d | NEAR on the Evidence | $1.17M | 2026-11-11 | $1.16M `l1_fees_usd_365d` @ 2026-11-10 | 0.6% | $1.15M `l1_fees_usd_365d` | 1.5% | [quote](https://github.com/AbdeldjalilChougui/NearThesis/blob/786865e153e47c14a2b541be8edecfa7cdb4fce4/THESIS.md) |
 | l1_fees_usd_365d | near-thesis (rajeshmullippa) | $1.19M | 2026-11-05 | $1.19M `l1_fees_usd_365d` @ 2026-11-04 | 0.2% | $1.15M `l1_fees_usd_365d` | 3.1% | [quote](https://github.com/rajeshmullippa-collab/near-thesis/blob/2cd7ead764bf6e3b57e5ef1da22bdffbf5d43dbd/THESIS.md) |
 | l1_fees_usd_365d | NEAR Thesis Lab (yema7582) | $1.21M | 2026-11-04 | $1.19M `l1_fees_usd_365d` @ 2026-11-03 | 0.9% | $1.15M `l1_fees_usd_365d` | 4.3% | [quote](https://github.com/yema7582-code/near-thesis-lab/blob/d1a9c49e833e3440701d4f0d196c4cd443682360/THESIS.md) |
