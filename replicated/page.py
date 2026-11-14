@@ -129,9 +129,9 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')tip.style.display='n
 // Background: a green ASCII field behind the whole page, in NEAR colours. Dark curtains on top, a slow glowing wave,
 // and under it a lit field drawn in monospace characters (an atlas drawn once on a 2D canvas, sampled per cell).
 // Full strength behind the hero; further down it dims and darkens the centre column, so text always sits on
-// near-black. Without WebGL the static CSS gradient stays.
+// near-black. Touch screens render fewer pixels and frames. Without WebGL the static CSS gradient stays.
 (()=>{const cv=document.createElement('canvas');cv.id='bg';const gl=cv.getContext('webgl',{antialias:false,alpha:false});if(!gl)return;
-const GL=' .:-=+*x#%@',D=Math.min(2,devicePixelRatio||1),CW=Math.round(7*D),CH=Math.round(12*D);
+const GL=' .:-=+*x#%@',touch=matchMedia('(pointer:coarse)').matches,D=Math.min(touch?1.5:2,devicePixelRatio||1),FT=touch?50:33,CW=Math.round(7*D),CH=Math.round(12*D);
 const at=document.createElement('canvas');at.width=CW*GL.length;at.height=CH;const cx=at.getContext('2d');
 cx.fillStyle='#fff';cx.font=Math.round(10.5*D)+'px ui-monospace,Menlo,Consolas,monospace';cx.textAlign='center';cx.textBaseline='middle';
 [...GL].forEach((c,i)=>cx.fillText(c,i*CW+CW/2,CH/2+.5));
@@ -169,7 +169,7 @@ let last=0,raf=0;
 function size(){cv.width=Math.ceil(innerWidth*D);cv.height=Math.ceil(innerHeight*D);gl.viewport(0,0,cv.width,cv.height)}
 function draw(ms){const m=Math.min(1,Math.max(0,scrollY/((hero?hero.offsetHeight:innerHeight)*.8)));
 gl.uniform2f(uR,cv.width,cv.height);gl.uniform1f(uT,still?12.:ms/1000);gl.uniform1f(uK,.78-.42*m);gl.uniform1f(uC,.4+.6*m);gl.drawArrays(gl.TRIANGLES,0,3)}
-function loop(ms){raf=requestAnimationFrame(loop);if(ms-last<33)return;last=ms;draw(ms)}
+function loop(ms){raf=requestAnimationFrame(loop);if(ms-last<FT)return;last=ms;draw(ms)}
 size();addEventListener('resize',()=>{size();draw(performance.now())});
 if(still){draw(0);addEventListener('scroll',()=>draw(0),{passive:true})}else raf=requestAnimationFrame(loop)})();
 """
