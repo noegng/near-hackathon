@@ -5,7 +5,9 @@ produced it (different windows, net vs gross issuance, ...). We report:
   * at_publication: the closest candidate as of the day the number was published: the end
                     day the quote states if it states one, otherwise the last complete UTC
                     day before the commit that wrote the quote (`published`, recorded by
-                    replicated.date_claims). One day per claim, no search over days.
+                    replicated.date_claims). One day per claim, no search over days. A day
+                    after the snapshot's last day is read from the first later snapshot that
+                    holds it, or the newest snapshot, capped at its last day, until one does.
   * at_snapshot:    the closest candidate as of our snapshot's last complete day, for
                     reference: it shows how far a number drifts once the data moves on.
 Metrics that only describe the snapshot (validators, stake, RPC samples) are compared on
@@ -55,14 +57,26 @@ def run(snapshot: str) -> dict:
     reg = json.loads((ROOT / "claims" / "claims.json").read_text())
     base = metrics.compute(raw)
     last = metrics.day_of(base["asof"] + "T00:00:00Z")
-    by_day = {last: base}
+    # A claim published after the snapshot's last day is read from the first later snapshot that holds
+    # its day (the newest one if none does yet), so it is not compared with data older than it was.
+    later = []
+    for s in build.all_snapshots():
+        if s > snapshot:
+            r = build.load_raw(s)
+            later.append((metrics.day_of(metrics.compute(r)["asof"] + "T00:00:00Z"), r))
+    by_day = {(0, last): base}
     rows = []
     for c in reg["claims"]:
-        day = min(published_day(c), last)
-        if day not in by_day:
-            by_day[day] = metrics.compute(raw, day)
+        want = published_day(c)
+        src, day = 0, min(want, last)
+        if want > last and later:
+            src = next((i for i, (end, _) in enumerate(later, 1) if end >= want), len(later))
+            day = min(want, later[src - 1][0])
+        if (src, day) not in by_day:
+            by_day[(src, day)] = metrics.compute(later[src - 1][1] if src else raw, day)
+        at = by_day[(src, day)]
         g0, id0, v0 = closest(base["metrics"], c["candidates"], c["value"])
-        gp, idp, vp = closest(by_day[day]["metrics"], c["candidates"], c["value"])
+        gp, idp, vp = closest(at["metrics"], c["candidates"], c["value"])
         dated = not metrics.snapshot_only(idp)
         src = reg["sources"][c["source"]]
         rows.append({
@@ -70,7 +84,7 @@ def run(snapshot: str) -> dict:
             "quote": c["quote"], "published": c["published"]["date"], "published_commit": c["published"]["commit"],
             "url": f"https://{'gitlab.com' if src.get('host') == 'gitlab' else 'github.com'}/{src['repo']}/{'-/' if src.get('host') == 'gitlab' else ''}blob/{src['commit']}/{c['file']}",
             "at_publication": {"metric": idp, "ours": vp, "gap": gp, "status": status(gp), "dated": dated,
-                               "asof": by_day[day]["asof"] if dated else base["asof"]},
+                               "asof": at["asof"] if dated else base["asof"]},
             "at_snapshot": {"metric": id0, "ours": v0, "gap": g0, "status": status(g0)},
         })
     fams = {}

@@ -29,6 +29,7 @@ jobs:
         if: steps.fetch.outputs.skip != 'true'
         run: |
           python -m replicated.history || echo "::warning::a kill condition fails on the new snapshot"
+          python -m replicated.compare
           python -m replicated.page
       - name: Tests, including the integrity of the new snapshot
         if: steps.fetch.outputs.skip != 'true'
@@ -38,6 +39,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/raw out/history.md out/history.json docs/index.html
+          git add data/raw out/history.md out/history.json out/replication.md out/replication.json docs/index.html
           git diff --cached --quiet || git commit -m "Snapshot $(date -u +%F)"
           git push

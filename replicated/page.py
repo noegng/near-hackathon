@@ -439,14 +439,17 @@ def number_line(teams: list[tuple[str, float]], ours: list[tuple[str, float]], f
         v = top * k / 4
         o.append(f'<line x1="{X(v):.1f}" x2="{X(v):.1f}" y1="{y - 3}" y2="{y + 3}" stroke="var(--muted)"/>'
                  f'<text x="{X(v):.1f}" y="{y + 4}" dx="{-14 if k == 4 else 0}" text-anchor="{"end" if k == 4 else "start" if k == 0 else "middle"}" class="axl">{fmt(v)}</text>')
+    crowded = len(teams) > 3  # more teams than names fit: label values only, the name is in the tooltip
     for pts, sign, col in ((teams, -1, "--s1"), (ours, 1, "--s2")):
-        lx = place([X(v) for _, v in pts], 150, L + 70, w - R - 70)
+        short = crowded and sign < 0
+        lx = place([X(v) for _, v in pts], 50 if short else 150, L + (20 if short else 70), w - R - (20 if short else 70))
         for (name, v), tx in zip(pts, lx):
             x, my = X(v), y + sign * 13
             if sign < 0:
+                label = "" if short else f'<text x="{tx:.1f}" y="{y - 49}" text-anchor="middle">{E(name)}</text>'
                 o.append(f'<line x1="{x:.1f}" y1="{my - 7}" x2="{tx:.1f}" y2="{y - 44}" stroke="var(--grid)"/>'
                          f'<circle cx="{x:.1f}" cy="{my}" r="7" fill="var({col})" stroke="var(--surface)" stroke-width="2" data-tip="{E(name)}: {fmt(v)}"/>'
-                         f'<text class="strong" x="{tx:.1f}" y="{y - 64}" text-anchor="middle">{fmt(v)}</text><text x="{tx:.1f}" y="{y - 49}" text-anchor="middle">{E(name)}</text>')
+                         f'<text class="strong" x="{tx:.1f}" y="{y - 64}" text-anchor="middle">{fmt(v)}</text>{label}')
             else:
                 o.append(f'<line x1="{x:.1f}" y1="{my + 8}" x2="{tx:.1f}" y2="{y + 44}" stroke="var(--grid)"/>'
                          f'<path d="M{x:.1f},{my - 8}l8,8l-8,8l-8,-8z" fill="var({col})" stroke="var(--surface)" stroke-width="2" data-tip="{E(name)}: {fmt(v)}"/>'
@@ -456,7 +459,7 @@ def number_line(teams: list[tuple[str, float]], ours: list[tuple[str, float]], f
 
 def fee_windows(days: list[str], ours: list[float], target: float, claims: list[dict], w=520, h=250) -> str:
     """Our 30-day fee total for each end day, a 5% band around the unexplained figure, and every team's 30-day fee claim."""
-    L, R, T, B = 52, 12, 14, 26
+    L, R, T, B = 52, 18, 14, 26
     vals = ours + [target * 0.95] + [c["claimed"] for c in claims]
     lo = math.floor(min(vals) / 2e5) * 2e5
     hi = math.ceil(max(vals) / 2e5) * 2e5
@@ -543,14 +546,19 @@ def render(snapshot: str) -> str:
     ratios = [m[f"wallet_growth_over_defillama_revenue_{n}d"] for n in (30, 90, 360)]
     # Finding 2: one quantity, two definitions.
     price_teams = [(c["project"].replace("NEAR ", "").replace(" Thesis", ""), c["claimed"]) for c in sorted(fam["price_yoy"], key=lambda c: c["claimed"])]
+    price_ok = sum(c["at_publication"]["status"] == "reproduced" for c in fam["price_yoy"])
+    price_close = sum(c["at_publication"]["status"] == "close" for c in fam["price_yoy"])
+    price_rest = (", the other within 15%" if price_close == 1 else f", the other {price_close} within 15%") if price_close and price_ok + price_close == len(price_teams) else ""
     price_ours = [("ours, day vs day", m["price_yoy"]), ("ours, 30-day means", m["price_yoy_30d_avg"])]
     l1 = sorted(c["claimed"] for c in fam["l1_fees_usd_yoy"])
     # Finding 3: the 30-day fee total that matches no window.
-    fees = metrics.llama_series(raw["llama_intents_fees"])
+    # Claims published after the thesis snapshot are compared on later snapshots (see compare.run), so the
+    # fee chart reads the newest one; its past days match the thesis snapshot (out/history.md lists restatements).
+    fees = metrics.llama_series(build.load_raw(build.latest_snapshot())["llama_intents_fees"])
     fee_claims = fam["intents_fees_30d"]
     target = max(set(c["claimed"] for c in fee_claims), key=lambda v: sum(c["claimed"] == v for c in fee_claims))
     n_target = sum(abs(c["claimed"] - target) / target < 0.01 for c in fee_claims)
-    last = metrics.day_of(res["asof"] + "T00:00:00Z")
+    last = max(metrics.day_of(c["at_publication"]["asof"] + "T00:00:00Z") for c in fee_claims + [{"at_publication": {"asof": res["asof"]}}])
     first = min(metrics.day_of(c["at_publication"]["asof"] + "T00:00:00Z") for c in fee_claims) - 4 * metrics.DAY
     fdays = list(range(first, last + 1, metrics.DAY))
     fee_iso = [metrics.datetime.fromtimestamp(d, metrics.timezone.utc).strftime("%Y-%m-%d") for d in fdays]
@@ -623,7 +631,7 @@ def render(snapshot: str) -> str:
 
 <header id="summary">
 <div class="hero"><div class="aura"><svg aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg></div>
-<h1>About thirty teams measured NEAR. <em>Do their numbers agree?</em></h1>
+<h1>{s['sources']} teams measured NEAR. <em>Do their numbers agree?</em></h1>
 <p class="lede">We took {s['claims']} numbers published by {s['sources']} teams in this track, recomputed every one from raw public data, and built an investment thesis using only the numbers that hold up.</p>
 <div class="meta"><span>Track<b>Investment Thesis</b></span><span>Teams checked<b>{s['sources']}</b></span><span>Numbers recomputed<b>{s['claims']}</b></span><span>Data to<b>{E(res['asof'])}</b></span></div>
 </div>
@@ -664,7 +672,7 @@ def render(snapshot: str) -> str:
 
 <div class="finding"><div><span class="tag warn">Explained</span>
 <h3 class="fh"><span class="num">2</span>Where the numbers differ, the definition differs, not the data</h3>
-<p>Three teams publish NEAR's price change over a year: +{price_teams[0][1]:.0f}%, +{price_teams[1][1]:.0f}% and +{price_teams[2][1]:.0f}%. All three are right. Comparing two single days gives +{m['price_yoy']:.0f}%; comparing two 30-day averages gives +{m['price_yoy_30d_avg']:.0f}%, because the price jumped in early November 2025.</p>
+<p>{len(price_teams)} teams publish NEAR's price change over a year, from +{price_teams[0][1]:.0f}% to +{price_teams[-1][1]:.0f}%. {price_ok} of them are within 5% of ours once the window and the end day match{price_rest}. Comparing two single days gives +{m['price_yoy']:.0f}%; comparing two 30-day averages gives +{m['price_yoy_30d_avg']:.0f}%, because the price jumped in early November 2025.</p>
 <p>The same holds for base-layer fees in dollars ({l1[0]:.0f}%, {l1[1]:.0f}% or {l1[2]:.0f}% in a year): each number is reproduced within 5% once the window and the end day match.</p>
 <p class="takeaway">A single number without its definition means little. The spread between teams is the honest error bar.</p></div>
 <figure><h3>NEAR price change over one year</h3>
@@ -674,7 +682,7 @@ def render(snapshot: str) -> str:
 <div class="finding"><div><span class="tag bad">Unexplained</span>
 <h3 class="fh"><span class="num">3</span>One figure does not replicate, and we say so</h3>
 <p>{n_target} teams print 30-day Intents fees of <b>${target:,.0f}</b> (or a rounded version), all committed the same day. Our total for the day before is <b>${t_ours / 1e6:.2f}M</b>, {abs(t_ours - target) / target:.0%} higher. No 30-day window in the chart comes within 5%: the closest is ${fee_vals[best] / 1e6:.2f}M, for the window ending {E(day_label(fee_iso[best]))}.</p>
-<p>Meanwhile {others_ok} other teams' fee totals land exactly on our line on their own publication days. Nor did the source rewrite its history: two snapshots a day apart agree on every past day.</p>
+<p>Meanwhile {others_ok} other teams' fee totals land within 5% of our line on their own publication days. Nor did the source rewrite its history: two snapshots a day apart agree on every past day.</p>
 <p class="takeaway">We publish what we cannot explain instead of tuning it away.</p></div>
 <figure><h3>Intents fees over 30 days, by the day the window ends</h3>
 <div class="legend"><span><i style="background:var(--s1)"></i>Ours</span><span><i style="background:var(--good)"></i>Team, within 5%</span><span><i style="background:var(--warn)"></i>Team, 5 to 15% off</span></div>

@@ -45,16 +45,18 @@ class Compare(unittest.TestCase):
     def test_each_claim_is_compared_on_its_publication_day(self):
         res = compare.run(build.thesis_snapshot())
         reg = {c["id"]: c for c in json.loads((ROOT / "claims" / "claims.json").read_text())["claims"]}
+        # Days after the thesis snapshot are read from later snapshots, so the cap is the newest one's last day.
+        newest = compare.metrics.compute(build.load_raw(build.latest_snapshot()))["asof"]
+        cap = compare.metrics.day_of(newest + "T00:00:00Z")
         for r in res["claims"]:
             p, c = r["at_publication"], reg[r["id"]]
             if not p["dated"]:
                 self.assertEqual(p["asof"], res["asof"], r["id"])
             elif "stated_asof" in c:
-                self.assertEqual(p["asof"], c["stated_asof"], r["id"])
-            else:  # the last complete UTC day before the commit, capped at the snapshot
+                self.assertEqual(p["asof"], min(c["stated_asof"], newest), r["id"])
+            else:  # the last complete UTC day before the commit, capped at the newest snapshot
                 day_before = compare.metrics.day_of(c["published"]["date"][:10] + "T00:00:00Z") - compare.metrics.DAY
-                want = min(day_before, compare.metrics.day_of(res["asof"] + "T00:00:00Z"))
-                self.assertEqual(compare.metrics.day_of(p["asof"] + "T00:00:00Z"), want, r["id"])
+                self.assertEqual(compare.metrics.day_of(p["asof"] + "T00:00:00Z"), min(day_before, cap), r["id"])
         for key in ("at_publication", "at_snapshot"):
             self.assertEqual(sum(res["summary"][key].values()), res["summary"]["claims"])
 

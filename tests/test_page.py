@@ -1,3 +1,4 @@
+import json
 import math
 import re
 import unittest
@@ -33,7 +34,8 @@ class Page(unittest.TestCase):
         self.assertEqual(self.html.count("<polyline"), 5)
 
     def test_one_square_per_claim_and_every_kill_condition_has_a_card(self):
-        self.assertEqual(len(re.findall(r'<rect x="\d+" y="\d+" width="22"', self.html)), 119)
+        n_claims = len(json.loads((ROOT / "claims" / "claims.json").read_text())["claims"])
+        self.assertEqual(len(re.findall(r'<rect x="\d+" y="\d+" width="22"', self.html)), n_claims)
         self.assertEqual(len(re.findall(r'<div class="chk (?:ok|bad|wait)"><div class="chk-h"><b>K', self.html)), 5)
 
     def test_label_placement_keeps_gap_and_bounds(self):

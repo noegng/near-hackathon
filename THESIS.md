@@ -19,18 +19,18 @@ of the metric that produced it; a test fails if the text and the computation dis
 
 ## How this thesis was built
 
-About thirty teams in this track measured NEAR independently. We recorded 119 of their published numbers from
-20 public repositories, with the exact quote and commit, and recomputed each from raw data
-([`out/replication.md`](out/replication.md)). 101 are within 5% of our number for the day each was
-published (the last complete day before the commit that wrote it), and 89 if all are recomputed on our snapshot day. The thesis uses only
+Dozens of teams in this track measured NEAR independently. We recorded 264 of their published numbers from
+43 public repositories, with the exact quote and commit, and recomputed each from raw data
+([`out/replication.md`](out/replication.md)). 231 are within 5% of our number for the day each was
+published (the last complete day before the commit that wrote it), and 210 if all are recomputed on our snapshot day. The thesis uses only
 quantities that replicate, and takes its uncertainty from the spread between teams instead of from one model.
 
 Two things came out of the comparison that no single thesis shows.
 
-**The agreement on Intents volume and fees is not independent evidence.** All 15 repositories that publish an
+**The agreement on Intents volume and fees is not independent evidence.** All 34 repositories that publish an
 Intents number mention DefiLlama as a source. DefiLlama's adapter in turn reads datasets that NEAR itself uploads to
-Dune (`dune.near.dataset_near_intents_metrics`, `..._fees`). Fifteen matching repositories are one number read
-fifteen times. We did not rebuild volume from `intents.near` events; one team reports doing so
+Dune (`dune.near.dataset_near_intents_metrics`, `..._fees`). Thirty-four matching repositories are one number read
+34 times. We did not rebuild volume from `intents.near` events; one team reports doing so
 ([near-thesis](https://github.com/soldanoandrea/near-thesis)) and we have not replicated their work.
 
 **Captured revenue, in contrast, can be checked without trusting the party that reports it.** We read the balances of the three revenue
